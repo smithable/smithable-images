@@ -77,7 +77,16 @@ for (const e of entries) {
   ids.add(e.id);
 }
 const selected = entries.filter((e) => !args.only || e.id === args.only || e.kind === args.only || e.tags.includes(args.only));
+// Pictures already served are cached for a year, so an uploaded id never gets a new picture:
+// a rejected one is replaced under a new id (cafe-1 → cafe-1-b) and --upload deletes the old object.
+const UPLOADED = join(ROOT, "uploaded.json");
+const uploaded = existsSync(UPLOADED) ? JSON.parse(readFileSync(UPLOADED, "utf8")) : {};
 const missing = selected.filter((e) => !existsSync(e.file));
+const reused = missing.filter((e) => uploaded[e.id]);
+if (reused.length && !args.upload && !args["dry-run"])
+  throw new Error(
+    `${reused.map((e) => e.id).join(", ")}: already uploaded and cached for a year; give the new picture a new id (e.g. ${reused[0].id}-b)`,
+  );
 
 const promptOf = (e) => [e.prompt, defaults.style?.[e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");
 const priceOf = (e) => {
@@ -343,7 +352,19 @@ function upload() {
       )
     : {};
   console.log(existsSync(file) ? `using the key in ${file}` : "using the default AWS profile");
-  run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"], { ...process.env, ...scoped });
+  const env = { ...process.env, ...scoped };
+  run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"], env);
+  // Ids gone from the manifest (rejected and replaced under a new id) leave the bucket.
+  const inManifest = new Map(entries.map((e) => [e.id, e.kind]));
+  for (const [id, kind] of Object.entries(uploaded))
+    if (!inManifest.has(id)) {
+      run("aws", ["s3", "rm", `s3://${bucket}/images/${kind}/${id}.webp`], env);
+      delete uploaded[id];
+    }
+  for (const e of entries) if (existsSync(e.file)) uploaded[e.id] = e.kind;
+  const sorted = Object.fromEntries(Object.entries(uploaded).sort(([a], [b]) => a.localeCompare(b)));
+  writeFileSync(UPLOADED, `${JSON.stringify(sorted, null, 2)}\n`);
+  console.log(`uploaded.json: ${Object.keys(sorted).length} pictures served; commit it`);
 }
 
 // Every picture and the index in one tarball, to attach to a GitHub release for offline use.
