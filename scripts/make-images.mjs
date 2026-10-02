@@ -321,8 +321,8 @@ async function sheets() {
   }
 }
 
-function run(command, commandArgs) {
-  const result = spawnSync(command, commandArgs, { cwd: ROOT, stdio: "inherit" });
+function run(command, commandArgs, env = process.env) {
+  const result = spawnSync(command, commandArgs, { cwd: ROOT, stdio: "inherit", env });
   if (result.status !== 0) throw new Error(`${command} ${commandArgs.join(" ")} failed`);
 }
 
@@ -330,7 +330,20 @@ function run(command, commandArgs) {
 function upload() {
   const bucket = process.env.SMITHABLE_DOCS_BUCKET;
   if (!bucket) throw new Error("set SMITHABLE_DOCS_BUCKET to the docs site's bucket name");
-  run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"]);
+  // A key limited to images/ in ~/.config/smithable/images.env when there is one (KEY=value lines),
+  // else the default AWS profile. Its values are passed to aws, never printed.
+  const file = join(homedir(), ".config/smithable/images.env");
+  const scoped = existsSync(file)
+    ? Object.fromEntries(
+        readFileSync(file, "utf8")
+          .split("\n")
+          .map((l) => l.trim().match(/^([A-Z_]+)=["']?(.*?)["']?$/))
+          .filter(Boolean)
+          .map((m) => [m[1], m[2]]),
+      )
+    : {};
+  console.log(existsSync(file) ? `using the key in ${file}` : "using the default AWS profile");
+  run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"], { ...process.env, ...scoped });
 }
 
 // Every picture and the index in one tarball, to attach to a GitHub release for offline use.
