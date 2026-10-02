@@ -1104,9 +1104,9 @@ images:
     prompt: "document-contract."
     alt: "document-contract"
     tags: [A printed contract with a pen]
-  - id: document-invoice
+  - id: document-invoice-b
     kind: sample
-    prompt: "A printed invoice on a desk."
+    prompt: "A printed one-page invoice on a desk; its lines and figures are only thin gray bars, too small to read, with no letters or words anywhere."
     alt: "A printed invoice on a desk"
     tags: [sample, document, documents, invoice, office, indoor]
   - id: document-folder
