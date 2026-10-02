@@ -5,7 +5,7 @@
 // releases as a tarball (--tar); index.json names each by its URL.
 //
 //   node scripts/make-images.mjs --dry-run [--only <id|kind>]   prompts and the estimated cost, nothing sent
-//   node scripts/make-images.mjs [--only <id|kind>]              copies `from:` entries, generates the rest directly
+//   node scripts/make-images.mjs [--only <id|kind|tag>]          copies `from:` entries, generates the rest directly
 //   node scripts/make-images.mjs --batch submit|status|fetch     the Batch API (half price, within 24 h)
 //   node scripts/make-images.mjs --sheet [--out <dir>]           a contact sheet per kind, in sheets/ and <dir>
 //   node scripts/make-images.mjs --upload                        images/ to the docs bucket (SMITHABLE_DOCS_BUCKET)
@@ -76,7 +76,7 @@ for (const e of entries) {
   if (ids.has(e.id)) throw new Error(`duplicate id ${e.id}`);
   ids.add(e.id);
 }
-const selected = entries.filter((e) => !args.only || e.id === args.only || e.kind === args.only);
+const selected = entries.filter((e) => !args.only || e.id === args.only || e.kind === args.only || e.tags.includes(args.only));
 const missing = selected.filter((e) => !existsSync(e.file));
 
 const promptOf = (e) => [e.prompt, defaults.style?.[e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");

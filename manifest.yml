@@ -1410,3 +1410,99 @@ images:
     prompt: "A loop forming a simple knot."
     alt: "A loop forming a simple knot"
     tags: [logo, mark, abstract, craft]
+  # The marketplace starter (Torget): second-hand things staged as a seller's photos, one or two each.
+  - id: market-sideboard-1
+    kind: sample
+    prompt: "A used mid-century teak sideboard with sliding doors, photographed by its seller against a white wall on a wooden floor."
+    alt: "A teak sideboard with sliding doors against a white wall"
+    tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
+  - id: market-sideboard-2
+    kind: sample
+    prompt: "A close-up of the top corner and grain of a used teak sideboard, with small signs of wear, in daylight."
+    alt: "The corner and wood grain of the teak sideboard"
+    tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
+  - id: market-chairs-1
+    kind: sample
+    prompt: "A pair of used oak dining chairs side by side on a wooden floor by a window, photographed by their seller."
+    alt: "Two oak dining chairs side by side"
+    tags: [sample, starter-marketplace, furniture, chair, second-hand, indoor]
+  - id: market-armchair-1
+    kind: sample
+    prompt: "A used armchair upholstered in gray wool, with wooden legs, in a bright living room corner, photographed by its seller."
+    alt: "A gray wool armchair in a living room corner"
+    tags: [sample, starter-marketplace, furniture, armchair, chair, second-hand, indoor]
+  - id: market-armchair-2
+    kind: sample
+    prompt: "A close-up of the gray wool fabric and the armrest of a used armchair, in soft daylight."
+    alt: "The wool fabric and armrest of the armchair"
+    tags: [sample, starter-marketplace, furniture, armchair, second-hand, indoor]
+  - id: market-lamp-1
+    kind: sample
+    prompt: "A used brass floor lamp with a white linen shade, switched on, against a plain wall, photographed by its seller."
+    alt: "A brass floor lamp with a linen shade against a wall"
+    tags: [sample, starter-marketplace, lamp, lighting, furniture, second-hand, indoor]
+  - id: market-city-bike-1
+    kind: sample
+    prompt: "A used dark green city bicycle with a front basket, standing on a gravel drive by a wooden house, photographed by its seller."
+    alt: "A green city bike with a basket on a gravel drive"
+    tags: [sample, starter-marketplace, bike, bicycle, vehicle, second-hand, outdoor]
+  - id: market-city-bike-2
+    kind: sample
+    prompt: "A close-up of the handlebar, bell and wicker basket of a used city bicycle, outdoors."
+    alt: "The handlebar, bell and basket of the city bike"
+    tags: [sample, starter-marketplace, bike, bicycle, second-hand, outdoor]
+  - id: market-balance-bike-1
+    kind: sample
+    prompt: "A small used wooden balance bike for a child, standing on a green lawn, photographed by its seller."
+    alt: "A child's wooden balance bike on a lawn"
+    tags: [sample, starter-marketplace, bike, kids, toy, second-hand, outdoor]
+  - id: market-road-bike-1
+    kind: sample
+    prompt: "A used gray road bike leaning against a garage wall, side view, photographed by its seller."
+    alt: "A gray road bike leaning against a garage wall"
+    tags: [sample, starter-marketplace, bike, bicycle, sports, second-hand, outdoor]
+  - id: market-laptop-1
+    kind: sample
+    prompt: "A used silver laptop, open with a dark blank screen, on a wooden table, with its charger coiled beside it, photographed by its seller."
+    alt: "An open laptop with its charger on a wooden table"
+    tags: [sample, starter-marketplace, laptop, computer, electronics, second-hand, indoor]
+  - id: market-headphones-1
+    kind: sample
+    prompt: "A pair of used black over-ear headphones lying on a wooden table, photographed by their seller."
+    alt: "Black over-ear headphones on a wooden table"
+    tags: [sample, starter-marketplace, headphones, electronics, music, second-hand, indoor]
+  - id: market-turntable-1
+    kind: sample
+    prompt: "A used record player with a wooden base and a clear lid, on a low shelf beside a few records with plain sleeves, photographed by its seller."
+    alt: "A wooden record player on a low shelf beside records"
+    tags: [sample, starter-marketplace, turntable, electronics, music, second-hand, indoor]
+  - id: market-turntable-2
+    kind: sample
+    prompt: "A close-up of the tonearm and platter of a used record player, a record on it, in warm daylight."
+    alt: "The tonearm and a record on the record player"
+    tags: [sample, starter-marketplace, turntable, music, second-hand, indoor]
+  - id: market-skis-1
+    kind: sample
+    prompt: "A pair of used cross-country skis with poles, leaning against a red wooden wall in the snow, photographed by their seller."
+    alt: "Cross-country skis and poles against a red wall in the snow"
+    tags: [sample, starter-marketplace, skis, sports, winter, second-hand, outdoor]
+  - id: market-dinghy-1
+    kind: sample
+    prompt: "A small used white sailing dinghy on a road trailer, parked on grass by a granite shore in the Åland archipelago, photographed by its seller."
+    alt: "A white sailing dinghy on a trailer by a granite shore"
+    tags: [sample, starter-marketplace, boat, sailing, sea, vehicle, second-hand, outdoor]
+  - id: market-dinghy-2
+    kind: sample
+    prompt: "The folded sail and wooden tiller lying inside a small used sailing dinghy, seen from above."
+    alt: "The sail and tiller inside the dinghy"
+    tags: [sample, starter-marketplace, boat, sailing, second-hand, outdoor]
+  - id: market-roof-box-1
+    kind: sample
+    prompt: "A used black car roof box lying on a garage floor, photographed by its seller."
+    alt: "A black car roof box on a garage floor"
+    tags: [sample, starter-marketplace, car, vehicle, accessories, second-hand, indoor]
+  - id: market-books-1
+    kind: sample
+    prompt: "An open cardboard box of used children's picture books with plain, unreadable covers, on a wooden floor, photographed by their seller."
+    alt: "A cardboard box of children's picture books on a floor"
+    tags: [sample, starter-marketplace, books, kids, second-hand, indoor]
