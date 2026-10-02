@@ -23,7 +23,7 @@ node scripts/make-images.mjs --batch submit         # the Batch API, half price,
 node scripts/make-images.mjs --batch status
 node scripts/make-images.mjs --batch fetch
 node scripts/make-images.mjs --sheet [--out <dir>]  # a contact sheet per kind
-SMITHABLE_DOCS_BUCKET=<bucket> node scripts/make-images.mjs --upload  # images/ to docs.smithable.ai, with the key in ~/.config/smithable/images.env if there is one
+SMITHABLE_DOCS_BUCKET=<bucket> SMITHABLE_DOCS_DISTRIBUTION=<id> node scripts/make-images.mjs --upload  # images/ and index.json to docs.smithable.ai, with the key in ~/.config/smithable/images.env if there is one
 node scripts/make-images.mjs --tar                 # images-<date>.tar for a release
 ```
 

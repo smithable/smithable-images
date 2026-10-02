@@ -336,7 +336,7 @@ function run(command, commandArgs, env = process.env) {
 }
 
 // The pictures to the docs site's bucket, cached for a year: a picture's id never changes what it shows.
-function upload() {
+async function upload() {
   const bucket = process.env.SMITHABLE_DOCS_BUCKET;
   if (!bucket) throw new Error("set SMITHABLE_DOCS_BUCKET to the docs site's bucket name");
   // A key limited to images/ in ~/.config/smithable/images.env when there is one (KEY=value lines),
@@ -365,6 +365,13 @@ function upload() {
   const sorted = Object.fromEntries(Object.entries(uploaded).sort(([a], [b]) => a.localeCompare(b)));
   writeFileSync(UPLOADED, `${JSON.stringify(sorted, null, 2)}\n`);
   console.log(`uploaded.json: ${Object.keys(sorted).length} pictures served; commit it`);
+  // The index too, where the CLI and the service fetch it: cached for a day, not a year, and
+  // invalidated at CloudFront when SMITHABLE_DOCS_DISTRIBUTION names the distribution.
+  await writeIndex();
+  run("aws", ["s3", "cp", "index.json", `s3://${bucket}/images/index.json`, "--content-type", "application/json", "--cache-control", "public, max-age=86400"], env);
+  const distribution = process.env.SMITHABLE_DOCS_DISTRIBUTION;
+  if (distribution) run("aws", ["cloudfront", "create-invalidation", "--distribution-id", distribution, "--paths", "/images/index.json", "--query", "Invalidation.Id", "--output", "text"], env);
+  else console.log("set SMITHABLE_DOCS_DISTRIBUTION to refresh the cached index at once; otherwise it updates within a day");
 }
 
 // Every picture and the index in one tarball, to attach to a GitHub release for offline use.
@@ -375,7 +382,7 @@ function tar() {
 }
 
 if (args["dry-run"]) dryRun();
-else if (args.upload) upload();
+else if (args.upload) await upload();
 else if (args.tar) tar();
 else if (args.sheet) await sheets();
 else if (args.index) {
