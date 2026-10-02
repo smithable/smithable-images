@@ -1,0 +1,15 @@
+{
+  "name": "smithable-images",
+  "private": true,
+  "type": "module",
+  "license": "CC0-1.0",
+  "packageManager": "pnpm@12.6.0",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "make": "node scripts/make-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.4",
+    "yaml": "^2.9.1"
+  }
+}
