@@ -10,13 +10,25 @@ defaults:
     logo: gpt-image-1-mini
   style:
     hero: >-
-      Photograph, natural light, a Nordic setting, muted colors. A wide, calm composition with quiet space
-      in the upper left for a headline. People, if any, small in the frame or seen from behind.
-      No text, no signs, no logos, no brands, no watermark.
+      Photograph, natural daylight, a Nordic setting, warm and lively colors. A wide composition with
+      quiet space in the upper left for a headline. A place in use rather than empty: if people are in it,
+      they are busy with what the place is for, natural and unposed, small in the frame or seen from the
+      side, and look content. Everything physically plausible and of today. No text, no signs, no logos,
+      no brands, no watermark.
     sample: >-
-      Photograph, natural light, a Nordic setting, muted colors, shallow depth of field. One subject, centered,
-      on an uncluttered background so it reads on a small card. People, if any, seen from behind or at a
-      distance, unless the subject is a portrait. No text, no signs, no logos, no brands, no watermark.
+      Photograph, natural daylight, a Nordic setting, warm and lively colors, shallow depth of field. One
+      clear subject that reads on a small card. People, when the picture is about a service or work, are
+      doing it together, natural and unposed, never standing in front of the scene facing the camera, with
+      warm, friendly expressions; their hands are free or hold only what the activity needs, never a blank
+      card or paper; a portrait is the exception. Everything physically plausible and of today. No text,
+      no signs, no logos, no brands, no watermark.
+    # Products and things for sale (an entry's `style: product`): the item alone, whole and in focus.
+    product: >-
+      Product photograph, natural daylight, warm and lively colors. The item is the subject: shown whole,
+      centered and sharp, in the setting where it belongs (an outdoor thing outdoors, a home thing in a
+      Nordic home), on a calm, uncluttered background; a prop or two at most, never taking the focus. No
+      people, no hands. Contemporary unless the description says otherwise, and physically plausible. No
+      text, no signs, no logos, no brands, no watermark.
     logo: >-
       A simple flat abstract mark in one or two solid colors, centered, on a transparent background.
       Not a photograph. No letters, no text.
@@ -182,10 +194,10 @@ images:
     from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-1-mini.jpg
     alt: "Three people side-stretching in a studio"
     tags: [sample, gallery, fitness, yoga, class, studio, people, indoor, calm, starter-booking]
-  - id: fitness-trainer
+  - id: fitness-trainer-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-2-mini.jpg
-    alt: "A trainer coaching someone lifting dumbbells outdoors"
+    prompt: "A personal trainer coaching a woman lifting light dumbbells in a bright gym; both smiling, the trainer standing beside her and encouraging, not holding her back."
+    alt: "A trainer encouraging a smiling woman lifting dumbbells in a bright gym"
     tags: [sample, fitness, trainer, weights, people, outdoor]
   - id: fitness-yoga-mat
     kind: sample
@@ -328,20 +340,20 @@ images:
     prompt: "A green garden with vegetable beds, a greenhouse and fruit trees."
     alt: "A green garden with vegetable beds, a greenhouse and fruit trees"
     tags: [hero, garden, plants, outdoor, summer]
-  - id: hero-school
+  - id: hero-school-b
     kind: hero
-    prompt: "An empty classroom with wooden desks, a blackboard and windows onto trees."
-    alt: "An empty classroom with wooden desks, a blackboard and windows onto trees"
+    prompt: "A bright classroom during a lesson: children of about ten working together in small groups at wooden tables, a teacher crouching beside one group, colorful drawings on the walls, windows onto trees."
+    alt: "Children working in small groups in a bright classroom while their teacher helps one group"
     tags: [hero, school, education, classroom, indoor, calm]
-  - id: hero-sports-hall
+  - id: hero-sports-hall-b
     kind: hero
-    prompt: "An empty sports hall with a polished wooden floor and climbing bars on the wall."
-    alt: "An empty sports hall with a polished wooden floor and climbing bars on the wall"
+    prompt: "A sports hall with a polished wooden floor during an evening session: a few people playing badminton and others stretching by the wall bars, colorful kit, warm light."
+    alt: "People playing badminton and stretching in a sports hall with a wooden floor"
     tags: [hero, sports, gym, hall, indoor]
-  - id: hero-warehouse
+  - id: hero-warehouse-b
     kind: hero
-    prompt: "A tidy warehouse with tall shelves of boxes and a forklift."
-    alt: "A tidy warehouse with tall shelves of boxes and a forklift"
+    prompt: "A busy, tidy warehouse with tall shelves of boxes: one worker driving a forklift and another checking parcels on a trolley, bright safety vests, daylight from high windows."
+    alt: "Two workers moving boxes in a tidy warehouse with tall shelves and a forklift"
     tags: [hero, warehouse, logistics, storage, indoor]
   - id: hero-lab
     kind: hero
@@ -464,40 +476,45 @@ images:
     alt: "Close-up of green leaves with dew in soft light"
     tags: [hero, abstract, nature, plants, calm]
   # Samples: things people list, book, sell or manage.
-  - id: car-hatchback
+  - id: car-hatchback-b
     kind: sample
-    prompt: "A small gray hatchback parked on a quiet street."
-    alt: "A small gray hatchback parked on a quiet street"
+    prompt: "A new compact hatchback in a bright color, clean and modern, parked on a city street, seen from the front three-quarters."
+    style: product
+    alt: "A modern compact hatchback parked on a street"
     tags: [sample, car, vehicle, outdoor]
-  - id: car-estate
+  - id: car-estate-b
     kind: sample
-    prompt: "A dark blue estate car by a birch forest."
-    alt: "A dark blue estate car by a birch forest"
+    prompt: "A new estate car in a deep blue color, with no badge, emblem or lettering anywhere, parked on a driveway in front of a house, seen from the side three-quarters; a generic design of no recognizable make."
+    style: product
+    alt: "A modern estate car parked on a driveway"
     tags: [sample, car, vehicle, outdoor]
   - id: car-electric
     kind: sample
     prompt: "A white electric car charging at a charging post."
     alt: "A white electric car charging at a charging post"
     tags: [sample, car, vehicle, electric, outdoor]
-  - id: car-vintage
+  - id: car-vintage-b
     kind: sample
-    prompt: "A red vintage car parked by a wooden house."
-    alt: "A red vintage car parked by a wooden house"
+    prompt: "A generic classic car from the 1960s, of no recognizable make, in a soft green color, parked by a wooden house; rounded lines, chrome bumpers, no badges."
+    style: product
+    alt: "A green classic car parked by a wooden house"
     tags: [sample, car, vehicle, vintage, outdoor]
   - id: car-van
     kind: sample
     prompt: "A small white delivery van in a parking area."
     alt: "A small white delivery van in a parking area"
     tags: [sample, van, vehicle, car, outdoor]
-  - id: bike-city
+  - id: bike-city-b
     kind: sample
-    prompt: "A city bicycle with a basket leaning against a wall."
-    alt: "A city bicycle with a basket leaning against a wall"
+    prompt: "A modern city bicycle with a front basket, parked at a bike rack on a busy city street outdoors, with shopfronts and caf\u00e9 tables softly out of focus behind; daylight."
+    style: product
+    alt: "A city bicycle with a basket parked on a city street"
     tags: [sample, bike, bicycle, vehicle, outdoor]
-  - id: bike-road
+  - id: bike-road-b
     kind: sample
-    prompt: "A road bike on a country road."
-    alt: "A road bike on a country road"
+    prompt: "A modern road bike leaning against a stone wall at the side of a quiet country road, nobody around."
+    style: product
+    alt: "A road bike leaning against a wall beside a country road"
     tags: [sample, bike, bicycle, sports, outdoor]
   - id: bike-cargo
     kind: sample
@@ -519,10 +536,11 @@ images:
     prompt: "A wooden rowing boat moored at a jetty."
     alt: "A wooden rowing boat moored at a jetty"
     tags: [sample, boat, sea, lake, outdoor, calm]
-  - id: boat-sail
+  - id: boat-sail-b
     kind: sample
-    prompt: "A small sailboat on calm water."
-    alt: "A small sailboat on calm water"
+    prompt: "A real small sailboat, about six meters long, with a white sail up, sailing on a sunny bay with green islands behind, photographed from another boat; a real boat on real water, not a picture or a model."
+    style: product
+    alt: "A small sailboat sailing on a bay"
     tags: [sample, boat, sailing, sea, outdoor]
   - id: boat-motor
     kind: sample
@@ -539,9 +557,9 @@ images:
     prompt: "A golden labrador sitting on a lawn."
     alt: "A golden labrador sitting on a lawn"
     tags: [sample, dog, pets, animal, outdoor]
-  - id: dog-terrier
+  - id: dog-terrier-b
     kind: sample
-    prompt: "A small terrier on a sofa."
+    prompt: "A small terrier sitting on a sofa, looking at the camera, nobody else in the picture."
     alt: "A small terrier on a sofa"
     tags: [sample, dog, pets, animal, indoor]
   - id: dog-shepherd
@@ -599,9 +617,9 @@ images:
     prompt: "A rabbit on straw in a hutch."
     alt: "A rabbit on straw in a hutch"
     tags: [sample, rabbit, pets, animal, indoor]
-  - id: animal-hens
+  - id: animal-hens-b
     kind: sample
-    prompt: "Hens in a farmyard."
+    prompt: "Three brown hens pecking in a sunny farmyard by a red barn, no people."
     alt: "Hens in a farmyard"
     tags: [sample, hens, chicken, animal, farm, outdoor]
   - id: animal-sheep
@@ -609,10 +627,11 @@ images:
     prompt: "Sheep grazing on a hillside."
     alt: "Sheep grazing on a hillside"
     tags: [sample, sheep, animal, farm, outdoor]
-  - id: sofa-gray
+  - id: sofa-gray-b
     kind: sample
-    prompt: "sofa-gray."
-    alt: "sofa-gray"
+    prompt: "A light gray three-seat fabric sofa in a living room, shown whole from the front, with two cushions on it."
+    style: product
+    alt: "A light gray three-seat sofa in a living room"
     tags: [A gray three-seater sofa in a bright room]
   - id: sofa-green
     kind: sample
@@ -629,10 +648,11 @@ images:
     prompt: "An oak dining table with six chairs."
     alt: "An oak dining table with six chairs"
     tags: [sample, table, furniture, dining, indoor]
-  - id: table-coffee
+  - id: table-coffee-b
     kind: sample
-    prompt: "A round coffee table with a book and a cup."
-    alt: "A round coffee table with a book and a cup"
+    prompt: "A round wooden coffee table, shown whole, on a rug in a living room, with a book on it."
+    style: product
+    alt: "A round wooden coffee table on a rug"
     tags: [sample, table, furniture, indoor]
   - id: table-desk
     kind: sample
@@ -654,20 +674,22 @@ images:
     prompt: "An office chair at a desk."
     alt: "An office chair at a desk"
     tags: [sample, chair, furniture, office, indoor]
-  - id: lamp-floor
+  - id: lamp-floor-b
     kind: sample
-    prompt: "A brass floor lamp beside a sofa."
-    alt: "A brass floor lamp beside a sofa"
+    prompt: "A brass floor lamp with a linen shade, shown whole, standing in the corner of a living room."
+    style: product
+    alt: "A brass floor lamp with a linen shade"
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: lamp-desk
     kind: sample
     prompt: "A black desk lamp on a table."
     alt: "A black desk lamp on a table"
     tags: [sample, lamp, lighting, furniture, indoor]
-  - id: lamp-pendant
+  - id: lamp-pendant-b
     kind: sample
-    prompt: "A white pendant lamp over a kitchen table."
-    alt: "A white pendant lamp over a kitchen table"
+    prompt: "A white pendant lamp hanging from the ceiling, shown whole, against a plain wall."
+    style: product
+    alt: "A white pendant lamp"
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: furniture-bookshelf
     kind: sample
@@ -744,9 +766,10 @@ images:
     prompt: "A folded knitted sweater."
     alt: "A folded knitted sweater"
     tags: [sample, sweater, clothes, fashion, indoor]
-  - id: clothes-shoes
+  - id: clothes-shoes-b
     kind: sample
-    prompt: "A pair of leather boots on a doormat."
+    prompt: "A pair of brown leather boots standing on a doormat in a hallway."
+    style: product
     alt: "A pair of leather boots on a doormat"
     tags: [sample, shoes, boots, clothes, fashion, indoor]
   - id: clothes-dress
@@ -754,9 +777,10 @@ images:
     prompt: "A linen dress on a hanger."
     alt: "A linen dress on a hanger"
     tags: [sample, dress, clothes, fashion, indoor]
-  - id: clothes-rack
+  - id: clothes-rack-b
     kind: sample
-    prompt: "A clothes rail with shirts in a shop."
+    prompt: "A clothes rail with a row of shirts on hangers in calm colors, in a bright room."
+    style: product
     alt: "A clothes rail with shirts in a shop"
     tags: [sample, clothes, fashion, shop, indoor]
   - id: clothes-bag
@@ -779,14 +803,16 @@ images:
     prompt: "A row of old books on a shelf."
     alt: "A row of old books on a shelf"
     tags: [sample, books, library, indoor]
-  - id: tools-drill
+  - id: tools-drill-b
     kind: sample
-    prompt: "A cordless drill on a workbench."
+    prompt: "A modern cordless drill lying on a wooden workbench."
+    style: product
     alt: "A cordless drill on a workbench"
     tags: [sample, tools, drill, workshop, indoor]
-  - id: tools-hand
+  - id: tools-hand-b
     kind: sample
-    prompt: "Hand tools hanging on a pegboard."
+    prompt: "Hand tools hanging neatly on a pegboard: a hammer, pliers, screwdrivers and a saw."
+    style: product
     alt: "Hand tools hanging on a pegboard"
     tags: [sample, tools, workshop, indoor]
   - id: tools-garden
@@ -809,14 +835,16 @@ images:
     prompt: "A monstera plant in a ceramic pot."
     alt: "A monstera plant in a ceramic pot"
     tags: [sample, plant, plants, houseplant, indoor]
-  - id: plant-succulents
+  - id: plant-succulents-b
     kind: sample
-    prompt: "Small succulents in pots on a windowsill."
+    prompt: "Small succulents in terracotta pots on a sunny windowsill."
+    style: product
     alt: "Small succulents in pots on a windowsill"
     tags: [sample, plant, plants, houseplant, indoor]
-  - id: plant-herbs
+  - id: plant-herbs-b
     kind: sample
-    prompt: "Pots of herbs on a kitchen windowsill."
+    prompt: "Pots of basil, parsley and rosemary on a kitchen windowsill."
+    style: product
     alt: "Pots of herbs on a kitchen windowsill"
     tags: [sample, plant, plants, herbs, kitchen, indoor]
   - id: plant-tree
@@ -904,14 +932,16 @@ images:
     prompt: "A glass of orange juice by a window."
     alt: "A glass of orange juice by a window"
     tags: [sample, drink, juice, indoor]
-  - id: drink-wine
+  - id: drink-wine-b
     kind: sample
-    prompt: "Two glasses of red wine on a table."
+    prompt: "Two glasses of red wine and the bottle on a dinner table."
+    style: product
     alt: "Two glasses of red wine on a table"
     tags: [sample, drink, wine, indoor, evening]
-  - id: drink-beer
+  - id: drink-beer-b
     kind: sample
-    prompt: "A glass of beer on a bar counter."
+    prompt: "A glass of beer with a foam head on a wooden bar counter."
+    style: product
     alt: "A glass of beer on a bar counter"
     tags: [sample, drink, beer, bar, indoor]
   - id: drink-cocktail
@@ -924,10 +954,10 @@ images:
     prompt: "A bedroom with a made bed and a window."
     alt: "A bedroom with a made bed and a window"
     tags: [sample, room, bedroom, interior, property, indoor, calm]
-  - id: room-kitchen
+  - id: room-kitchen-b
     kind: sample
-    prompt: "A modern kitchen with wooden cupboards."
-    alt: "A modern kitchen with wooden cupboards"
+    prompt: "A bright modern kitchen with wooden cupboards, a fruit bowl and a plant on the counter, nobody in it."
+    alt: "A bright kitchen with wooden cupboards and a fruit bowl on the counter"
     tags: [sample, room, kitchen, interior, property, indoor]
   - id: room-office
     kind: sample
@@ -939,15 +969,15 @@ images:
     prompt: "A living room with a sofa and a rug."
     alt: "A living room with a sofa and a rug"
     tags: [sample, room, living-room, interior, property, indoor]
-  - id: room-bathroom
+  - id: room-bathroom-b
     kind: sample
-    prompt: "A bathroom with white tiles and a basin."
-    alt: "A bathroom with white tiles and a basin"
+    prompt: "An empty bright modern bathroom with white tiles, a basin, a mirror and green towels; no people at all."
+    alt: "A bright bathroom with white tiles, a basin and green towels"
     tags: [sample, room, bathroom, interior, property, indoor]
-  - id: room-meeting
+  - id: room-meeting-b
     kind: sample
-    prompt: "A small meeting room with a table and chairs."
-    alt: "A small meeting room with a table and chairs"
+    prompt: "A meeting in progress in a small meeting room: four colleagues around a table, one sketching on a whiteboard while the others discuss, laptops and coffee cups on the table, lively and friendly."
+    alt: "Four colleagues discussing around a table while one sketches on a whiteboard"
     tags: [sample, room, meeting-room, office, indoor]
   - id: room-hall
     kind: sample
@@ -964,10 +994,10 @@ images:
     prompt: "A yellow two-story house with a garden."
     alt: "A yellow two-story house with a garden"
     tags: [sample, house, property, building, outdoor]
-  - id: house-modern
+  - id: house-modern-b
     kind: sample
-    prompt: "A modern house with large windows."
-    alt: "A modern house with large windows"
+    prompt: "A modern detached house with large windows and wooden cladding, seen whole from the garden on a sunny day, nobody in front of it."
+    alt: "A modern wooden house with large windows seen from its garden"
     tags: [sample, house, property, building, outdoor]
   - id: house-cottage
     kind: sample
@@ -979,20 +1009,20 @@ images:
     prompt: "A row of terraced houses."
     alt: "A row of terraced houses"
     tags: [sample, house, property, building, outdoor]
-  - id: apartment-block
+  - id: apartment-block-b
     kind: sample
-    prompt: "apartment-block."
-    alt: "apartment-block"
+    prompt: "A three-storey apartment building with balconies and plants, seen whole from across a green courtyard on a sunny day, nobody in front of it."
+    alt: "A three-storey apartment building with balconies seen across a courtyard"
     tags: [An apartment building with balconies]
   - id: apartment-interior
     kind: sample
     prompt: "A bright apartment living room with a balcony door."
     alt: "A bright apartment living room with a balcony door"
     tags: [sample, apartment, property, interior, indoor]
-  - id: apartment-studio
+  - id: apartment-studio-b
     kind: sample
-    prompt: "A small studio apartment with a bed and a kitchenette."
-    alt: "A small studio apartment with a bed and a kitchenette"
+    prompt: "A cozy studio apartment with a made bed, a kitchenette and plants; a young woman sitting at the table with a cup of tea and a book, looking relaxed and content."
+    alt: "A young woman relaxing with tea and a book in a cozy studio apartment"
     tags: [sample, apartment, property, interior, indoor]
   - id: apartment-balcony
     kind: sample
@@ -1054,15 +1084,15 @@ images:
     prompt: "A farmer carrying a crate of vegetables."
     alt: "A farmer carrying a crate of vegetables"
     tags: [sample, people, farmer, farm, work, outdoor]
-  - id: people-nurse
+  - id: people-nurse-b
     kind: sample
-    prompt: "A nurse in a corridor."
-    alt: "A nurse in a corridor"
+    prompt: "A nurse in blue scrubs kindly checking an elderly patient's blood pressure in a bright clinic room, both relaxed."
+    alt: "A nurse talking with an elderly patient in a clinic"
     tags: [sample, people, nurse, health, work, indoor]
-  - id: people-teacher
+  - id: people-teacher-b
     kind: sample
-    prompt: "A teacher at a whiteboard."
-    alt: "A teacher at a whiteboard"
+    prompt: "A teacher explaining something at a whiteboard to a small, attentive class of adults taking notes."
+    alt: "A teacher explaining at a whiteboard to a small class"
     tags: [sample, people, teacher, school, work, indoor]
   - id: people-mechanic
     kind: sample
@@ -1109,20 +1139,23 @@ images:
     prompt: "A printed one-page invoice on a desk; its lines and figures are only thin gray bars, too small to read, with no letters or words anywhere."
     alt: "A printed invoice on a desk"
     tags: [sample, document, documents, invoice, office, indoor]
-  - id: document-folder
+  - id: document-folder-b
     kind: sample
-    prompt: "A stack of folders on a shelf."
-    alt: "A stack of folders on a shelf"
+    prompt: "A stack of colored folders on a desk."
+    style: product
+    alt: "A stack of colored folders on a desk"
     tags: [sample, document, documents, folder, office, indoor]
-  - id: document-notebook
+  - id: document-notebook-b
     kind: sample
-    prompt: "An open notebook with handwritten notes."
+    prompt: "An open notebook with handwritten notes and a pen on a wooden desk."
+    style: product
     alt: "An open notebook with handwritten notes"
     tags: [sample, document, documents, notes, indoor]
-  - id: document-letter
+  - id: document-letter-b
     kind: sample
-    prompt: "An envelope and a folded letter."
-    alt: "An envelope and a folded letter"
+    prompt: "A folded letter lying flat beside its open envelope on a wooden desk, seen from above at an angle."
+    style: product
+    alt: "A folded letter beside its envelope on a desk"
     tags: [sample, document, documents, mail, letter, indoor]
   - id: document-receipts
     kind: sample
@@ -1139,9 +1172,10 @@ images:
     prompt: "A plain cardboard box on a table."
     alt: "A plain cardboard box on a table"
     tags: [sample, product, box, parcel, shipping, indoor]
-  - id: product-boxes
+  - id: product-boxes-b
     kind: sample
-    prompt: "A stack of shipping boxes."
+    prompt: "A neat stack of three cardboard shipping boxes on a wooden floor."
+    style: product
     alt: "A stack of shipping boxes"
     tags: [sample, product, boxes, parcel, shipping, warehouse, indoor]
   - id: product-parcel
@@ -1149,9 +1183,10 @@ images:
     prompt: "A parcel at a front door."
     alt: "A parcel at a front door"
     tags: [sample, product, parcel, delivery, outdoor]
-  - id: product-bottle
+  - id: product-bottle-b
     kind: sample
-    prompt: "A glass bottle with no label."
+    prompt: "A clear glass bottle with no label on a wooden table."
+    style: product
     alt: "A glass bottle with no label"
     tags: [sample, product, bottle, indoor]
   - id: product-jar
@@ -1214,10 +1249,11 @@ images:
     prompt: "A digital keyboard on a stand."
     alt: "A digital keyboard on a stand"
     tags: [sample, instrument, keyboard, music, indoor]
-  - id: toy-blocks
+  - id: toy-blocks-b
     kind: sample
-    prompt: "toy-blocks."
-    alt: "toy-blocks"
+    prompt: "Colorful wooden building blocks stacked into a small tower on a play mat."
+    style: product
+    alt: "Colorful wooden building blocks stacked into a tower"
     tags: [Wooden toy blocks on a floor]
   - id: toy-teddy
     kind: sample
@@ -1229,24 +1265,28 @@ images:
     prompt: "A wooden toy train set."
     alt: "A wooden toy train set"
     tags: [sample, toy, toys, kids, indoor]
-  - id: toy-puzzle
+  - id: toy-puzzle-b
     kind: sample
-    prompt: "A jigsaw puzzle half done on a table."
-    alt: "A jigsaw puzzle half done on a table"
+    prompt: "A half-finished colorful jigsaw puzzle on a wooden table, loose pieces around it, seen from above at an angle."
+    style: product
+    alt: "A half-finished jigsaw puzzle with loose pieces on a table"
     tags: [sample, toy, toys, game, indoor]
-  - id: toy-boardgame
+  - id: toy-boardgame-b
     kind: sample
-    prompt: "A board game on a table."
-    alt: "A board game on a table"
+    prompt: "A colorful board game set up on a table with its pieces and dice, ready to play, seen from above at an angle."
+    style: product
+    alt: "A board game set up with its pieces and dice"
     tags: [sample, toy, game, boardgame, indoor]
-  - id: sports-skis
+  - id: sports-skis-b
     kind: sample
-    prompt: "sports-skis."
-    alt: "sports-skis"
+    prompt: "A pair of cross-country skis with poles standing in the snow against a red wooden wall."
+    style: product
+    alt: "A pair of cross-country skis and poles standing in the snow"
     tags: [Cross-country skis in the snow]
-  - id: sports-football
+  - id: sports-football-b
     kind: sample
-    prompt: "A football on a grass pitch."
+    prompt: "A football on the grass of a sunny outdoor football pitch, the goal softly out of focus behind."
+    style: product
     alt: "A football on a grass pitch"
     tags: [sample, sports, football, ball, outdoor]
   - id: sports-tennis
@@ -1269,14 +1309,16 @@ images:
     prompt: "A hiking backpack on a rock."
     alt: "A hiking backpack on a rock"
     tags: [sample, sports, backpack, hiking, outdoor]
-  - id: sports-weights
+  - id: sports-weights-b
     kind: sample
-    prompt: "Dumbbells on a gym floor."
+    prompt: "A pair of dumbbells on a rubber gym floor."
+    style: product
     alt: "Dumbbells on a gym floor"
     tags: [sample, sports, weights, gym, fitness, indoor]
-  - id: sports-golf
+  - id: sports-golf-b
     kind: sample
-    prompt: "Golf clubs in a bag on a course."
+    prompt: "A golf bag with clubs standing on the green fairway of a golf course outdoors on a sunny day, trees in the distance."
+    style: product
     alt: "Golf clubs in a bag on a course"
     tags: [sample, sports, golf, outdoor]
   - id: sports-fishing
@@ -1284,29 +1326,30 @@ images:
     prompt: "A fishing rod by a lake."
     alt: "A fishing rod by a lake"
     tags: [sample, sports, fishing, lake, outdoor]
-  - id: event-concert
+  - id: event-concert-b
     kind: sample
-    prompt: "A small stage with instruments before a concert."
-    alt: "A small stage with instruments before a concert"
+    prompt: "A small band playing on a low stage in a caf\u00e9, the audience listening at tables with drinks in the foreground."
+    alt: "A small band playing in a café to an audience"
     tags: [sample, event, concert, music, indoor, evening]
-  - id: event-workshop
+  - id: event-workshop-b
     kind: sample
-    prompt: "A workshop with chairs in a circle."
-    alt: "A workshop with chairs in a circle"
+    prompt: "A lively workshop: a dozen people at tables working in groups with large paper sheets and markers while the host walks between them."
+    alt: "People working in groups at a workshop"
     tags: [sample, event, workshop, class, indoor]
-  - id: event-dinner
+  - id: event-dinner-b
     kind: sample
-    prompt: "A table set for a dinner party."
-    alt: "A table set for a dinner party"
+    prompt: "Friends around a long dinner table with candles and food, laughing and passing dishes, seen from the side."
+    alt: "Friends laughing around a candlelit dinner table"
     tags: [sample, event, dinner, party, indoor, evening]
   - id: event-wedding
     kind: sample
     prompt: "Chairs set out for an outdoor wedding."
     alt: "Chairs set out for an outdoor wedding"
     tags: [sample, event, wedding, outdoor, summer]
-  - id: event-tickets
+  - id: event-tickets-b
     kind: sample
-    prompt: "Two paper tickets on a table."
+    prompt: "Two printed paper tickets lying on a café table, with no readable text."
+    style: product
     alt: "Two paper tickets on a table"
     tags: [sample, event, tickets, indoor]
   - id: service-cleaning
@@ -1314,20 +1357,20 @@ images:
     prompt: "Cleaning supplies in a bucket."
     alt: "Cleaning supplies in a bucket"
     tags: [sample, service, cleaning, indoor]
-  - id: service-haircut
+  - id: service-haircut-b
     kind: sample
-    prompt: "Scissors and a comb on a salon counter."
-    alt: "Scissors and a comb on a salon counter"
+    prompt: "A hairdresser cutting a smiling customer's hair in a bright salon, both relaxed and chatting."
+    alt: "A hairdresser cutting a customer's hair in a bright salon"
     tags: [sample, service, salon, haircut, beauty, indoor]
   - id: service-massage
     kind: sample
     prompt: "A massage table in a calm room."
     alt: "A massage table in a calm room"
     tags: [sample, service, massage, health, indoor, calm]
-  - id: service-moving
+  - id: service-moving-b
     kind: sample
-    prompt: "Moving boxes in an empty room."
-    alt: "Moving boxes in an empty room"
+    prompt: "Two movers carrying a sofa out of a house to a van on a sunny day, working together."
+    alt: "Two movers carrying a sofa to a van"
     tags: [sample, service, moving, boxes, indoor]
   - id: service-painting
     kind: sample
@@ -1344,10 +1387,10 @@ images:
     prompt: "A notebook and textbook on a desk."
     alt: "A notebook and textbook on a desk"
     tags: [sample, service, tutoring, education, indoor]
-  - id: service-photography
+  - id: service-photography-b
     kind: sample
-    prompt: "A photo studio with a light and a backdrop."
-    alt: "A photo studio with a light and a backdrop"
+    prompt: "A photographer taking a portrait of a smiling woman sitting on a stool in a bright studio with a softbox light and a backdrop; her hands rest in her lap, empty."
+    alt: "A photographer taking a portrait in a bright studio"
     tags: [sample, service, photography, studio, indoor]
   # Logos for sample apps.
   - id: logo-circle

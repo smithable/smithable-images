@@ -64,6 +64,7 @@ const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
   if (!e.prompt === !e.from) throw new Error(`${e.id}: give either prompt or from`);
   if (!e.alt || !e.tags?.length) throw new Error(`${e.id}: alt and tags are required`);
+  if (e.style && !defaults.style?.[e.style]) throw new Error(`${e.id}: no style ${e.style} in defaults`);
   return {
     ...e,
     model: e.model ?? defaults.models?.[e.kind] ?? "gpt-image-1-mini",
@@ -88,7 +89,9 @@ if (reused.length && !args.upload && !args["dry-run"])
     `${reused.map((e) => e.id).join(", ")}: already uploaded and cached for a year; give the new picture a new id (e.g. ${reused[0].id}-b)`,
   );
 
-const promptOf = (e) => [e.prompt, defaults.style?.[e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");
+// A picture may name its style (a product shot in the sample kind); otherwise its kind's.
+const promptOf = (e) =>
+  [e.prompt, defaults.style?.[e.style ?? e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");
 const priceOf = (e) => {
   const p = PRICE[e.model]?.[e.quality];
   if (!p) throw new Error(`${e.id}: no price for ${e.model} at ${e.quality}`);
