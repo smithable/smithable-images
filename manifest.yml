@@ -16,12 +16,14 @@ defaults:
       side, and look content. Everything physically plausible and of today. No text, no signs, no logos,
       no brands, no watermark.
     sample: >-
-      Photograph, natural daylight, a Nordic setting, warm and lively colors, shallow depth of field. One
-      clear subject that reads on a small card. People, when the picture is about a service or work, are
-      doing it together, natural and unposed, never standing in front of the scene facing the camera, with
-      warm, friendly expressions; their hands are free or hold only what the activity needs, never a blank
-      card or paper; a portrait is the exception. Everything physically plausible and of today. No text,
-      no signs, no logos, no brands, no watermark.
+      Photograph, natural daylight, a Nordic setting, lively and natural colors, shallow depth of field.
+      Exactly what the description names, as one clear subject that reads well as a small picture, and
+      nothing added: an animal, a building, a room or a thing is shown on its own, without people. When
+      the description names people, they are busy with what it says, natural and unposed, with warm,
+      friendly expressions, their hands on the task or at rest. Each person dressed differently in
+      everyday clothes: navy, denim blue, forest green, grey, white, black, beige, now and then a
+      bright yellow or red. The background is the place itself. Everything physically plausible and of today. No
+      text, no signs, no logos, no brands, no watermark.
     # Products and things for sale (an entry's `style: product`): the item alone, whole and in focus.
     product: >-
       Product photograph, natural daylight, warm and lively colors. The item is the subject: shown whole,
@@ -29,169 +31,179 @@ defaults:
       Nordic home), on a calm, uncluttered background; a prop or two at most, never taking the focus. No
       people, no hands. Contemporary unless the description says otherwise, and physically plausible. No
       text, no signs, no logos, no brands, no watermark.
+    # Second-hand listings (an entry's `style: listing`): the item in full and in focus, life around it allowed.
+    listing: >-
+      Photograph of a second-hand item for sale, as a person takes it for a listing: natural daylight,
+      warm and lively colors, the item the clear subject, shown in full and in focus, in everyday
+      surroundings (a home, a garage, a garden, a street). People in the background, a hand or a foot at
+      the edge are fine and look natural. Everything physically plausible and of today. No text, no signs,
+      no logos, no brands, no watermark.
     logo: >-
       A simple flat abstract mark in one or two solid colors, centered, on a transparent background.
       Not a photograph. No letters, no text.
 images:
   # The 2026-09-28 pilot (gpt-image-1-mini, and one gpt-image-2 per trade as the hero).
-  - id: accounting-meeting
+  - id: accounting-meeting-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-1-gpt2.jpg
+    prompt: "An accountant going through papers with a client at a desk by the window."
     alt: "An accountant going through papers with a client at a desk by the window"
-    tags: [hero, accounting, office, meeting, people, indoor, calm]
-  - id: accounting-review
+    tags: [hero, accounting, meeting, people, indoor, calm, invoice, bookkeeping, client, payment]
+  - id: accounting-review-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-1-mini.jpg
+    prompt: "An advisor pointing at a printed statement while a client listens."
     alt: "An advisor pointing at a printed statement while a client listens"
     tags: [sample, accounting, office, meeting, people, documents, indoor]
-  - id: accounting-laptops
+  - id: accounting-laptops-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-2-mini.jpg
+    prompt: "Two colleagues working on laptops across a light wooden table."
     alt: "Two colleagues working on laptops across a light wooden table"
     tags: [sample, accounting, office, laptop, people, indoor, calm]
-  - id: accounting-calculator
+  - id: accounting-calculator-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-3-mini.jpg
+    prompt: "A calculator, receipts and a laptop on a wooden desk."
+    style: product
     alt: "A calculator, receipts and a laptop on a wooden desk"
     tags: [sample, accounting, office, documents, calculator, invoice, indoor, calm, starter-invoicing]
-  - id: accounting-team
+  - id: accounting-team-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-4-mini.jpg
+    prompt: "Four people in a meeting room with a view of houses."
     alt: "Four people in a meeting room with a view of houses"
     tags: [sample, accounting, office, meeting, team, people, indoor]
-  - id: accounting-signing
+  - id: accounting-signing-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/accounting-5-mini.jpg
+    prompt: "A hand signing a document on a weathered table."
     alt: "A hand signing a document on a weathered table"
     tags: [sample, accounting, documents, contract, signing, outdoor]
-  - id: cafe-barista
+  - id: cafe-barista-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-1-gpt2.jpg
+    prompt: "A barista pouring milk into a cup at a counter by the harbour window."
     alt: "A barista pouring milk into a cup at a counter by the harbour window"
     tags: [hero, cafe, barista, coffee, people, indoor, warm]
-  - id: cafe-latte-art
+  - id: cafe-latte-art-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-1-mini.jpg
+    prompt: "A barista pouring latte art at a wooden counter."
     alt: "A barista pouring latte art at a wooden counter"
     tags: [sample, cafe, barista, coffee, people, indoor, warm]
-  - id: cafe-readers
+  - id: cafe-readers-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-2-mini.jpg
-    alt: "People reading over coffee at small café tables"
+    prompt: "Two people reading quietly at separate tables in a calm, half-empty café, each with a cup of coffee, soft daylight through the window."
+    alt: "Two people reading quietly at separate tables in a calm café"
     tags: [sample, cafe, coffee, books, people, indoor, warm, calm]
-  - id: cafe-cinnamon-buns
+  - id: cafe-cinnamon-buns-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-3-mini.jpg
+    prompt: "A tray of cinnamon buns by a café window."
+    style: product
     alt: "A tray of cinnamon buns by a café window"
     tags: [sample, cafe, food, bakery, buns, indoor, warm]
-  - id: cafe-friends
+  - id: cafe-friends-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-4-mini.jpg
+    prompt: "Two friends talking over coffee at a window table."
     alt: "Two friends talking over coffee at a window table"
     tags: [sample, cafe, coffee, people, indoor, warm]
-  - id: cafe-cup-street
+  - id: cafe-cup-street-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/cafe-5-mini.jpg
+    prompt: "Hands holding a ceramic cup on a quiet old-town street."
     alt: "Hands holding a ceramic cup on a quiet old-town street"
     tags: [sample, cafe, coffee, cup, street, outdoor]
-  - id: construction-framing
+  - id: construction-framing-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-1-gpt2.jpg
+    prompt: "Two builders raising a timber frame by the water."
     alt: "Two builders raising a timber frame by the water"
     tags: [hero, construction, builder, timber, people, outdoor]
-  - id: construction-frame
+  - id: construction-frame-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-1-mini.jpg
+    prompt: "Builders putting up the timber frame of a house."
     alt: "Builders putting up the timber frame of a house"
     tags: [sample, construction, builder, timber, house, people, outdoor]
   - id: construction-measuring
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-2-mini.jpg
+    prompt: "A builder in a hard hat measuring a plank."
     alt: "A builder in a hard hat measuring a plank"
     tags: [sample, construction, builder, timber, tools, people, outdoor]
-  - id: construction-wooden-house
+  - id: construction-wooden-house-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-3-mini.jpg
+    prompt: "A small new wooden house with a green door."
     alt: "A small new wooden house with a green door"
     tags: [sample, construction, house, building, property, outdoor]
-  - id: construction-plans
+  - id: construction-plans-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-4-mini.jpg
+    prompt: "A site manager in high-visibility gear reading plans on a street."
     alt: "A site manager in high-visibility gear reading plans on a street"
     tags: [sample, construction, plans, documents, people, outdoor]
-  - id: construction-living-room
+  - id: construction-living-room-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/construction-5-mini.jpg
+    prompt: "A finished living room with a sofa and a window onto the street."
     alt: "A finished living room with a sofa and a window onto the street"
     tags: [sample, construction, room, living-room, sofa, interior, property, indoor, calm]
-  - id: consulting-whiteboard
+  - id: consulting-whiteboard-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-1-gpt2.jpg
+    prompt: "A team standing at a whiteboard by a window over the harbour."
     alt: "A team standing at a whiteboard by a window over the harbour"
-    tags: [hero, consulting, office, team, meeting, people, indoor]
-  - id: consulting-workshop
+    tags: [hero, consulting, office, meeting, people, indoor, sales, crm, deal, lead, pipeline, agency]
+  - id: consulting-workshop-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-1-mini.jpg
+    prompt: "A consultant presenting at a whiteboard to three colleagues."
     alt: "A consultant presenting at a whiteboard to three colleagues"
     tags: [sample, consulting, office, workshop, team, people, indoor]
-  - id: consulting-conversation
+  - id: consulting-conversation-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-2-mini.jpg
+    prompt: "Three people talking around a laptop at a table."
     alt: "Three people talking around a laptop at a table"
     tags: [sample, consulting, office, meeting, people, indoor]
-  - id: consulting-coworking
+  - id: consulting-coworking-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-3-mini.jpg
+    prompt: "People working on laptops in a bright shared office."
     alt: "People working on laptops in a bright shared office"
     tags: [sample, consulting, office, coworking, laptop, people, indoor]
-  - id: consulting-video-call
+  - id: consulting-video-call-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-4-mini.jpg
+    prompt: "A laptop showing a video call on a desk with a mug."
     alt: "A laptop showing a video call on a desk with a mug"
     tags: [sample, consulting, office, laptop, remote, indoor, calm]
-  - id: consulting-handshake
+  - id: consulting-handshake-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/consulting-5-mini.jpg
+    prompt: "Two people shaking hands across a desk."
     alt: "Two people shaking hands across a desk"
     tags: [sample, consulting, office, deal, people, indoor]
-  - id: dental-checkup
+  - id: dental-checkup-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-1-gpt2.jpg
+    prompt: "A dentist talking with a patient in a bright clinic."
     alt: "A dentist talking with a patient in a bright clinic"
     tags: [hero, dental, clinic, health, people, indoor, calm]
   - id: dental-dentist
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-1-mini.jpg
+    prompt: "A smiling dentist talking with a patient."
     alt: "A smiling dentist talking with a patient"
     tags: [sample, dental, clinic, health, people, indoor]
-  - id: dental-chair
+  - id: dental-chair-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-2-mini.jpg
+    prompt: "An empty dental chair in a treatment room."
     alt: "An empty dental chair in a treatment room"
     tags: [sample, dental, clinic, health, room, indoor, calm]
-  - id: dental-reception
+  - id: dental-reception-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-3-mini.jpg
-    alt: "A receptionist behind a wooden desk with plants"
+    prompt: "The reception desk of a dental clinic: a receptionist at a light wooden desk, one small plant, a display of toothbrushes and dental floss on a shelf, and through an open door behind, a dental treatment chair with its lamp."
+    alt: "A dental clinic's reception, with a treatment chair seen through the door behind"
     tags: [sample, dental, clinic, reception, people, indoor, calm]
-  - id: dental-instruments
+  - id: dental-instruments-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-4-mini.jpg
+    prompt: "A dental nurse laying out instruments on a tray."
+    style: product
     alt: "A dental nurse laying out instruments on a tray"
     tags: [sample, dental, clinic, health, tools, people, indoor]
-  - id: dental-waiting-room
+  - id: dental-waiting-room-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/dental-5-mini.jpg
+    prompt: "A patient smiling in a waiting room."
     alt: "A patient smiling in a waiting room"
     tags: [sample, dental, clinic, waiting-room, people, indoor]
-  - id: fitness-yoga-class
+  - id: fitness-yoga-class-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-1-gpt2.jpg
+    prompt: "A yoga class stretching on mats in a bright studio."
     alt: "A yoga class stretching on mats in a bright studio"
     tags: [hero, fitness, yoga, studio, class, people, indoor, calm, starter-booking]
   - id: fitness-stretching
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-1-mini.jpg
+    prompt: "Three people side-stretching in a studio."
     alt: "Three people side-stretching in a studio"
     tags: [sample, gallery, fitness, yoga, class, studio, people, indoor, calm, starter-booking]
   - id: fitness-trainer-b
@@ -199,147 +211,151 @@ images:
     prompt: "A personal trainer coaching a woman lifting light dumbbells in a bright gym; both smiling, the trainer standing beside her and encouraging, not holding her back."
     alt: "A trainer encouraging a smiling woman lifting dumbbells in a bright gym"
     tags: [sample, fitness, trainer, weights, people, outdoor]
-  - id: fitness-yoga-mat
+  - id: fitness-yoga-mat-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-3-mini.jpg
+    prompt: "A rolled yoga mat and a water bottle on a wooden floor."
+    style: product
     alt: "A rolled yoga mat and a water bottle on a wooden floor"
     tags: [sample, gallery, fitness, yoga, mat, studio, indoor, calm, starter-booking]
-  - id: fitness-coast-run
+  - id: fitness-coast-run-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-4-mini.jpg
+    prompt: "A runner on a coastal path at sunset."
     alt: "A runner on a coastal path at sunset"
     tags: [sample, gallery, fitness, running, sea, coast, evening, people, outdoor, warm, starter-booking]
-  - id: fitness-gym
+  - id: fitness-gym-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/fitness-5-mini.jpg
+    prompt: "An empty gym with benches and weights."
     alt: "An empty gym with benches and weights"
     tags: [sample, fitness, gym, weights, room, indoor]
-  - id: florist-shop
+  - id: florist-shop-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-1-gpt2.jpg
+    prompt: "A florist arranging a bouquet in a small shop."
     alt: "A florist arranging a bouquet in a small shop"
-    tags: [hero, florist, shop, flowers, people, indoor, warm]
-  - id: florist-bouquet
+    tags: [hero, florist, flowers, people, indoor, warm]
+  - id: florist-bouquet-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-1-mini.jpg
+    prompt: "A florist tying a bouquet of white roses."
     alt: "A florist tying a bouquet of white roses"
     tags: [sample, florist, flowers, bouquet, people, indoor, warm]
-  - id: florist-buckets
+  - id: florist-buckets-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-2-mini.jpg
+    prompt: "Buckets of fresh flowers outside a shop."
+    style: product
     alt: "Buckets of fresh flowers outside a shop"
     tags: [sample, florist, flowers, shop, outdoor]
-  - id: florist-wrapped
+  - id: florist-wrapped-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-3-mini.jpg
+    prompt: "A wrapped bouquet on a windowsill."
+    style: product
     alt: "A wrapped bouquet on a windowsill"
     tags: [sample, florist, flowers, bouquet, product, indoor, calm]
-  - id: florist-storefront
+  - id: florist-storefront-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-4-mini.jpg
+    prompt: "Potted plants in front of a shop door."
     alt: "Potted plants in front of a shop door"
     tags: [sample, florist, plants, shop, storefront, outdoor]
-  - id: florist-ribbon
+  - id: florist-ribbon-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/florist-5-mini.jpg
+    prompt: "Hands tying a ribbon around a bouquet."
     alt: "Hands tying a ribbon around a bouquet"
     tags: [sample, florist, flowers, bouquet, outdoor]
-  - id: plumber-kitchen
+  - id: plumber-kitchen-b
     kind: hero
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-1-gpt2.jpg
+    prompt: "A plumber fixing the pipes under a kitchen sink."
     alt: "A plumber fixing the pipes under a kitchen sink"
     tags: [hero, plumber, repair, kitchen, people, indoor]
-  - id: plumber-sink
+  - id: plumber-sink-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-1-mini.jpg
+    prompt: "A plumber fitting a pipe under a sink."
     alt: "A plumber fitting a pipe under a sink"
     tags: [sample, plumber, repair, pipes, people, indoor]
-  - id: plumber-van
+  - id: plumber-van-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-2-mini.jpg
+    prompt: "A white van parked outside a yellow house."
     alt: "A white van parked outside a yellow house"
     tags: [sample, plumber, van, vehicle, car, house, outdoor]
-  - id: plumber-tools
+  - id: plumber-tools-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-3-mini.jpg
+    prompt: "A case of spanners on a street."
+    style: product
     alt: "A case of spanners on a street"
     tags: [sample, plumber, tools, product, outdoor]
-  - id: plumber-customer
+  - id: plumber-customer-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-4-mini.jpg
+    prompt: "A plumber explaining a job to a customer in a bathroom."
     alt: "A plumber explaining a job to a customer in a bathroom"
     tags: [sample, plumber, customer, bathroom, people, indoor]
-  - id: plumber-bathroom
+  - id: plumber-bathroom-b
     kind: sample
-    from: /mnt/c/Users/johan/Pictures/claude/image-pilot/originals/plumber-5-mini.jpg
+    prompt: "A new bathroom with a glass shower."
     alt: "A new bathroom with a glass shower"
     tags: [sample, plumber, bathroom, room, interior, property, indoor, calm]
   # Heroes, one per trade or mood.
-  - id: hero-yoga-studio
+  - id: hero-yoga-studio-b
     kind: hero
     prompt: "An empty yoga studio with wooden floors, mats laid out and tall windows in morning light."
     alt: "An empty yoga studio with wooden floors, mats laid out and tall windows in morning light"
     tags: [hero, studio, yoga, fitness, indoor, calm, light]
-  - id: hero-office
+  - id: hero-office-b
     kind: hero
     prompt: "A quiet open-plan office with long wooden desks, plants and large windows over a small town."
     alt: "A quiet open-plan office with long wooden desks, plants and large windows over a small town"
-    tags: [hero, office, work, indoor, calm]
-  - id: hero-workshop
+    tags: [hero, office, indoor, calm, invoice, invoicing, client, freelance, freelancer, payment, api, incident, maintenance, status, uptime, outage]
+  - id: hero-workshop-b
     kind: hero
     prompt: "A carpenter's workshop with a workbench, hand tools on the wall and sawdust in the light from a window."
     alt: "A carpenter's workshop with a workbench, hand tools on the wall and sawdust in the light from a window"
-    tags: [hero, workshop, craft, carpenter, tools, indoor, warm]
-  - id: hero-shop
+    tags: [hero, workshop, craft, carpenter, tools, indoor, warm, lend, borrow, neighbor, diy, drill, tool]
+  - id: hero-shop-b
     kind: hero
     prompt: "A small independent shop interior with wooden shelves of goods and a counter by the window."
     alt: "A small independent shop interior with wooden shelves of goods and a counter by the window"
     tags: [hero, shop, retail, store, indoor, warm]
-  - id: hero-cafe
+  - id: hero-cafe-b
     kind: hero
     prompt: "A cozy café interior with small round tables, a counter with pastries and soft daylight."
     alt: "A cozy café interior with small round tables, a counter with pastries and soft daylight"
     tags: [hero, cafe, coffee, indoor, warm]
-  - id: hero-restaurant
+  - id: hero-restaurant-b
     kind: hero
     prompt: "A restaurant dining room set for dinner with candles, linen and dark wooden chairs."
     alt: "A restaurant dining room set for dinner with candles, linen and dark wooden chairs"
     tags: [hero, restaurant, food, dining, indoor, warm, evening]
-  - id: hero-clinic
+  - id: hero-clinic-b
     kind: hero
     prompt: "A calm, bright clinic reception with a wooden desk, plants and chairs."
     alt: "A calm, bright clinic reception with a wooden desk, plants and chairs"
     tags: [hero, clinic, health, reception, indoor, calm, light]
-  - id: hero-farm
+  - id: hero-farm-b
     kind: hero
     prompt: "A red farmhouse and barn by a field of grain under a wide sky."
     alt: "A red farmhouse and barn by a field of grain under a wide sky"
     tags: [hero, farm, countryside, field, outdoor, summer]
-  - id: hero-harbour
+  - id: hero-harbour-b
     kind: hero
     prompt: "A small harbor with wooden boats and red boathouses on a still morning."
     alt: "A small harbor with wooden boats and red boathouses on a still morning"
     tags: [hero, harbour, harbor, sea, boats, outdoor, calm]
-  - id: hero-forest
+  - id: hero-forest-b
     kind: hero
     prompt: "A path through a pine forest with low sunlight between the trunks."
     alt: "A path through a pine forest with low sunlight between the trunks"
-    tags: [hero, forest, nature, outdoor, calm]
-  - id: hero-city-street
+    tags: [hero, forest, nature, outdoor, calm, bird, birdwatching, species, sighting, wildlife]
+  - id: hero-city-street-b
     kind: hero
     prompt: "A cobbled city street with shopfronts and bicycles in soft evening light."
     alt: "A cobbled city street with shopfronts and bicycles in soft evening light"
     tags: [hero, city, street, urban, outdoor, evening]
-  - id: hero-home
+  - id: hero-home-b
     kind: hero
     prompt: "A bright living room with a sofa, rug, bookshelf and large windows."
     alt: "A bright living room with a sofa, rug, bookshelf and large windows"
     tags: [hero, home, interior, living-room, property, indoor, calm, light]
-  - id: hero-garden
+  - id: hero-garden-b
     kind: hero
     prompt: "A green garden with vegetable beds, a greenhouse and fruit trees."
     alt: "A green garden with vegetable beds, a greenhouse and fruit trees"
-    tags: [hero, garden, plants, outdoor, summer]
+    tags: [hero, garden, plants, outdoor, summer, allotment, plot, gardener, vegetable]
   - id: hero-school-b
     kind: hero
     prompt: "A bright classroom during a lesson: children of about ten working together in small groups at wooden tables, a teacher crouching beside one group, colorful drawings on the walls, windows onto trees."
@@ -349,128 +365,128 @@ images:
     kind: hero
     prompt: "A sports hall with a polished wooden floor during an evening session: a few people playing badminton and others stretching by the wall bars, colorful kit, warm light."
     alt: "People playing badminton and stretching in a sports hall with a wooden floor"
-    tags: [hero, sports, gym, hall, indoor]
+    tags: [hero, sports, gym, hall, indoor, football, club, player, match, league]
   - id: hero-warehouse-b
     kind: hero
     prompt: "A busy, tidy warehouse with tall shelves of boxes: one worker driving a forklift and another checking parcels on a trolley, bright safety vests, daylight from high windows."
     alt: "Two workers moving boxes in a tidy warehouse with tall shelves and a forklift"
     tags: [hero, warehouse, logistics, storage, indoor]
-  - id: hero-lab
+  - id: hero-lab-b
     kind: hero
     prompt: "A clean laboratory bench with glassware and a microscope by a window."
     alt: "A clean laboratory bench with glassware and a microscope by a window"
     tags: [hero, lab, science, research, indoor, light]
-  - id: hero-hotel
+  - id: hero-hotel-b
     kind: hero
     prompt: "A hotel room with a made bed, a reading chair and a view of the sea."
     alt: "A hotel room with a made bed, a reading chair and a view of the sea"
     tags: [hero, hotel, room, travel, indoor, calm]
-  - id: hero-winter
+  - id: hero-winter-b
     kind: hero
     prompt: "A snowy village street at dusk with warm lit windows."
     alt: "A snowy village street at dusk with warm lit windows"
     tags: [hero, winter, snow, village, outdoor, evening, cool]
-  - id: hero-summer
+  - id: hero-summer-b
     kind: hero
     prompt: "A sunlit meadow by a lake with a wooden jetty on a summer afternoon."
     alt: "A sunlit meadow by a lake with a wooden jetty on a summer afternoon"
     tags: [hero, summer, lake, nature, outdoor, light]
-  - id: hero-coast
+  - id: hero-coast-b
     kind: hero
     prompt: "Smooth granite rocks by a calm sea at sunrise."
     alt: "Smooth granite rocks by a calm sea at sunrise"
     tags: [hero, coast, sea, nature, outdoor, calm]
-  - id: hero-mountains
+  - id: hero-mountains-b
     kind: hero
     prompt: "A valley with mountains and a lake under soft clouds."
     alt: "A valley with mountains and a lake under soft clouds"
     tags: [hero, mountains, nature, travel, outdoor, calm]
-  - id: hero-bakery
+  - id: hero-bakery-b
     kind: hero
     prompt: "A bakery counter with loaves of bread on wooden shelves and flour in the air."
     alt: "A bakery counter with loaves of bread on wooden shelves and flour in the air"
-    tags: [hero, bakery, food, shop, indoor, warm]
-  - id: hero-salon
+    tags: [hero, bakery, food, indoor, warm]
+  - id: hero-salon-b
     kind: hero
     prompt: "A hair salon with mirrors, chairs and plants in daylight."
     alt: "A hair salon with mirrors, chairs and plants in daylight"
-    tags: [hero, salon, hair, beauty, indoor, light]
-  - id: hero-garage
+    tags: [hero, salon, hair, beauty, indoor, light, hairdresser, stylist, haircut, barber]
+  - id: hero-garage-b
     kind: hero
     prompt: "A car repair garage with a car on a lift and tools on the wall."
     alt: "A car repair garage with a car on a lift and tools on the wall"
     tags: [hero, garage, car, repair, mechanic, indoor]
-  - id: hero-library
+  - id: hero-library-b
     kind: hero
     prompt: "Rows of bookshelves and reading tables in a quiet library."
     alt: "Rows of bookshelves and reading tables in a quiet library"
-    tags: [hero, library, books, education, indoor, calm]
-  - id: hero-kitchen
+    tags: [hero, library, books, education, indoor, calm, museum, collection, exhibit, archive]
+  - id: hero-kitchen-b
     kind: hero
     prompt: "A home kitchen with a wooden table, open shelves and herbs on the windowsill."
     alt: "A home kitchen with a wooden table, open shelves and herbs on the windowsill"
-    tags: [hero, kitchen, home, food, indoor, warm]
-  - id: hero-event
+    tags: [hero, kitchen, home, food, indoor, warm, recipe, ingredient, cooking, meal, shopping]
+  - id: hero-event-b
     kind: hero
     prompt: "A long table set for a celebration under string lights in a garden."
     alt: "A long table set for a celebration under string lights in a garden"
-    tags: [hero, event, party, celebration, outdoor, evening, warm]
-  - id: hero-stable
+    tags: [hero, event, party, celebration, outdoor, evening, warm, conference, talk, speaker, attendee, registration, wedding, guest, seating]
+  - id: hero-stable-b
     kind: hero
     prompt: "A horse stable with wooden stalls and hay in the morning light."
     alt: "A horse stable with wooden stalls and hay in the morning light"
     tags: [hero, stable, horses, farm, indoor, warm]
-  - id: hero-vineyard
+  - id: hero-vineyard-b
     kind: hero
     prompt: "Rows of vines on a hillside in late summer."
     alt: "Rows of vines on a hillside in late summer"
     tags: [hero, vineyard, farm, wine, outdoor, summer]
-  - id: hero-market
+  - id: hero-market-b
     kind: hero
     prompt: "An outdoor market with stalls of vegetables and flowers."
     alt: "An outdoor market with stalls of vegetables and flowers"
-    tags: [hero, market, food, shop, outdoor]
-  - id: hero-cabin
+    tags: [hero, market, food, outdoor]
+  - id: hero-cabin-b
     kind: hero
     prompt: "A wooden cabin by a lake surrounded by birch trees."
     alt: "A wooden cabin by a lake surrounded by birch trees"
     tags: [hero, cabin, rental, travel, nature, outdoor, calm]
-  - id: hero-boatyard
+  - id: hero-boatyard-b
     kind: hero
     prompt: "Sailboats on stands in a boatyard by the water."
     alt: "Sailboats on stands in a boatyard by the water"
     tags: [hero, boats, marina, sea, outdoor]
-  - id: hero-music
+  - id: hero-music-b
     kind: hero
     prompt: "A music room with a piano, guitars on the wall and a warm lamp."
     alt: "A music room with a piano, guitars on the wall and a warm lamp"
-    tags: [hero, music, instruments, studio, indoor, warm]
-  - id: hero-coworking
+    tags: [hero, music, instruments, studio, indoor, warm, piano, lesson, pupil, vinyl, record, album, artist]
+  - id: hero-coworking-b
     kind: hero
     prompt: "A shared workspace with people working at long tables, seen from a distance."
     alt: "A shared workspace with people working at long tables, seen from a distance"
-    tags: [hero, office, coworking, people, indoor]
-  - id: hero-abstract-calm
+    tags: [hero, office, coworking, people, indoor, job, career, union, applicant, application, ticket, helpdesk, support, colleague, swap, system]
+  - id: hero-abstract-calm-b
     kind: hero
     prompt: "Soft out-of-focus light through linen curtains in pale tones."
     alt: "Soft out-of-focus light through linen curtains in pale tones"
     tags: [hero, abstract, calm, light, texture]
-  - id: hero-abstract-bold
+  - id: hero-abstract-bold-b
     kind: hero
     prompt: "Deep blue water with a strong diagonal of sunlight, abstract."
     alt: "Deep blue water with a strong diagonal of sunlight, abstract"
     tags: [hero, abstract, bold, water, cool]
-  - id: hero-abstract-warm
+  - id: hero-abstract-warm-b
     kind: hero
     prompt: "Sunlight and shadow on a warm plastered wall."
     alt: "Sunlight and shadow on a warm plastered wall"
     tags: [hero, abstract, warm, texture, light]
-  - id: hero-abstract-dark
+  - id: hero-abstract-dark-b
     kind: hero
     prompt: "Dark slate stone surface with faint light across it."
     alt: "Dark slate stone surface with faint light across it"
     tags: [hero, abstract, dark, texture]
-  - id: hero-abstract-green
+  - id: hero-abstract-green-b
     kind: hero
     prompt: "Close-up of green leaves with dew in soft light."
     alt: "Close-up of green leaves with dew in soft light"
@@ -488,9 +504,10 @@ images:
     style: product
     alt: "A modern estate car parked on a driveway"
     tags: [sample, car, vehicle, outdoor]
-  - id: car-electric
+  - id: car-electric-b
     kind: sample
     prompt: "A white electric car charging at a charging post."
+    style: product
     alt: "A white electric car charging at a charging post"
     tags: [sample, car, vehicle, electric, outdoor]
   - id: car-vintage-b
@@ -499,9 +516,10 @@ images:
     style: product
     alt: "A green classic car parked by a wooden house"
     tags: [sample, car, vehicle, vintage, outdoor]
-  - id: car-van
+  - id: car-van-b
     kind: sample
     prompt: "A small white delivery van in a parking area."
+    style: product
     alt: "A small white delivery van in a parking area"
     tags: [sample, van, vehicle, car, outdoor]
   - id: bike-city-b
@@ -516,24 +534,28 @@ images:
     style: product
     alt: "A road bike leaning against a wall beside a country road"
     tags: [sample, bike, bicycle, sports, outdoor]
-  - id: bike-cargo
+  - id: bike-cargo-b
     kind: sample
     prompt: "A cargo bike parked outside a house."
+    style: product
     alt: "A cargo bike parked outside a house"
     tags: [sample, bike, bicycle, cargo, vehicle, outdoor]
-  - id: bike-kids
+  - id: bike-kids-b
     kind: sample
     prompt: "A small child's bicycle on a garden lawn."
+    style: product
     alt: "A small child's bicycle on a garden lawn"
     tags: [sample, bike, bicycle, kids, outdoor]
-  - id: bike-mountain
+  - id: bike-mountain-b
     kind: sample
     prompt: "A mountain bike on a forest trail."
+    style: product
     alt: "A mountain bike on a forest trail"
     tags: [sample, bike, bicycle, sports, outdoor]
-  - id: boat-rowing
+  - id: boat-rowing-b
     kind: sample
     prompt: "A wooden rowing boat moored at a jetty."
+    style: product
     alt: "A wooden rowing boat moored at a jetty"
     tags: [sample, boat, sea, lake, outdoor, calm]
   - id: boat-sail-b
@@ -542,17 +564,19 @@ images:
     style: product
     alt: "A small sailboat sailing on a bay"
     tags: [sample, boat, sailing, sea, outdoor]
-  - id: boat-motor
+  - id: boat-motor-b
     kind: sample
     prompt: "A small motorboat at a harbor pontoon."
+    style: product
     alt: "A small motorboat at a harbor pontoon"
     tags: [sample, boat, sea, harbor, outdoor]
-  - id: boat-kayak
+  - id: boat-kayak-b
     kind: sample
     prompt: "A kayak pulled up on a rocky shore."
+    style: product
     alt: "A kayak pulled up on a rocky shore"
     tags: [sample, boat, kayak, sports, sea, outdoor]
-  - id: dog-labrador
+  - id: dog-labrador-b
     kind: sample
     prompt: "A golden labrador sitting on a lawn."
     alt: "A golden labrador sitting on a lawn"
@@ -562,57 +586,57 @@ images:
     prompt: "A small terrier sitting on a sofa, looking at the camera, nobody else in the picture."
     alt: "A small terrier on a sofa"
     tags: [sample, dog, pets, animal, indoor]
-  - id: dog-shepherd
+  - id: dog-shepherd-b
     kind: sample
     prompt: "A German shepherd standing in a forest."
     alt: "A German shepherd standing in a forest"
     tags: [sample, dog, pets, animal, outdoor]
-  - id: dog-puppy
+  - id: dog-puppy-b
     kind: sample
     prompt: "A puppy lying on a wooden floor."
     alt: "A puppy lying on a wooden floor"
     tags: [sample, dog, puppy, pets, animal, indoor]
-  - id: dog-walk
+  - id: dog-walk-b
     kind: sample
     prompt: "A dog on a leash on a beach, seen from behind with its walker."
     alt: "A dog on a leash on a beach, seen from behind with its walker"
     tags: [sample, dog, pets, animal, walk, outdoor]
-  - id: cat-tabby
+  - id: cat-tabby-b
     kind: sample
     prompt: "A tabby cat on a windowsill."
     alt: "A tabby cat on a windowsill"
     tags: [sample, cat, pets, animal, indoor]
-  - id: cat-black
+  - id: cat-black-b
     kind: sample
     prompt: "A black cat on a wooden chair."
     alt: "A black cat on a wooden chair"
     tags: [sample, cat, pets, animal, indoor]
-  - id: cat-kitten
+  - id: cat-kitten-b
     kind: sample
     prompt: "A gray kitten on a knitted blanket."
     alt: "A gray kitten on a knitted blanket"
     tags: [sample, cat, kitten, pets, animal, indoor]
-  - id: cat-garden
+  - id: cat-garden-b
     kind: sample
     prompt: "A ginger cat in a garden."
     alt: "A ginger cat in a garden"
     tags: [sample, cat, pets, animal, outdoor]
-  - id: horse-paddock
+  - id: horse-paddock-b
     kind: sample
     prompt: "A brown horse in a paddock."
     alt: "A brown horse in a paddock"
     tags: [sample, horse, animal, farm, outdoor]
-  - id: horse-white
+  - id: horse-white-b
     kind: sample
     prompt: "A white horse by a wooden fence."
     alt: "A white horse by a wooden fence"
     tags: [sample, horse, animal, farm, outdoor]
-  - id: horse-pony
+  - id: horse-pony-b
     kind: sample
     prompt: "A small pony in a meadow."
     alt: "A small pony in a meadow"
     tags: [sample, horse, pony, animal, farm, outdoor]
-  - id: animal-rabbit
+  - id: animal-rabbit-b
     kind: sample
     prompt: "A rabbit on straw in a hutch."
     alt: "A rabbit on straw in a hutch"
@@ -622,7 +646,7 @@ images:
     prompt: "Three brown hens pecking in a sunny farmyard by a red barn, no people."
     alt: "Hens in a farmyard"
     tags: [sample, hens, chicken, animal, farm, outdoor]
-  - id: animal-sheep
+  - id: animal-sheep-b
     kind: sample
     prompt: "Sheep grazing on a hillside."
     alt: "Sheep grazing on a hillside"
@@ -633,19 +657,22 @@ images:
     style: product
     alt: "A light gray three-seat sofa in a living room"
     tags: [A gray three-seater sofa in a bright room]
-  - id: sofa-green
+  - id: sofa-green-b
     kind: sample
     prompt: "A green velvet sofa against a white wall."
+    style: product
     alt: "A green velvet sofa against a white wall"
     tags: [sample, sofa, furniture, indoor]
-  - id: sofa-leather
+  - id: sofa-leather-b
     kind: sample
     prompt: "A brown leather sofa with a wool throw."
+    style: product
     alt: "A brown leather sofa with a wool throw"
     tags: [sample, sofa, furniture, indoor, warm]
-  - id: table-dining
+  - id: table-dining-b
     kind: sample
     prompt: "An oak dining table with six chairs."
+    style: product
     alt: "An oak dining table with six chairs"
     tags: [sample, table, furniture, dining, indoor]
   - id: table-coffee-b
@@ -654,24 +681,28 @@ images:
     style: product
     alt: "A round wooden coffee table on a rug"
     tags: [sample, table, furniture, indoor]
-  - id: table-desk
+  - id: table-desk-b
     kind: sample
     prompt: "A wooden desk with a lamp and a notebook."
+    style: product
     alt: "A wooden desk with a lamp and a notebook"
     tags: [sample, desk, table, furniture, office, indoor]
-  - id: chair-wooden
+  - id: chair-wooden-b
     kind: sample
     prompt: "A bentwood chair on a plain floor."
+    style: product
     alt: "A bentwood chair on a plain floor"
     tags: [sample, chair, furniture, indoor]
-  - id: chair-armchair
+  - id: chair-armchair-b
     kind: sample
     prompt: "A wingback armchair by a window."
+    style: product
     alt: "A wingback armchair by a window"
     tags: [sample, chair, armchair, furniture, indoor]
-  - id: chair-office
+  - id: chair-office-b
     kind: sample
     prompt: "An office chair at a desk."
+    style: product
     alt: "An office chair at a desk"
     tags: [sample, chair, furniture, office, indoor]
   - id: lamp-floor-b
@@ -680,9 +711,10 @@ images:
     style: product
     alt: "A brass floor lamp with a linen shade"
     tags: [sample, lamp, lighting, furniture, indoor]
-  - id: lamp-desk
+  - id: lamp-desk-b
     kind: sample
     prompt: "A black desk lamp on a table."
+    style: product
     alt: "A black desk lamp on a table"
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: lamp-pendant-b
@@ -691,79 +723,94 @@ images:
     style: product
     alt: "A white pendant lamp"
     tags: [sample, lamp, lighting, furniture, indoor]
-  - id: furniture-bookshelf
+  - id: furniture-bookshelf-b
     kind: sample
     prompt: "A bookshelf full of books and plants."
+    style: product
     alt: "A bookshelf full of books and plants"
     tags: [sample, bookshelf, furniture, books, indoor]
-  - id: furniture-bed
+  - id: furniture-bed-b
     kind: sample
     prompt: "A made double bed with linen covers."
+    style: product
     alt: "A made double bed with linen covers"
     tags: [sample, bed, furniture, bedroom, indoor]
-  - id: furniture-wardrobe
+  - id: furniture-wardrobe-b
     kind: sample
     prompt: "A wooden wardrobe with its doors open."
+    style: product
     alt: "A wooden wardrobe with its doors open"
     tags: [sample, wardrobe, furniture, indoor]
-  - id: phone-black
+  - id: phone-black-b
     kind: sample
     prompt: "A smartphone lying face down on a wooden table."
+    style: product
     alt: "A smartphone lying face down on a wooden table"
     tags: [sample, phone, electronics, indoor]
-  - id: phone-hand
+  - id: phone-hand-b
     kind: sample
-    prompt: "A hand holding a smartphone with a blank screen."
-    alt: "A hand holding a smartphone with a blank screen"
+    model: gpt-image-2  # the lock screen's clock and date are text: the small model misspells them
+    prompt: "Indoors on a sofa in a living room, softly out of focus behind: a hand holding a smartphone just picked up, its lock screen lit with a colourful wallpaper of snowy mountains at dusk in pink and violet, a large clock reading 16:41 and below it the date written exactly 'Monday 5 October'. No brand names, logos or app icons."
+    alt: "A hand holding a phone on a sofa, its lock screen lit: a mountain wallpaper, the clock and the date"
     tags: [sample, phone, electronics, indoor]
-  - id: laptop-open
+  - id: laptop-open-b
     kind: sample
     prompt: "An open laptop with a blank screen on a desk."
+    style: product
     alt: "An open laptop with a blank screen on a desk"
     tags: [sample, laptop, computer, electronics, office, indoor]
-  - id: laptop-closed
+  - id: laptop-closed-b
     kind: sample
     prompt: "A closed laptop and a coffee cup."
+    style: product
     alt: "A closed laptop and a coffee cup"
     tags: [sample, laptop, computer, electronics, indoor]
-  - id: camera-film
+  - id: camera-film-b
     kind: sample
     prompt: "A film camera on a wooden table."
+    style: product
     alt: "A film camera on a wooden table"
     tags: [sample, camera, electronics, photography, indoor]
-  - id: camera-digital
+  - id: camera-digital-b
     kind: sample
     prompt: "A digital camera with a lens beside it."
+    style: product
     alt: "A digital camera with a lens beside it"
     tags: [sample, camera, electronics, photography, indoor]
-  - id: electronics-headphones
+  - id: electronics-headphones-b
     kind: sample
-    prompt: "Over-ear headphones on a desk."
+    prompt: "Over-ear headphones resting on a wooden headphone stand on a desk."
+    style: product
     alt: "Over-ear headphones on a desk"
     tags: [sample, headphones, electronics, music, indoor]
-  - id: electronics-speaker
+  - id: electronics-speaker-b
     kind: sample
     prompt: "A small speaker on a shelf."
+    style: product
     alt: "A small speaker on a shelf"
     tags: [sample, speaker, electronics, music, indoor]
-  - id: electronics-tablet
+  - id: electronics-tablet-b
     kind: sample
     prompt: "A tablet on a sofa cushion."
+    style: product
     alt: "A tablet on a sofa cushion"
     tags: [sample, tablet, electronics, indoor]
-  - id: electronics-monitor
+  - id: electronics-monitor-b
     kind: sample
     prompt: "A computer monitor and keyboard on a desk."
+    style: product
     alt: "A computer monitor and keyboard on a desk"
     tags: [sample, monitor, computer, electronics, office, indoor]
-  - id: clothes-jacket
+  - id: clothes-jacket-b
     kind: sample
     prompt: "A rain jacket on a hanger against a wall."
+    style: product
     alt: "A rain jacket on a hanger against a wall"
     tags: [sample, jacket, clothes, fashion, indoor]
-  - id: clothes-sweater
+  - id: clothes-sweater-b
     kind: sample
     prompt: "A folded knitted sweater."
+    style: product
     alt: "A folded knitted sweater"
     tags: [sample, sweater, clothes, fashion, indoor]
   - id: clothes-shoes-b
@@ -772,9 +819,10 @@ images:
     style: product
     alt: "A pair of leather boots on a doormat"
     tags: [sample, shoes, boots, clothes, fashion, indoor]
-  - id: clothes-dress
+  - id: clothes-dress-b
     kind: sample
     prompt: "A linen dress on a hanger."
+    style: product
     alt: "A linen dress on a hanger"
     tags: [sample, dress, clothes, fashion, indoor]
   - id: clothes-rack-b
@@ -783,24 +831,28 @@ images:
     style: product
     alt: "A clothes rail with shirts in a shop"
     tags: [sample, clothes, fashion, shop, indoor]
-  - id: clothes-bag
+  - id: clothes-bag-b
     kind: sample
     prompt: "A canvas tote bag on a chair."
+    style: product
     alt: "A canvas tote bag on a chair"
     tags: [sample, bag, clothes, fashion, indoor]
-  - id: books-stack
+  - id: books-stack-b
     kind: sample
     prompt: "A stack of hardback books on a table."
+    style: product
     alt: "A stack of hardback books on a table"
     tags: [sample, books, reading, indoor]
-  - id: books-open
+  - id: books-open-b
     kind: sample
     prompt: "An open book on a blanket."
+    style: product
     alt: "An open book on a blanket"
     tags: [sample, books, reading, indoor, calm]
-  - id: books-shelf
+  - id: books-shelf-b
     kind: sample
     prompt: "A row of old books on a shelf."
+    style: product
     alt: "A row of old books on a shelf"
     tags: [sample, books, library, indoor]
   - id: tools-drill-b
@@ -815,24 +867,28 @@ images:
     style: product
     alt: "Hand tools hanging on a pegboard"
     tags: [sample, tools, workshop, indoor]
-  - id: tools-garden
+  - id: tools-garden-b
     kind: sample
     prompt: "Garden tools leaning against a shed."
+    style: product
     alt: "Garden tools leaning against a shed"
     tags: [sample, tools, garden, outdoor]
-  - id: tools-ladder
+  - id: tools-ladder-b
     kind: sample
     prompt: "A wooden ladder against a house wall."
+    style: product
     alt: "A wooden ladder against a house wall"
     tags: [sample, tools, ladder, outdoor]
-  - id: tools-toolbox
+  - id: tools-toolbox-b
     kind: sample
     prompt: "An open toolbox on a floor."
+    style: product
     alt: "An open toolbox on a floor"
     tags: [sample, tools, toolbox, indoor]
-  - id: plant-monstera
+  - id: plant-monstera-b
     kind: sample
     prompt: "A monstera plant in a ceramic pot."
+    style: product
     alt: "A monstera plant in a ceramic pot"
     tags: [sample, plant, plants, houseplant, indoor]
   - id: plant-succulents-b
@@ -847,89 +903,106 @@ images:
     style: product
     alt: "Pots of herbs on a kitchen windowsill"
     tags: [sample, plant, plants, herbs, kitchen, indoor]
-  - id: plant-tree
+  - id: plant-tree-b
     kind: sample
     prompt: "A young apple tree in a garden."
+    style: product
     alt: "A young apple tree in a garden"
     tags: [sample, plant, tree, garden, outdoor]
-  - id: plant-flowers
+  - id: plant-flowers-b
     kind: sample
     prompt: "A vase of tulips on a table."
+    style: product
     alt: "A vase of tulips on a table"
     tags: [sample, plant, flowers, indoor]
-  - id: food-salad
+  - id: food-salad-b
     kind: sample
     prompt: "A bowl of green salad on a wooden table."
+    style: product
     alt: "A bowl of green salad on a wooden table"
     tags: [sample, food, dish, salad, indoor]
-  - id: food-soup
+  - id: food-soup-b
     kind: sample
     prompt: "A bowl of soup with bread."
+    style: product
     alt: "A bowl of soup with bread"
     tags: [sample, food, dish, soup, indoor, warm]
-  - id: food-pasta
+  - id: food-pasta-b
     kind: sample
     prompt: "A plate of pasta with tomato sauce."
+    style: product
     alt: "A plate of pasta with tomato sauce"
     tags: [sample, food, dish, pasta, indoor]
-  - id: food-fish
+  - id: food-fish-b
     kind: sample
     prompt: "A plate of salmon with potatoes and dill."
+    style: product
     alt: "A plate of salmon with potatoes and dill"
     tags: [sample, food, dish, fish, indoor]
   - id: food-burger
     kind: sample
     prompt: "A burger with fries on a board."
+    style: product
     alt: "A burger with fries on a board"
     tags: [sample, food, dish, burger, indoor]
-  - id: food-pizza
+  - id: food-pizza-b
     kind: sample
     prompt: "A pizza on a wooden board."
+    style: product
     alt: "A pizza on a wooden board"
     tags: [sample, food, dish, pizza, indoor]
-  - id: food-cake
+  - id: food-cake-b
     kind: sample
     prompt: "A slice of berry cake on a plate."
+    style: product
     alt: "A slice of berry cake on a plate"
     tags: [sample, food, cake, dessert, bakery, indoor]
-  - id: food-bread
+  - id: food-bread-b
     kind: sample
     prompt: "A loaf of sourdough bread on a board."
+    style: product
     alt: "A loaf of sourdough bread on a board"
     tags: [sample, food, bread, bakery, indoor]
-  - id: food-breakfast
+  - id: food-breakfast-b
     kind: sample
     prompt: "A breakfast of eggs, bread and coffee."
+    style: product
     alt: "A breakfast of eggs, bread and coffee"
     tags: [sample, food, breakfast, indoor]
-  - id: food-vegetables
+  - id: food-vegetables-b
     kind: sample
     prompt: "A crate of fresh vegetables."
+    style: product
     alt: "A crate of fresh vegetables"
     tags: [sample, food, vegetables, market, indoor]
-  - id: food-fruit
+  - id: food-fruit-b
     kind: sample
     prompt: "A bowl of apples and pears."
+    style: product
     alt: "A bowl of apples and pears"
     tags: [sample, food, fruit, indoor]
-  - id: food-cheese
+  - id: food-cheese-b
     kind: sample
     prompt: "A board of cheeses and crackers."
+    style: product
     alt: "A board of cheeses and crackers"
     tags: [sample, food, cheese, indoor]
-  - id: drink-coffee
+  - id: drink-coffee-b
     kind: sample
     prompt: "A cup of black coffee on a saucer."
+    style: product
     alt: "A cup of black coffee on a saucer"
     tags: [sample, drink, coffee, cafe, indoor]
-  - id: drink-tea
+  - id: drink-tea-b
     kind: sample
     prompt: "A teapot and a cup of tea."
+    style: product
     alt: "A teapot and a cup of tea"
     tags: [sample, drink, tea, indoor, calm]
-  - id: drink-juice
+  - id: drink-juice-b
     kind: sample
     prompt: "A glass of orange juice by a window."
+    style: product
     alt: "A glass of orange juice by a window"
     tags: [sample, drink, juice, indoor]
   - id: drink-wine-b
@@ -944,12 +1017,13 @@ images:
     style: product
     alt: "A glass of beer on a bar counter"
     tags: [sample, drink, beer, bar, indoor]
-  - id: drink-cocktail
+  - id: drink-cocktail-b
     kind: sample
     prompt: "A cocktail in a glass with a lemon slice."
+    style: product
     alt: "A cocktail in a glass with a lemon slice"
     tags: [sample, drink, cocktail, bar, indoor]
-  - id: room-bedroom
+  - id: room-bedroom-b
     kind: sample
     prompt: "A bedroom with a made bed and a window."
     alt: "A bedroom with a made bed and a window"
@@ -959,12 +1033,12 @@ images:
     prompt: "A bright modern kitchen with wooden cupboards, a fruit bowl and a plant on the counter, nobody in it."
     alt: "A bright kitchen with wooden cupboards and a fruit bowl on the counter"
     tags: [sample, room, kitchen, interior, property, indoor]
-  - id: room-office
+  - id: room-office-b
     kind: sample
     prompt: "A home office with a desk by the window."
     alt: "A home office with a desk by the window"
     tags: [sample, room, office, interior, indoor]
-  - id: room-living
+  - id: room-living-b
     kind: sample
     prompt: "A living room with a sofa and a rug."
     alt: "A living room with a sofa and a rug"
@@ -979,17 +1053,17 @@ images:
     prompt: "A meeting in progress in a small meeting room: four colleagues around a table, one sketching on a whiteboard while the others discuss, laptops and coffee cups on the table, lively and friendly."
     alt: "Four colleagues discussing around a table while one sketches on a whiteboard"
     tags: [sample, room, meeting-room, office, indoor]
-  - id: room-hall
+  - id: room-hall-b
     kind: sample
     prompt: "An entrance hall with coats and a bench."
     alt: "An entrance hall with coats and a bench"
     tags: [sample, room, hall, interior, indoor]
-  - id: house-red
+  - id: house-red-b
     kind: sample
     prompt: "A red wooden house with white corners."
     alt: "A red wooden house with white corners"
     tags: [sample, house, property, building, outdoor]
-  - id: house-yellow
+  - id: house-yellow-b
     kind: sample
     prompt: "A yellow two-story house with a garden."
     alt: "A yellow two-story house with a garden"
@@ -999,12 +1073,12 @@ images:
     prompt: "A modern detached house with large windows and wooden cladding, seen whole from the garden on a sunny day, nobody in front of it."
     alt: "A modern wooden house with large windows seen from its garden"
     tags: [sample, house, property, building, outdoor]
-  - id: house-cottage
+  - id: house-cottage-b
     kind: sample
     prompt: "A small cottage by a lake."
     alt: "A small cottage by a lake"
     tags: [sample, house, cottage, property, rental, outdoor]
-  - id: house-terrace
+  - id: house-terrace-b
     kind: sample
     prompt: "A row of terraced houses."
     alt: "A row of terraced houses"
@@ -1014,7 +1088,7 @@ images:
     prompt: "A three-storey apartment building with balconies and plants, seen whole from across a green courtyard on a sunny day, nobody in front of it."
     alt: "A three-storey apartment building with balconies seen across a courtyard"
     tags: [An apartment building with balconies]
-  - id: apartment-interior
+  - id: apartment-interior-b
     kind: sample
     prompt: "A bright apartment living room with a balcony door."
     alt: "A bright apartment living room with a balcony door"
@@ -1024,62 +1098,62 @@ images:
     prompt: "A cozy studio apartment with a made bed, a kitchenette and plants; a young woman sitting at the table with a cup of tea and a book, looking relaxed and content."
     alt: "A young woman relaxing with tea and a book in a cozy studio apartment"
     tags: [sample, apartment, property, interior, indoor]
-  - id: apartment-balcony
+  - id: apartment-balcony-b
     kind: sample
     prompt: "A balcony with two chairs and plants."
     alt: "A balcony with two chairs and plants"
     tags: [sample, apartment, property, balcony, outdoor]
-  - id: people-portrait-1
+  - id: people-portrait-1-b
     kind: sample
     prompt: "A portrait of a woman in her forties against a plain wall."
     alt: "A portrait of a woman in her forties against a plain wall"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-2
+  - id: people-portrait-2-b
     kind: sample
     prompt: "A portrait of a man in his thirties against a plain wall."
     alt: "A portrait of a man in his thirties against a plain wall"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-3
+  - id: people-portrait-3-b
     kind: sample
     prompt: "A portrait of an older man with a gray beard."
     alt: "A portrait of an older man with a gray beard"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-4
+  - id: people-portrait-4-b
     kind: sample
     prompt: "A portrait of a young woman with short hair."
     alt: "A portrait of a young woman with short hair"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-5
+  - id: people-portrait-5-b
     kind: sample
     prompt: "A portrait of a woman in her sixties smiling."
     alt: "A portrait of a woman in her sixties smiling"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-6
+  - id: people-portrait-6-b
     kind: sample
     prompt: "A portrait of a young man with curly hair."
     alt: "A portrait of a young man with curly hair"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-7
+  - id: people-portrait-7-b
     kind: sample
     prompt: "A portrait of a woman with dark skin and braided hair."
     alt: "A portrait of a woman with dark skin and braided hair"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-portrait-8
+  - id: people-portrait-8-b
     kind: sample
     prompt: "A portrait of a man with glasses in a cardigan."
     alt: "A portrait of a man with glasses in a cardigan"
     tags: [sample, people, person, portrait, indoor]
-  - id: people-chef
+  - id: people-chef-b
     kind: sample
     prompt: "A chef plating food in a kitchen."
     alt: "A chef plating food in a kitchen"
     tags: [sample, people, chef, restaurant, work, indoor]
-  - id: people-carpenter
+  - id: people-carpenter-b
     kind: sample
     prompt: "A carpenter sanding a board."
     alt: "A carpenter sanding a board"
     tags: [sample, people, carpenter, craft, work, indoor]
-  - id: people-farmer
+  - id: people-farmer-b
     kind: sample
     prompt: "A farmer carrying a crate of vegetables."
     alt: "A farmer carrying a crate of vegetables"
@@ -1094,44 +1168,45 @@ images:
     prompt: "A teacher explaining something at a whiteboard to a small, attentive class of adults taking notes."
     alt: "A teacher explaining at a whiteboard to a small class"
     tags: [sample, people, teacher, school, work, indoor]
-  - id: people-mechanic
+  - id: people-mechanic-b
     kind: sample
     prompt: "A mechanic working on an engine."
     alt: "A mechanic working on an engine"
     tags: [sample, people, mechanic, garage, work, indoor]
-  - id: people-office
+  - id: people-office-b
     kind: sample
-    prompt: "A person working at a laptop, seen from behind."
+    prompt: "A smiling person working at a laptop in a bright, plant-filled office."
     alt: "A person working at a laptop, seen from behind"
     tags: [sample, people, office, work, indoor]
-  - id: people-courier
+  - id: people-courier-b
     kind: sample
     prompt: "A courier carrying a parcel to a door."
     alt: "A courier carrying a parcel to a door"
     tags: [sample, people, courier, delivery, work, outdoor]
-  - id: people-shopkeeper
+  - id: people-shopkeeper-b
     kind: sample
     prompt: "A shopkeeper behind a counter."
     alt: "A shopkeeper behind a counter"
     tags: [sample, people, shop, work, indoor]
-  - id: people-gardener
+  - id: people-gardener-b
     kind: sample
     prompt: "A gardener planting in a bed."
     alt: "A gardener planting in a bed"
     tags: [sample, people, gardener, garden, work, outdoor]
-  - id: people-team
+  - id: people-team-b
     kind: sample
     prompt: "A small team around a table, seen from a distance."
     alt: "A small team around a table, seen from a distance"
     tags: [sample, people, team, office, meeting, indoor]
-  - id: people-hiker
+  - id: people-hiker-b
     kind: sample
     prompt: "A hiker on a mountain trail, seen from behind."
     alt: "A hiker on a mountain trail, seen from behind"
     tags: [sample, people, hiking, outdoor, travel]
-  - id: document-contract
+  - id: document-contract-b
     kind: sample
     prompt: "document-contract."
+    style: product
     alt: "document-contract"
     tags: [A printed contract with a pen]
   - id: document-invoice-b
@@ -1157,19 +1232,22 @@ images:
     style: product
     alt: "A folded letter beside its envelope on a desk"
     tags: [sample, document, documents, mail, letter, indoor]
-  - id: document-receipts
+  - id: document-receipts-b
     kind: sample
     prompt: "Receipts and a calculator."
+    style: product
     alt: "Receipts and a calculator"
     tags: [sample, document, documents, receipt, accounting, indoor]
-  - id: document-plans
+  - id: document-plans-b
     kind: sample
     prompt: "Building plans rolled out on a table."
+    style: product
     alt: "Building plans rolled out on a table"
     tags: [sample, document, documents, plans, construction, indoor]
-  - id: product-box
+  - id: product-box-b
     kind: sample
     prompt: "A plain cardboard box on a table."
+    style: product
     alt: "A plain cardboard box on a table"
     tags: [sample, product, box, parcel, shipping, indoor]
   - id: product-boxes-b
@@ -1178,9 +1256,10 @@ images:
     style: product
     alt: "A stack of shipping boxes"
     tags: [sample, product, boxes, parcel, shipping, warehouse, indoor]
-  - id: product-parcel
+  - id: product-parcel-b
     kind: sample
     prompt: "A parcel at a front door."
+    style: product
     alt: "A parcel at a front door"
     tags: [sample, product, parcel, delivery, outdoor]
   - id: product-bottle-b
@@ -1189,64 +1268,76 @@ images:
     style: product
     alt: "A glass bottle with no label"
     tags: [sample, product, bottle, indoor]
-  - id: product-jar
+  - id: product-jar-b
     kind: sample
     prompt: "A jar of honey on a table."
+    style: product
     alt: "A jar of honey on a table"
     tags: [sample, product, jar, food, indoor]
-  - id: product-soap
+  - id: product-soap-b
     kind: sample
     prompt: "Handmade soap bars on a cloth."
+    style: product
     alt: "Handmade soap bars on a cloth"
     tags: [sample, product, soap, craft, indoor]
-  - id: product-candle
+  - id: product-candle-b
     kind: sample
     prompt: "A candle in a glass jar."
+    style: product
     alt: "A candle in a glass jar"
     tags: [sample, product, candle, home, indoor, warm]
-  - id: product-mug
+  - id: product-mug-b
     kind: sample
     prompt: "A ceramic mug on a shelf."
+    style: product
     alt: "A ceramic mug on a shelf"
     tags: [sample, product, mug, ceramics, craft, indoor]
-  - id: product-vase
+  - id: product-vase-b
     kind: sample
     prompt: "A ceramic vase on a table."
+    style: product
     alt: "A ceramic vase on a table"
     tags: [sample, product, vase, ceramics, craft, indoor]
-  - id: product-watch
+  - id: product-watch-b
     kind: sample
     prompt: "A wristwatch on a wooden surface."
+    style: product
     alt: "A wristwatch on a wooden surface"
     tags: [sample, product, watch, fashion, indoor]
-  - id: product-sunglasses
+  - id: product-sunglasses-b
     kind: sample
     prompt: "Sunglasses on a table."
+    style: product
     alt: "Sunglasses on a table"
     tags: [sample, product, sunglasses, fashion, indoor]
-  - id: instrument-guitar
+  - id: instrument-guitar-b
     kind: sample
     prompt: "An acoustic guitar against a wall."
+    style: product
     alt: "An acoustic guitar against a wall"
     tags: [sample, instrument, guitar, music, indoor]
-  - id: instrument-piano
+  - id: instrument-piano-b
     kind: sample
     prompt: "An upright piano in a room."
+    style: product
     alt: "An upright piano in a room"
     tags: [sample, instrument, piano, music, indoor]
-  - id: instrument-violin
+  - id: instrument-violin-b
     kind: sample
     prompt: "A violin on a chair."
+    style: product
     alt: "A violin on a chair"
     tags: [sample, instrument, violin, music, indoor]
-  - id: instrument-drums
+  - id: instrument-drums-b
     kind: sample
     prompt: "A drum kit in a rehearsal room."
+    style: product
     alt: "A drum kit in a rehearsal room"
     tags: [sample, instrument, drums, music, indoor]
-  - id: instrument-keyboard
+  - id: instrument-keyboard-b
     kind: sample
     prompt: "A digital keyboard on a stand."
+    style: product
     alt: "A digital keyboard on a stand"
     tags: [sample, instrument, keyboard, music, indoor]
   - id: toy-blocks-b
@@ -1255,14 +1346,16 @@ images:
     style: product
     alt: "Colorful wooden building blocks stacked into a tower"
     tags: [Wooden toy blocks on a floor]
-  - id: toy-teddy
+  - id: toy-teddy-b
     kind: sample
     prompt: "A teddy bear on a bed."
+    style: product
     alt: "A teddy bear on a bed"
     tags: [sample, toy, toys, kids, indoor]
-  - id: toy-train
+  - id: toy-train-b
     kind: sample
     prompt: "A wooden toy train set."
+    style: product
     alt: "A wooden toy train set"
     tags: [sample, toy, toys, kids, indoor]
   - id: toy-puzzle-b
@@ -1289,24 +1382,28 @@ images:
     style: product
     alt: "A football on a grass pitch"
     tags: [sample, sports, football, ball, outdoor]
-  - id: sports-tennis
+  - id: sports-tennis-b
     kind: sample
     prompt: "A tennis racket and balls on a court."
+    style: product
     alt: "A tennis racket and balls on a court"
     tags: [sample, sports, tennis, outdoor]
-  - id: sports-skates
+  - id: sports-skates-b
     kind: sample
     prompt: "Ice skates on a frozen lake."
+    style: product
     alt: "Ice skates on a frozen lake"
     tags: [sample, sports, skates, winter, outdoor]
-  - id: sports-tent
+  - id: sports-tent-b
     kind: sample
     prompt: "A tent pitched by a lake."
+    style: product
     alt: "A tent pitched by a lake"
     tags: [sample, sports, camping, tent, outdoor]
-  - id: sports-backpack
+  - id: sports-backpack-b
     kind: sample
     prompt: "A hiking backpack on a rock."
+    style: product
     alt: "A hiking backpack on a rock"
     tags: [sample, sports, backpack, hiking, outdoor]
   - id: sports-weights-b
@@ -1321,9 +1418,10 @@ images:
     style: product
     alt: "Golf clubs in a bag on a course"
     tags: [sample, sports, golf, outdoor]
-  - id: sports-fishing
+  - id: sports-fishing-b
     kind: sample
     prompt: "A fishing rod by a lake."
+    style: product
     alt: "A fishing rod by a lake"
     tags: [sample, sports, fishing, lake, outdoor]
   - id: event-concert-b
@@ -1341,7 +1439,7 @@ images:
     prompt: "Friends around a long dinner table with candles and food, laughing and passing dishes, seen from the side."
     alt: "Friends laughing around a candlelit dinner table"
     tags: [sample, event, dinner, party, indoor, evening]
-  - id: event-wedding
+  - id: event-wedding-b
     kind: sample
     prompt: "Chairs set out for an outdoor wedding."
     alt: "Chairs set out for an outdoor wedding"
@@ -1352,7 +1450,7 @@ images:
     style: product
     alt: "Two paper tickets on a table"
     tags: [sample, event, tickets, indoor]
-  - id: service-cleaning
+  - id: service-cleaning-b
     kind: sample
     prompt: "Cleaning supplies in a bucket."
     alt: "Cleaning supplies in a bucket"
@@ -1362,7 +1460,7 @@ images:
     prompt: "A hairdresser cutting a smiling customer's hair in a bright salon, both relaxed and chatting."
     alt: "A hairdresser cutting a customer's hair in a bright salon"
     tags: [sample, service, salon, haircut, beauty, indoor]
-  - id: service-massage
+  - id: service-massage-b
     kind: sample
     prompt: "A massage table in a calm room."
     alt: "A massage table in a calm room"
@@ -1372,17 +1470,17 @@ images:
     prompt: "Two movers carrying a sofa out of a house to a van on a sunny day, working together."
     alt: "Two movers carrying a sofa to a van"
     tags: [sample, service, moving, boxes, indoor]
-  - id: service-painting
+  - id: service-painting-b
     kind: sample
-    prompt: "A paint roller and a tin of paint."
-    alt: "A paint roller and a tin of paint"
+    prompt: "A freshly painted living-room wall in a soft sage green, with a paint roller and an open tin of the same green paint on a drop cloth in front of it."
+    alt: "A freshly painted green wall with a roller and an open tin of the same paint"
     tags: [sample, service, painting, decorating, indoor]
-  - id: service-repair
+  - id: service-repair-b
     kind: sample
     prompt: "A bicycle being repaired on a stand."
     alt: "A bicycle being repaired on a stand"
     tags: [sample, service, repair, bike, indoor]
-  - id: service-tutoring
+  - id: service-tutoring-b
     kind: sample
     prompt: "A notebook and textbook on a desk."
     alt: "A notebook and textbook on a desk"
@@ -1454,44 +1552,52 @@ images:
     alt: "A loop forming a simple knot"
     tags: [logo, mark, abstract, craft]
   # The marketplace starter (Torget): second-hand things staged as a seller's photos, one or two each.
-  - id: market-sideboard-1
+  - id: market-sideboard-1-b
     kind: sample
     prompt: "A used mid-century teak sideboard with sliding doors, photographed by its seller against a white wall on a wooden floor."
+    style: listing
     alt: "A teak sideboard with sliding doors against a white wall"
     tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
-  - id: market-sideboard-2
+  - id: market-sideboard-2-b
     kind: sample
     prompt: "A close-up of the top corner and grain of a used teak sideboard, with small signs of wear, in daylight."
+    style: listing
     alt: "The corner and wood grain of the teak sideboard"
     tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
-  - id: market-chairs-1
+  - id: market-chairs-1-b
     kind: sample
     prompt: "A pair of used oak dining chairs side by side on a wooden floor by a window, photographed by their seller."
+    style: listing
     alt: "Two oak dining chairs side by side"
     tags: [sample, starter-marketplace, furniture, chair, second-hand, indoor]
-  - id: market-armchair-1
+  - id: market-armchair-1-b
     kind: sample
     prompt: "A used armchair upholstered in gray wool, with wooden legs, in a bright living room corner, photographed by its seller."
+    style: listing
     alt: "A gray wool armchair in a living room corner"
     tags: [sample, starter-marketplace, furniture, armchair, chair, second-hand, indoor]
-  - id: market-armchair-2
+  - id: market-armchair-2-b
     kind: sample
     prompt: "A close-up of the gray wool fabric and the armrest of a used armchair, in soft daylight."
+    style: listing
     alt: "The wool fabric and armrest of the armchair"
     tags: [sample, starter-marketplace, furniture, armchair, second-hand, indoor]
-  - id: market-lamp-1
+  - id: market-lamp-1-b
     kind: sample
     prompt: "A used brass floor lamp with a white linen shade, switched on, against a plain wall, photographed by its seller."
+    style: listing
     alt: "A brass floor lamp with a linen shade against a wall"
     tags: [sample, starter-marketplace, lamp, lighting, furniture, second-hand, indoor]
-  - id: market-city-bike-1
+  - id: market-city-bike-1-b
     kind: sample
     prompt: "A used dark green city bicycle with a front basket, standing on a gravel drive by a wooden house, photographed by its seller."
+    style: listing
     alt: "A green city bike with a basket on a gravel drive"
     tags: [sample, starter-marketplace, bike, bicycle, vehicle, second-hand, outdoor]
-  - id: market-city-bike-2
+  - id: market-city-bike-2-b
     kind: sample
     prompt: "A close-up of the handlebar, bell and wicker basket of a used city bicycle, outdoors."
+    style: listing
     alt: "The handlebar, bell and basket of the city bike"
     tags: [sample, starter-marketplace, bike, bicycle, second-hand, outdoor]
   - id: market-balance-bike-1
@@ -1499,53 +1605,63 @@ images:
     prompt: "A small used wooden balance bike for a child, standing on a green lawn, photographed by its seller."
     alt: "A child's wooden balance bike on a lawn"
     tags: [sample, starter-marketplace, bike, kids, toy, second-hand, outdoor]
-  - id: market-road-bike-1
+  - id: market-road-bike-1-b
     kind: sample
     prompt: "A used gray road bike leaning against a garage wall, side view, photographed by its seller."
+    style: listing
     alt: "A gray road bike leaning against a garage wall"
     tags: [sample, starter-marketplace, bike, bicycle, sports, second-hand, outdoor]
-  - id: market-laptop-1
+  - id: market-laptop-1-b
     kind: sample
     prompt: "A used silver laptop, open with a dark blank screen, on a wooden table, with its charger coiled beside it, photographed by its seller."
+    style: listing
     alt: "An open laptop with its charger on a wooden table"
     tags: [sample, starter-marketplace, laptop, computer, electronics, second-hand, indoor]
-  - id: market-headphones-1
+  - id: market-headphones-1-b
     kind: sample
     prompt: "A pair of used black over-ear headphones lying on a wooden table, photographed by their seller."
+    style: listing
     alt: "Black over-ear headphones on a wooden table"
     tags: [sample, starter-marketplace, headphones, electronics, music, second-hand, indoor]
-  - id: market-turntable-1
+  - id: market-turntable-1-b
     kind: sample
     prompt: "A used record player with a wooden base and a clear lid, on a low shelf beside a few records with plain sleeves, photographed by its seller."
+    style: listing
     alt: "A wooden record player on a low shelf beside records"
     tags: [sample, starter-marketplace, turntable, electronics, music, second-hand, indoor]
-  - id: market-turntable-2
+  - id: market-turntable-2-b
     kind: sample
     prompt: "A close-up of the tonearm and platter of a used record player, a record on it, in warm daylight."
+    style: listing
     alt: "The tonearm and a record on the record player"
     tags: [sample, starter-marketplace, turntable, music, second-hand, indoor]
-  - id: market-skis-1
+  - id: market-skis-1-b
     kind: sample
     prompt: "A pair of used cross-country skis with poles, leaning against a red wooden wall in the snow, photographed by their seller."
+    style: listing
     alt: "Cross-country skis and poles against a red wall in the snow"
     tags: [sample, starter-marketplace, skis, sports, winter, second-hand, outdoor]
-  - id: market-dinghy-1
+  - id: market-dinghy-1-b
     kind: sample
     prompt: "A small used white sailing dinghy on a road trailer, parked on grass by a granite shore in the Åland archipelago, photographed by its seller."
+    style: listing
     alt: "A white sailing dinghy on a trailer by a granite shore"
     tags: [sample, starter-marketplace, boat, sailing, sea, vehicle, second-hand, outdoor]
-  - id: market-dinghy-2
+  - id: market-dinghy-2-b
     kind: sample
     prompt: "The folded sail and wooden tiller lying inside a small used sailing dinghy, seen from above."
+    style: listing
     alt: "The sail and tiller inside the dinghy"
     tags: [sample, starter-marketplace, boat, sailing, second-hand, outdoor]
-  - id: market-roof-box-1
+  - id: market-roof-box-1-b
     kind: sample
     prompt: "A used black car roof box lying on a garage floor, photographed by its seller."
+    style: listing
     alt: "A black car roof box on a garage floor"
     tags: [sample, starter-marketplace, car, vehicle, accessories, second-hand, indoor]
-  - id: market-books-1
+  - id: market-books-1-b
     kind: sample
     prompt: "An open cardboard box of used children's picture books with plain, unreadable covers, on a wooden floor, photographed by their seller."
+    style: listing
     alt: "A cardboard box of children's picture books on a floor"
     tags: [sample, starter-marketplace, books, kids, second-hand, indoor]

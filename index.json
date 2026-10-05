@@ -1,8 +1,8 @@
 [
   {
-    "id": "accounting-calculator",
+    "id": "accounting-calculator-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/accounting-calculator.webp",
+    "url": "https://docs.smithable.ai/images/sample/accounting-calculator-b.webp",
     "alt": "A calculator, receipts and a laptop on a wooden desk",
     "tags": [
       "sample",
@@ -17,17 +17,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 27612,
+    "bytes": 29908,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "accounting-laptops",
+    "id": "accounting-laptops-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/accounting-laptops.webp",
+    "url": "https://docs.smithable.ai/images/sample/accounting-laptops-b.webp",
     "alt": "Two colleagues working on laptops across a light wooden table",
     "tags": [
       "sample",
@@ -40,40 +40,43 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28368,
+    "bytes": 31636,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "accounting-meeting",
+    "id": "accounting-meeting-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/accounting-meeting.webp",
+    "url": "https://docs.smithable.ai/images/hero/accounting-meeting-b.webp",
     "alt": "An accountant going through papers with a client at a desk by the window",
     "tags": [
       "hero",
       "accounting",
-      "office",
       "meeting",
       "people",
       "indoor",
-      "calm"
+      "calm",
+      "invoice",
+      "bookkeeping",
+      "client",
+      "payment"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 56050,
+    "bytes": 94470,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#988878",
-    "source": "file"
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "gpt-image-2"
   },
   {
-    "id": "accounting-review",
+    "id": "accounting-review-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/accounting-review.webp",
+    "url": "https://docs.smithable.ai/images/sample/accounting-review-b.webp",
     "alt": "An advisor pointing at a printed statement while a client listens",
     "tags": [
       "sample",
@@ -86,17 +89,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31860,
+    "bytes": 28930,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "accounting-signing",
+    "id": "accounting-signing-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/accounting-signing.webp",
+    "url": "https://docs.smithable.ai/images/sample/accounting-signing-b.webp",
     "alt": "A hand signing a document on a weathered table",
     "tags": [
       "sample",
@@ -108,17 +111,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26976,
+    "bytes": 32078,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#d8d8d8",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "accounting-team",
+    "id": "accounting-team-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/accounting-team.webp",
+    "url": "https://docs.smithable.ai/images/sample/accounting-team-b.webp",
     "alt": "Four people in a meeting room with a view of houses",
     "tags": [
       "sample",
@@ -131,12 +134,12 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 30382,
+    "bytes": 40830,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#f8f8f8",
+    "source": "gpt-image-1-mini"
   },
   {
     "id": "animal-hens-b",
@@ -161,9 +164,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "animal-rabbit",
+    "id": "animal-rabbit-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/animal-rabbit.webp",
+    "url": "https://docs.smithable.ai/images/sample/animal-rabbit-b.webp",
     "alt": "A rabbit on straw in a hutch",
     "tags": [
       "sample",
@@ -174,17 +177,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29530,
+    "bytes": 50434,
     "orientation": "landscape",
     "tone": "dark",
     "temperature": "warm",
-    "color": "#382818",
+    "color": "#481808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "animal-sheep",
+    "id": "animal-sheep-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/animal-sheep.webp",
+    "url": "https://docs.smithable.ai/images/sample/animal-sheep-b.webp",
     "alt": "Sheep grazing on a hillside",
     "tags": [
       "sample",
@@ -195,17 +198,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31722,
+    "bytes": 50968,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#584828",
+    "color": "#986818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "apartment-balcony",
+    "id": "apartment-balcony-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/apartment-balcony.webp",
+    "url": "https://docs.smithable.ai/images/sample/apartment-balcony-b.webp",
     "alt": "A balcony with two chairs and plants",
     "tags": [
       "sample",
@@ -216,11 +219,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 36308,
+    "bytes": 56778,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#d8b898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -241,9 +244,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "apartment-interior",
+    "id": "apartment-interior-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/apartment-interior.webp",
+    "url": "https://docs.smithable.ai/images/sample/apartment-interior-b.webp",
     "alt": "A bright apartment living room with a balcony door",
     "tags": [
       "sample",
@@ -254,11 +257,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23998,
+    "bytes": 43850,
     "orientation": "landscape",
     "tone": "light",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#c8b8a8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -283,9 +286,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "bike-cargo",
+    "id": "bike-cargo-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/bike-cargo.webp",
+    "url": "https://docs.smithable.ai/images/sample/bike-cargo-b.webp",
     "alt": "A cargo bike parked outside a house",
     "tags": [
       "sample",
@@ -297,11 +300,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 47290,
+    "bytes": 44294,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#b8a898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -326,9 +329,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "bike-kids",
+    "id": "bike-kids-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/bike-kids.webp",
+    "url": "https://docs.smithable.ai/images/sample/bike-kids-b.webp",
     "alt": "A small child's bicycle on a garden lawn",
     "tags": [
       "sample",
@@ -339,17 +342,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 35892,
+    "bytes": 54046,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#282818",
+    "color": "#989838",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "bike-mountain",
+    "id": "bike-mountain-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/bike-mountain.webp",
+    "url": "https://docs.smithable.ai/images/sample/bike-mountain-b.webp",
     "alt": "A mountain bike on a forest trail",
     "tags": [
       "sample",
@@ -360,11 +363,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 60192,
+    "bytes": 69772,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#383828",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -389,9 +392,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "boat-kayak",
+    "id": "boat-kayak-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/boat-kayak.webp",
+    "url": "https://docs.smithable.ai/images/sample/boat-kayak-b.webp",
     "alt": "A kayak pulled up on a rocky shore",
     "tags": [
       "sample",
@@ -403,17 +406,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31520,
+    "bytes": 68568,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#081808",
+    "temperature": "warm",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "boat-motor",
+    "id": "boat-motor-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/boat-motor.webp",
+    "url": "https://docs.smithable.ai/images/sample/boat-motor-b.webp",
     "alt": "A small motorboat at a harbor pontoon",
     "tags": [
       "sample",
@@ -424,17 +427,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25386,
+    "bytes": 46562,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#585848",
+    "temperature": "warm",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "boat-rowing",
+    "id": "boat-rowing-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/boat-rowing.webp",
+    "url": "https://docs.smithable.ai/images/sample/boat-rowing-b.webp",
     "alt": "A wooden rowing boat moored at a jetty",
     "tags": [
       "sample",
@@ -446,7 +449,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31192,
+    "bytes": 45292,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -475,9 +478,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "books-open",
+    "id": "books-open-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/books-open.webp",
+    "url": "https://docs.smithable.ai/images/sample/books-open-b.webp",
     "alt": "An open book on a blanket",
     "tags": [
       "sample",
@@ -488,17 +491,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17944,
+    "bytes": 34010,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#d8b898",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "books-shelf",
+    "id": "books-shelf-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/books-shelf.webp",
+    "url": "https://docs.smithable.ai/images/sample/books-shelf-b.webp",
     "alt": "A row of old books on a shelf",
     "tags": [
       "sample",
@@ -508,17 +511,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28242,
+    "bytes": 45172,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#181808",
+    "color": "#e8d8b8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "books-stack",
+    "id": "books-stack-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/books-stack.webp",
+    "url": "https://docs.smithable.ai/images/sample/books-stack-b.webp",
     "alt": "A stack of hardback books on a table",
     "tags": [
       "sample",
@@ -528,17 +531,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21008,
+    "bytes": 25844,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#b8b8a8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "cafe-barista",
+    "id": "cafe-barista-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/cafe-barista.webp",
+    "url": "https://docs.smithable.ai/images/hero/cafe-barista-b.webp",
     "alt": "A barista pouring milk into a cup at a counter by the harbour window",
     "tags": [
       "hero",
@@ -551,17 +554,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 110080,
+    "bytes": 104882,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#080808",
-    "source": "file"
+    "temperature": "warm",
+    "color": "#e8e8e8",
+    "source": "gpt-image-2"
   },
   {
-    "id": "cafe-cinnamon-buns",
+    "id": "cafe-cinnamon-buns-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cafe-cinnamon-buns.webp",
+    "url": "https://docs.smithable.ai/images/sample/cafe-cinnamon-buns-b.webp",
     "alt": "A tray of cinnamon buns by a café window",
     "tags": [
       "sample",
@@ -574,17 +577,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 32578,
+    "bytes": 47898,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#181808",
-    "source": "file"
+    "color": "#988878",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "cafe-cup-street",
+    "id": "cafe-cup-street-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cafe-cup-street.webp",
+    "url": "https://docs.smithable.ai/images/sample/cafe-cup-street-b.webp",
     "alt": "Hands holding a ceramic cup on a quiet old-town street",
     "tags": [
       "sample",
@@ -596,17 +599,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16810,
+    "bytes": 23870,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#887868",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "cafe-friends",
+    "id": "cafe-friends-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cafe-friends.webp",
+    "url": "https://docs.smithable.ai/images/sample/cafe-friends-b.webp",
     "alt": "Two friends talking over coffee at a window table",
     "tags": [
       "sample",
@@ -618,17 +621,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 40114,
+    "bytes": 31864,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "cafe-latte-art",
+    "id": "cafe-latte-art-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cafe-latte-art.webp",
+    "url": "https://docs.smithable.ai/images/sample/cafe-latte-art-b.webp",
     "alt": "A barista pouring latte art at a wooden counter",
     "tags": [
       "sample",
@@ -641,18 +644,18 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22796,
+    "bytes": 31192,
     "orientation": "landscape",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "cafe-readers",
+    "id": "cafe-readers-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cafe-readers.webp",
-    "alt": "People reading over coffee at small café tables",
+    "url": "https://docs.smithable.ai/images/sample/cafe-readers-b.webp",
+    "alt": "Two people reading quietly at separate tables in a calm café",
     "tags": [
       "sample",
       "cafe",
@@ -665,17 +668,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24592,
+    "bytes": 31280,
     "orientation": "landscape",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "camera-digital",
+    "id": "camera-digital-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/camera-digital.webp",
+    "url": "https://docs.smithable.ai/images/sample/camera-digital-b.webp",
     "alt": "A digital camera with a lens beside it",
     "tags": [
       "sample",
@@ -686,7 +689,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12858,
+    "bytes": 26784,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -694,9 +697,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "camera-film",
+    "id": "camera-film-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/camera-film.webp",
+    "url": "https://docs.smithable.ai/images/sample/camera-film-b.webp",
     "alt": "A film camera on a wooden table",
     "tags": [
       "sample",
@@ -707,17 +710,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14598,
+    "bytes": 26682,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#686858",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "car-electric",
+    "id": "car-electric-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/car-electric.webp",
+    "url": "https://docs.smithable.ai/images/sample/car-electric-b.webp",
     "alt": "A white electric car charging at a charging post",
     "tags": [
       "sample",
@@ -728,11 +731,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28398,
+    "bytes": 50570,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -776,9 +779,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "car-van",
+    "id": "car-van-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/car-van.webp",
+    "url": "https://docs.smithable.ai/images/sample/car-van-b.webp",
     "alt": "A small white delivery van in a parking area",
     "tags": [
       "sample",
@@ -789,11 +792,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25590,
+    "bytes": 57158,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#e8e8d8",
+    "temperature": "warm",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -818,9 +821,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "cat-black",
+    "id": "cat-black-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cat-black.webp",
+    "url": "https://docs.smithable.ai/images/sample/cat-black-b.webp",
     "alt": "A black cat on a wooden chair",
     "tags": [
       "sample",
@@ -831,7 +834,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12082,
+    "bytes": 15494,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -839,9 +842,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "cat-garden",
+    "id": "cat-garden-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cat-garden.webp",
+    "url": "https://docs.smithable.ai/images/sample/cat-garden-b.webp",
     "alt": "A ginger cat in a garden",
     "tags": [
       "sample",
@@ -852,17 +855,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 30534,
+    "bytes": 37952,
     "orientation": "landscape",
-    "tone": "dark",
+    "tone": "mid",
     "temperature": "warm",
-    "color": "#283818",
+    "color": "#585808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "cat-kitten",
+    "id": "cat-kitten-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cat-kitten.webp",
+    "url": "https://docs.smithable.ai/images/sample/cat-kitten-b.webp",
     "alt": "A gray kitten on a knitted blanket",
     "tags": [
       "sample",
@@ -874,17 +877,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22926,
+    "bytes": 28516,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#888878",
+    "color": "#d8c8b8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "cat-tabby",
+    "id": "cat-tabby-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/cat-tabby.webp",
+    "url": "https://docs.smithable.ai/images/sample/cat-tabby-b.webp",
     "alt": "A tabby cat on a windowsill",
     "tags": [
       "sample",
@@ -895,17 +898,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16106,
+    "bytes": 24962,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#180808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "chair-armchair",
+    "id": "chair-armchair-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/chair-armchair.webp",
+    "url": "https://docs.smithable.ai/images/sample/chair-armchair-b.webp",
     "alt": "A wingback armchair by a window",
     "tags": [
       "sample",
@@ -916,17 +919,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19658,
+    "bytes": 37638,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#584838",
+    "color": "#682808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "chair-office",
+    "id": "chair-office-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/chair-office.webp",
+    "url": "https://docs.smithable.ai/images/sample/chair-office-b.webp",
     "alt": "An office chair at a desk",
     "tags": [
       "sample",
@@ -937,17 +940,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12224,
+    "bytes": 39966,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#785838",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "chair-wooden",
+    "id": "chair-wooden-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/chair-wooden.webp",
+    "url": "https://docs.smithable.ai/images/sample/chair-wooden-b.webp",
     "alt": "A bentwood chair on a plain floor",
     "tags": [
       "sample",
@@ -957,17 +960,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13496,
+    "bytes": 20058,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#c8a888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "clothes-bag",
+    "id": "clothes-bag-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/clothes-bag.webp",
+    "url": "https://docs.smithable.ai/images/sample/clothes-bag-b.webp",
     "alt": "A canvas tote bag on a chair",
     "tags": [
       "sample",
@@ -978,17 +981,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15366,
+    "bytes": 22106,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#b8a898",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "clothes-dress",
+    "id": "clothes-dress-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/clothes-dress.webp",
+    "url": "https://docs.smithable.ai/images/sample/clothes-dress-b.webp",
     "alt": "A linen dress on a hanger",
     "tags": [
       "sample",
@@ -999,17 +1002,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16258,
+    "bytes": 33232,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#888878",
+    "color": "#e8c898",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "clothes-jacket",
+    "id": "clothes-jacket-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/clothes-jacket.webp",
+    "url": "https://docs.smithable.ai/images/sample/clothes-jacket-b.webp",
     "alt": "A rain jacket on a hanger against a wall",
     "tags": [
       "sample",
@@ -1020,11 +1023,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14394,
+    "bytes": 22214,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#c8b8a8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -1071,9 +1074,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "clothes-sweater",
+    "id": "clothes-sweater-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/clothes-sweater.webp",
+    "url": "https://docs.smithable.ai/images/sample/clothes-sweater-b.webp",
     "alt": "A folded knitted sweater",
     "tags": [
       "sample",
@@ -1084,17 +1087,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26176,
+    "bytes": 55608,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#b88848",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "construction-frame",
+    "id": "construction-frame-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/construction-frame.webp",
+    "url": "https://docs.smithable.ai/images/sample/construction-frame-b.webp",
     "alt": "Builders putting up the timber frame of a house",
     "tags": [
       "sample",
@@ -1107,17 +1110,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 44386,
+    "bytes": 34184,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8a878",
-    "source": "file"
+    "color": "#d8c898",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "construction-framing",
+    "id": "construction-framing-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/construction-framing.webp",
+    "url": "https://docs.smithable.ai/images/hero/construction-framing-b.webp",
     "alt": "Two builders raising a timber frame by the water",
     "tags": [
       "hero",
@@ -1129,17 +1132,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 91708,
+    "bytes": 206780,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#585858",
-    "source": "file"
+    "color": "#d8d8e8",
+    "source": "gpt-image-2"
   },
   {
-    "id": "construction-living-room",
+    "id": "construction-living-room-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/construction-living-room.webp",
+    "url": "https://docs.smithable.ai/images/sample/construction-living-room-b.webp",
     "alt": "A finished living room with a sofa and a window onto the street",
     "tags": [
       "sample",
@@ -1154,12 +1157,12 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 34220,
+    "bytes": 28868,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685838",
-    "source": "file"
+    "color": "#280808",
+    "source": "gpt-image-1-mini"
   },
   {
     "id": "construction-measuring",
@@ -1182,12 +1185,12 @@
     "tone": "mid",
     "temperature": "warm",
     "color": "#e8e8e8",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "construction-plans",
+    "id": "construction-plans-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/construction-plans.webp",
+    "url": "https://docs.smithable.ai/images/sample/construction-plans-b.webp",
     "alt": "A site manager in high-visibility gear reading plans on a street",
     "tags": [
       "sample",
@@ -1199,17 +1202,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31450,
+    "bytes": 28670,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#e8e8e8",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "construction-wooden-house",
+    "id": "construction-wooden-house-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/construction-wooden-house.webp",
+    "url": "https://docs.smithable.ai/images/sample/construction-wooden-house-b.webp",
     "alt": "A small new wooden house with a green door",
     "tags": [
       "sample",
@@ -1221,17 +1224,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 47448,
+    "bytes": 45800,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#e8e8e8",
-    "source": "file"
+    "color": "#e8a868",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "consulting-conversation",
+    "id": "consulting-conversation-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/consulting-conversation.webp",
+    "url": "https://docs.smithable.ai/images/sample/consulting-conversation-b.webp",
     "alt": "Three people talking around a laptop at a table",
     "tags": [
       "sample",
@@ -1243,17 +1246,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29066,
+    "bytes": 34850,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "consulting-coworking",
+    "id": "consulting-coworking-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/consulting-coworking.webp",
+    "url": "https://docs.smithable.ai/images/sample/consulting-coworking-b.webp",
     "alt": "People working on laptops in a bright shared office",
     "tags": [
       "sample",
@@ -1266,17 +1269,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26832,
+    "bytes": 40910,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "consulting-handshake",
+    "id": "consulting-handshake-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/consulting-handshake.webp",
+    "url": "https://docs.smithable.ai/images/sample/consulting-handshake-b.webp",
     "alt": "Two people shaking hands across a desk",
     "tags": [
       "sample",
@@ -1288,17 +1291,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29638,
+    "bytes": 31398,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#f8f8f8",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "consulting-video-call",
+    "id": "consulting-video-call-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/consulting-video-call.webp",
+    "url": "https://docs.smithable.ai/images/sample/consulting-video-call-b.webp",
     "alt": "A laptop showing a video call on a desk with a mug",
     "tags": [
       "sample",
@@ -1311,40 +1314,45 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26812,
+    "bytes": 28628,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "consulting-whiteboard",
+    "id": "consulting-whiteboard-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/consulting-whiteboard.webp",
+    "url": "https://docs.smithable.ai/images/hero/consulting-whiteboard-b.webp",
     "alt": "A team standing at a whiteboard by a window over the harbour",
     "tags": [
       "hero",
       "consulting",
       "office",
-      "team",
       "meeting",
       "people",
-      "indoor"
+      "indoor",
+      "sales",
+      "crm",
+      "deal",
+      "lead",
+      "pipeline",
+      "agency"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 75460,
+    "bytes": 107388,
     "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "neutral",
-    "color": "#080808",
-    "source": "file"
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#d8e8e8",
+    "source": "gpt-image-2"
   },
   {
-    "id": "consulting-workshop",
+    "id": "consulting-workshop-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/consulting-workshop.webp",
+    "url": "https://docs.smithable.ai/images/sample/consulting-workshop-b.webp",
     "alt": "A consultant presenting at a whiteboard to three colleagues",
     "tags": [
       "sample",
@@ -1357,17 +1365,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31072,
+    "bytes": 37258,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#c8c8c8",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "dental-chair",
+    "id": "dental-chair-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dental-chair.webp",
+    "url": "https://docs.smithable.ai/images/sample/dental-chair-b.webp",
     "alt": "An empty dental chair in a treatment room",
     "tags": [
       "sample",
@@ -1380,17 +1388,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22032,
+    "bytes": 20672,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#887858",
-    "source": "file"
+    "color": "#c8c8b8",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "dental-checkup",
+    "id": "dental-checkup-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/dental-checkup.webp",
+    "url": "https://docs.smithable.ai/images/hero/dental-checkup-b.webp",
     "alt": "A dentist talking with a patient in a bright clinic",
     "tags": [
       "hero",
@@ -1403,12 +1411,12 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 56504,
+    "bytes": 77092,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "neutral",
-    "color": "#c8b8b8",
-    "source": "file"
+    "color": "#e8e8d8",
+    "source": "gpt-image-2"
   },
   {
     "id": "dental-dentist",
@@ -1430,12 +1438,12 @@
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "dental-instruments",
+    "id": "dental-instruments-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dental-instruments.webp",
+    "url": "https://docs.smithable.ai/images/sample/dental-instruments-b.webp",
     "alt": "A dental nurse laying out instruments on a tray",
     "tags": [
       "sample",
@@ -1448,18 +1456,18 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 27676,
+    "bytes": 23764,
     "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "neutral",
-    "color": "#585838",
-    "source": "file"
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#d8b898",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "dental-reception",
+    "id": "dental-reception-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dental-reception.webp",
-    "alt": "A receptionist behind a wooden desk with plants",
+    "url": "https://docs.smithable.ai/images/sample/dental-reception-b.webp",
+    "alt": "A dental clinic's reception, with a treatment chair seen through the door behind",
     "tags": [
       "sample",
       "dental",
@@ -1471,17 +1479,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21686,
+    "bytes": 22194,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#988868",
-    "source": "file"
+    "color": "#c8c8b8",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "dental-waiting-room",
+    "id": "dental-waiting-room-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dental-waiting-room.webp",
+    "url": "https://docs.smithable.ai/images/sample/dental-waiting-room-b.webp",
     "alt": "A patient smiling in a waiting room",
     "tags": [
       "sample",
@@ -1493,28 +1501,28 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26334,
+    "bytes": 31126,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#080818",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "document-contract",
+    "id": "document-contract-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/document-contract.webp",
+    "url": "https://docs.smithable.ai/images/sample/document-contract-b.webp",
     "alt": "document-contract",
     "tags": [
       "A printed contract with a pen"
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22480,
+    "bytes": 33764,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#e8d8d8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -1605,9 +1613,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "document-plans",
+    "id": "document-plans-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/document-plans.webp",
+    "url": "https://docs.smithable.ai/images/sample/document-plans-b.webp",
     "alt": "Building plans rolled out on a table",
     "tags": [
       "sample",
@@ -1619,17 +1627,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12874,
+    "bytes": 32178,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8b8",
+    "color": "#d8c8c8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "document-receipts",
+    "id": "document-receipts-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/document-receipts.webp",
+    "url": "https://docs.smithable.ai/images/sample/document-receipts-b.webp",
     "alt": "Receipts and a calculator",
     "tags": [
       "sample",
@@ -1641,17 +1649,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13328,
+    "bytes": 31120,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#484838",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "dog-labrador",
+    "id": "dog-labrador-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dog-labrador.webp",
+    "url": "https://docs.smithable.ai/images/sample/dog-labrador-b.webp",
     "alt": "A golden labrador sitting on a lawn",
     "tags": [
       "sample",
@@ -1662,17 +1670,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21876,
+    "bytes": 36850,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#686838",
+    "color": "#a89828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "dog-puppy",
+    "id": "dog-puppy-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dog-puppy.webp",
+    "url": "https://docs.smithable.ai/images/sample/dog-puppy-b.webp",
     "alt": "A puppy lying on a wooden floor",
     "tags": [
       "sample",
@@ -1684,17 +1692,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17602,
+    "bytes": 23212,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#885828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "dog-shepherd",
+    "id": "dog-shepherd-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dog-shepherd.webp",
+    "url": "https://docs.smithable.ai/images/sample/dog-shepherd-b.webp",
     "alt": "A German shepherd standing in a forest",
     "tags": [
       "sample",
@@ -1705,11 +1713,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 20958,
+    "bytes": 36686,
     "orientation": "landscape",
     "tone": "dark",
     "temperature": "warm",
-    "color": "#282818",
+    "color": "#483818",
     "source": "gpt-image-1-mini"
   },
   {
@@ -1734,9 +1742,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "dog-walk",
+    "id": "dog-walk-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/dog-walk.webp",
+    "url": "https://docs.smithable.ai/images/sample/dog-walk-b.webp",
     "alt": "A dog on a leash on a beach, seen from behind with its walker",
     "tags": [
       "sample",
@@ -1748,11 +1756,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16668,
+    "bytes": 40112,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "warm",
-    "color": "#a89878",
+    "temperature": "neutral",
+    "color": "#c8b898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -1777,9 +1785,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "drink-cocktail",
+    "id": "drink-cocktail-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/drink-cocktail.webp",
+    "url": "https://docs.smithable.ai/images/sample/drink-cocktail-b.webp",
     "alt": "A cocktail in a glass with a lemon slice",
     "tags": [
       "sample",
@@ -1790,17 +1798,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 11142,
+    "bytes": 24736,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685848",
+    "color": "#d8b888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "drink-coffee",
+    "id": "drink-coffee-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/drink-coffee.webp",
+    "url": "https://docs.smithable.ai/images/sample/drink-coffee-b.webp",
     "alt": "A cup of black coffee on a saucer",
     "tags": [
       "sample",
@@ -1811,17 +1819,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13716,
+    "bytes": 24048,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#484838",
+    "temperature": "warm",
+    "color": "#c89868",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "drink-juice",
+    "id": "drink-juice-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/drink-juice.webp",
+    "url": "https://docs.smithable.ai/images/sample/drink-juice-b.webp",
     "alt": "A glass of orange juice by a window",
     "tags": [
       "sample",
@@ -1831,17 +1839,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14518,
+    "bytes": 21546,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#181808",
+    "color": "#887858",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "drink-tea",
+    "id": "drink-tea-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/drink-tea.webp",
+    "url": "https://docs.smithable.ai/images/sample/drink-tea-b.webp",
     "alt": "A teapot and a cup of tea",
     "tags": [
       "sample",
@@ -1852,11 +1860,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18352,
+    "bytes": 27772,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#484838",
+    "color": "#d8a878",
     "source": "gpt-image-1-mini"
   },
   {
@@ -1881,9 +1889,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "electronics-headphones",
+    "id": "electronics-headphones-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/electronics-headphones.webp",
+    "url": "https://docs.smithable.ai/images/sample/electronics-headphones-b.webp",
     "alt": "Over-ear headphones on a desk",
     "tags": [
       "sample",
@@ -1894,17 +1902,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12424,
+    "bytes": 23098,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
+    "color": "#a89878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "electronics-monitor",
+    "id": "electronics-monitor-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/electronics-monitor.webp",
+    "url": "https://docs.smithable.ai/images/sample/electronics-monitor-b.webp",
     "alt": "A computer monitor and keyboard on a desk",
     "tags": [
       "sample",
@@ -1916,17 +1924,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 10014,
+    "bytes": 25248,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
+    "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "electronics-speaker",
+    "id": "electronics-speaker-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/electronics-speaker.webp",
+    "url": "https://docs.smithable.ai/images/sample/electronics-speaker-b.webp",
     "alt": "A small speaker on a shelf",
     "tags": [
       "sample",
@@ -1937,17 +1945,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16100,
+    "bytes": 26870,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#b8b8a8",
+    "color": "#d8c8b8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "electronics-tablet",
+    "id": "electronics-tablet-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/electronics-tablet.webp",
+    "url": "https://docs.smithable.ai/images/sample/electronics-tablet-b.webp",
     "alt": "A tablet on a sofa cushion",
     "tags": [
       "sample",
@@ -1957,11 +1965,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23692,
+    "bytes": 68744,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#e8b898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -2029,9 +2037,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "event-wedding",
+    "id": "event-wedding-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/event-wedding.webp",
+    "url": "https://docs.smithable.ai/images/sample/event-wedding-b.webp",
     "alt": "Chairs set out for an outdoor wedding",
     "tags": [
       "sample",
@@ -2042,11 +2050,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24618,
+    "bytes": 33948,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#786828",
     "source": "gpt-image-1-mini"
   },
   {
@@ -2071,9 +2079,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "fitness-coast-run",
+    "id": "fitness-coast-run-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/fitness-coast-run.webp",
+    "url": "https://docs.smithable.ai/images/sample/fitness-coast-run-b.webp",
     "alt": "A runner on a coastal path at sunset",
     "tags": [
       "sample",
@@ -2090,17 +2098,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26460,
+    "bytes": 35644,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#f8e8c8",
-    "source": "file"
+    "color": "#281808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "fitness-gym",
+    "id": "fitness-gym-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/fitness-gym.webp",
+    "url": "https://docs.smithable.ai/images/sample/fitness-gym-b.webp",
     "alt": "An empty gym with benches and weights",
     "tags": [
       "sample",
@@ -2112,12 +2120,12 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23484,
+    "bytes": 34306,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685848",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
     "id": "fitness-stretching",
@@ -2143,7 +2151,7 @@
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-1-mini"
   },
   {
     "id": "fitness-trainer-b",
@@ -2168,9 +2176,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "fitness-yoga-class",
+    "id": "fitness-yoga-class-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/fitness-yoga-class.webp",
+    "url": "https://docs.smithable.ai/images/hero/fitness-yoga-class-b.webp",
     "alt": "A yoga class stretching on mats in a bright studio",
     "tags": [
       "hero",
@@ -2185,17 +2193,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 69266,
+    "bytes": 93020,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#d8b898",
+    "source": "gpt-image-2"
   },
   {
-    "id": "fitness-yoga-mat",
+    "id": "fitness-yoga-mat-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/fitness-yoga-mat.webp",
+    "url": "https://docs.smithable.ai/images/sample/fitness-yoga-mat-b.webp",
     "alt": "A rolled yoga mat and a water bottle on a wooden floor",
     "tags": [
       "sample",
@@ -2210,17 +2218,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25350,
+    "bytes": 38556,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#382818",
-    "source": "file"
+    "color": "#582808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "florist-bouquet",
+    "id": "florist-bouquet-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/florist-bouquet.webp",
+    "url": "https://docs.smithable.ai/images/sample/florist-bouquet-b.webp",
     "alt": "A florist tying a bouquet of white roses",
     "tags": [
       "sample",
@@ -2233,17 +2241,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 38124,
+    "bytes": 34002,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
-    "source": "file"
+    "color": "#282828",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "florist-buckets",
+    "id": "florist-buckets-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/florist-buckets.webp",
+    "url": "https://docs.smithable.ai/images/sample/florist-buckets-b.webp",
     "alt": "Buckets of fresh flowers outside a shop",
     "tags": [
       "sample",
@@ -2254,17 +2262,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 46282,
+    "bytes": 48522,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#081808",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "florist-ribbon",
+    "id": "florist-ribbon-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/florist-ribbon.webp",
+    "url": "https://docs.smithable.ai/images/sample/florist-ribbon-b.webp",
     "alt": "Hands tying a ribbon around a bouquet",
     "tags": [
       "sample",
@@ -2275,22 +2283,21 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 42756,
+    "bytes": 34440,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "florist-shop",
+    "id": "florist-shop-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/florist-shop.webp",
+    "url": "https://docs.smithable.ai/images/hero/florist-shop-b.webp",
     "alt": "A florist arranging a bouquet in a small shop",
     "tags": [
       "hero",
       "florist",
-      "shop",
       "flowers",
       "people",
       "indoor",
@@ -2298,17 +2305,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 169628,
+    "bytes": 144186,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
     "color": "#080808",
-    "source": "file"
+    "source": "gpt-image-2"
   },
   {
-    "id": "florist-storefront",
+    "id": "florist-storefront-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/florist-storefront.webp",
+    "url": "https://docs.smithable.ai/images/sample/florist-storefront-b.webp",
     "alt": "Potted plants in front of a shop door",
     "tags": [
       "sample",
@@ -2320,17 +2327,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 58140,
+    "bytes": 50644,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#d8c8b8",
-    "source": "file"
+    "color": "#181808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "florist-wrapped",
+    "id": "florist-wrapped-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/florist-wrapped.webp",
+    "url": "https://docs.smithable.ai/images/sample/florist-wrapped-b.webp",
     "alt": "A wrapped bouquet on a windowsill",
     "tags": [
       "sample",
@@ -2343,17 +2350,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24876,
+    "bytes": 30168,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#181808",
-    "source": "file"
+    "color": "#c8b898",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-bread",
+    "id": "food-bread-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-bread.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-bread-b.webp",
     "alt": "A loaf of sourdough bread on a board",
     "tags": [
       "sample",
@@ -2364,17 +2371,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26030,
+    "bytes": 47872,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#481808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-breakfast",
+    "id": "food-breakfast-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-breakfast.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-breakfast-b.webp",
     "alt": "A breakfast of eggs, bread and coffee",
     "tags": [
       "sample",
@@ -2384,11 +2391,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22848,
+    "bytes": 28904,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a8a8",
+    "color": "#d8b898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -2413,9 +2420,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-cake",
+    "id": "food-cake-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-cake.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-cake-b.webp",
     "alt": "A slice of berry cake on a plate",
     "tags": [
       "sample",
@@ -2427,17 +2434,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23594,
+    "bytes": 41858,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
+    "color": "#282808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-cheese",
+    "id": "food-cheese-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-cheese.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-cheese-b.webp",
     "alt": "A board of cheeses and crackers",
     "tags": [
       "sample",
@@ -2447,17 +2454,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21482,
+    "bytes": 29906,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#885828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-fish",
+    "id": "food-fish-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-fish.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-fish-b.webp",
     "alt": "A plate of salmon with potatoes and dill",
     "tags": [
       "sample",
@@ -2468,17 +2475,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25160,
+    "bytes": 42556,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8b8",
+    "color": "#c8a888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-fruit",
+    "id": "food-fruit-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-fruit.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-fruit-b.webp",
     "alt": "A bowl of apples and pears",
     "tags": [
       "sample",
@@ -2488,17 +2495,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13196,
+    "bytes": 28912,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89898",
+    "color": "#383828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-pasta",
+    "id": "food-pasta-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-pasta.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-pasta-b.webp",
     "alt": "A plate of pasta with tomato sauce",
     "tags": [
       "sample",
@@ -2509,17 +2516,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 20308,
+    "bytes": 34384,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#988878",
+    "color": "#181808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-pizza",
+    "id": "food-pizza-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-pizza.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-pizza-b.webp",
     "alt": "A pizza on a wooden board",
     "tags": [
       "sample",
@@ -2530,17 +2537,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28648,
+    "bytes": 62626,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#383828",
+    "color": "#684828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-salad",
+    "id": "food-salad-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-salad.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-salad-b.webp",
     "alt": "A bowl of green salad on a wooden table",
     "tags": [
       "sample",
@@ -2551,17 +2558,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19386,
+    "bytes": 33480,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#282808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-soup",
+    "id": "food-soup-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-soup.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-soup-b.webp",
     "alt": "A bowl of soup with bread",
     "tags": [
       "sample",
@@ -2573,17 +2580,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21642,
+    "bytes": 32864,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#888888",
+    "color": "#a89888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "food-vegetables",
+    "id": "food-vegetables-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/food-vegetables.webp",
+    "url": "https://docs.smithable.ai/images/sample/food-vegetables-b.webp",
     "alt": "A crate of fresh vegetables",
     "tags": [
       "sample",
@@ -2594,17 +2601,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 39074,
+    "bytes": 51958,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#886848",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "furniture-bed",
+    "id": "furniture-bed-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/furniture-bed.webp",
+    "url": "https://docs.smithable.ai/images/sample/furniture-bed-b.webp",
     "alt": "A made double bed with linen covers",
     "tags": [
       "sample",
@@ -2615,17 +2622,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24218,
+    "bytes": 39244,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685848",
+    "color": "#a89878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "furniture-bookshelf",
+    "id": "furniture-bookshelf-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/furniture-bookshelf.webp",
+    "url": "https://docs.smithable.ai/images/sample/furniture-bookshelf-b.webp",
     "alt": "A bookshelf full of books and plants",
     "tags": [
       "sample",
@@ -2636,17 +2643,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25390,
+    "bytes": 30136,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8b8a8",
+    "color": "#e8d8c8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "furniture-wardrobe",
+    "id": "furniture-wardrobe-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/furniture-wardrobe.webp",
+    "url": "https://docs.smithable.ai/images/sample/furniture-wardrobe-b.webp",
     "alt": "A wooden wardrobe with its doors open",
     "tags": [
       "sample",
@@ -2656,17 +2663,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17426,
+    "bytes": 31916,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685838",
+    "color": "#381808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "hero-abstract-bold",
+    "id": "hero-abstract-bold-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-abstract-bold.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-abstract-bold-b.webp",
     "alt": "Deep blue water with a strong diagonal of sunlight, abstract",
     "tags": [
       "hero",
@@ -2677,17 +2684,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 220370,
+    "bytes": 259886,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "cool",
-    "color": "#182838",
+    "color": "#080808",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-abstract-calm",
+    "id": "hero-abstract-calm-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-abstract-calm.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-abstract-calm-b.webp",
     "alt": "Soft out-of-focus light through linen curtains in pale tones",
     "tags": [
       "hero",
@@ -2698,17 +2705,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 94926,
+    "bytes": 91662,
     "orientation": "landscape",
     "tone": "light",
     "temperature": "warm",
-    "color": "#d8d8c8",
+    "color": "#b8a888",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-abstract-dark",
+    "id": "hero-abstract-dark-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-abstract-dark.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-abstract-dark-b.webp",
     "alt": "Dark slate stone surface with faint light across it",
     "tags": [
       "hero",
@@ -2718,17 +2725,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 90622,
+    "bytes": 180092,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "neutral",
-    "color": "#282828",
+    "color": "#788898",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-abstract-green",
+    "id": "hero-abstract-green-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-abstract-green.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-abstract-green-b.webp",
     "alt": "Close-up of green leaves with dew in soft light",
     "tags": [
       "hero",
@@ -2739,17 +2746,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 89622,
+    "bytes": 110954,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#d8d8e8",
+    "temperature": "warm",
+    "color": "#e8e8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-abstract-warm",
+    "id": "hero-abstract-warm-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-abstract-warm.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-abstract-warm-b.webp",
     "alt": "Sunlight and shadow on a warm plastered wall",
     "tags": [
       "hero",
@@ -2760,39 +2767,38 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 53794,
+    "bytes": 201984,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#d8b888",
+    "color": "#f8b878",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-bakery",
+    "id": "hero-bakery-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-bakery.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-bakery-b.webp",
     "alt": "A bakery counter with loaves of bread on wooden shelves and flour in the air",
     "tags": [
       "hero",
       "bakery",
       "food",
-      "shop",
       "indoor",
       "warm"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 93766,
+    "bytes": 119928,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483838",
+    "color": "#c8a888",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-boatyard",
+    "id": "hero-boatyard-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-boatyard.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-boatyard-b.webp",
     "alt": "Sailboats on stands in a boatyard by the water",
     "tags": [
       "hero",
@@ -2803,17 +2809,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 84776,
+    "bytes": 151972,
     "orientation": "landscape",
     "tone": "light",
-    "temperature": "neutral",
-    "color": "#d8d8d8",
+    "temperature": "cool",
+    "color": "#b8c8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-cabin",
+    "id": "hero-cabin-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-cabin.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-cabin-b.webp",
     "alt": "A wooden cabin by a lake surrounded by birch trees",
     "tags": [
       "hero",
@@ -2826,17 +2832,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 182028,
+    "bytes": 318662,
     "orientation": "landscape",
-    "tone": "light",
+    "tone": "mid",
     "temperature": "neutral",
-    "color": "#e8e8e8",
+    "color": "#b8c8d8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-cafe",
+    "id": "hero-cafe-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-cafe.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-cafe-b.webp",
     "alt": "A cozy café interior with small round tables, a counter with pastries and soft daylight",
     "tags": [
       "hero",
@@ -2847,17 +2853,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 102754,
+    "bytes": 129978,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#a89888",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-city-street",
+    "id": "hero-city-street-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-city-street.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-city-street-b.webp",
     "alt": "A cobbled city street with shopfronts and bicycles in soft evening light",
     "tags": [
       "hero",
@@ -2869,17 +2875,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 155238,
+    "bytes": 221992,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "neutral",
-    "color": "#585858",
+    "color": "#080808",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-clinic",
+    "id": "hero-clinic-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-clinic.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-clinic-b.webp",
     "alt": "A calm, bright clinic reception with a wooden desk, plants and chairs",
     "tags": [
       "hero",
@@ -2892,17 +2898,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 71856,
+    "bytes": 121118,
     "orientation": "landscape",
     "tone": "light",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#e8e8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-coast",
+    "id": "hero-coast-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-coast.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-coast-b.webp",
     "alt": "Smooth granite rocks by a calm sea at sunrise",
     "tags": [
       "hero",
@@ -2914,38 +2920,49 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 109360,
+    "bytes": 120406,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#484848",
+    "color": "#a8a8a8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-coworking",
+    "id": "hero-coworking-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-coworking.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-coworking-b.webp",
     "alt": "A shared workspace with people working at long tables, seen from a distance",
     "tags": [
       "hero",
       "office",
       "coworking",
       "people",
-      "indoor"
+      "indoor",
+      "job",
+      "career",
+      "union",
+      "applicant",
+      "application",
+      "ticket",
+      "helpdesk",
+      "support",
+      "colleague",
+      "swap",
+      "system"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 83886,
+    "bytes": 126016,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#d8d8d8",
+    "temperature": "warm",
+    "color": "#f8f8f8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-event",
+    "id": "hero-event-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-event.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-event-b.webp",
     "alt": "A long table set for a celebration under string lights in a garden",
     "tags": [
       "hero",
@@ -2954,21 +2971,29 @@
       "celebration",
       "outdoor",
       "evening",
-      "warm"
+      "warm",
+      "conference",
+      "talk",
+      "speaker",
+      "attendee",
+      "registration",
+      "wedding",
+      "guest",
+      "seating"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 170780,
+    "bytes": 234316,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#c8c8d8",
+    "temperature": "warm",
+    "color": "#f8f8f8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-farm",
+    "id": "hero-farm-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-farm.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-farm-b.webp",
     "alt": "A red farmhouse and barn by a field of grain under a wide sky",
     "tags": [
       "hero",
@@ -2980,38 +3005,43 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 127674,
+    "bytes": 182874,
     "orientation": "landscape",
     "tone": "light",
-    "temperature": "warm",
-    "color": "#c8c8c8",
+    "temperature": "neutral",
+    "color": "#a8c8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-forest",
+    "id": "hero-forest-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-forest.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-forest-b.webp",
     "alt": "A path through a pine forest with low sunlight between the trunks",
     "tags": [
       "hero",
       "forest",
       "nature",
       "outdoor",
-      "calm"
+      "calm",
+      "bird",
+      "birdwatching",
+      "species",
+      "sighting",
+      "wildlife"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 269638,
+    "bytes": 380530,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#282818",
+    "color": "#181808",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-garage",
+    "id": "hero-garage-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-garage.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-garage-b.webp",
     "alt": "A car repair garage with a car on a lift and tools on the wall",
     "tags": [
       "hero",
@@ -3023,28 +3053,32 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 76392,
+    "bytes": 136472,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "neutral",
-    "color": "#a8a8a8",
+    "color": "#b8b8a8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-garden",
+    "id": "hero-garden-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-garden.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-garden-b.webp",
     "alt": "A green garden with vegetable beds, a greenhouse and fruit trees",
     "tags": [
       "hero",
       "garden",
       "plants",
       "outdoor",
-      "summer"
+      "summer",
+      "allotment",
+      "plot",
+      "gardener",
+      "vegetable"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 196030,
+    "bytes": 262064,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "neutral",
@@ -3052,9 +3086,9 @@
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-harbour",
+    "id": "hero-harbour-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-harbour.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-harbour-b.webp",
     "alt": "A small harbor with wooden boats and red boathouses on a still morning",
     "tags": [
       "hero",
@@ -3067,17 +3101,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 98024,
+    "bytes": 133276,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "cool",
-    "color": "#b8c8d8",
+    "color": "#a8c8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-home",
+    "id": "hero-home-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-home.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-home-b.webp",
     "alt": "A bright living room with a sofa, rug, bookshelf and large windows",
     "tags": [
       "hero",
@@ -3091,17 +3125,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 137556,
+    "bytes": 129732,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#989888",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-hotel",
+    "id": "hero-hotel-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-hotel.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-hotel-b.webp",
     "alt": "A hotel room with a made bed, a reading chair and a view of the sea",
     "tags": [
       "hero",
@@ -3113,17 +3147,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 78310,
+    "bytes": 149220,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#686858",
+    "temperature": "warm",
+    "color": "#483828",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-kitchen",
+    "id": "hero-kitchen-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-kitchen.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-kitchen-b.webp",
     "alt": "A home kitchen with a wooden table, open shelves and herbs on the windowsill",
     "tags": [
       "hero",
@@ -3131,21 +3165,26 @@
       "home",
       "food",
       "indoor",
-      "warm"
+      "warm",
+      "recipe",
+      "ingredient",
+      "cooking",
+      "meal",
+      "shopping"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 75324,
+    "bytes": 104424,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#585848",
+    "color": "#a89888",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-lab",
+    "id": "hero-lab-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-lab.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-lab-b.webp",
     "alt": "A clean laboratory bench with glassware and a microscope by a window",
     "tags": [
       "hero",
@@ -3157,17 +3196,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 65196,
+    "bytes": 63376,
     "orientation": "landscape",
     "tone": "light",
     "temperature": "neutral",
-    "color": "#b8b8b8",
+    "color": "#c8c8b8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-library",
+    "id": "hero-library-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-library.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-library-b.webp",
     "alt": "Rows of bookshelves and reading tables in a quiet library",
     "tags": [
       "hero",
@@ -3175,42 +3214,45 @@
       "books",
       "education",
       "indoor",
-      "calm"
+      "calm",
+      "museum",
+      "collection",
+      "exhibit",
+      "archive"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 94846,
+    "bytes": 131658,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#d8d8c8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-market",
+    "id": "hero-market-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-market.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-market-b.webp",
     "alt": "An outdoor market with stalls of vegetables and flowers",
     "tags": [
       "hero",
       "market",
       "food",
-      "shop",
       "outdoor"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 129680,
+    "bytes": 187326,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#e8e8e8",
+    "temperature": "cool",
+    "color": "#b8d8e8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-mountains",
+    "id": "hero-mountains-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-mountains.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-mountains-b.webp",
     "alt": "A valley with mountains and a lake under soft clouds",
     "tags": [
       "hero",
@@ -3222,17 +3264,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 142816,
+    "bytes": 176088,
     "orientation": "landscape",
-    "tone": "light",
+    "tone": "mid",
     "temperature": "neutral",
-    "color": "#c8c8d8",
+    "color": "#b8c8c8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-music",
+    "id": "hero-music-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-music.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-music-b.webp",
     "alt": "A music room with a piano, guitars on the wall and a warm lamp",
     "tags": [
       "hero",
@@ -3240,42 +3282,60 @@
       "instruments",
       "studio",
       "indoor",
-      "warm"
+      "warm",
+      "piano",
+      "lesson",
+      "pupil",
+      "vinyl",
+      "record",
+      "album",
+      "artist"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 94596,
+    "bytes": 105728,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#685848",
+    "color": "#887858",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-office",
+    "id": "hero-office-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-office.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-office-b.webp",
     "alt": "A quiet open-plan office with long wooden desks, plants and large windows over a small town",
     "tags": [
       "hero",
       "office",
-      "work",
       "indoor",
-      "calm"
+      "calm",
+      "invoice",
+      "invoicing",
+      "client",
+      "freelance",
+      "freelancer",
+      "payment",
+      "api",
+      "incident",
+      "maintenance",
+      "status",
+      "uptime",
+      "outage"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 82350,
+    "bytes": 93594,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#786868",
+    "temperature": "warm",
+    "color": "#988878",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-restaurant",
+    "id": "hero-restaurant-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-restaurant.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-restaurant-b.webp",
     "alt": "A restaurant dining room set for dinner with candles, linen and dark wooden chairs",
     "tags": [
       "hero",
@@ -3288,17 +3348,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 84168,
+    "bytes": 124392,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#f8f8f8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-salon",
+    "id": "hero-salon-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-salon.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-salon-b.webp",
     "alt": "A hair salon with mirrors, chairs and plants in daylight",
     "tags": [
       "hero",
@@ -3306,15 +3366,19 @@
       "hair",
       "beauty",
       "indoor",
-      "light"
+      "light",
+      "hairdresser",
+      "stylist",
+      "haircut",
+      "barber"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 90728,
+    "bytes": 131644,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#888878",
+    "temperature": "warm",
+    "color": "#a89878",
     "source": "gpt-image-2"
   },
   {
@@ -3340,9 +3404,9 @@
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-shop",
+    "id": "hero-shop-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-shop.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-shop-b.webp",
     "alt": "A small independent shop interior with wooden shelves of goods and a counter by the window",
     "tags": [
       "hero",
@@ -3354,11 +3418,11 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 80328,
+    "bytes": 99106,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#787878",
+    "temperature": "warm",
+    "color": "#c8b8a8",
     "source": "gpt-image-2"
   },
   {
@@ -3371,7 +3435,12 @@
       "sports",
       "gym",
       "hall",
-      "indoor"
+      "indoor",
+      "football",
+      "club",
+      "player",
+      "match",
+      "league"
     ],
     "width": 1536,
     "height": 1024,
@@ -3383,9 +3452,9 @@
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-stable",
+    "id": "hero-stable-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-stable.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-stable-b.webp",
     "alt": "A horse stable with wooden stalls and hay in the morning light",
     "tags": [
       "hero",
@@ -3397,17 +3466,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 104250,
+    "bytes": 176630,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#080808",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-summer",
+    "id": "hero-summer-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-summer.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-summer-b.webp",
     "alt": "A sunlit meadow by a lake with a wooden jetty on a summer afternoon",
     "tags": [
       "hero",
@@ -3419,17 +3488,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 201450,
+    "bytes": 216732,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#f8f8e8",
+    "color": "#f8f8f8",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-vineyard",
+    "id": "hero-vineyard-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-vineyard.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-vineyard-b.webp",
     "alt": "Rows of vines on a hillside in late summer",
     "tags": [
       "hero",
@@ -3441,7 +3510,7 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 177140,
+    "bytes": 206986,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -3470,9 +3539,9 @@
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-winter",
+    "id": "hero-winter-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-winter.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-winter-b.webp",
     "alt": "A snowy village street at dusk with warm lit windows",
     "tags": [
       "hero",
@@ -3485,17 +3554,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 111146,
+    "bytes": 109062,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "cool",
-    "color": "#8898a8",
+    "color": "#484868",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-workshop",
+    "id": "hero-workshop-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-workshop.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-workshop-b.webp",
     "alt": "A carpenter's workshop with a workbench, hand tools on the wall and sawdust in the light from a window",
     "tags": [
       "hero",
@@ -3504,21 +3573,27 @@
       "carpenter",
       "tools",
       "indoor",
-      "warm"
+      "warm",
+      "lend",
+      "borrow",
+      "neighbor",
+      "diy",
+      "drill",
+      "tool"
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 93068,
+    "bytes": 147928,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#786858",
+    "color": "#785838",
     "source": "gpt-image-2"
   },
   {
-    "id": "hero-yoga-studio",
+    "id": "hero-yoga-studio-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/hero-yoga-studio.webp",
+    "url": "https://docs.smithable.ai/images/hero/hero-yoga-studio-b.webp",
     "alt": "An empty yoga studio with wooden floors, mats laid out and tall windows in morning light",
     "tags": [
       "hero",
@@ -3531,17 +3606,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 110968,
+    "bytes": 106304,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#c89878",
     "source": "gpt-image-2"
   },
   {
-    "id": "horse-paddock",
+    "id": "horse-paddock-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/horse-paddock.webp",
+    "url": "https://docs.smithable.ai/images/sample/horse-paddock-b.webp",
     "alt": "A brown horse in a paddock",
     "tags": [
       "sample",
@@ -3552,17 +3627,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22184,
+    "bytes": 26062,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#d8d8d8",
+    "color": "#381808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "horse-pony",
+    "id": "horse-pony-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/horse-pony.webp",
+    "url": "https://docs.smithable.ai/images/sample/horse-pony-b.webp",
     "alt": "A small pony in a meadow",
     "tags": [
       "sample",
@@ -3574,17 +3649,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29486,
+    "bytes": 46646,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#887848",
+    "color": "#987818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "horse-white",
+    "id": "horse-white-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/horse-white.webp",
+    "url": "https://docs.smithable.ai/images/sample/horse-white-b.webp",
     "alt": "A white horse by a wooden fence",
     "tags": [
       "sample",
@@ -3595,17 +3670,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 20758,
+    "bytes": 31564,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8b8",
+    "color": "#482808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "house-cottage",
+    "id": "house-cottage-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/house-cottage.webp",
+    "url": "https://docs.smithable.ai/images/sample/house-cottage-b.webp",
     "alt": "A small cottage by a lake",
     "tags": [
       "sample",
@@ -3617,11 +3692,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23604,
+    "bytes": 75520,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#d8c8c8",
+    "color": "#181808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -3646,9 +3721,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "house-red",
+    "id": "house-red-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/house-red.webp",
+    "url": "https://docs.smithable.ai/images/sample/house-red-b.webp",
     "alt": "A red wooden house with white corners",
     "tags": [
       "sample",
@@ -3659,17 +3734,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 41580,
+    "bytes": 39616,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#e8e8e8",
+    "color": "#681808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "house-terrace",
+    "id": "house-terrace-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/house-terrace.webp",
+    "url": "https://docs.smithable.ai/images/sample/house-terrace-b.webp",
     "alt": "A row of terraced houses",
     "tags": [
       "sample",
@@ -3680,17 +3755,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 35310,
+    "bytes": 61636,
     "orientation": "landscape",
-    "tone": "light",
+    "tone": "mid",
     "temperature": "warm",
-    "color": "#f8f8f8",
+    "color": "#b88868",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "house-yellow",
+    "id": "house-yellow-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/house-yellow.webp",
+    "url": "https://docs.smithable.ai/images/sample/house-yellow-b.webp",
     "alt": "A yellow two-story house with a garden",
     "tags": [
       "sample",
@@ -3701,17 +3776,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 54746,
+    "bytes": 83280,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#383818",
+    "color": "#283818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "instrument-drums",
+    "id": "instrument-drums-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/instrument-drums.webp",
+    "url": "https://docs.smithable.ai/images/sample/instrument-drums-b.webp",
     "alt": "A drum kit in a rehearsal room",
     "tags": [
       "sample",
@@ -3722,17 +3797,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 30098,
+    "bytes": 43930,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#d8a878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "instrument-guitar",
+    "id": "instrument-guitar-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/instrument-guitar.webp",
+    "url": "https://docs.smithable.ai/images/sample/instrument-guitar-b.webp",
     "alt": "An acoustic guitar against a wall",
     "tags": [
       "sample",
@@ -3743,17 +3818,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14094,
+    "bytes": 77282,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8b8",
+    "color": "#c89868",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "instrument-keyboard",
+    "id": "instrument-keyboard-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/instrument-keyboard.webp",
+    "url": "https://docs.smithable.ai/images/sample/instrument-keyboard-b.webp",
     "alt": "A digital keyboard on a stand",
     "tags": [
       "sample",
@@ -3764,17 +3839,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19766,
+    "bytes": 43844,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#d8b888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "instrument-piano",
+    "id": "instrument-piano-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/instrument-piano.webp",
+    "url": "https://docs.smithable.ai/images/sample/instrument-piano-b.webp",
     "alt": "An upright piano in a room",
     "tags": [
       "sample",
@@ -3785,17 +3860,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15044,
+    "bytes": 24444,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#180808",
+    "color": "#682808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "instrument-violin",
+    "id": "instrument-violin-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/instrument-violin.webp",
+    "url": "https://docs.smithable.ai/images/sample/instrument-violin-b.webp",
     "alt": "A violin on a chair",
     "tags": [
       "sample",
@@ -3806,17 +3881,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18736,
+    "bytes": 26486,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#888878",
+    "color": "#887858",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "lamp-desk",
+    "id": "lamp-desk-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/lamp-desk.webp",
+    "url": "https://docs.smithable.ai/images/sample/lamp-desk-b.webp",
     "alt": "A black desk lamp on a table",
     "tags": [
       "sample",
@@ -3827,11 +3902,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15616,
+    "bytes": 23974,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#c8c8b8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -3877,9 +3952,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "laptop-closed",
+    "id": "laptop-closed-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/laptop-closed.webp",
+    "url": "https://docs.smithable.ai/images/sample/laptop-closed-b.webp",
     "alt": "A closed laptop and a coffee cup",
     "tags": [
       "sample",
@@ -3890,17 +3965,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12998,
+    "bytes": 24474,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#282808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "laptop-open",
+    "id": "laptop-open-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/laptop-open.webp",
+    "url": "https://docs.smithable.ai/images/sample/laptop-open-b.webp",
     "alt": "An open laptop with a blank screen on a desk",
     "tags": [
       "sample",
@@ -3912,11 +3987,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12560,
+    "bytes": 18512,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#e8e8e8",
+    "color": "#f8f8f8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -4160,9 +4235,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-armchair-1",
+    "id": "market-armchair-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-armchair-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-armchair-1-b.webp",
     "alt": "A gray wool armchair in a living room corner",
     "tags": [
       "sample",
@@ -4175,17 +4250,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21680,
+    "bytes": 43784,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#986838",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-armchair-2",
+    "id": "market-armchair-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-armchair-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-armchair-2-b.webp",
     "alt": "The wool fabric and armrest of the armchair",
     "tags": [
       "sample",
@@ -4197,11 +4272,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18424,
+    "bytes": 51396,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#181808",
+    "temperature": "warm",
+    "color": "#382818",
     "source": "gpt-image-1-mini"
   },
   {
@@ -4228,9 +4303,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-books-1",
+    "id": "market-books-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-books-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-books-1-b.webp",
     "alt": "A cardboard box of children's picture books on a floor",
     "tags": [
       "sample",
@@ -4242,17 +4317,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21828,
+    "bytes": 34996,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#d8b888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-chairs-1",
+    "id": "market-chairs-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-chairs-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-chairs-1-b.webp",
     "alt": "Two oak dining chairs side by side",
     "tags": [
       "sample",
@@ -4264,17 +4339,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29210,
+    "bytes": 50450,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8a8",
+    "color": "#582808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-city-bike-1",
+    "id": "market-city-bike-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-city-bike-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-city-bike-1-b.webp",
     "alt": "A green city bike with a basket on a gravel drive",
     "tags": [
       "sample",
@@ -4287,17 +4362,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 53780,
+    "bytes": 81730,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#585848",
+    "color": "#a89888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-city-bike-2",
+    "id": "market-city-bike-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-city-bike-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-city-bike-2-b.webp",
     "alt": "The handlebar, bell and basket of the city bike",
     "tags": [
       "sample",
@@ -4309,17 +4384,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28988,
+    "bytes": 33628,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#a88868",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-dinghy-1",
+    "id": "market-dinghy-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-dinghy-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-dinghy-1-b.webp",
     "alt": "A white sailing dinghy on a trailer by a granite shore",
     "tags": [
       "sample",
@@ -4333,17 +4408,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 34922,
+    "bytes": 59966,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#b8c8c8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-dinghy-2",
+    "id": "market-dinghy-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-dinghy-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-dinghy-2-b.webp",
     "alt": "The sail and tiller inside the dinghy",
     "tags": [
       "sample",
@@ -4355,17 +4430,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 29620,
+    "bytes": 54532,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#e8d8b8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-headphones-1",
+    "id": "market-headphones-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-headphones-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-headphones-1-b.webp",
     "alt": "Black over-ear headphones on a wooden table",
     "tags": [
       "sample",
@@ -4378,7 +4453,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17132,
+    "bytes": 28040,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -4386,9 +4461,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-lamp-1",
+    "id": "market-lamp-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-lamp-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-lamp-1-b.webp",
     "alt": "A brass floor lamp with a linen shade against a wall",
     "tags": [
       "sample",
@@ -4401,17 +4476,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 7216,
+    "bytes": 23784,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#988878",
+    "color": "#a88868",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-laptop-1",
+    "id": "market-laptop-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-laptop-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-laptop-1-b.webp",
     "alt": "An open laptop with its charger on a wooden table",
     "tags": [
       "sample",
@@ -4424,7 +4499,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17786,
+    "bytes": 35406,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -4432,9 +4507,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-road-bike-1",
+    "id": "market-road-bike-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-road-bike-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-road-bike-1-b.webp",
     "alt": "A gray road bike leaning against a garage wall",
     "tags": [
       "sample",
@@ -4447,17 +4522,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 52602,
+    "bytes": 55910,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8b8",
+    "color": "#b89878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-roof-box-1",
+    "id": "market-roof-box-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-roof-box-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-roof-box-1-b.webp",
     "alt": "A black car roof box on a garage floor",
     "tags": [
       "sample",
@@ -4470,17 +4545,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15302,
+    "bytes": 51538,
     "orientation": "landscape",
-    "tone": "dark",
-    "temperature": "neutral",
-    "color": "#181818",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#c8b898",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-sideboard-1",
+    "id": "market-sideboard-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-sideboard-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-sideboard-1-b.webp",
     "alt": "A teak sideboard with sliding doors against a white wall",
     "tags": [
       "sample",
@@ -4492,17 +4567,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15784,
+    "bytes": 34554,
     "orientation": "landscape",
-    "tone": "light",
+    "tone": "mid",
     "temperature": "warm",
-    "color": "#e8e8e8",
+    "color": "#883808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-sideboard-2",
+    "id": "market-sideboard-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-sideboard-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-sideboard-2-b.webp",
     "alt": "The corner and wood grain of the teak sideboard",
     "tags": [
       "sample",
@@ -4514,17 +4589,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14200,
+    "bytes": 21932,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#783818",
+    "color": "#782808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-skis-1",
+    "id": "market-skis-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-skis-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-skis-1-b.webp",
     "alt": "Cross-country skis and poles against a red wall in the snow",
     "tags": [
       "sample",
@@ -4537,17 +4612,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 34904,
+    "bytes": 46182,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#783828",
+    "color": "#983818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-turntable-1",
+    "id": "market-turntable-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-turntable-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-turntable-1-b.webp",
     "alt": "A wooden record player on a low shelf beside records",
     "tags": [
       "sample",
@@ -4560,17 +4635,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22274,
+    "bytes": 32584,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#181808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "market-turntable-2",
+    "id": "market-turntable-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-turntable-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/market-turntable-2-b.webp",
     "alt": "The tonearm and a record on the record player",
     "tags": [
       "sample",
@@ -4582,7 +4657,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16280,
+    "bytes": 28216,
     "orientation": "landscape",
     "tone": "dark",
     "temperature": "warm",
@@ -4590,9 +4665,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-carpenter",
+    "id": "people-carpenter-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-carpenter.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-carpenter-b.webp",
     "alt": "A carpenter sanding a board",
     "tags": [
       "sample",
@@ -4604,17 +4679,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24292,
+    "bytes": 30650,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#482808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-chef",
+    "id": "people-chef-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-chef.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-chef-b.webp",
     "alt": "A chef plating food in a kitchen",
     "tags": [
       "sample",
@@ -4626,17 +4701,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21426,
+    "bytes": 31462,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#585848",
+    "temperature": "warm",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-courier",
+    "id": "people-courier-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-courier.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-courier-b.webp",
     "alt": "A courier carrying a parcel to a door",
     "tags": [
       "sample",
@@ -4648,17 +4723,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16798,
+    "bytes": 31128,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#182818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-farmer",
+    "id": "people-farmer-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-farmer.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-farmer-b.webp",
     "alt": "A farmer carrying a crate of vegetables",
     "tags": [
       "sample",
@@ -4670,17 +4745,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 32620,
+    "bytes": 40490,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8c8c8",
+    "color": "#e8e8e8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-gardener",
+    "id": "people-gardener-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-gardener.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-gardener-b.webp",
     "alt": "A gardener planting in a bed",
     "tags": [
       "sample",
@@ -4692,17 +4767,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 38386,
+    "bytes": 42526,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#584838",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-hiker",
+    "id": "people-hiker-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-hiker.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-hiker-b.webp",
     "alt": "A hiker on a mountain trail, seen from behind",
     "tags": [
       "sample",
@@ -4713,7 +4788,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31396,
+    "bytes": 45746,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -4721,9 +4796,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-mechanic",
+    "id": "people-mechanic-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-mechanic.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-mechanic-b.webp",
     "alt": "A mechanic working on an engine",
     "tags": [
       "sample",
@@ -4735,9 +4810,9 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 28544,
+    "bytes": 36592,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini"
@@ -4765,9 +4840,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-office",
+    "id": "people-office-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-office.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-office-b.webp",
     "alt": "A person working at a laptop, seen from behind",
     "tags": [
       "sample",
@@ -4778,17 +4853,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16934,
+    "bytes": 31780,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#181818",
+    "color": "#b8a898",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-1",
+    "id": "people-portrait-1-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-1.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-1-b.webp",
     "alt": "A portrait of a woman in her forties against a plain wall",
     "tags": [
       "sample",
@@ -4799,17 +4874,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15020,
+    "bytes": 20358,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a8a8",
+    "color": "#b8a8a8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-2",
+    "id": "people-portrait-2-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-2.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-2-b.webp",
     "alt": "A portrait of a man in his thirties against a plain wall",
     "tags": [
       "sample",
@@ -4820,17 +4895,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16374,
+    "bytes": 21680,
     "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#a8a898",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#d8c8c8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-3",
+    "id": "people-portrait-3-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-3.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-3-b.webp",
     "alt": "A portrait of an older man with a gray beard",
     "tags": [
       "sample",
@@ -4841,17 +4916,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22568,
+    "bytes": 28382,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#181818",
+    "temperature": "warm",
+    "color": "#685818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-4",
+    "id": "people-portrait-4-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-4.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-4-b.webp",
     "alt": "A portrait of a young woman with short hair",
     "tags": [
       "sample",
@@ -4862,17 +4937,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 23156,
+    "bytes": 25652,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#e8e8f8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-5",
+    "id": "people-portrait-5-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-5.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-5-b.webp",
     "alt": "A portrait of a woman in her sixties smiling",
     "tags": [
       "sample",
@@ -4883,17 +4958,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 24556,
+    "bytes": 29130,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#584838",
+    "color": "#081828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-6",
+    "id": "people-portrait-6-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-6.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-6-b.webp",
     "alt": "A portrait of a young man with curly hair",
     "tags": [
       "sample",
@@ -4904,17 +4979,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21872,
+    "bytes": 36370,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#f8f8f8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-7",
+    "id": "people-portrait-7-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-7.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-7-b.webp",
     "alt": "A portrait of a woman with dark skin and braided hair",
     "tags": [
       "sample",
@@ -4925,17 +5000,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22828,
+    "bytes": 28146,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#d8d8d8",
+    "temperature": "warm",
+    "color": "#182848",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-portrait-8",
+    "id": "people-portrait-8-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-portrait-8.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-portrait-8-b.webp",
     "alt": "A portrait of a man with glasses in a cardigan",
     "tags": [
       "sample",
@@ -4946,17 +5021,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 36400,
+    "bytes": 45666,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#e8e8d8",
+    "color": "#e8e8f8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-shopkeeper",
+    "id": "people-shopkeeper-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-shopkeeper.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-shopkeeper-b.webp",
     "alt": "A shopkeeper behind a counter",
     "tags": [
       "sample",
@@ -4967,7 +5042,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22492,
+    "bytes": 30398,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -4997,9 +5072,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "people-team",
+    "id": "people-team-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/people-team.webp",
+    "url": "https://docs.smithable.ai/images/sample/people-team-b.webp",
     "alt": "A small team around a table, seen from a distance",
     "tags": [
       "sample",
@@ -5011,7 +5086,7 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17618,
+    "bytes": 32996,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
@@ -5019,9 +5094,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "phone-black",
+    "id": "phone-black-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/phone-black.webp",
+    "url": "https://docs.smithable.ai/images/sample/phone-black-b.webp",
     "alt": "A smartphone lying face down on a wooden table",
     "tags": [
       "sample",
@@ -5031,18 +5106,18 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14612,
+    "bytes": 24274,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#886848",
+    "color": "#d89858",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "phone-hand",
+    "id": "phone-hand-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/phone-hand.webp",
-    "alt": "A hand holding a smartphone with a blank screen",
+    "url": "https://docs.smithable.ai/images/sample/phone-hand-b.webp",
+    "alt": "A hand holding a phone on a sofa, its lock screen lit: a mountain wallpaper, the clock and the date",
     "tags": [
       "sample",
       "phone",
@@ -5051,17 +5126,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13304,
+    "bytes": 30504,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "warm",
-    "color": "#e8e8f8",
-    "source": "gpt-image-1-mini"
+    "temperature": "neutral",
+    "color": "#686868",
+    "source": "gpt-image-2"
   },
   {
-    "id": "plant-flowers",
+    "id": "plant-flowers-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plant-flowers.webp",
+    "url": "https://docs.smithable.ai/images/sample/plant-flowers-b.webp",
     "alt": "A vase of tulips on a table",
     "tags": [
       "sample",
@@ -5071,11 +5146,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15242,
+    "bytes": 31990,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
+    "color": "#b8a898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5101,9 +5176,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "plant-monstera",
+    "id": "plant-monstera-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plant-monstera.webp",
+    "url": "https://docs.smithable.ai/images/sample/plant-monstera-b.webp",
     "alt": "A monstera plant in a ceramic pot",
     "tags": [
       "sample",
@@ -5114,11 +5189,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16044,
+    "bytes": 29496,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a89888",
+    "color": "#e8c8a8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5143,9 +5218,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "plant-tree",
+    "id": "plant-tree-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plant-tree.webp",
+    "url": "https://docs.smithable.ai/images/sample/plant-tree-b.webp",
     "alt": "A young apple tree in a garden",
     "tags": [
       "sample",
@@ -5156,17 +5231,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 25486,
+    "bytes": 58854,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#888848",
+    "color": "#384808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "plumber-bathroom",
+    "id": "plumber-bathroom-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plumber-bathroom.webp",
+    "url": "https://docs.smithable.ai/images/sample/plumber-bathroom-b.webp",
     "alt": "A new bathroom with a glass shower",
     "tags": [
       "sample",
@@ -5180,17 +5255,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18674,
+    "bytes": 20850,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
-    "source": "file"
+    "color": "#785828",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "plumber-customer",
+    "id": "plumber-customer-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plumber-customer.webp",
+    "url": "https://docs.smithable.ai/images/sample/plumber-customer-b.webp",
     "alt": "A plumber explaining a job to a customer in a bathroom",
     "tags": [
       "sample",
@@ -5202,17 +5277,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 31956,
+    "bytes": 30510,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "warm",
-    "color": "#c8c8b8",
-    "source": "file"
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "plumber-kitchen",
+    "id": "plumber-kitchen-b",
     "kind": "hero",
-    "url": "https://docs.smithable.ai/images/hero/plumber-kitchen.webp",
+    "url": "https://docs.smithable.ai/images/hero/plumber-kitchen-b.webp",
     "alt": "A plumber fixing the pipes under a kitchen sink",
     "tags": [
       "hero",
@@ -5224,17 +5299,17 @@
     ],
     "width": 1536,
     "height": 1024,
-    "bytes": 67630,
+    "bytes": 78780,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#181818",
-    "source": "file"
+    "temperature": "warm",
+    "color": "#c8c8c8",
+    "source": "gpt-image-2"
   },
   {
-    "id": "plumber-sink",
+    "id": "plumber-sink-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plumber-sink.webp",
+    "url": "https://docs.smithable.ai/images/sample/plumber-sink-b.webp",
     "alt": "A plumber fitting a pipe under a sink",
     "tags": [
       "sample",
@@ -5246,17 +5321,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 26916,
+    "bytes": 27914,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#382818",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "plumber-tools",
+    "id": "plumber-tools-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plumber-tools.webp",
+    "url": "https://docs.smithable.ai/images/sample/plumber-tools-b.webp",
     "alt": "A case of spanners on a street",
     "tags": [
       "sample",
@@ -5267,17 +5342,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 34090,
+    "bytes": 40130,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#887868",
-    "source": "file"
+    "color": "#c8a888",
+    "source": "gpt-image-1-mini"
   },
   {
-    "id": "plumber-van",
+    "id": "plumber-van-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/plumber-van.webp",
+    "url": "https://docs.smithable.ai/images/sample/plumber-van-b.webp",
     "alt": "A white van parked outside a yellow house",
     "tags": [
       "sample",
@@ -5290,12 +5365,12 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 44280,
+    "bytes": 43096,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#988878",
-    "source": "file"
+    "color": "#080808",
+    "source": "gpt-image-1-mini"
   },
   {
     "id": "product-bottle-b",
@@ -5318,9 +5393,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-box",
+    "id": "product-box-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-box.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-box-b.webp",
     "alt": "A plain cardboard box on a table",
     "tags": [
       "sample",
@@ -5332,11 +5407,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 13424,
+    "bytes": 18134,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8b8",
+    "color": "#784818",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5363,9 +5438,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-candle",
+    "id": "product-candle-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-candle.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-candle-b.webp",
     "alt": "A candle in a glass jar",
     "tags": [
       "sample",
@@ -5377,17 +5452,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 11154,
+    "bytes": 26488,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
+    "color": "#c8a878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-jar",
+    "id": "product-jar-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-jar.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-jar-b.webp",
     "alt": "A jar of honey on a table",
     "tags": [
       "sample",
@@ -5398,17 +5473,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12538,
+    "bytes": 27636,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#182808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-mug",
+    "id": "product-mug-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-mug.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-mug-b.webp",
     "alt": "A ceramic mug on a shelf",
     "tags": [
       "sample",
@@ -5420,17 +5495,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 9976,
+    "bytes": 21554,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#786858",
+    "color": "#b8a888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-parcel",
+    "id": "product-parcel-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-parcel.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-parcel-b.webp",
     "alt": "A parcel at a front door",
     "tags": [
       "sample",
@@ -5441,17 +5516,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19848,
+    "bytes": 28782,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#888878",
+    "color": "#d8a848",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-soap",
+    "id": "product-soap-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-soap.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-soap-b.webp",
     "alt": "Handmade soap bars on a cloth",
     "tags": [
       "sample",
@@ -5462,17 +5537,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19592,
+    "bytes": 26544,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#a85808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-sunglasses",
+    "id": "product-sunglasses-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-sunglasses.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-sunglasses-b.webp",
     "alt": "Sunglasses on a table",
     "tags": [
       "sample",
@@ -5483,17 +5558,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 11042,
+    "bytes": 21854,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#886848",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-vase",
+    "id": "product-vase-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-vase.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-vase-b.webp",
     "alt": "A ceramic vase on a table",
     "tags": [
       "sample",
@@ -5505,17 +5580,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 9584,
+    "bytes": 23570,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#d8b888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "product-watch",
+    "id": "product-watch-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/product-watch.webp",
+    "url": "https://docs.smithable.ai/images/sample/product-watch-b.webp",
     "alt": "A wristwatch on a wooden surface",
     "tags": [
       "sample",
@@ -5526,11 +5601,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22736,
+    "bytes": 35832,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#887868",
+    "color": "#c88848",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5556,9 +5631,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "room-bedroom",
+    "id": "room-bedroom-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/room-bedroom.webp",
+    "url": "https://docs.smithable.ai/images/sample/room-bedroom-b.webp",
     "alt": "A bedroom with a made bed and a window",
     "tags": [
       "sample",
@@ -5571,17 +5646,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19718,
+    "bytes": 28186,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#382818",
+    "color": "#583808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "room-hall",
+    "id": "room-hall-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/room-hall.webp",
+    "url": "https://docs.smithable.ai/images/sample/room-hall-b.webp",
     "alt": "An entrance hall with coats and a bench",
     "tags": [
       "sample",
@@ -5592,11 +5667,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18592,
+    "bytes": 33336,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#686848",
+    "color": "#885828",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5622,9 +5697,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "room-living",
+    "id": "room-living-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/room-living.webp",
+    "url": "https://docs.smithable.ai/images/sample/room-living-b.webp",
     "alt": "A living room with a sofa and a rug",
     "tags": [
       "sample",
@@ -5636,11 +5711,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 22864,
+    "bytes": 53484,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a898",
+    "color": "#c8b8a8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5665,9 +5740,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "room-office",
+    "id": "room-office-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/room-office.webp",
+    "url": "https://docs.smithable.ai/images/sample/room-office-b.webp",
     "alt": "A home office with a desk by the window",
     "tags": [
       "sample",
@@ -5678,17 +5753,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 17340,
+    "bytes": 29544,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#483828",
+    "color": "#583818",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "service-cleaning",
+    "id": "service-cleaning-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/service-cleaning.webp",
+    "url": "https://docs.smithable.ai/images/sample/service-cleaning-b.webp",
     "alt": "Cleaning supplies in a bucket",
     "tags": [
       "sample",
@@ -5698,11 +5773,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12700,
+    "bytes": 22676,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#a8a8a8",
+    "color": "#b89868",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5728,9 +5803,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "service-massage",
+    "id": "service-massage-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/service-massage.webp",
+    "url": "https://docs.smithable.ai/images/sample/service-massage-b.webp",
     "alt": "A massage table in a calm room",
     "tags": [
       "sample",
@@ -5742,11 +5817,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 12898,
+    "bytes": 20046,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#584838",
+    "color": "#885828",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5771,10 +5846,10 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "service-painting",
+    "id": "service-painting-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/service-painting.webp",
-    "alt": "A paint roller and a tin of paint",
+    "url": "https://docs.smithable.ai/images/sample/service-painting-b.webp",
+    "alt": "A freshly painted green wall with a roller and an open tin of the same paint",
     "tags": [
       "sample",
       "service",
@@ -5784,11 +5859,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 10616,
+    "bytes": 18584,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#98a888",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5813,9 +5888,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "service-repair",
+    "id": "service-repair-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/service-repair.webp",
+    "url": "https://docs.smithable.ai/images/sample/service-repair-b.webp",
     "alt": "A bicycle being repaired on a stand",
     "tags": [
       "sample",
@@ -5826,17 +5901,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 37402,
+    "bytes": 47462,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#887858",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "service-tutoring",
+    "id": "service-tutoring-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/service-tutoring.webp",
+    "url": "https://docs.smithable.ai/images/sample/service-tutoring-b.webp",
     "alt": "A notebook and textbook on a desk",
     "tags": [
       "sample",
@@ -5847,11 +5922,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14056,
+    "bytes": 21652,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#886848",
+    "color": "#e8d8c8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5872,9 +5947,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sofa-green",
+    "id": "sofa-green-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sofa-green.webp",
+    "url": "https://docs.smithable.ai/images/sample/sofa-green-b.webp",
     "alt": "A green velvet sofa against a white wall",
     "tags": [
       "sample",
@@ -5884,17 +5959,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 11204,
+    "bytes": 19234,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#080808",
+    "color": "#e8e8d8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sofa-leather",
+    "id": "sofa-leather-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sofa-leather.webp",
+    "url": "https://docs.smithable.ai/images/sample/sofa-leather-b.webp",
     "alt": "A brown leather sofa with a wool throw",
     "tags": [
       "sample",
@@ -5905,17 +5980,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 21430,
+    "bytes": 42304,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#381808",
+    "color": "#481808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sports-backpack",
+    "id": "sports-backpack-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sports-backpack.webp",
+    "url": "https://docs.smithable.ai/images/sample/sports-backpack-b.webp",
     "alt": "A hiking backpack on a rock",
     "tags": [
       "sample",
@@ -5926,17 +6001,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 33990,
+    "bytes": 45394,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#d8d8c8",
+    "color": "#584808",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sports-fishing",
+    "id": "sports-fishing-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sports-fishing.webp",
+    "url": "https://docs.smithable.ai/images/sample/sports-fishing-b.webp",
     "alt": "A fishing rod by a lake",
     "tags": [
       "sample",
@@ -5947,11 +6022,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14654,
+    "bytes": 29526,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#c8c8c8",
+    "temperature": "warm",
+    "color": "#d8d8c8",
     "source": "gpt-image-1-mini"
   },
   {
@@ -5996,9 +6071,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sports-skates",
+    "id": "sports-skates-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sports-skates.webp",
+    "url": "https://docs.smithable.ai/images/sample/sports-skates-b.webp",
     "alt": "Ice skates on a frozen lake",
     "tags": [
       "sample",
@@ -6009,11 +6084,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16934,
+    "bytes": 30628,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#a8a8a8",
+    "temperature": "warm",
+    "color": "#786858",
     "source": "gpt-image-1-mini"
   },
   {
@@ -6034,9 +6109,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sports-tennis",
+    "id": "sports-tennis-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sports-tennis.webp",
+    "url": "https://docs.smithable.ai/images/sample/sports-tennis-b.webp",
     "alt": "A tennis racket and balls on a court",
     "tags": [
       "sample",
@@ -6046,17 +6121,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 15620,
+    "bytes": 92462,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#787868",
+    "color": "#a85828",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "sports-tent",
+    "id": "sports-tent-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/sports-tent.webp",
+    "url": "https://docs.smithable.ai/images/sample/sports-tent-b.webp",
     "alt": "A tent pitched by a lake",
     "tags": [
       "sample",
@@ -6067,11 +6142,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 30446,
+    "bytes": 51774,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#b83808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -6117,9 +6192,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "table-desk",
+    "id": "table-desk-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/table-desk.webp",
+    "url": "https://docs.smithable.ai/images/sample/table-desk-b.webp",
     "alt": "A wooden desk with a lamp and a notebook",
     "tags": [
       "sample",
@@ -6131,17 +6206,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 14230,
+    "bytes": 20954,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#989888",
+    "color": "#c8a888",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "table-dining",
+    "id": "table-dining-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/table-dining.webp",
+    "url": "https://docs.smithable.ai/images/sample/table-dining-b.webp",
     "alt": "An oak dining table with six chairs",
     "tags": [
       "sample",
@@ -6152,11 +6227,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 19858,
+    "bytes": 33938,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8b8a8",
+    "color": "#b8a898",
     "source": "gpt-image-1-mini"
   },
   {
@@ -6181,9 +6256,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "tools-garden",
+    "id": "tools-garden-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/tools-garden.webp",
+    "url": "https://docs.smithable.ai/images/sample/tools-garden-b.webp",
     "alt": "Garden tools leaning against a shed",
     "tags": [
       "sample",
@@ -6193,11 +6268,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 32202,
+    "bytes": 47890,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#686868",
+    "color": "#884818",
     "source": "gpt-image-1-mini"
   },
   {
@@ -6221,9 +6296,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "tools-ladder",
+    "id": "tools-ladder-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/tools-ladder.webp",
+    "url": "https://docs.smithable.ai/images/sample/tools-ladder-b.webp",
     "alt": "A wooden ladder against a house wall",
     "tags": [
       "sample",
@@ -6233,17 +6308,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 20930,
+    "bytes": 48908,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#c8b8a8",
+    "color": "#c8a878",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "tools-toolbox",
+    "id": "tools-toolbox-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/tools-toolbox.webp",
+    "url": "https://docs.smithable.ai/images/sample/tools-toolbox-b.webp",
     "alt": "An open toolbox on a floor",
     "tags": [
       "sample",
@@ -6253,11 +6328,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 18932,
+    "bytes": 34390,
     "orientation": "landscape",
     "tone": "mid",
-    "temperature": "neutral",
-    "color": "#282828",
+    "temperature": "warm",
+    "color": "#080808",
     "source": "gpt-image-1-mini"
   },
   {
@@ -6320,9 +6395,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "toy-teddy",
+    "id": "toy-teddy-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/toy-teddy.webp",
+    "url": "https://docs.smithable.ai/images/sample/toy-teddy-b.webp",
     "alt": "A teddy bear on a bed",
     "tags": [
       "sample",
@@ -6333,17 +6408,17 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 27010,
+    "bytes": 22636,
     "orientation": "landscape",
-    "tone": "mid",
+    "tone": "light",
     "temperature": "warm",
-    "color": "#c8c8c8",
+    "color": "#d8c8b8",
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "toy-train",
+    "id": "toy-train-b",
     "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/toy-train.webp",
+    "url": "https://docs.smithable.ai/images/sample/toy-train-b.webp",
     "alt": "A wooden toy train set",
     "tags": [
       "sample",
@@ -6354,11 +6429,11 @@
     ],
     "width": 900,
     "height": 600,
-    "bytes": 16328,
+    "bytes": 22920,
     "orientation": "landscape",
     "tone": "mid",
     "temperature": "warm",
-    "color": "#b8a898",
+    "color": "#d8a878",
     "source": "gpt-image-1-mini"
   }
 ]
