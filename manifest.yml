@@ -38,9 +38,12 @@ defaults:
       surroundings (a home, a garage, a garden, a street). People in the background, a hand or a foot at
       the edge are fine and look natural. Everything physically plausible and of today. No text, no signs,
       no logos, no brands, no watermark.
+    # Marks are drawn as is, with no tile behind them, on a white page and in a dark shell alike.
     logo: >-
       A simple flat abstract mark in one or two solid colors, centered, on a transparent background.
-      Not a photograph. No letters, no text.
+      The colors are of mid lightness and clearly saturated (teal, coral, amber, a clear blue, a fresh
+      green, magenta), so the mark reads on white and on a dark navy ground alike; never navy, black,
+      dark green, brown, dark grey or pale grey. Not a photograph. No letters, no text.
 images:
   # The 2026-09-28 pilot (gpt-image-1-mini, and one gpt-image-2 per trade as the hero).
   - id: accounting-meeting-b
@@ -1491,66 +1494,289 @@ images:
     alt: "A photographer taking a portrait in a bright studio"
     tags: [sample, service, photography, studio, indoor]
   # Logos for sample apps.
-  - id: logo-circle
+  - id: logo-circle-b
     kind: logo
-    prompt: "Two overlapping circles."
+    prompt: "Two overlapping circles, one coral and one clear blue."
     alt: "Two overlapping circles"
-    tags: [logo, mark, abstract, round]
-  - id: logo-wave
+    tags: [logo, mark, abstract, round, community, partners]
+  - id: logo-wave-b
     kind: logo
-    prompt: "A single wave line."
+    prompt: "A single bold wave line in teal."
     alt: "A single wave line"
-    tags: [logo, mark, abstract, sea]
-  - id: logo-leaf
+    tags: [logo, mark, abstract, sea, water, coast, surf, swimming]
+  - id: logo-leaf-b
     kind: logo
-    prompt: "A simple leaf shape."
+    prompt: "A simple leaf shape in a fresh green."
     alt: "A simple leaf shape"
-    tags: [logo, mark, abstract, nature]
-  - id: logo-mountain
+    tags: [logo, mark, abstract, nature, garden, plants, green, organic]
+  - id: logo-mountain-b
     kind: logo
-    prompt: "Two triangles as mountains."
+    prompt: "Two triangles as mountains, in amber and coral."
     alt: "Two triangles as mountains"
-    tags: [logo, mark, abstract, mountains]
+    tags: [logo, mark, abstract, mountains, hiking, outdoor, travel]
   - id: logo-sun
     kind: logo
     prompt: "A half sun over a line."
     alt: "A half sun over a line"
-    tags: [logo, mark, abstract, warm]
+    tags: [logo, mark, abstract, warm, sun, summer, morning]
   - id: logo-square
     kind: logo
     prompt: "Two offset rounded squares."
     alt: "Two offset rounded squares"
-    tags: [logo, mark, abstract, geometric]
-  - id: logo-house
+    tags: [logo, mark, abstract, geometric, building, blocks]
+  - id: logo-house-b
     kind: logo
-    prompt: "A house outline with a single window."
+    prompt: "A house outline with a single window, in a clear blue with an amber window."
     alt: "A house outline with a single window"
-    tags: [logo, mark, abstract, home]
+    tags: [logo, mark, abstract, home, property, house, rental, cabin]
   - id: logo-drop
     kind: logo
     prompt: "A water drop."
     alt: "A water drop"
-    tags: [logo, mark, abstract, water]
-  - id: logo-star
+    tags: [logo, mark, abstract, water, plumbing, plumber, cleaning]
+  - id: logo-star-b
     kind: logo
-    prompt: "A four-pointed star."
+    prompt: "A four-pointed star in amber."
     alt: "A four-pointed star"
-    tags: [logo, mark, abstract, bold]
-  - id: logo-flower
+    tags: [logo, mark, abstract, bold, star, review, rating]
+  - id: logo-flower-b
     kind: logo
-    prompt: "A flower of five round petals."
+    prompt: "A flower of five round petals in coral with an amber centre."
     alt: "A flower of five round petals"
-    tags: [logo, mark, abstract, flowers]
-  - id: logo-arc
+    tags: [logo, mark, abstract, flowers, florist, spring]
+  - id: logo-arc-b
     kind: logo
-    prompt: "Three nested arcs."
+    prompt: "Three nested arcs in teal, amber and coral."
     alt: "Three nested arcs"
-    tags: [logo, mark, abstract, geometric]
-  - id: logo-knot
+    tags: [logo, mark, abstract, geometric, rainbow, children]
+  - id: logo-knot-b
     kind: logo
-    prompt: "A loop forming a simple knot."
+    prompt: "A thick rope tied in a simple overhand knot with both ends showing, in magenta."
     alt: "A loop forming a simple knot"
-    tags: [logo, mark, abstract, craft]
+    tags: [logo, mark, abstract, craft, knitting, sewing, sailing]
+  # Marks for the starters (starter-<name>) and the trades a description names (C 15, docs/design/app-logo.md §3–4).
+  - id: logo-lotus
+    kind: logo
+    prompt: "A lotus flower of five pointed petals over a single ripple line, in coral and teal."
+    alt: "A lotus over a ripple"
+    tags: [logo, mark, starter-booking, yoga, studio, wellness, meditation, class]
+  - id: logo-rings
+    kind: logo
+    prompt: "Two interlinked rings, one clear blue and one amber."
+    alt: "Two interlinked rings"
+    tags: [logo, mark, starter-crm, crm, sales, client, customer, deal, partners]
+  - id: logo-receipt
+    kind: logo
+    prompt: "A receipt with a zigzag torn bottom edge and three short lines on it, in teal with an amber coin at its corner."
+    alt: "A receipt with a torn edge and a coin"
+    tags: [logo, mark, starter-invoicing, invoice, invoicing, payment, bookkeeping, freelance]
+  - id: logo-tag
+    kind: logo
+    model: gpt-image-1
+    prompt: "The silhouette of a price tag with a round hole and a short string: a single solid coral shape and nothing inside it."
+    alt: "A price tag"
+    tags: [logo, mark, starter-marketplace, market, second-hand, shop, sell, listing]
+  - id: logo-cards
+    kind: logo
+    prompt: "Three plain rounded rectangles stacked with a slight offset, like a fanned deck of cards, in clear blue, teal and amber, with nothing drawn on them."
+    alt: "Three stacked cards"
+    tags: [logo, mark, starter-records, records, list, collection, inventory, register]
+  - id: logo-pulse
+    kind: logo
+    prompt: "A heartbeat pulse line inside a circle, in a fresh green."
+    alt: "A pulse line in a circle"
+    tags: [logo, mark, starter-status, status, uptime, incident, monitoring, outage]
+  - id: logo-plug
+    kind: logo
+    prompt: "A simple electric plug with two prongs, in a clear blue with an amber spark."
+    alt: "A plug"
+    tags: [logo, mark, starter-api, api, developer, integration, assistant, data]
+  - id: logo-cup
+    kind: logo
+    prompt: "A coffee cup with two curls of steam, in amber and coral."
+    alt: "A coffee cup with steam"
+    tags: [logo, mark, cafe, coffee, barista, tea]
+  - id: logo-wheat
+    kind: logo
+    prompt: "An ear of wheat, in amber."
+    alt: "An ear of wheat"
+    tags: [logo, mark, bakery, bread, baking, farm, grain]
+  - id: logo-fork
+    kind: logo
+    prompt: "A fork and a knife side by side, in coral."
+    alt: "A fork and a knife"
+    tags: [logo, mark, restaurant, food, dining, catering, lunch]
+  - id: logo-paw
+    kind: logo
+    prompt: "A paw print of four toes and a pad, in amber."
+    alt: "A paw print"
+    tags: [logo, mark, dog, pets, animal, kennel, veterinary, cat, walking]
+  - id: logo-cat
+    kind: logo
+    prompt: "A sitting cat seen from behind, a plain silhouette in coral."
+    alt: "A sitting cat"
+    tags: [logo, mark, cat, pets, animal, shelter]
+  - id: logo-horseshoe
+    kind: logo
+    prompt: "A horseshoe, in amber."
+    alt: "A horseshoe"
+    tags: [logo, mark, horses, stable, riding, farm]
+  - id: logo-ball
+    kind: logo
+    prompt: "A football with a simple pattern of pentagons, in a fresh green and white."
+    alt: "A football"
+    tags: [logo, mark, football, club, sports, match, league, team, player]
+  - id: logo-dumbbell
+    kind: logo
+    prompt: "A dumbbell, in coral."
+    alt: "A dumbbell"
+    tags: [logo, mark, fitness, gym, training, sports, coach]
+  - id: logo-heart-cross
+    kind: logo
+    prompt: "A rounded plus sign with a small heart in its centre, in teal and coral."
+    alt: "A plus sign with a heart"
+    tags: [logo, mark, clinic, health, care, medical, nurse, doctor]
+  - id: logo-tooth
+    kind: logo
+    prompt: "A tooth, in clear blue."
+    alt: "A tooth"
+    tags: [logo, mark, dental, dentist, clinic, health]
+  - id: logo-hands
+    kind: logo
+    prompt: "Two cupped hands holding a heart, in amber and coral."
+    alt: "Two hands holding a heart"
+    tags: [logo, mark, care, elderly, nursing, charity, volunteer, community]
+  - id: logo-wrench
+    kind: logo
+    prompt: "A wrench, in clear blue."
+    alt: "A wrench"
+    tags: [logo, mark, plumber, repair, mechanic, tools, maintenance, service]
+  - id: logo-hammer
+    kind: logo
+    prompt: "A hammer, in amber with a teal head."
+    alt: "A hammer"
+    tags: [logo, mark, construction, builder, carpenter, craft, renovation, diy]
+  - id: logo-key
+    kind: logo
+    prompt: "A key with a round bow, in amber."
+    alt: "A key"
+    tags: [logo, mark, property, rental, cabin, hotel, home, apartment, booking]
+  - id: logo-coins
+    kind: logo
+    prompt: "Three coins stacked, in amber, with one coin beside them in teal."
+    alt: "A stack of coins"
+    tags: [logo, mark, accounting, bookkeeping, payment, money, budget, finance]
+  - id: logo-cap
+    kind: logo
+    prompt: "A graduation cap, in clear blue with an amber tassel."
+    alt: "A graduation cap"
+    tags: [logo, mark, school, education, classroom, course, lesson, pupil, student]
+  - id: logo-book
+    kind: logo
+    prompt: "An open book seen from the front, in teal with lighter teal pages, no dark outlines, nothing drawn on the pages."
+    alt: "An open book"
+    tags: [logo, mark, library, books, education, archive, reading, club]
+  - id: logo-ticket
+    kind: logo
+    prompt: "A plain ticket with a half-round notch on each side and a dashed line across it, solid magenta, with no letters or symbols on it."
+    alt: "A ticket"
+    tags: [logo, mark, event, conference, registration, attendee, party, concert]
+  - id: logo-note
+    kind: logo
+    prompt: "A pair of joined music notes, in magenta."
+    alt: "Two music notes"
+    tags: [logo, mark, music, instruments, piano, lesson, choir, band, vinyl]
+  - id: logo-sprout
+    kind: logo
+    prompt: "A sprout of two leaves rising from a short line of soil, in a fresh green."
+    alt: "A sprout"
+    tags: [logo, mark, garden, plants, allotment, gardener, vegetable, nursery]
+  - id: logo-tulip
+    kind: logo
+    prompt: "A tulip, in coral with a fresh green stem."
+    alt: "A tulip"
+    tags: [logo, mark, florist, flowers, bouquet, wedding]
+  - id: logo-car
+    kind: logo
+    prompt: "A small car seen from the side, in clear blue."
+    alt: "A car from the side"
+    tags: [logo, mark, car, garage, mechanic, repair, driving, taxi]
+  - id: logo-bike
+    kind: logo
+    prompt: "A bicycle, in teal."
+    alt: "A bicycle"
+    tags: [logo, mark, bike, cycling, repair, rental, delivery]
+  - id: logo-scissors
+    kind: logo
+    prompt: "Open scissors, in magenta."
+    alt: "Open scissors"
+    tags: [logo, mark, salon, hair, hairdresser, barber, haircut, beauty, tailor]
+  - id: logo-plane
+    kind: logo
+    prompt: "A folded paper plane, in clear blue."
+    alt: "A paper plane"
+    tags: [logo, mark, travel, trip, tour, holiday, flight, hotel]
+  - id: logo-sailboat
+    kind: logo
+    prompt: "A sailboat with one triangular sail on a short wave line, in teal and coral."
+    alt: "A sailboat"
+    tags: [logo, mark, boats, marina, harbour, harbor, sea, sailing]
+  - id: logo-toolbox
+    kind: logo
+    prompt: "A toolbox with a handle, in coral."
+    alt: "A toolbox"
+    tags: [logo, mark, tools, tool, lend, borrow, workshop, diy, drill, neighbor]
+  - id: logo-barn
+    kind: logo
+    prompt: "A barn with a peaked roof and crossed doors, in coral."
+    alt: "A barn"
+    tags: [logo, mark, farm, countryside, stable, field, harvest]
+  - id: logo-grapes
+    kind: logo
+    prompt: "A bunch of grapes with one leaf, in magenta and a fresh green."
+    alt: "A bunch of grapes"
+    tags: [logo, mark, vineyard, wine, farm, tasting]
+  - id: logo-camera
+    kind: logo
+    prompt: "A camera with a round lens, in teal."
+    alt: "A camera"
+    tags: [logo, mark, photography, photographer, studio, portrait]
+  - id: logo-flask
+    kind: logo
+    prompt: "A laboratory flask with liquid in it, in teal."
+    alt: "A flask"
+    tags: [logo, mark, lab, science, research, chemistry, experiment]
+  - id: logo-bubble
+    kind: logo
+    prompt: "A rounded speech bubble with three dots, in clear blue."
+    alt: "A speech bubble"
+    tags: [logo, mark, ticket, helpdesk, support, chat, contact, feedback]
+  - id: logo-calendar
+    kind: logo
+    prompt: "A calendar page with one day marked, in coral with an amber mark."
+    alt: "A calendar page"
+    tags: [logo, mark, calendar, booking, appointment, schedule, event, reservation]
+  - id: logo-bird
+    kind: logo
+    prompt: "A small bird in flight, in teal."
+    alt: "A bird in flight"
+    tags: [logo, mark, bird, birdwatching, wildlife, species, sighting, nature]
+  - id: logo-bag
+    kind: logo
+    model: gpt-image-1
+    prompt: "The silhouette of a shopping bag with two handles: a single solid amber shape and nothing inside it."
+    alt: "A shopping bag"
+    tags: [logo, mark, shop, retail, store, boutique, order]
+  - id: logo-pin
+    kind: logo
+    prompt: "A map pin, in coral."
+    alt: "A map pin"
+    tags: [logo, mark, map, place, location, local, guide, city]
+  - id: logo-box
+    kind: logo
+    prompt: "A parcel box, in amber."
+    alt: "A parcel box"
+    tags: [logo, mark, warehouse, logistics, storage, delivery, inventory, stock]
   # The marketplace starter (Torget): second-hand things staged as a seller's photos, one or two each.
   - id: market-sideboard-1-b
     kind: sample

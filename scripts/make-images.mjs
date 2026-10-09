@@ -128,14 +128,34 @@ async function api(path, init = {}) {
   }
 }
 
+// The model sometimes leaves a near-invisible frame or haze around a mark (alpha 1 to 60), which shows as
+// a faint box on a dark ground: everything outside the mark's solid part (alpha 128 and up) and a 12 px
+// margin becomes fully transparent, as does any alpha under 8 inside it.
+async function clearHaze(input) {
+  const { data, info } = await sharp(input).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  let [x0, y0, x1, y1] = [w, h, -1, -1];
+  for (let y = 0; y < h; y++)
+    for (let x = 0; x < w; x++)
+      if (data[(y * w + x) * 4 + 3] >= 128) [x0, y0, x1, y1] = [Math.min(x0, x), Math.min(y0, y), Math.max(x1, x), Math.max(y1, y)];
+  const m = 12;
+  for (let y = 0; y < h; y++)
+    for (let x = 0; x < w; x++) {
+      const i = (y * w + x) * 4 + 3;
+      if (data[i] < 8 || x < x0 - m || x > x1 + m || y < y0 - m || y > y1 + m) data[i] = 0;
+    }
+  return sharp(data, { raw: info }).png().toBuffer();
+}
+
 // Scales to the kind's long side (never up), encodes WebP, and writes the file.
 async function store(e, input) {
   const kind = KINDS[e.kind];
   mkdirSync(dirname(e.file), { recursive: true });
+  if (kind.transparent) input = await clearHaze(input);
   await sharp(input)
     .rotate()
     .resize({ width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true })
-    .webp({ quality: kind.quality, effort: 6, alphaQuality: 90 })
+    .webp({ quality: kind.quality, effort: 6, alphaQuality: kind.transparent ? 100 : 90 })
     .toFile(e.file);
 }
 
@@ -313,7 +333,18 @@ async function sheets() {
       for (const [i, e] of slice.entries()) {
         const left = (i % cols) * cell;
         const top = Math.floor(i / cols) * (height + label);
-        composites.push({ input: await sharp(e.file).resize(cell - 4, height - 4, { fit: "cover" }).toBuffer(), left: left + 2, top: top + 2 });
+        if (KINDS[kind].transparent) {
+          // A mark is drawn as is, with no tile behind it: on white and on the dark shell's ground side by side.
+          const half = cell / 2;
+          for (const [j, ground] of ["#ffffff", "#101b2a"].entries()) {
+            const mark = await sharp(e.file).resize(half - 24, height - 24, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } }).toBuffer();
+            const tile = await sharp({ create: { width: half - 2, height: height - 4, channels: 4, background: ground } })
+              .composite([{ input: mark, gravity: "center" }])
+              .png()
+              .toBuffer();
+            composites.push({ input: tile, left: left + 1 + j * half, top: top + 2 });
+          }
+        } else composites.push({ input: await sharp(e.file).resize(cell - 4, height - 4, { fit: "cover" }).toBuffer(), left: left + 2, top: top + 2 });
         const text = e.id.replace(/&/g, "&amp;").replace(/</g, "&lt;");
         composites.push({
           input: Buffer.from(`<svg width="${cell}" height="${label}"><text x="4" y="16" font-family="sans-serif" font-size="13" fill="#ddd">${text}</text></svg>`),
