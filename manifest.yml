@@ -1914,7 +1914,7 @@ images:
   - id: logo-mono-invoicely-c
     kind: logo
     style: monogram
-    prompt: "The letter I, in a clear blue and amber."
+    prompt: "A single capital letter I: one upright stroke with a crossbar at the top and at the bottom, nothing beside it, in a clear blue and amber."
     alt: "Invoicely's monogram"
     tags: [logo, monogram, monogram-invoicing]
   - id: logo-mono-torget-c
