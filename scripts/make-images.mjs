@@ -7,7 +7,7 @@
 //   node scripts/make-images.mjs --dry-run [--only <id|kind>]   prompts and the estimated cost, nothing sent
 //   node scripts/make-images.mjs [--only <id|kind|tag>]          copies `from:` entries, generates the rest directly
 //   node scripts/make-images.mjs --batch submit|status|fetch     the Batch API (half price, within 24 h)
-//   node scripts/make-images.mjs --sheet [--out <dir>]           a contact sheet per kind, in sheets/ and <dir>
+//   node scripts/make-images.mjs --sheet [--only <kind> --out <dir>]  a contact sheet per kind, in sheets/ (and <dir>)
 //   node scripts/make-images.mjs --upload                        images/ to the docs bucket (SMITHABLE_DOCS_BUCKET)
 //   node scripts/make-images.mjs --tar                           images-<date>.tar, for a release asset
 //   node scripts/make-images.mjs --index                         copies `from:` entries and writes index.json; nothing sent
@@ -321,6 +321,8 @@ async function batch(step) {
 
 // A grid of thumbnails per kind with each id under its picture.
 async function sheets() {
+  // A review folder gets the sheets of the kind under review, never every kind's.
+  if (args.out && !args.only) throw new Error("--out needs --only <kind>, so the folder gets only the sheets asked for");
   for (const dir of [join(ROOT, "sheets"), args.out]) mkdirSync(dir, { recursive: true });
   const cell = 300;
   const label = 22;
