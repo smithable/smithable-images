@@ -3995,9 +3995,9 @@
     "source": "gpt-image-1-mini"
   },
   {
-    "id": "logo-arc-b",
+    "id": "logo-arc-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-arc-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-arc-c.webp",
     "alt": "Three nested arcs",
     "tags": [
       "logo",
@@ -4009,17 +4009,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 21524,
+    "bytes": 27020,
     "orientation": "square",
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-bag",
+    "id": "logo-bag-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-bag.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-bag-c.webp",
     "alt": "A shopping bag",
     "tags": [
       "logo",
@@ -4032,7 +4032,7 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 26800,
+    "bytes": 16290,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
@@ -4040,9 +4040,9 @@
     "source": "gpt-image-1"
   },
   {
-    "id": "logo-ball",
+    "id": "logo-ball-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-ball.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-ball-c.webp",
     "alt": "A football",
     "tags": [
       "logo",
@@ -4057,17 +4057,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 23914,
+    "bytes": 27076,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-barn",
+    "id": "logo-barn-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-barn.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-barn-c.webp",
     "alt": "A barn",
     "tags": [
       "logo",
@@ -4080,17 +4080,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 27424,
+    "bytes": 15578,
     "orientation": "square",
-    "tone": "light",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#f8f8f8",
-    "source": "gpt-image-1-mini"
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-bike",
+    "id": "logo-bike-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-bike.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-bike-c.webp",
     "alt": "A bicycle",
     "tags": [
       "logo",
@@ -4103,17 +4103,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 25948,
+    "bytes": 21452,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-bird",
+    "id": "logo-bird-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-bird.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-bird-c.webp",
     "alt": "A bird in flight",
     "tags": [
       "logo",
@@ -4127,17 +4127,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15626,
+    "bytes": 18134,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-book",
+    "id": "logo-book-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-book.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-book-c.webp",
     "alt": "An open book",
     "tags": [
       "logo",
@@ -4151,17 +4151,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18824,
+    "bytes": 19722,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-box",
+    "id": "logo-box-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-box.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-box-c.webp",
     "alt": "A parcel box",
     "tags": [
       "logo",
@@ -4175,17 +4175,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19718,
+    "bytes": 21796,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-bubble",
+    "id": "logo-bubble-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-bubble.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-bubble-c.webp",
     "alt": "A speech bubble",
     "tags": [
       "logo",
@@ -4199,17 +4199,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17744,
+    "bytes": 18096,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-calendar",
+    "id": "logo-calendar-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-calendar.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-calendar-c.webp",
     "alt": "A calendar page",
     "tags": [
       "logo",
@@ -4223,17 +4223,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19786,
+    "bytes": 20346,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#f85858",
-    "source": "gpt-image-1-mini"
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-camera",
+    "id": "logo-camera-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-camera.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-camera-c.webp",
     "alt": "A camera",
     "tags": [
       "logo",
@@ -4245,17 +4245,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17478,
+    "bytes": 19464,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-cap",
+    "id": "logo-cap-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-cap.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-cap-c.webp",
     "alt": "A graduation cap",
     "tags": [
       "logo",
@@ -4270,17 +4270,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18458,
+    "bytes": 15438,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-car",
+    "id": "logo-car-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-car.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-car-c.webp",
     "alt": "A car from the side",
     "tags": [
       "logo",
@@ -4294,17 +4294,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17514,
+    "bytes": 18810,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-cards",
+    "id": "logo-cards-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-cards.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-cards-c.webp",
     "alt": "Three stacked cards",
     "tags": [
       "logo",
@@ -4318,17 +4318,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 25030,
+    "bytes": 12744,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "cool",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-cat",
+    "id": "logo-cat-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-cat.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-cat-c.webp",
     "alt": "A sitting cat",
     "tags": [
       "logo",
@@ -4340,12 +4340,12 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17416,
+    "bytes": 19096,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
     "id": "logo-circle-b",
@@ -4367,12 +4367,12 @@
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-coins",
+    "id": "logo-coins-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-coins.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-coins-c.webp",
     "alt": "A stack of coins",
     "tags": [
       "logo",
@@ -4386,17 +4386,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17836,
+    "bytes": 18436,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "warm",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-cup",
+    "id": "logo-cup-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-cup.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-cup-c.webp",
     "alt": "A coffee cup with steam",
     "tags": [
       "logo",
@@ -4408,17 +4408,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 21720,
+    "bytes": 19556,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-drop",
+    "id": "logo-drop-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-drop.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-drop-c.webp",
     "alt": "A water drop",
     "tags": [
       "logo",
@@ -4431,17 +4431,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 21026,
+    "bytes": 18016,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "cool",
+    "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-dumbbell",
+    "id": "logo-dumbbell-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-dumbbell.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-dumbbell-c.webp",
     "alt": "A dumbbell",
     "tags": [
       "logo",
@@ -4454,17 +4454,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 12734,
+    "bytes": 15998,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-flask",
+    "id": "logo-flask-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-flask.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-flask-c.webp",
     "alt": "A flask",
     "tags": [
       "logo",
@@ -4477,17 +4477,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 20434,
+    "bytes": 20534,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-flower-b",
+    "id": "logo-flower-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-flower-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-flower-c.webp",
     "alt": "A flower of five round petals",
     "tags": [
       "logo",
@@ -4499,17 +4499,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19654,
+    "bytes": 21212,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-fork",
+    "id": "logo-fork-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-fork.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-fork-c.webp",
     "alt": "A fork and a knife",
     "tags": [
       "logo",
@@ -4522,17 +4522,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15002,
+    "bytes": 21518,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-grapes",
+    "id": "logo-grapes-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-grapes.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-grapes-c.webp",
     "alt": "A bunch of grapes",
     "tags": [
       "logo",
@@ -4544,17 +4544,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 28670,
+    "bytes": 28454,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "warm",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-hammer",
+    "id": "logo-hammer-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-hammer.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-hammer-c.webp",
     "alt": "A hammer",
     "tags": [
       "logo",
@@ -4568,17 +4568,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19188,
+    "bytes": 15628,
     "orientation": "square",
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-hands",
+    "id": "logo-hands-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-hands.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-hands-c.webp",
     "alt": "Two hands holding a heart",
     "tags": [
       "logo",
@@ -4592,17 +4592,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 27900,
+    "bytes": 28872,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-heart-cross",
+    "id": "logo-heart-cross-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-heart-cross.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-heart-cross-c.webp",
     "alt": "A plus sign with a heart",
     "tags": [
       "logo",
@@ -4616,17 +4616,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 14854,
+    "bytes": 12770,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-horseshoe",
+    "id": "logo-horseshoe-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-horseshoe.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-horseshoe-c.webp",
     "alt": "A horseshoe",
     "tags": [
       "logo",
@@ -4638,17 +4638,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18906,
+    "bytes": 20772,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-house-b",
+    "id": "logo-house-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-house-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-house-c.webp",
     "alt": "A house outline with a single window",
     "tags": [
       "logo",
@@ -4662,17 +4662,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 14246,
+    "bytes": 12640,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-key",
+    "id": "logo-key-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-key.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-key-c.webp",
     "alt": "A key",
     "tags": [
       "logo",
@@ -4687,17 +4687,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15876,
+    "bytes": 19396,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-knot-b",
+    "id": "logo-knot-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-knot-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-knot-c.webp",
     "alt": "A loop forming a simple knot",
     "tags": [
       "logo",
@@ -4710,17 +4710,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 21476,
+    "bytes": 22552,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "warm",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-leaf-b",
+    "id": "logo-leaf-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-leaf-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-leaf-c.webp",
     "alt": "A simple leaf shape",
     "tags": [
       "logo",
@@ -4734,17 +4734,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15810,
+    "bytes": 19054,
     "orientation": "square",
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-lotus",
+    "id": "logo-lotus-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-lotus.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-lotus-c.webp",
     "alt": "A lotus over a ripple",
     "tags": [
       "logo",
@@ -4758,12 +4758,145 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 25138,
+    "bytes": 28776,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-acme-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-acme-c.webp",
+    "alt": "Acme CRM's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-crm"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 19252,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "cool",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-invoicely-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-invoicely-c.webp",
+    "alt": "Invoicely's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-invoicing"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 12024,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-northwind-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-northwind-c.webp",
+    "alt": "Northwind Status's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-status"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 15916,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "cool",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-our-collection-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-our-collection-c.webp",
+    "alt": "Our Collection's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-records"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 24586,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-stillwater-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-stillwater-c.webp",
+    "alt": "Stillwater Yoga's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-booking"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 19812,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-team-tasks-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-team-tasks-c.webp",
+    "alt": "The Team Tasks monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-api"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 11436,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "gpt-image-1"
+  },
+  {
+    "id": "logo-mono-torget-c",
+    "kind": "logo",
+    "url": "https://docs.smithable.ai/images/logo/logo-mono-torget-c.webp",
+    "alt": "Torget's monogram",
+    "tags": [
+      "logo",
+      "monogram",
+      "monogram-marketplace"
+    ],
+    "width": 512,
+    "height": 512,
+    "bytes": 9998,
+    "orientation": "square",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
     "id": "logo-mountain-b",
@@ -4786,12 +4919,12 @@
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-note",
+    "id": "logo-note-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-note.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-note-c.webp",
     "alt": "Two music notes",
     "tags": [
       "logo",
@@ -4806,17 +4939,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 12438,
+    "bytes": 17078,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "warm",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-paw",
+    "id": "logo-paw-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-paw.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-paw-c.webp",
     "alt": "A paw print",
     "tags": [
       "logo",
@@ -4831,17 +4964,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17498,
+    "bytes": 25254,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-pin",
+    "id": "logo-pin-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-pin.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-pin-c.webp",
     "alt": "A map pin",
     "tags": [
       "logo",
@@ -4855,17 +4988,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 16694,
+    "bytes": 19270,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#d8d8d8",
-    "source": "gpt-image-1-mini"
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-plane",
+    "id": "logo-plane-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-plane.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-plane-c.webp",
     "alt": "A paper plane",
     "tags": [
       "logo",
@@ -4879,17 +5012,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18346,
+    "bytes": 18208,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-plug",
+    "id": "logo-plug-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-plug.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-plug-c.webp",
     "alt": "A plug",
     "tags": [
       "logo",
@@ -4903,12 +5036,12 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 17976,
+    "bytes": 19432,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
     "id": "logo-pulse",
@@ -4932,12 +5065,12 @@
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-receipt",
+    "id": "logo-receipt-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-receipt.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-receipt-c.webp",
     "alt": "A receipt with a torn edge and a coin",
     "tags": [
       "logo",
@@ -4951,12 +5084,12 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15634,
+    "bytes": 12846,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
     "id": "logo-rings",
@@ -4981,12 +5114,12 @@
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-sailboat",
+    "id": "logo-sailboat-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-sailboat.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-sailboat-c.webp",
     "alt": "A sailboat",
     "tags": [
       "logo",
@@ -5000,17 +5133,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 24776,
+    "bytes": 26692,
     "orientation": "square",
-    "tone": "mid",
+    "tone": "dark",
     "temperature": "neutral",
-    "color": "#585858",
-    "source": "gpt-image-1-mini"
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-scissors",
+    "id": "logo-scissors-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-scissors.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-scissors-c.webp",
     "alt": "Open scissors",
     "tags": [
       "logo",
@@ -5025,17 +5158,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19490,
+    "bytes": 23464,
     "orientation": "square",
     "tone": "dark",
-    "temperature": "warm",
+    "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-sprout",
+    "id": "logo-sprout-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-sprout.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-sprout-c.webp",
     "alt": "A sprout",
     "tags": [
       "logo",
@@ -5049,12 +5182,12 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19358,
+    "bytes": 17936,
     "orientation": "square",
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
     "id": "logo-square",
@@ -5076,12 +5209,12 @@
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-star-b",
+    "id": "logo-star-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-star-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-star-c.webp",
     "alt": "A four-pointed star",
     "tags": [
       "logo",
@@ -5094,17 +5227,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 14136,
+    "bytes": 17566,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-sun",
+    "id": "logo-sun-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-sun.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-sun-c.webp",
     "alt": "A half sun over a line",
     "tags": [
       "logo",
@@ -5117,17 +5250,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 19862,
+    "bytes": 14842,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-tag",
+    "id": "logo-tag-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-tag.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-tag-c.webp",
     "alt": "A price tag",
     "tags": [
       "logo",
@@ -5141,7 +5274,7 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 26432,
+    "bytes": 17766,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
@@ -5149,9 +5282,9 @@
     "source": "gpt-image-1"
   },
   {
-    "id": "logo-ticket",
+    "id": "logo-ticket-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-ticket.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-ticket-c.webp",
     "alt": "A ticket",
     "tags": [
       "logo",
@@ -5165,17 +5298,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 11926,
+    "bytes": 15004,
     "orientation": "square",
-    "tone": "light",
+    "tone": "dark",
     "temperature": "warm",
-    "color": "#f8f8f8",
-    "source": "gpt-image-1-mini"
+    "color": "#080808",
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-toolbox",
+    "id": "logo-toolbox-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-toolbox.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-toolbox-c.webp",
     "alt": "A toolbox",
     "tags": [
       "logo",
@@ -5191,17 +5324,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18030,
+    "bytes": 15344,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-tooth",
+    "id": "logo-tooth-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-tooth.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-tooth-c.webp",
     "alt": "A tooth",
     "tags": [
       "logo",
@@ -5213,17 +5346,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 18978,
+    "bytes": 13008,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-tulip",
+    "id": "logo-tulip-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-tulip.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-tulip-c.webp",
     "alt": "A tulip",
     "tags": [
       "logo",
@@ -5235,17 +5368,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 14932,
+    "bytes": 15336,
     "orientation": "square",
     "tone": "dark",
     "temperature": "neutral",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-wave-b",
+    "id": "logo-wave-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-wave-b.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-wave-c.webp",
     "alt": "A single wave line",
     "tags": [
       "logo",
@@ -5259,17 +5392,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 8532,
+    "bytes": 12620,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-wheat",
+    "id": "logo-wheat-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-wheat.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-wheat-c.webp",
     "alt": "An ear of wheat",
     "tags": [
       "logo",
@@ -5282,17 +5415,17 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 15704,
+    "bytes": 17564,
     "orientation": "square",
     "tone": "dark",
     "temperature": "warm",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
-    "id": "logo-wrench",
+    "id": "logo-wrench-c",
     "kind": "logo",
-    "url": "https://docs.smithable.ai/images/logo/logo-wrench.webp",
+    "url": "https://docs.smithable.ai/images/logo/logo-wrench-c.webp",
     "alt": "A wrench",
     "tags": [
       "logo",
@@ -5306,12 +5439,12 @@
     ],
     "width": 512,
     "height": 512,
-    "bytes": 12058,
+    "bytes": 17910,
     "orientation": "square",
     "tone": "dark",
     "temperature": "cool",
     "color": "#080808",
-    "source": "gpt-image-1-mini"
+    "source": "gpt-image-1"
   },
   {
     "id": "market-armchair-1-b",
