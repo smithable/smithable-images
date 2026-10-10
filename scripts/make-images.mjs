@@ -181,6 +181,9 @@ async function describe(e) {
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
     source: e.from ? "file" : e.model,
+    // Drawn in a photograph's style (heroes and samples, the abstract heroes included), so an app shows
+    // it with the AI-generated badge; marks are drawn as marks, not as photographs.
+    photo: !KINDS[e.kind].transparent,
   };
 }
 
