@@ -1,12 +1,13 @@
 # Smithable images
 
-Photographs and marks for Smithable's starters, sample data and picture picker. We generated every picture here with an image model (or made it by hand), so the whole repository, pictures and script, is dedicated to the public domain under [CC0 1.0](LICENSE): use them for anything, no attribution needed. No picture is taken from another site.
+Photographs and marks for Smithable's starters, sample data and picture picker. Most pictures here we generated with an image model (or made by hand); some are real photographs that their authors dedicated to the public domain (CC0) on Wikimedia Commons. The whole repository, pictures and scripts, is dedicated to the public domain under [CC0 1.0](LICENSE): use them for anything, no attribution needed. `credits.json` names each real photograph's source all the same.
 
 ## What is here
 
-- `manifest.yml`: one entry per picture: `id`, `kind`, a `prompt` or a `from` file, `alt` text and `tags`. The style appended to every prompt is in its `defaults`.
+- `manifest.yml`: one entry per picture: `id`, `kind`, a `prompt`, a `from` file or a `photo` (its Wikimedia Commons page), `alt` text and `tags`. The style appended to every prompt is in its `defaults`.
 - `images/<kind>/`: the pictures as WebP, kept out of Git (they would bloat the history with every regeneration). They are served from `https://docs.smithable.ai/images/<kind>/<id>.webp` and attached to each release as `images-<date>.tar`. Heroes are 3:2 at up to 1600 px, samples 3:2 at 900 px, logos 512 px with transparency.
-- `index.json`: what Smithable reads: id, url, alt, tags, size and bytes, plus orientation, tone (`light`, `mid`, `dark`), temperature (`warm`, `neutral`, `cool`) and the dominant color, computed from the picture.
+- `index.json`: what Smithable reads: id, url, alt, tags, size and bytes, plus orientation, tone (`light`, `mid`, `dark`), temperature (`warm`, `neutral`, `cool`) and the dominant color, computed from the picture; `generated` (true when an image model made it, so an app that places it shows the AI badge) and, on a real photograph, `credit`: its page, author, licence and the date it was fetched.
+- `credits.json`: the real photographs' sources, kept when they are fetched, so the index can be rebuilt without asking again.
 
 `smithable new --describe` picks samples by matching a model's name and fields to tags, and heroes by the app's trade; the Look tab's picker searches the same index. A tag that matches nothing falls back to the group tag (`pets`, `furniture`, `food` …), then to a neutral set. Tags starting with `starter-` mark pictures a starter also ships a copy of.
 
@@ -30,5 +31,16 @@ node scripts/make-images.mjs --tar                 # images-<date>.tar for a rel
 A rerun only makes what is missing; get the current pictures first from the latest release's tarball. Contact sheets are kept in `sheets/`.
 
 **Replacing a picture.** Served pictures are cached for a year, so an id that has been uploaded (listed in `uploaded.json`) never gets a new picture. To replace a rejected one, give its manifest entry a new id (`hero-salon` → `hero-salon-b`) and a better prompt, run `--only hero-salon-b`, then `--upload`: the old id is no longer in the manifest, so its object is deleted from the bucket. The script refuses to regenerate an uploaded id. Commit `uploaded.json` after every upload. A picture never uploaded can simply be deleted and made again with `--only <id>`. Batch ids are kept in `batches.json` until fetched.
+
+## Real photographs
+
+Only CC0 or public domain, only from Wikimedia Commons (whose volunteers review licences; a CC0 mark on Flickr or a stock site is the uploader's own word), never under a stock site's own licence. `find-photos.mjs` searches Commons by its structured data and makes a numbered contact sheet; the file chosen goes in the manifest as `photo:`; `make-images.mjs` reads its licence again from its page, refuses anything but CC0 or public domain and any file with restrictions (personality rights, trademarks), cuts it to 3:2 at the kind's size and writes it without its metadata.
+
+```sh
+node scripts/find-photos.mjs "intitle:armchair" --out /tmp/armchair   # sheet.webp and candidates.json; --pd adds public domain
+node scripts/make-images.mjs --index --only <id>                       # fetch a photo: entry and rewrite index.json
+```
+
+## Prompts
 
 Prompts ask for natural light, Nordic settings, one subject, no text, logos or brands, and people from behind or at a distance except in portraits. Write `alt` by hand: it is what screen readers say and what the picker searches.

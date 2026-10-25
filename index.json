@@ -23,7 +23,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "accounting-laptops-b",
@@ -47,7 +48,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "accounting-meeting-b",
@@ -74,7 +76,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "accounting-review-b",
@@ -98,7 +101,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "accounting-signing-b",
@@ -121,7 +125,8 @@
     "temperature": "warm",
     "color": "#d8d8d8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "accounting-team-b",
@@ -145,7 +150,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "animal-hens-b",
@@ -168,7 +174,8 @@
     "temperature": "warm",
     "color": "#481808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "animal-rabbit-b",
@@ -190,7 +197,8 @@
     "temperature": "warm",
     "color": "#481808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "animal-sheep-b",
@@ -212,7 +220,8 @@
     "temperature": "warm",
     "color": "#986818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "apartment-balcony-b",
@@ -234,7 +243,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "apartment-block-b",
@@ -252,7 +262,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "apartment-interior-b",
@@ -274,7 +285,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "apartment-studio-b",
@@ -296,7 +308,8 @@
     "temperature": "warm",
     "color": "#a88868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "bike-cargo-b",
@@ -319,7 +332,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "bike-city-b",
@@ -341,7 +355,8 @@
     "temperature": "warm",
     "color": "#d8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "bike-kids-b",
@@ -363,7 +378,8 @@
     "temperature": "warm",
     "color": "#989838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "bike-mountain-b",
@@ -385,7 +401,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "bike-road-b",
@@ -407,7 +424,8 @@
     "temperature": "warm",
     "color": "#a87848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "boat-kayak-b",
@@ -430,7 +448,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "boat-motor-b",
@@ -452,7 +471,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "boat-rowing-b",
@@ -475,7 +495,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "boat-sail-b",
@@ -497,7 +518,8 @@
     "temperature": "cool",
     "color": "#88a8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "books-open-b",
@@ -519,7 +541,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "books-shelf-b",
@@ -540,7 +563,8 @@
     "temperature": "warm",
     "color": "#e8d8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "books-stack-b",
@@ -561,7 +585,8 @@
     "temperature": "warm",
     "color": "#b8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-barista-b",
@@ -585,7 +610,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-cinnamon-buns-b",
@@ -609,7 +635,8 @@
     "temperature": "warm",
     "color": "#988878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-cup-street-b",
@@ -632,7 +659,8 @@
     "temperature": "warm",
     "color": "#887868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-friends-b",
@@ -655,7 +683,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-latte-art-b",
@@ -679,7 +708,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cafe-readers-b",
@@ -704,7 +734,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "camera-digital-b",
@@ -726,7 +757,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "camera-film-b",
@@ -748,7 +780,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "car-electric-b",
@@ -770,7 +803,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "car-estate-b",
@@ -791,7 +825,8 @@
     "temperature": "warm",
     "color": "#b89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "car-hatchback-b",
@@ -812,7 +847,8 @@
     "temperature": "warm",
     "color": "#a89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "car-van-b",
@@ -834,7 +870,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "car-vintage-b",
@@ -856,7 +893,8 @@
     "temperature": "warm",
     "color": "#885828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cat-black-b",
@@ -878,7 +916,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cat-garden-b",
@@ -900,7 +939,8 @@
     "temperature": "warm",
     "color": "#585808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cat-kitten-b",
@@ -923,7 +963,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "cat-tabby-b",
@@ -945,7 +986,8 @@
     "temperature": "warm",
     "color": "#180808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "chair-armchair-b",
@@ -967,7 +1009,8 @@
     "temperature": "warm",
     "color": "#682808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "chair-office-b",
@@ -989,7 +1032,8 @@
     "temperature": "warm",
     "color": "#785838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "chair-wooden-b",
@@ -1010,7 +1054,8 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-bag-b",
@@ -1032,7 +1077,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-dress-b",
@@ -1054,7 +1100,8 @@
     "temperature": "warm",
     "color": "#e8c898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-jacket-b",
@@ -1076,7 +1123,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-rack-b",
@@ -1098,7 +1146,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-shoes-b",
@@ -1121,7 +1170,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "clothes-sweater-b",
@@ -1143,7 +1193,8 @@
     "temperature": "warm",
     "color": "#b88848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-frame-b",
@@ -1167,7 +1218,8 @@
     "temperature": "warm",
     "color": "#d8c898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-framing-b",
@@ -1190,7 +1242,8 @@
     "temperature": "warm",
     "color": "#d8d8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-living-room-b",
@@ -1216,7 +1269,8 @@
     "temperature": "warm",
     "color": "#280808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-measuring",
@@ -1240,7 +1294,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-plans-b",
@@ -1263,7 +1318,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "construction-wooden-house-b",
@@ -1286,7 +1342,8 @@
     "temperature": "warm",
     "color": "#e8a868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-conversation-b",
@@ -1309,7 +1366,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-coworking-b",
@@ -1333,7 +1391,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-handshake-b",
@@ -1356,7 +1415,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-video-call-b",
@@ -1380,7 +1440,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-whiteboard-b",
@@ -1409,7 +1470,8 @@
     "temperature": "warm",
     "color": "#d8e8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "consulting-workshop-b",
@@ -1433,7 +1495,8 @@
     "temperature": "warm",
     "color": "#c8c8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-chair-b",
@@ -1457,7 +1520,8 @@
     "temperature": "warm",
     "color": "#c8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-checkup-b",
@@ -1481,7 +1545,8 @@
     "temperature": "neutral",
     "color": "#e8e8d8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-dentist",
@@ -1504,7 +1569,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-instruments-b",
@@ -1528,7 +1594,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-reception-b",
@@ -1552,7 +1619,8 @@
     "temperature": "warm",
     "color": "#c8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dental-waiting-room-b",
@@ -1575,7 +1643,8 @@
     "temperature": "warm",
     "color": "#080818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-contract-b",
@@ -1593,7 +1662,8 @@
     "temperature": "warm",
     "color": "#e8d8d8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-folder-b",
@@ -1616,7 +1686,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-invoice-b",
@@ -1639,7 +1710,8 @@
     "temperature": "warm",
     "color": "#988868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-letter-b",
@@ -1662,7 +1734,8 @@
     "temperature": "warm",
     "color": "#a86828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-notebook-b",
@@ -1684,7 +1757,8 @@
     "temperature": "warm",
     "color": "#d8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-plans-b",
@@ -1707,7 +1781,8 @@
     "temperature": "warm",
     "color": "#d8c8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "document-receipts-b",
@@ -1730,7 +1805,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dog-labrador-b",
@@ -1752,7 +1828,8 @@
     "temperature": "warm",
     "color": "#a89828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dog-puppy-b",
@@ -1775,7 +1852,8 @@
     "temperature": "warm",
     "color": "#885828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dog-shepherd-b",
@@ -1797,7 +1875,8 @@
     "temperature": "warm",
     "color": "#483818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dog-terrier-b",
@@ -1819,7 +1898,8 @@
     "temperature": "warm",
     "color": "#682808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "dog-walk-b",
@@ -1842,7 +1922,8 @@
     "temperature": "neutral",
     "color": "#c8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-beer-b",
@@ -1864,7 +1945,8 @@
     "temperature": "warm",
     "color": "#a86838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-cocktail-b",
@@ -1886,7 +1968,8 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-coffee-b",
@@ -1908,7 +1991,8 @@
     "temperature": "warm",
     "color": "#c89868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-juice-b",
@@ -1929,7 +2013,8 @@
     "temperature": "warm",
     "color": "#887858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-tea-b",
@@ -1951,7 +2036,8 @@
     "temperature": "warm",
     "color": "#d8a878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "drink-wine-b",
@@ -1973,7 +2059,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "electronics-headphones-b",
@@ -1995,7 +2082,8 @@
     "temperature": "warm",
     "color": "#a89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "electronics-monitor-b",
@@ -2018,7 +2106,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "electronics-speaker-b",
@@ -2040,7 +2129,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "electronics-tablet-b",
@@ -2061,7 +2151,8 @@
     "temperature": "warm",
     "color": "#e8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "event-concert-b",
@@ -2084,7 +2175,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "event-dinner-b",
@@ -2107,7 +2199,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "event-tickets-b",
@@ -2128,7 +2221,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "event-wedding-b",
@@ -2150,7 +2244,8 @@
     "temperature": "warm",
     "color": "#786828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "event-workshop-b",
@@ -2172,7 +2267,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-coast-run-b",
@@ -2200,7 +2296,8 @@
     "temperature": "warm",
     "color": "#281808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-gym-b",
@@ -2223,7 +2320,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-stretching",
@@ -2250,7 +2348,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-trainer-b",
@@ -2273,7 +2372,8 @@
     "temperature": "warm",
     "color": "#d8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-yoga-class-b",
@@ -2299,7 +2399,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "fitness-yoga-mat-b",
@@ -2325,7 +2426,8 @@
     "temperature": "warm",
     "color": "#582808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-bouquet-b",
@@ -2349,7 +2451,8 @@
     "temperature": "warm",
     "color": "#282828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-buckets-b",
@@ -2371,7 +2474,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-ribbon-b",
@@ -2393,7 +2497,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-shop-b",
@@ -2416,7 +2521,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-storefront-b",
@@ -2439,7 +2545,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "florist-wrapped-b",
@@ -2463,7 +2570,8 @@
     "temperature": "warm",
     "color": "#c8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-bread-b",
@@ -2485,7 +2593,8 @@
     "temperature": "warm",
     "color": "#481808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-breakfast-b",
@@ -2506,7 +2615,8 @@
     "temperature": "warm",
     "color": "#d8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-burger",
@@ -2528,7 +2638,8 @@
     "temperature": "warm",
     "color": "#888878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-cake-b",
@@ -2551,7 +2662,8 @@
     "temperature": "warm",
     "color": "#282808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-cheese-b",
@@ -2572,7 +2684,8 @@
     "temperature": "warm",
     "color": "#885828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-fish-b",
@@ -2594,7 +2707,8 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-fruit-b",
@@ -2615,7 +2729,8 @@
     "temperature": "warm",
     "color": "#383828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-pasta-b",
@@ -2637,7 +2752,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-pizza-b",
@@ -2659,7 +2775,8 @@
     "temperature": "warm",
     "color": "#684828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-salad-b",
@@ -2681,7 +2798,8 @@
     "temperature": "warm",
     "color": "#282808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-soup-b",
@@ -2704,7 +2822,8 @@
     "temperature": "warm",
     "color": "#a89888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "food-vegetables-b",
@@ -2726,7 +2845,8 @@
     "temperature": "warm",
     "color": "#886848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "furniture-bed-b",
@@ -2748,7 +2868,8 @@
     "temperature": "warm",
     "color": "#a89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "furniture-bookshelf-b",
@@ -2770,7 +2891,8 @@
     "temperature": "warm",
     "color": "#e8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "furniture-wardrobe-b",
@@ -2791,7 +2913,8 @@
     "temperature": "warm",
     "color": "#381808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-abstract-bold-b",
@@ -2813,7 +2936,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-abstract-calm-b",
@@ -2835,7 +2959,8 @@
     "temperature": "warm",
     "color": "#b8a888",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-abstract-dark-b",
@@ -2856,7 +2981,8 @@
     "temperature": "neutral",
     "color": "#788898",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-abstract-green-b",
@@ -2878,7 +3004,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-abstract-warm-b",
@@ -2900,7 +3027,8 @@
     "temperature": "warm",
     "color": "#f8b878",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-bakery-b",
@@ -2922,7 +3050,8 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-boatyard-b",
@@ -2944,7 +3073,8 @@
     "temperature": "cool",
     "color": "#b8c8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-cabin-b",
@@ -2968,7 +3098,8 @@
     "temperature": "neutral",
     "color": "#b8c8d8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-cafe-b",
@@ -2990,7 +3121,8 @@
     "temperature": "warm",
     "color": "#a89888",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-city-street-b",
@@ -3013,7 +3145,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-clinic-b",
@@ -3037,7 +3170,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-coast-b",
@@ -3060,7 +3194,8 @@
     "temperature": "warm",
     "color": "#a8a8a8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-coworking-b",
@@ -3093,7 +3228,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-event-b",
@@ -3125,7 +3261,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-farm-b",
@@ -3148,7 +3285,8 @@
     "temperature": "neutral",
     "color": "#a8c8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-forest-b",
@@ -3175,7 +3313,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-garage-b",
@@ -3198,7 +3337,8 @@
     "temperature": "neutral",
     "color": "#b8b8a8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-garden-b",
@@ -3224,7 +3364,8 @@
     "temperature": "neutral",
     "color": "#d8e8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-harbour-b",
@@ -3248,7 +3389,8 @@
     "temperature": "cool",
     "color": "#a8c8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-home-b",
@@ -3273,7 +3415,8 @@
     "temperature": "warm",
     "color": "#989888",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-hotel-b",
@@ -3296,7 +3439,8 @@
     "temperature": "warm",
     "color": "#483828",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-kitchen-b",
@@ -3324,7 +3468,8 @@
     "temperature": "warm",
     "color": "#a89888",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-lab-b",
@@ -3347,7 +3492,8 @@
     "temperature": "neutral",
     "color": "#c8c8b8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-library-b",
@@ -3374,7 +3520,8 @@
     "temperature": "warm",
     "color": "#d8d8c8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-market-b",
@@ -3395,7 +3542,8 @@
     "temperature": "cool",
     "color": "#b8d8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-mountains-b",
@@ -3418,7 +3566,8 @@
     "temperature": "neutral",
     "color": "#b8c8c8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-music-b",
@@ -3448,7 +3597,8 @@
     "temperature": "warm",
     "color": "#887858",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-office-b",
@@ -3481,7 +3631,8 @@
     "temperature": "warm",
     "color": "#988878",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-restaurant-b",
@@ -3505,7 +3656,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-salon-b",
@@ -3532,7 +3684,8 @@
     "temperature": "warm",
     "color": "#a89878",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-school-b",
@@ -3555,7 +3708,8 @@
     "temperature": "warm",
     "color": "#d8c8c8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-shop-b",
@@ -3578,7 +3732,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-sports-hall-b",
@@ -3605,7 +3760,8 @@
     "temperature": "warm",
     "color": "#884808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-stable-b",
@@ -3628,7 +3784,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-summer-b",
@@ -3651,7 +3808,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-vineyard-b",
@@ -3674,7 +3832,8 @@
     "temperature": "warm",
     "color": "#d8d8d8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-warehouse-b",
@@ -3696,7 +3855,8 @@
     "temperature": "warm",
     "color": "#f8f8e8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-winter-b",
@@ -3720,7 +3880,8 @@
     "temperature": "cool",
     "color": "#484868",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-workshop-b",
@@ -3750,7 +3911,8 @@
     "temperature": "warm",
     "color": "#785838",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-yoga-studio-b",
@@ -3774,7 +3936,8 @@
     "temperature": "warm",
     "color": "#c89878",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "horse-paddock-b",
@@ -3796,7 +3959,8 @@
     "temperature": "warm",
     "color": "#381808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "horse-pony-b",
@@ -3819,7 +3983,8 @@
     "temperature": "warm",
     "color": "#987818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "horse-white-b",
@@ -3841,7 +4006,8 @@
     "temperature": "warm",
     "color": "#482808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "house-cottage-b",
@@ -3864,7 +4030,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "house-modern-b",
@@ -3886,7 +4053,8 @@
     "temperature": "warm",
     "color": "#98b8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "house-red-b",
@@ -3908,7 +4076,8 @@
     "temperature": "warm",
     "color": "#681808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "house-terrace-b",
@@ -3930,7 +4099,8 @@
     "temperature": "warm",
     "color": "#b88868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "house-yellow-b",
@@ -3952,7 +4122,8 @@
     "temperature": "warm",
     "color": "#283818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "instrument-drums-b",
@@ -3974,7 +4145,8 @@
     "temperature": "warm",
     "color": "#d8a878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "instrument-guitar-b",
@@ -3996,7 +4168,8 @@
     "temperature": "warm",
     "color": "#c89868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "instrument-keyboard-b",
@@ -4018,7 +4191,8 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "instrument-piano-b",
@@ -4040,7 +4214,8 @@
     "temperature": "warm",
     "color": "#682808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "instrument-violin-b",
@@ -4062,7 +4237,8 @@
     "temperature": "warm",
     "color": "#887858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "lamp-desk-b",
@@ -4084,7 +4260,8 @@
     "temperature": "warm",
     "color": "#c8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "lamp-floor-b",
@@ -4106,7 +4283,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "lamp-pendant-b",
@@ -4128,7 +4306,8 @@
     "temperature": "warm",
     "color": "#a89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "laptop-closed-b",
@@ -4150,7 +4329,8 @@
     "temperature": "warm",
     "color": "#282808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "laptop-open-b",
@@ -4173,7 +4353,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "logo-arc-c",
@@ -4196,7 +4377,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-bag-c",
@@ -4220,7 +4402,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-ball-c",
@@ -4246,7 +4429,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-barn-c",
@@ -4270,7 +4454,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-bike-c",
@@ -4294,7 +4479,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-bird-c",
@@ -4319,7 +4505,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-book-c",
@@ -4344,7 +4531,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-box-c",
@@ -4369,7 +4557,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-bubble-c",
@@ -4394,7 +4583,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-calendar-c",
@@ -4419,7 +4609,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-camera-c",
@@ -4442,7 +4633,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-cap-c",
@@ -4468,7 +4660,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-car-c",
@@ -4493,7 +4686,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-cards-c",
@@ -4518,7 +4712,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-cat-c",
@@ -4541,7 +4736,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-circle-b",
@@ -4564,7 +4760,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-coins-c",
@@ -4589,7 +4786,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-cup-c",
@@ -4612,7 +4810,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-drop-c",
@@ -4636,7 +4835,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-dumbbell-c",
@@ -4660,7 +4860,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-flask-c",
@@ -4684,7 +4885,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-flower-c",
@@ -4707,7 +4909,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-fork-c",
@@ -4731,7 +4934,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-grapes-c",
@@ -4754,7 +4958,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-hammer-c",
@@ -4779,7 +4984,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-hands-c",
@@ -4804,7 +5010,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-heart-cross-c",
@@ -4829,7 +5036,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-horseshoe-c",
@@ -4852,7 +5060,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-house-c",
@@ -4877,7 +5086,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-key-c",
@@ -4903,7 +5113,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-knot-c",
@@ -4927,7 +5138,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-leaf-c",
@@ -4952,7 +5164,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-lotus-c",
@@ -4977,7 +5190,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-acme-c",
@@ -4997,7 +5211,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-invoicely-c",
@@ -5017,7 +5232,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-northwind-c",
@@ -5037,7 +5253,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-our-collection-c",
@@ -5057,7 +5274,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-stillwater-c",
@@ -5077,7 +5295,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-team-tasks-c",
@@ -5097,7 +5316,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mono-torget-c",
@@ -5117,7 +5337,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-mountain-b",
@@ -5141,7 +5362,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-note-c",
@@ -5167,7 +5389,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-paw-c",
@@ -5193,7 +5416,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-pin-c",
@@ -5218,7 +5442,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-plane-c",
@@ -5243,7 +5468,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-plug-c",
@@ -5268,7 +5494,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-pulse",
@@ -5293,7 +5520,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-receipt-c",
@@ -5318,7 +5546,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-rings",
@@ -5344,7 +5573,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-sailboat-c",
@@ -5369,7 +5599,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-scissors-c",
@@ -5395,7 +5626,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-sprout-c",
@@ -5420,7 +5652,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-square",
@@ -5443,7 +5676,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-star-c",
@@ -5467,7 +5701,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-sun-c",
@@ -5491,7 +5726,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-tag-c",
@@ -5516,7 +5752,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-ticket-c",
@@ -5541,7 +5778,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-toolbox-c",
@@ -5568,7 +5806,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-tooth-c",
@@ -5591,7 +5830,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-tulip-c",
@@ -5614,7 +5854,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-wave-c",
@@ -5639,7 +5880,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-wheat-c",
@@ -5663,7 +5905,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "logo-wrench-c",
@@ -5688,7 +5931,8 @@
     "temperature": "cool",
     "color": "#080808",
     "source": "gpt-image-1",
-    "photo": false
+    "photo": false,
+    "generated": true
   },
   {
     "id": "market-armchair-1-b",
@@ -5697,7 +5941,6 @@
     "alt": "A gray wool armchair in a living room corner",
     "tags": [
       "sample",
-      "starter-marketplace",
       "furniture",
       "armchair",
       "chair",
@@ -5712,7 +5955,8 @@
     "temperature": "warm",
     "color": "#986838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-armchair-2-b",
@@ -5721,7 +5965,6 @@
     "alt": "The wool fabric and armrest of the armchair",
     "tags": [
       "sample",
-      "starter-marketplace",
       "furniture",
       "armchair",
       "second-hand",
@@ -5735,7 +5978,40 @@
     "temperature": "warm",
     "color": "#382818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-armchair-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-armchair-p.webp",
+    "alt": "A light grey armchair with a blue cushion in a corner by the curtains",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "armchair",
+      "furniture",
+      "chair",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 67494,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#181818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Sheraton_Grand_Macao_%E5%AE%A2%E6%88%BF_hotel_room_%E7%81%B0%E8%89%B2_%E6%A2%B3%E5%8C%96%E6%A4%85_armchair_sofa_n_%E5%95%A1%E8%89%B2%E6%9C%A8%E8%A3%BD%E8%8C%B6%E5%B9%BE_brown_wooden_tea_table_%E6%97%A9%E4%B8%8A_morning_November_2023_R12S_03.jpg",
+      "author": "Bita RmJohnson Liuosa",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-balance-bike-1",
@@ -5744,7 +6020,6 @@
     "alt": "A child's wooden balance bike on a lawn",
     "tags": [
       "sample",
-      "starter-marketplace",
       "bike",
       "kids",
       "toy",
@@ -5759,7 +6034,8 @@
     "temperature": "warm",
     "color": "#484828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-books-1-b",
@@ -5768,7 +6044,6 @@
     "alt": "A cardboard box of children's picture books on a floor",
     "tags": [
       "sample",
-      "starter-marketplace",
       "books",
       "kids",
       "second-hand",
@@ -5782,7 +6057,40 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-books-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-books-p.webp",
+    "alt": "A stack of old leather-bound books",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "books",
+      "antique",
+      "reading",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 69548,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#d8d8d8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Books_01.JPG",
+      "author": "Ch. Maderthoner",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-chairs-1-b",
@@ -5791,7 +6099,6 @@
     "alt": "Two oak dining chairs side by side",
     "tags": [
       "sample",
-      "starter-marketplace",
       "furniture",
       "chair",
       "second-hand",
@@ -5805,7 +6112,8 @@
     "temperature": "warm",
     "color": "#582808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-city-bike-1-b",
@@ -5814,7 +6122,6 @@
     "alt": "A green city bike with a basket on a gravel drive",
     "tags": [
       "sample",
-      "starter-marketplace",
       "bike",
       "bicycle",
       "vehicle",
@@ -5829,7 +6136,8 @@
     "temperature": "warm",
     "color": "#a89888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-city-bike-2-b",
@@ -5838,7 +6146,6 @@
     "alt": "The handlebar, bell and basket of the city bike",
     "tags": [
       "sample",
-      "starter-marketplace",
       "bike",
       "bicycle",
       "second-hand",
@@ -5852,7 +6159,40 @@
     "temperature": "warm",
     "color": "#a88868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-city-bike-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-city-bike-p.webp",
+    "alt": "A black hybrid bike on the grass by a pond at sunset",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "bike",
+      "bicycle",
+      "outdoor",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 85820,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Bicycle_parked_near_a_seasonal_pond_at_Kumbakudi.jpg",
+      "author": "deadrat",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-dinghy-1-b",
@@ -5861,7 +6201,6 @@
     "alt": "A white sailing dinghy on a trailer by a granite shore",
     "tags": [
       "sample",
-      "starter-marketplace",
       "boat",
       "sailing",
       "sea",
@@ -5877,7 +6216,8 @@
     "temperature": "warm",
     "color": "#b8c8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-dinghy-2-b",
@@ -5886,7 +6226,6 @@
     "alt": "The sail and tiller inside the dinghy",
     "tags": [
       "sample",
-      "starter-marketplace",
       "boat",
       "sailing",
       "second-hand",
@@ -5900,7 +6239,40 @@
     "temperature": "warm",
     "color": "#e8d8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-guitar-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-guitar-p.webp",
+    "alt": "An acoustic guitar standing against a white wall",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "guitar",
+      "music",
+      "instrument",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 76748,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#986848",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Yamaha_Acoustic_Guitar_FG-331v2.jpg",
+      "author": "Veradrive",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-headphones-1-b",
@@ -5909,7 +6281,6 @@
     "alt": "Black over-ear headphones on a wooden table",
     "tags": [
       "sample",
-      "starter-marketplace",
       "headphones",
       "electronics",
       "music",
@@ -5924,7 +6295,40 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-headphones-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-headphones-p.webp",
+    "alt": "Over-ear headphones resting on a loudspeaker",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "headphones",
+      "music",
+      "electronics",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 34196,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#584838",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg",
+      "author": "Alphacolor 13 duck58cth",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-lamp-1-b",
@@ -5933,7 +6337,6 @@
     "alt": "A brass floor lamp with a linen shade against a wall",
     "tags": [
       "sample",
-      "starter-marketplace",
       "lamp",
       "lighting",
       "furniture",
@@ -5948,7 +6351,40 @@
     "temperature": "warm",
     "color": "#a88868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-lamp-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-lamp-p.webp",
+    "alt": "A green floor lamp against a pale green wall",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "lamp",
+      "furniture",
+      "lighting",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 24012,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#98a898",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png",
+      "author": "Mamcmi",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-laptop-1-b",
@@ -5957,7 +6393,6 @@
     "alt": "An open laptop with its charger on a wooden table",
     "tags": [
       "sample",
-      "starter-marketplace",
       "laptop",
       "computer",
       "electronics",
@@ -5972,7 +6407,74 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-laptop-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-laptop-p.webp",
+    "alt": "An open laptop, a phone and a notebook on a wooden desk",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "laptop",
+      "computer",
+      "electronics",
+      "desk",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 60646,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg",
+      "author": "www.Pixel.la Free Stock Photos",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
+  },
+  {
+    "id": "market-record-player-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-record-player-p.webp",
+    "alt": "A record player in a wooden cabinet, a record on the platter",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "turntable",
+      "record-player",
+      "music",
+      "electronics",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 65862,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#484848",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:HMV_Record_Player.jpg",
+      "author": "Amitbalani",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-road-bike-1-b",
@@ -5981,7 +6483,6 @@
     "alt": "A gray road bike leaning against a garage wall",
     "tags": [
       "sample",
-      "starter-marketplace",
       "bike",
       "bicycle",
       "sports",
@@ -5996,7 +6497,41 @@
     "temperature": "warm",
     "color": "#b89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-road-bike-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-road-bike-p.webp",
+    "alt": "A blue road bike leaning on a green railing by a beach",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "bike",
+      "bicycle",
+      "road-bike",
+      "outdoor",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 154914,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "cool",
+    "color": "#78b8f8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Triban_RC520_Decathlon_road_bike.jpg",
+      "author": "Moklys",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-roof-box-1-b",
@@ -6005,7 +6540,6 @@
     "alt": "A black car roof box on a garage floor",
     "tags": [
       "sample",
-      "starter-marketplace",
       "car",
       "vehicle",
       "accessories",
@@ -6020,7 +6554,42 @@
     "temperature": "warm",
     "color": "#c8b898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-rowboat-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-rowboat-p.webp",
+    "alt": "White rowing boats with oars on a lakeside lawn",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "boat",
+      "rowboat",
+      "outdoor",
+      "water",
+      "sports",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 104174,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "cool",
+    "color": "#b8b8b8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg",
+      "author": "Mustang Joe",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-sideboard-1-b",
@@ -6029,7 +6598,6 @@
     "alt": "A teak sideboard with sliding doors against a white wall",
     "tags": [
       "sample",
-      "starter-marketplace",
       "furniture",
       "sideboard",
       "second-hand",
@@ -6043,7 +6611,8 @@
     "temperature": "warm",
     "color": "#883808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-sideboard-2-b",
@@ -6052,7 +6621,6 @@
     "alt": "The corner and wood grain of the teak sideboard",
     "tags": [
       "sample",
-      "starter-marketplace",
       "furniture",
       "sideboard",
       "second-hand",
@@ -6066,7 +6634,8 @@
     "temperature": "warm",
     "color": "#782808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-skis-1-b",
@@ -6075,7 +6644,6 @@
     "alt": "Cross-country skis and poles against a red wall in the snow",
     "tags": [
       "sample",
-      "starter-marketplace",
       "skis",
       "sports",
       "winter",
@@ -6090,7 +6658,73 @@
     "temperature": "warm",
     "color": "#983818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-table-chairs-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-table-chairs-p.webp",
+    "alt": "A birch table with white chairs around it",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "table",
+      "chairs",
+      "furniture",
+      "dining",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 23284,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#888888",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg",
+      "author": "Breather breather",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
+  },
+  {
+    "id": "market-toys-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-toys-p.webp",
+    "alt": "Three wooden pull-along toys: a car, a star and a duck",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "toys",
+      "kids",
+      "wooden",
+      "second-hand",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 17986,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#c8d8d8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Wooden_toys_with_wheels.jpg",
+      "author": "LakshanaRamasamy",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-25"
+    }
   },
   {
     "id": "market-turntable-1-b",
@@ -6099,7 +6733,6 @@
     "alt": "A wooden record player on a low shelf beside records",
     "tags": [
       "sample",
-      "starter-marketplace",
       "turntable",
       "electronics",
       "music",
@@ -6114,7 +6747,8 @@
     "temperature": "warm",
     "color": "#181808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-turntable-2-b",
@@ -6123,7 +6757,6 @@
     "alt": "The tonearm and a record on the record player",
     "tags": [
       "sample",
-      "starter-marketplace",
       "turntable",
       "music",
       "second-hand",
@@ -6137,7 +6770,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-carpenter-b",
@@ -6160,7 +6794,8 @@
     "temperature": "warm",
     "color": "#482808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-chef-b",
@@ -6183,7 +6818,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-courier-b",
@@ -6206,7 +6842,8 @@
     "temperature": "warm",
     "color": "#182818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-farmer-b",
@@ -6229,7 +6866,8 @@
     "temperature": "warm",
     "color": "#e8e8e8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-gardener-b",
@@ -6252,7 +6890,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-hiker-b",
@@ -6274,7 +6913,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-mechanic-b",
@@ -6297,7 +6937,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-nurse-b",
@@ -6320,7 +6961,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-office-b",
@@ -6342,7 +6984,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-1-b",
@@ -6364,7 +7007,8 @@
     "temperature": "warm",
     "color": "#b8a8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-2-b",
@@ -6386,7 +7030,8 @@
     "temperature": "neutral",
     "color": "#d8c8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-3-b",
@@ -6408,7 +7053,8 @@
     "temperature": "warm",
     "color": "#685818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-4-b",
@@ -6430,7 +7076,8 @@
     "temperature": "warm",
     "color": "#e8e8f8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-5-b",
@@ -6452,7 +7099,8 @@
     "temperature": "warm",
     "color": "#081828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-6-b",
@@ -6474,7 +7122,8 @@
     "temperature": "warm",
     "color": "#f8f8f8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-7-b",
@@ -6496,7 +7145,8 @@
     "temperature": "warm",
     "color": "#182848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-portrait-8-b",
@@ -6518,7 +7168,8 @@
     "temperature": "warm",
     "color": "#e8e8f8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-shopkeeper-b",
@@ -6540,7 +7191,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-teacher-b",
@@ -6563,7 +7215,8 @@
     "temperature": "warm",
     "color": "#c8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "people-team-b",
@@ -6586,7 +7239,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "phone-black-b",
@@ -6607,7 +7261,8 @@
     "temperature": "warm",
     "color": "#d89858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "phone-hand-b",
@@ -6628,7 +7283,8 @@
     "temperature": "neutral",
     "color": "#686868",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plant-flowers-b",
@@ -6649,7 +7305,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plant-herbs-b",
@@ -6672,7 +7329,8 @@
     "temperature": "warm",
     "color": "#b8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plant-monstera-b",
@@ -6694,7 +7352,8 @@
     "temperature": "warm",
     "color": "#e8c8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plant-succulents-b",
@@ -6716,7 +7375,8 @@
     "temperature": "warm",
     "color": "#886838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plant-tree-b",
@@ -6738,7 +7398,8 @@
     "temperature": "warm",
     "color": "#384808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-bathroom-b",
@@ -6763,7 +7424,8 @@
     "temperature": "warm",
     "color": "#785828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-customer-b",
@@ -6786,7 +7448,8 @@
     "temperature": "neutral",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-kitchen-b",
@@ -6809,7 +7472,8 @@
     "temperature": "warm",
     "color": "#c8c8c8",
     "source": "gpt-image-2",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-sink-b",
@@ -6832,7 +7496,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-tools-b",
@@ -6854,7 +7519,8 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "plumber-van-b",
@@ -6878,7 +7544,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-bottle-b",
@@ -6899,7 +7566,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-box-b",
@@ -6922,7 +7590,8 @@
     "temperature": "warm",
     "color": "#784818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-boxes-b",
@@ -6946,7 +7615,8 @@
     "temperature": "warm",
     "color": "#c89858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-candle-b",
@@ -6969,7 +7639,8 @@
     "temperature": "warm",
     "color": "#c8a878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-jar-b",
@@ -6991,7 +7662,8 @@
     "temperature": "warm",
     "color": "#182808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-mug-b",
@@ -7014,7 +7686,8 @@
     "temperature": "warm",
     "color": "#b8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-parcel-b",
@@ -7036,7 +7709,8 @@
     "temperature": "warm",
     "color": "#d8a848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-soap-b",
@@ -7058,7 +7732,8 @@
     "temperature": "warm",
     "color": "#a85808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-sunglasses-b",
@@ -7080,7 +7755,8 @@
     "temperature": "warm",
     "color": "#886848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-vase-b",
@@ -7103,7 +7779,8 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "product-watch-b",
@@ -7125,7 +7802,8 @@
     "temperature": "warm",
     "color": "#c88848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-bathroom-b",
@@ -7148,7 +7826,8 @@
     "temperature": "warm",
     "color": "#a8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-bedroom-b",
@@ -7172,7 +7851,8 @@
     "temperature": "warm",
     "color": "#583808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-hall-b",
@@ -7194,7 +7874,8 @@
     "temperature": "warm",
     "color": "#885828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-kitchen-b",
@@ -7217,7 +7898,8 @@
     "temperature": "warm",
     "color": "#a8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-living-b",
@@ -7240,7 +7922,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-meeting-b",
@@ -7262,7 +7945,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "room-office-b",
@@ -7284,7 +7968,8 @@
     "temperature": "warm",
     "color": "#583818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-cleaning-b",
@@ -7305,7 +7990,8 @@
     "temperature": "warm",
     "color": "#b89868",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-haircut-b",
@@ -7328,7 +8014,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-massage-b",
@@ -7351,7 +8038,8 @@
     "temperature": "warm",
     "color": "#885828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-moving-b",
@@ -7373,7 +8061,8 @@
     "temperature": "warm",
     "color": "#484838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-painting-b",
@@ -7395,7 +8084,8 @@
     "temperature": "warm",
     "color": "#98a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-photography-b",
@@ -7417,7 +8107,8 @@
     "temperature": "warm",
     "color": "#d8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-repair-b",
@@ -7439,7 +8130,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "service-tutoring-b",
@@ -7461,7 +8153,8 @@
     "temperature": "warm",
     "color": "#e8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sofa-gray-b",
@@ -7479,7 +8172,8 @@
     "temperature": "warm",
     "color": "#c8b8a8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sofa-green-b",
@@ -7500,7 +8194,8 @@
     "temperature": "warm",
     "color": "#e8e8d8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sofa-leather-b",
@@ -7522,7 +8217,8 @@
     "temperature": "warm",
     "color": "#481808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-backpack-b",
@@ -7544,7 +8240,8 @@
     "temperature": "warm",
     "color": "#584808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-fishing-b",
@@ -7566,7 +8263,8 @@
     "temperature": "warm",
     "color": "#d8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-football-b",
@@ -7588,7 +8286,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-golf-b",
@@ -7609,7 +8308,8 @@
     "temperature": "warm",
     "color": "#a8a848",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-skates-b",
@@ -7631,7 +8331,8 @@
     "temperature": "warm",
     "color": "#786858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-skis-b",
@@ -7649,7 +8350,8 @@
     "temperature": "warm",
     "color": "#882808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-tennis-b",
@@ -7670,7 +8372,8 @@
     "temperature": "warm",
     "color": "#a85828",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-tent-b",
@@ -7692,7 +8395,8 @@
     "temperature": "warm",
     "color": "#b83808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "sports-weights-b",
@@ -7715,7 +8419,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "table-coffee-b",
@@ -7736,7 +8441,8 @@
     "temperature": "warm",
     "color": "#e8d8c8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "table-desk-b",
@@ -7759,7 +8465,8 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "table-dining-b",
@@ -7781,7 +8488,8 @@
     "temperature": "warm",
     "color": "#b8a898",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "tools-drill-b",
@@ -7803,7 +8511,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "tools-garden-b",
@@ -7824,7 +8533,8 @@
     "temperature": "warm",
     "color": "#884818",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "tools-hand-b",
@@ -7845,7 +8555,8 @@
     "temperature": "warm",
     "color": "#b88858",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "tools-ladder-b",
@@ -7866,7 +8577,8 @@
     "temperature": "warm",
     "color": "#c8a878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "tools-toolbox-b",
@@ -7887,7 +8599,8 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "toy-blocks-b",
@@ -7905,7 +8618,8 @@
     "temperature": "warm",
     "color": "#b89878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "toy-boardgame-b",
@@ -7927,7 +8641,8 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "toy-puzzle-b",
@@ -7949,7 +8664,8 @@
     "temperature": "warm",
     "color": "#a87838",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "toy-teddy-b",
@@ -7971,7 +8687,8 @@
     "temperature": "warm",
     "color": "#d8c8b8",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   },
   {
     "id": "toy-train-b",
@@ -7993,6 +8710,7 @@
     "temperature": "warm",
     "color": "#d8a878",
     "source": "gpt-image-1-mini",
-    "photo": true
+    "photo": true,
+    "generated": true
   }
 ]

@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 // Builds the image library from manifest.yml: generates missing pictures with OpenAI's image API
-// (or copies them from a file), writes images/<kind>/<id>.webp and regenerates index.json. The
+// (or copies them from a file, or fetches a real photograph from Wikimedia Commons), writes images/<kind>/<id>.webp and regenerates index.json. The
 // pictures are not in Git: they are served from the docs site's bucket (--upload) and attached to
 // releases as a tarball (--tar); index.json names each by its URL.
 //
 //   node scripts/make-images.mjs --dry-run [--only <id|kind>]   prompts and the estimated cost, nothing sent
-//   node scripts/make-images.mjs [--only <id|kind|tag>]          copies `from:` entries, generates the rest directly
+//   node scripts/make-images.mjs [--only <id|kind|tag>]          copies `from:`, fetches `photo:`, generates the rest directly
 //   node scripts/make-images.mjs --batch submit|status|fetch     the Batch API (half price, within 24 h)
 //   node scripts/make-images.mjs --sheet [--only <kind> --out <dir>]  a contact sheet per kind, in sheets/ (and <dir>)
 //   node scripts/make-images.mjs --upload                        images/ to the docs bucket (SMITHABLE_DOCS_BUCKET)
 //   node scripts/make-images.mjs --tar                           images-<date>.tar, for a release asset
-//   node scripts/make-images.mjs --index                         copies `from:` entries and writes index.json; nothing sent
+//   node scripts/make-images.mjs --index                         copies `from:`, fetches `photo:` and writes index.json; no model
 //
 // The key is read from OPENAI_API_KEY or ~/.config/smithable/openai.env and never printed.
 import { spawnSync } from "node:child_process";
@@ -22,6 +22,7 @@ import { Readable } from "node:stream";
 import { parseArgs } from "node:util";
 import sharp from "sharp";
 import { parse } from "yaml";
+import { commonsFile, UA } from "./commons.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -62,7 +63,8 @@ const manifest = parse(readFileSync(join(ROOT, "manifest.yml"), "utf8"));
 const defaults = manifest.defaults ?? {};
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
-  if (!e.prompt === !e.from) throw new Error(`${e.id}: give either prompt or from`);
+  if ([e.prompt, e.from, e.photo].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from or photo`);
+  if (e.photo && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
   if (!e.alt || !e.tags?.length) throw new Error(`${e.id}: alt and tags are required`);
   if (e.style && !defaults.style?.[e.style]) throw new Error(`${e.id}: no style ${e.style} in defaults`);
   return {
@@ -147,14 +149,20 @@ async function clearHaze(input) {
   return sharp(data, { raw: info }).png().toBuffer();
 }
 
-// Scales to the kind's long side (never up), encodes WebP, and writes the file.
+// Scales to the kind's long side (never up), encodes WebP, and writes the file. A real photograph is
+// cut to 3:2 first, as the generated ones are, around its most detailed part. Sharp writes no
+// metadata unless asked, so the camera's and the source's are left behind (credits.json keeps
+// what is owed).
 async function store(e, input) {
   const kind = KINDS[e.kind];
   mkdirSync(dirname(e.file), { recursive: true });
   if (kind.transparent) input = await clearHaze(input);
+  const resize = e.photo
+    ? { width: kind.long, height: Math.round((kind.long * 2) / 3), fit: "cover", position: "attention", withoutEnlargement: true }
+    : { width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true };
   await sharp(input)
     .rotate()
-    .resize({ width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true })
+    .resize(resize)
     .webp({ quality: kind.quality, effort: 6, alphaQuality: kind.transparent ? 100 : 90 })
     .toFile(e.file);
 }
@@ -180,10 +188,14 @@ async function describe(e) {
     tone: luminance > 0.6 ? "light" : luminance < 0.3 ? "dark" : "mid",
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
-    source: e.from ? "file" : e.model,
-    // Drawn in a photograph's style (heroes and samples, the abstract heroes included), so an app shows
-    // it with the AI-generated badge; marks are drawn as marks, not as photographs.
+    source: e.photo ? "wikimedia-commons" : e.from ? "file" : e.model,
+    // A photograph or drawn as one (heroes and samples, the abstract heroes included); marks are
+    // drawn as marks.
     photo: !KINDS[e.kind].transparent,
+    // Made by an image model, so an app that places it says so (generated: true, the AI badge);
+    // a real photograph is not, and carries where it is from instead.
+    generated: !e.photo && !e.from,
+    ...(e.photo ? { credit: credits[e.id] } : {}),
   };
 }
 
@@ -223,8 +235,8 @@ function dryRun() {
     byModel[key].count++;
     byModel[key].cost += priceOf(e);
   }
-  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
-  console.log(`\n${missing.length - toMake.length} to copy, ${toMake.length} to generate, ${selected.length - missing.length} present`);
+  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : e.photo ? `photo ${e.photo}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
+  console.log(`\n${missing.length - toMake.length} to copy or fetch, ${toMake.length} to generate, ${selected.length - missing.length} present`);
   let total = 0;
   for (const [key, { count, cost }] of Object.entries(byModel)) {
     console.log(`  ${String(count).padStart(4)} × ${key}: $${cost.toFixed(2)}`);
@@ -234,7 +246,36 @@ function dryRun() {
   console.log(`  total $${total.toFixed(2)} direct; $${(total - batchable / 2).toFixed(2)} with --batch (${[...BATCH_MODELS].join(", ")} at half price)`);
 }
 
+// Real photographs: CC0 or public domain on Wikimedia Commons, the licence read again from the
+// file's own page when fetched (find-photos.mjs only proposes). What the credits file of an app
+// lists is kept in credits.json: the page, the author as Commons gives it, the licence, the date.
+const CREDITS = join(ROOT, "credits.json");
+const credits = existsSync(CREDITS) ? JSON.parse(readFileSync(CREDITS, "utf8")) : {};
+
+async function fetchPhotos() {
+  for (const e of missing.filter((m) => m.photo)) {
+    const file = await commonsFile(e.photo);
+    if (!file.licence.ok)
+      throw new Error(`${e.id}: ${file.page} is ${file.licence.name}${file.licence.restricted ? " with restrictions" : ""}, not CC0 or public domain without restrictions`);
+    // Commons scales on its side; twice the kind's size leaves room for the 3:2 cut.
+    const { url } = await commonsFile(e.photo, KINDS[e.kind].long * 2);
+    const res = await fetch(url, { headers: { "user-agent": UA } });
+    if (!res.ok) throw new Error(`${e.id}: ${url} answered ${res.status}`);
+    await store(e, Buffer.from(await res.arrayBuffer()));
+    credits[e.id] = {
+      page: file.page,
+      author: file.licence.author,
+      licence: file.licence.name,
+      ...(file.licence.url ? { licenceUrl: file.licence.url } : {}),
+      fetched: new Date().toISOString().slice(0, 10),
+    };
+    writeFileSync(CREDITS, `${JSON.stringify(Object.fromEntries(Object.entries(credits).sort()), null, 2)}\n`);
+    console.log(`✓ ${e.kind}/${e.id} (${file.licence.name}, ${file.page})`);
+  }
+}
+
 async function copyFiles() {
+  await fetchPhotos();
   for (const e of missing.filter((m) => m.from)) {
     const source = resolve(ROOT, e.from.replace(/^~(?=\/)/, homedir()));
     await store(e, source);

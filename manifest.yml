@@ -1791,114 +1791,175 @@ images:
     prompt: "A used mid-century teak sideboard with sliding doors, photographed by its seller against a white wall on a wooden floor."
     style: listing
     alt: "A teak sideboard with sliding doors against a white wall"
-    tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
+    tags: [sample, furniture, sideboard, second-hand, indoor]
   - id: market-sideboard-2-b
     kind: sample
     prompt: "A close-up of the top corner and grain of a used teak sideboard, with small signs of wear, in daylight."
     style: listing
     alt: "The corner and wood grain of the teak sideboard"
-    tags: [sample, starter-marketplace, furniture, sideboard, second-hand, indoor]
+    tags: [sample, furniture, sideboard, second-hand, indoor]
   - id: market-chairs-1-b
     kind: sample
     prompt: "A pair of used oak dining chairs side by side on a wooden floor by a window, photographed by their seller."
     style: listing
     alt: "Two oak dining chairs side by side"
-    tags: [sample, starter-marketplace, furniture, chair, second-hand, indoor]
+    tags: [sample, furniture, chair, second-hand, indoor]
   - id: market-armchair-1-b
     kind: sample
     prompt: "A used armchair upholstered in gray wool, with wooden legs, in a bright living room corner, photographed by its seller."
     style: listing
     alt: "A gray wool armchair in a living room corner"
-    tags: [sample, starter-marketplace, furniture, armchair, chair, second-hand, indoor]
+    tags: [sample, furniture, armchair, chair, second-hand, indoor]
   - id: market-armchair-2-b
     kind: sample
     prompt: "A close-up of the gray wool fabric and the armrest of a used armchair, in soft daylight."
     style: listing
     alt: "The wool fabric and armrest of the armchair"
-    tags: [sample, starter-marketplace, furniture, armchair, second-hand, indoor]
+    tags: [sample, furniture, armchair, second-hand, indoor]
   - id: market-lamp-1-b
     kind: sample
     prompt: "A used brass floor lamp with a white linen shade, switched on, against a plain wall, photographed by its seller."
     style: listing
     alt: "A brass floor lamp with a linen shade against a wall"
-    tags: [sample, starter-marketplace, lamp, lighting, furniture, second-hand, indoor]
+    tags: [sample, lamp, lighting, furniture, second-hand, indoor]
   - id: market-city-bike-1-b
     kind: sample
     prompt: "A used dark green city bicycle with a front basket, standing on a gravel drive by a wooden house, photographed by its seller."
     style: listing
     alt: "A green city bike with a basket on a gravel drive"
-    tags: [sample, starter-marketplace, bike, bicycle, vehicle, second-hand, outdoor]
+    tags: [sample, bike, bicycle, vehicle, second-hand, outdoor]
   - id: market-city-bike-2-b
     kind: sample
     prompt: "A close-up of the handlebar, bell and wicker basket of a used city bicycle, outdoors."
     style: listing
     alt: "The handlebar, bell and basket of the city bike"
-    tags: [sample, starter-marketplace, bike, bicycle, second-hand, outdoor]
+    tags: [sample, bike, bicycle, second-hand, outdoor]
   - id: market-balance-bike-1
     kind: sample
     prompt: "A small used wooden balance bike for a child, standing on a green lawn, photographed by its seller."
     alt: "A child's wooden balance bike on a lawn"
-    tags: [sample, starter-marketplace, bike, kids, toy, second-hand, outdoor]
+    tags: [sample, bike, kids, toy, second-hand, outdoor]
   - id: market-road-bike-1-b
     kind: sample
     prompt: "A used gray road bike leaning against a garage wall, side view, photographed by its seller."
     style: listing
     alt: "A gray road bike leaning against a garage wall"
-    tags: [sample, starter-marketplace, bike, bicycle, sports, second-hand, outdoor]
+    tags: [sample, bike, bicycle, sports, second-hand, outdoor]
   - id: market-laptop-1-b
     kind: sample
     prompt: "A used silver laptop, open with a dark blank screen, on a wooden table, with its charger coiled beside it, photographed by its seller."
     style: listing
     alt: "An open laptop with its charger on a wooden table"
-    tags: [sample, starter-marketplace, laptop, computer, electronics, second-hand, indoor]
+    tags: [sample, laptop, computer, electronics, second-hand, indoor]
   - id: market-headphones-1-b
     kind: sample
     prompt: "A pair of used black over-ear headphones lying on a wooden table, photographed by their seller."
     style: listing
     alt: "Black over-ear headphones on a wooden table"
-    tags: [sample, starter-marketplace, headphones, electronics, music, second-hand, indoor]
+    tags: [sample, headphones, electronics, music, second-hand, indoor]
   - id: market-turntable-1-b
     kind: sample
     prompt: "A used record player with a wooden base and a clear lid, on a low shelf beside a few records with plain sleeves, photographed by its seller."
     style: listing
     alt: "A wooden record player on a low shelf beside records"
-    tags: [sample, starter-marketplace, turntable, electronics, music, second-hand, indoor]
+    tags: [sample, turntable, electronics, music, second-hand, indoor]
   - id: market-turntable-2-b
     kind: sample
     prompt: "A close-up of the tonearm and platter of a used record player, a record on it, in warm daylight."
     style: listing
     alt: "The tonearm and a record on the record player"
-    tags: [sample, starter-marketplace, turntable, music, second-hand, indoor]
+    tags: [sample, turntable, music, second-hand, indoor]
   - id: market-skis-1-b
     kind: sample
     prompt: "A pair of used cross-country skis with poles, leaning against a red wooden wall in the snow, photographed by their seller."
     style: listing
     alt: "Cross-country skis and poles against a red wall in the snow"
-    tags: [sample, starter-marketplace, skis, sports, winter, second-hand, outdoor]
+    tags: [sample, skis, sports, winter, second-hand, outdoor]
   - id: market-dinghy-1-b
     kind: sample
     prompt: "A small used white sailing dinghy on a road trailer, parked on grass by a granite shore in the Åland archipelago, photographed by its seller."
     style: listing
     alt: "A white sailing dinghy on a trailer by a granite shore"
-    tags: [sample, starter-marketplace, boat, sailing, sea, vehicle, second-hand, outdoor]
+    tags: [sample, boat, sailing, sea, vehicle, second-hand, outdoor]
   - id: market-dinghy-2-b
     kind: sample
     prompt: "The folded sail and wooden tiller lying inside a small used sailing dinghy, seen from above."
     style: listing
     alt: "The sail and tiller inside the dinghy"
-    tags: [sample, starter-marketplace, boat, sailing, second-hand, outdoor]
+    tags: [sample, boat, sailing, second-hand, outdoor]
   - id: market-roof-box-1-b
     kind: sample
     prompt: "A used black car roof box lying on a garage floor, photographed by its seller."
     style: listing
     alt: "A black car roof box on a garage floor"
-    tags: [sample, starter-marketplace, car, vehicle, accessories, second-hand, indoor]
+    tags: [sample, car, vehicle, accessories, second-hand, indoor]
   - id: market-books-1-b
     kind: sample
     prompt: "An open cardboard box of used children's picture books with plain, unreadable covers, on a wooden floor, photographed by their seller."
     style: listing
     alt: "A cardboard box of children's picture books on a floor"
-    tags: [sample, starter-marketplace, books, kids, second-hand, indoor]
+    tags: [sample, books, kids, second-hand, indoor]
+  # Real photographs for the marketplace starter (CC0 on Wikimedia Commons; credits.json).
+  - id: market-armchair-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Sheraton_Grand_Macao_%E5%AE%A2%E6%88%BF_hotel_room_%E7%81%B0%E8%89%B2_%E6%A2%B3%E5%8C%96%E6%A4%85_armchair_sofa_n_%E5%95%A1%E8%89%B2%E6%9C%A8%E8%A3%BD%E8%8C%B6%E5%B9%BE_brown_wooden_tea_table_%E6%97%A9%E4%B8%8A_morning_November_2023_R12S_03.jpg"
+    alt: "A light grey armchair with a blue cushion in a corner by the curtains"
+    tags: [sample, starter-marketplace, armchair, furniture, chair, second-hand, photo-real]
+  - id: market-lamp-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png"
+    alt: "A green floor lamp against a pale green wall"
+    tags: [sample, starter-marketplace, lamp, furniture, lighting, second-hand, photo-real]
+  - id: market-table-chairs-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg"
+    alt: "A birch table with white chairs around it"
+    tags: [sample, starter-marketplace, table, chairs, furniture, dining, second-hand, photo-real]
+  - id: market-city-bike-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Bicycle_parked_near_a_seasonal_pond_at_Kumbakudi.jpg"
+    alt: "A black hybrid bike on the grass by a pond at sunset"
+    tags: [sample, starter-marketplace, bike, bicycle, outdoor, second-hand, photo-real]
+  - id: market-road-bike-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Triban_RC520_Decathlon_road_bike.jpg"
+    alt: "A blue road bike leaning on a green railing by a beach"
+    tags: [sample, starter-marketplace, bike, bicycle, road-bike, outdoor, second-hand, photo-real]
+  - id: market-laptop-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg"
+    alt: "An open laptop, a phone and a notebook on a wooden desk"
+    tags: [sample, starter-marketplace, laptop, computer, electronics, desk, second-hand, photo-real]
+  - id: market-headphones-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg"
+    alt: "Over-ear headphones resting on a loudspeaker"
+    tags: [sample, starter-marketplace, headphones, music, electronics, second-hand, photo-real]
+  - id: market-record-player-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:HMV_Record_Player.jpg"
+    alt: "A record player in a wooden cabinet, a record on the platter"
+    tags: [sample, starter-marketplace, turntable, record-player, music, electronics, second-hand, photo-real]
+  - id: market-books-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Old_Books_01.JPG"
+    alt: "A stack of old leather-bound books"
+    tags: [sample, starter-marketplace, books, antique, reading, second-hand, photo-real]
+  - id: market-rowboat-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg"
+    alt: "White rowing boats with oars on a lakeside lawn"
+    tags: [sample, starter-marketplace, boat, rowboat, outdoor, water, sports, second-hand, photo-real]
+  - id: market-guitar-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Yamaha_Acoustic_Guitar_FG-331v2.jpg"
+    alt: "An acoustic guitar standing against a white wall"
+    tags: [sample, starter-marketplace, guitar, music, instrument, second-hand, photo-real]
+  - id: market-toys-p
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Wooden_toys_with_wheels.jpg"
+    alt: "Three wooden pull-along toys: a car, a star and a duck"
+    tags: [sample, starter-marketplace, toys, kids, wooden, second-hand, photo-real]
   - id: logo-mono-stillwater-c
     kind: logo
     style: monogram
