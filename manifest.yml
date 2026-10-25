@@ -1953,7 +1953,7 @@ images:
   - id: market-guitar-p
     kind: sample
     photo: "https://commons.wikimedia.org/wiki/File:Yamaha_Acoustic_Guitar_FG-331v2.jpg"
-    alt: "An acoustic guitar standing against a white wall"
+    alt: "An acoustic guitar standing against a wall on a gray carpet"
     tags: [sample, starter-marketplace, guitar, music, instrument, second-hand, photo-real]
   - id: market-toys-p
     kind: sample
