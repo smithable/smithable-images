@@ -2002,3 +2002,9 @@ images:
     prompt: "The letters T and T, in magenta and a clear blue."
     alt: "The Team Tasks monogram"
     tags: [logo, monogram, monogram-api]
+  # A real photograph for the kiosk starter's hero (CC0 on Wikimedia Commons; credits.json).
+  - id: hero-food-truck-evening-p
+    kind: hero
+    photo: "https://commons.wikimedia.org/wiki/File:Food_truck_292_S%27Archittu_2.jpg"
+    alt: "People at tables under string lights by a food truck on a summer evening"
+    tags: [hero, starter-kiosk, food-truck, street-food, food, evening, outdoor, photo-real]

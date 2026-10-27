@@ -3289,6 +3289,39 @@
     "generated": true
   },
   {
+    "id": "hero-food-truck-evening-p",
+    "kind": "hero",
+    "url": "https://docs.smithable.ai/images/hero/hero-food-truck-evening-p.webp",
+    "alt": "People at tables under string lights by a food truck on a summer evening",
+    "tags": [
+      "hero",
+      "starter-kiosk",
+      "food-truck",
+      "street-food",
+      "food",
+      "evening",
+      "outdoor",
+      "photo-real"
+    ],
+    "width": 1600,
+    "height": 1067,
+    "bytes": 301806,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080838",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Food_truck_292_S%27Archittu_2.jpg",
+      "author": "Air fans",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-10-27"
+    }
+  },
+  {
     "id": "hero-forest-b",
     "kind": "hero",
     "url": "https://docs.smithable.ai/images/hero/hero-forest-b.webp",
