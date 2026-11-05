@@ -320,3 +320,14 @@ test("a Commons file copied from a barred site is not fetched, by its title or i
   await collect({ ...o, fetchFn, commonsSearch: commons({ 1: page(1, "File:Bike (Unsplash).jpg", "Own work"), 2: page(2, "File:Bike.jpg", '<a href="https://www.pexels.com/x">Pexels</a>'), 3: page(3, "File:Bike 3.jpg", "Own work") }) });
   assert.deepEqual(folder(o, "bike").filter((n) => n.endsWith(".webp")), ["commons-3.webp"]);
 });
+
+test("one subject's cap leaves the night to the next subject, and is not searched again", async (t) => {
+  const o = setup(t, { subjects: "bike\nlamp\n" });
+  const fetchFn = fetcher({ bike: [ov("a"), ov("b"), ov("c")], lamp: [ov("d")] });
+  await collect({ ...o, perSubject: 2, fetchFn, commonsSearch: noCommons });
+  assert.deepEqual(folder(o, "bike").filter((n) => n.endsWith(".webp")), ["openverse-a.webp", "openverse-b.webp"]);
+  assert.deepEqual(folder(o, "lamp").filter((n) => n.endsWith(".webp")), ["openverse-d.webp"]);
+  const again = fetcher({ bike: [ov("c")] });
+  await collect({ ...o, perSubject: 2, fetchFn: again, commonsSearch: noCommons });
+  assert.equal(folder(o, "bike").filter((n) => n.endsWith(".webp")).length, 2);
+});

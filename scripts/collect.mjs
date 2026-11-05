@@ -14,7 +14,7 @@ const subjectWords = (subject) => subject.toLowerCase().split(/[\s-]+/).filter(B
 export const commonsTerms = (subject) => `${subjectWords(subject).map((w) => `intitle:${w}`).join(" ")} -unsplash -pexels -pixabay`;
 export const titleFits = (subject, title = "") => subjectWords(subject).every((w) => title.toLowerCase().includes(w));
 
-export async function collect({ misses, subjects: subjectsFile, out, max = 50, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null }) {
+export async function collect({ misses, subjects: subjectsFile, out, max = 50, perSubject = 12, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null }) {
     const subjects = new Set();
     
     if (subjectsFile && existsSync(subjectsFile)) {
@@ -98,6 +98,8 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
         if (saved >= max) break;
         if (['openverse', 'commons'].every((s) => state.searched[subject]?.includes(s))) continue;
         subjectsSearched++;
+        // Enough of one subject leaves the night's cap to the others.
+        let subjectSaved = 0;
         
         for (const source of ['openverse', 'commons']) {
             if (saved >= max) break;
@@ -171,6 +173,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     capReached = true;
                     break;
                 }
+                if (subjectSaved >= perSubject) break;
                 if (c.width === undefined || c.height === undefined || c.width === null || c.height === null || Math.max(c.width, c.height) < 1280) {
                     skipped++;
                     continue;
@@ -184,6 +187,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     seen.add(c.pageUrl);
                     seen.add(c.imageUrl);
                     saved++;
+                    subjectSaved++;
                     continue;
                 }
                 
@@ -246,6 +250,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     seen.add(c.pageUrl);
                     seen.add(c.imageUrl);
                     saved++;
+                    subjectSaved++;
                 } catch (e) {
                     failed++;
                 }
