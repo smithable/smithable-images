@@ -287,6 +287,8 @@ test("a subject's words are searched in the title", () => {
   assert.equal(commonsTerms("second-hand clothes"), "intitle:second intitle:hand intitle:clothes -unsplash -pexels -pixabay");
   assert.ok(titleFits("vintage camera", "Vintage Konica C35 Cameras"));
   assert.ok(!titleFits("vintage camera", "Vintage lamp"));
+  assert.ok(!titleFits("bike", null));
+  assert.equal(commonsTerms('a "bike": -new'), "intitle:a intitle:bike intitle:new -unsplash -pexels -pixabay");
 });
 
 test("an Openverse result whose title lacks the subject is not fetched", async (t) => {
@@ -324,9 +326,11 @@ test("a Commons file copied from a barred site is not fetched, by its title or i
 test("one subject's cap leaves the night to the next subject, and is not searched again", async (t) => {
   const o = setup(t, { subjects: "bike\nlamp\n" });
   const fetchFn = fetcher({ bike: [ov("a"), ov("b"), ov("c")], lamp: [ov("d")] });
-  await collect({ ...o, perSubject: 2, fetchFn, commonsSearch: noCommons });
+  let searches = 0;
+  await collect({ ...o, perSubject: 2, fetchFn, commonsSearch: async () => { searches++; return { query: { pages: {} } }; } });
   assert.deepEqual(folder(o, "bike").filter((n) => n.endsWith(".webp")), ["openverse-a.webp", "openverse-b.webp"]);
   assert.deepEqual(folder(o, "lamp").filter((n) => n.endsWith(".webp")), ["openverse-d.webp"]);
+  assert.equal(searches, 1);
   const again = fetcher({ bike: [ov("c")] });
   await collect({ ...o, perSubject: 2, fetchFn: again, commonsSearch: noCommons });
   assert.equal(folder(o, "bike").filter((n) => n.endsWith(".webp")).length, 2);

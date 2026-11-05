@@ -10,9 +10,9 @@ const BARRED = /unsplash|pexels|pixabay/i;
 
 // A subject's words, each in the file's title: a word only in a long description brought drawings,
 // plaques and houses. Commons' own search stems them; Openverse's answers are checked by titleFits.
-const subjectWords = (subject) => subject.toLowerCase().split(/[\s-]+/).filter(Boolean);
+const subjectWords = (subject) => subject.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 export const commonsTerms = (subject) => `${subjectWords(subject).map((w) => `intitle:${w}`).join(" ")} -unsplash -pexels -pixabay`;
-export const titleFits = (subject, title = "") => subjectWords(subject).every((w) => title.toLowerCase().includes(w));
+export const titleFits = (subject, title) => subjectWords(subject).every((w) => (title ?? "").toLowerCase().includes(w));
 
 export async function collect({ misses, subjects: subjectsFile, out, max = 50, perSubject = 12, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null }) {
     const subjects = new Set();
@@ -105,6 +105,10 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
             if (saved >= max) break;
             if (stoppedSources.has(source)) continue;
             if (state.searched[subject]?.includes(source)) continue;
+            if (subjectSaved >= perSubject) {
+                state.searched[subject] = [...(state.searched[subject] ?? []), source];
+                continue;
+            }
             
             let results = [];
             try {

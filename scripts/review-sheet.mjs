@@ -99,6 +99,14 @@ function atomicJson(file, value) {
   renameSync(`${file}.tmp`, file);
 }
 
+function pageOf(sidecar) {
+  try {
+    return JSON.parse(readFileSync(sidecar, "utf8")).pageUrl;
+  } catch {
+    return undefined; // A damaged list of where it came from: not shown.
+  }
+}
+
 export async function reviewSheets({ review, out, perSubject = 24, read }) {
   const shownFile = join(review, "shown.json");
   const shown = new Set(existsSync(shownFile) ? JSON.parse(readFileSync(shownFile, "utf8")) : []);
@@ -112,7 +120,7 @@ export async function reviewSheets({ review, out, perSubject = 24, read }) {
     const fresh = readdirSync(dir)
       .filter((f) => f.endsWith(".webp") && !shown.has(`${slug}/${f}`) && existsSync(join(dir, f.replace(/\.webp$/, ".json"))))
       // Only Commons' pictures can reach the library, so no other is read, pre-picked or shown.
-      .filter((f) => isCommonsPage(JSON.parse(readFileSync(join(dir, f.replace(/\.webp$/, ".json")), "utf8")).pageUrl))
+      .filter((f) => isCommonsPage(pageOf(join(dir, f.replace(/\.webp$/, ".json")))))
       .sort()
       .slice(0, perSubject);
     if (!fresh.length) continue;

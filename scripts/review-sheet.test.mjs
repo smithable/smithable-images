@@ -123,3 +123,12 @@ test("a picture from outside Commons never reaches the model or the sheet", asyn
   assert.equal(asked.length, 1);
   assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/openverse-4.webp"]);
 });
+
+test("a damaged sidecar skips that picture, not the run", async () => {
+  const { review, out } = folders();
+  await picture(review, "vintage-lamp", "commons-1");
+  await picture(review, "vintage-lamp", "commons-2");
+  writeFileSync(join(review, "vintage-lamp", "commons-1.json"), "{ cut off");
+  const [s] = await reviewSheets({ review, out, read: async () => good });
+  assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/commons-2.webp"]);
+});
