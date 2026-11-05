@@ -28,7 +28,7 @@ SMITHABLE_DOCS_BUCKET=<bucket> SMITHABLE_DOCS_DISTRIBUTION=<id> node scripts/mak
 node scripts/make-images.mjs --tar                 # images-<date>.tar for a release
 ```
 
-`scripts/collect.mjs` gathers CC0 candidates slowly into a review folder, never the library; `scripts/review-sheet.mjs --review <dir> --out <dir>` then makes one numbered contact sheet per subject of the pictures not yet shown, with a pre-pick by plain rules and a small vision model (needs `ANTHROPIC_API_KEY`; `--no-vision` makes the sheets alone).
+`scripts/collect.mjs` gathers CC0 candidates from Commons slowly into a review folder, never the library (Openverse is only another way to find Commons' files); `scripts/review-sheet.mjs --review <dir> --out <dir>` then makes one numbered contact sheet per subject of the pictures not yet shown, with a pre-pick by plain rules and a small vision model (needs `ANTHROPIC_API_KEY`; `--no-vision` makes the sheets alone).
 
 A rerun only makes what is missing; get the current pictures first from the latest release's tarball. Contact sheets are kept in `sheets/`.
 

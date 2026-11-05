@@ -11,7 +11,7 @@ const good = { onSubject: true, photograph: true, logo: false, textOver: false, 
 async function picture(review, slug, name, extra = {}) {
   mkdirSync(join(review, slug), { recursive: true });
   await sharp({ create: { width: 64, height: 48, channels: 3, background: "#888888" } }).webp().toFile(join(review, slug, `${name}.webp`));
-  writeFileSync(join(review, slug, `${name}.json`), JSON.stringify({ source: "commons", width: 1600, height: 1200, subject: "vintage lamp", ...extra }));
+  writeFileSync(join(review, slug, `${name}.json`), JSON.stringify({ source: "commons", pageUrl: "https://commons.wikimedia.org/wiki/File:x.jpg", width: 1600, height: 1200, subject: "vintage lamp", ...extra }));
 }
 
 function folders() {
@@ -102,12 +102,24 @@ test("a shown picture does not come back; a new one does", async () => {
   assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/commons-2.webp"]);
 });
 
-test("a subject over the cap shows Commons first and keeps the rest for next time", async () => {
+test("a subject over the cap keeps the rest for next time", async () => {
   const { review, out } = folders();
-  await picture(review, "vintage-lamp", "openverse-1");
+  await picture(review, "vintage-lamp", "commons-1");
   await picture(review, "vintage-lamp", "commons-2");
   const [s] = await reviewSheets({ review, out, perSubject: 1, read: async () => good });
-  assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/commons-2.webp"]);
+  assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/commons-1.webp"]);
   const [next] = await reviewSheets({ review, out: `${out}-2`, perSubject: 1, read: async () => good });
-  assert.deepEqual(next.candidates.map((c) => c.file), ["vintage-lamp/openverse-1.webp"]);
+  assert.deepEqual(next.candidates.map((c) => c.file), ["vintage-lamp/commons-2.webp"]);
+});
+
+test("a picture from outside Commons never reaches the model or the sheet", async () => {
+  const { review, out } = folders();
+  await picture(review, "vintage-lamp", "openverse-1", { pageUrl: "https://www.rawpixel.com/image/1" });
+  await picture(review, "vintage-lamp", "openverse-2", { pageUrl: "https://commons.wikimedia.org.evil.example/x" });
+  await picture(review, "vintage-lamp", "openverse-3", { pageUrl: undefined });
+  await picture(review, "vintage-lamp", "openverse-4");
+  const asked = [];
+  const [s] = await reviewSheets({ review, out, read: async (file) => { asked.push(file); return good; } });
+  assert.equal(asked.length, 1);
+  assert.deepEqual(s.candidates.map((c) => c.file), ["vintage-lamp/openverse-4.webp"]);
 });

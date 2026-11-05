@@ -13,12 +13,12 @@ const big = await jpeg(2000, 1500);
 /** A result of Openverse's, large and CC0 unless said otherwise. */
 const ov = (id, more = {}) => ({
   id,
-  foreign_landing_url: `https://pages.example/${id}`,
+  foreign_landing_url: `https://commons.wikimedia.org/w/index.php?curid=${id}`,
   url: `https://img.example/${id}.jpg`,
   creator: "A Person",
   license: "cc0",
   license_version: "1.0",
-  source: "flickr",
+  source: "wikimedia",
   width: 2000,
   height: 1500,
   ...more,
@@ -88,8 +88,8 @@ test("what is saved: a scaled WebP and where it came from", async (t) => {
   assert.equal(width, 1600);
   const p = JSON.parse(readFileSync(join(o.out, "bike", "openverse-a.json"), "utf8"));
   assert.equal(p.source, "openverse");
-  assert.equal(p.via, "flickr");
-  assert.equal(p.pageUrl, "https://pages.example/a");
+  assert.equal(p.via, "wikimedia");
+  assert.equal(p.pageUrl, "https://commons.wikimedia.org/w/index.php?curid=a");
   assert.equal(p.imageUrl, "https://img.example/a.jpg");
   assert.equal(p.author, "A Person");
   assert.equal(p.licence, "cc0 1.0");
@@ -273,4 +273,12 @@ test("a photograph is saved the way up its camera says", async (t) => {
   await collect({ ...o, fetchFn, commonsSearch: noCommons });
   const { width, height } = await sharp(join(o.out, "bike", "openverse-a.webp")).metadata();
   assert.ok(height > width, `${width}x${height}`);
+});
+
+test("a CC0 mark outside Commons is not fetched", async (t) => {
+  const o = setup(t);
+  const fetchFn = fetcher({ bike: [ov("a", { source: "flickr", foreign_landing_url: "https://www.flickr.com/photos/a" })] });
+  await collect({ ...o, fetchFn, commonsSearch: noCommons });
+  assert.ok(!fetchFn.calls.includes("https://img.example/a.jpg"));
+  assert.equal(existsSync(join(o.out, "bike")), false);
 });

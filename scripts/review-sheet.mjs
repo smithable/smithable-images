@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // The weekly look at what collect.mjs found: for each subject in the review folder, the pictures not
 // yet shown get a pre-pick and go on one numbered contact sheet for a person to pick from. Nothing
-// enters the library here. The pre-pick is plain rules (size, aspect), then a small vision model's
+// enters the library here, and only Commons' pictures are looked at. The pre-pick is plain rules (size, aspect), then a small vision model's
 // reading (on subject, a photograph, no logo, no text over it, no watermark, no recognisable person);
 // a picture the model could not read is shown but not pre-picked, and a run where it read none stops. What the person sees is in
 // <out>/candidates.json, each picture's number, file, provenance, verdict and reasons.
@@ -15,6 +15,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import sharp from "sharp";
+import { isCommonsPage } from "./commons.mjs";
 
 const MIN_LONG = 1280;
 const MAX_ASPECT = 2.2;
@@ -110,8 +111,9 @@ export async function reviewSheets({ review, out, perSubject = 24, read }) {
     const dir = join(review, slug);
     const fresh = readdirSync(dir)
       .filter((f) => f.endsWith(".webp") && !shown.has(`${slug}/${f}`) && existsSync(join(dir, f.replace(/\.webp$/, ".json"))))
-      // Commons reviews its licences: its pictures first when a subject has more than a sheet's worth.
-      .sort((a, b) => Number(b.startsWith("commons-")) - Number(a.startsWith("commons-")) || a.localeCompare(b))
+      // Only Commons' pictures can reach the library, so no other is read, pre-picked or shown.
+      .filter((f) => isCommonsPage(JSON.parse(readFileSync(join(dir, f.replace(/\.webp$/, ".json")), "utf8")).pageUrl))
+      .sort()
       .slice(0, perSubject);
     if (!fresh.length) continue;
     const candidates = [];

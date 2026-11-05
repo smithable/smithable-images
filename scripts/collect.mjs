@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from '
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import sharp from 'sharp';
-import { commonsLicence, commonsQuery, UA } from './commons.mjs';
+import { commonsLicence, commonsQuery, UA, isCommonsPage } from './commons.mjs';
 import { fileURLToPath } from 'node:url';
 
 const MAX_BYTES = 50 * 1024 * 1024;
@@ -111,7 +111,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     for (const r of data.results || []) {
                         if ((r.license || "").toLowerCase() !== "cc0") continue;
                         // Never these, whatever licence a search reports (their own terms are not CC0).
-                        if (BARRED.test(`${r.source} ${r.foreign_landing_url} ${r.url}`)) continue;
+                        if (BARRED.test(`${r.source} ${r.foreign_landing_url} ${r.url}`) || !isCommonsPage(r.foreign_landing_url)) continue;
                         results.push({
                             id: String(r.id),
                             source: 'openverse',

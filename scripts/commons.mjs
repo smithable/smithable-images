@@ -34,3 +34,13 @@ export async function commonsFile(page, width) {
   if (!info) throw new Error(`no such file on Commons: ${title}`);
   return { page: info.descriptionurl, url: (width && info.thumburl) || info.url, width: info.width, height: info.height, licence: commonsLicence(info.extmetadata) };
 }
+
+// The library takes only Commons' pictures: its volunteers review licences, and a CC0 mark elsewhere
+// is the uploader's own word. The page's address decides, whichever search found the picture.
+export function isCommonsPage(url) {
+  try {
+    return new URL(url).hostname === "commons.wikimedia.org";
+  } catch {
+    return false;
+  }
+}
