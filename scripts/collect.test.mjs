@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import sharp from "sharp";
-import { collect } from "./collect.mjs";
+import { collect, commonsTerms, titleFits } from "./collect.mjs";
 
 const jpeg = (width, height) =>
   sharp({ create: { width, height, channels: 3, background: "#888" } }).jpeg().toBuffer();
@@ -44,7 +44,7 @@ function fetcher(results, images = {}) {
     if (url.includes("api.openverse.org")) {
       const q = new URL(url).searchParams.get("q");
       if (results.status) return new Response("", { status: results.status });
-      return Response.json({ results: results[q] ?? [] });
+      return Response.json({ results: (results[q] ?? []).map((r) => ({ title: q, ...r })) });
     }
     const image = images[url] ?? big;
     return typeof image === "number" ? new Response("", { status: image }) : new Response(image);
@@ -281,4 +281,42 @@ test("a CC0 mark outside Commons is not fetched", async (t) => {
   await collect({ ...o, fetchFn, commonsSearch: noCommons });
   assert.ok(!fetchFn.calls.includes("https://img.example/a.jpg"));
   assert.equal(existsSync(join(o.out, "bike")), false);
+});
+
+test("a subject's words are searched in the title", () => {
+  assert.equal(commonsTerms("second-hand clothes"), "intitle:second intitle:hand intitle:clothes -unsplash -pexels -pixabay");
+  assert.ok(titleFits("vintage camera", "Vintage Konica C35 Cameras"));
+  assert.ok(!titleFits("vintage camera", "Vintage lamp"));
+});
+
+test("an Openverse result whose title lacks the subject is not fetched", async (t) => {
+  const o = setup(t);
+  const fetchFn = fetcher({ bike: [ov("a", { title: "A woman resting her hand" })] });
+  await collect({ ...o, fetchFn, commonsSearch: noCommons });
+  assert.ok(!fetchFn.calls.includes("https://img.example/a.jpg"));
+});
+
+test("an Openverse Commons hit copied from a barred site is not fetched", async (t) => {
+  const o = setup(t);
+  const fetchFn = fetcher({ bike: [ov("a", { title: "A bike (Unsplash)" })] });
+  await collect({ ...o, fetchFn, commonsSearch: noCommons });
+  assert.ok(!fetchFn.calls.includes("https://img.example/a.jpg"));
+});
+
+test("a Commons file copied from a barred site is not fetched, by its title or its credit", async (t) => {
+  const o = setup(t);
+  const page = (pageid, title, Credit) => ({
+    pageid,
+    title,
+    imageinfo: [{
+      width: 2000,
+      height: 1500,
+      url: `https://img.example/${pageid}.jpg`,
+      descriptionurl: `https://commons.wikimedia.org/wiki/File:${pageid}.jpg`,
+      extmetadata: { License: { value: "cc0" }, LicenseShortName: { value: "CC0" }, Artist: { value: "A Person" }, Credit: { value: Credit } },
+    }],
+  });
+  const fetchFn = fetcher({});
+  await collect({ ...o, fetchFn, commonsSearch: commons({ 1: page(1, "File:Bike (Unsplash).jpg", "Own work"), 2: page(2, "File:Bike.jpg", '<a href="https://www.pexels.com/x">Pexels</a>'), 3: page(3, "File:Bike 3.jpg", "Own work") }) });
+  assert.deepEqual(folder(o, "bike").filter((n) => n.endsWith(".webp")), ["commons-3.webp"]);
 });

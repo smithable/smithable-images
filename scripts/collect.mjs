@@ -8,6 +8,12 @@ import { fileURLToPath } from 'node:url';
 const MAX_BYTES = 50 * 1024 * 1024;
 const BARRED = /unsplash|pexels|pixabay/i;
 
+// A subject's words, each in the file's title: a word only in a long description brought drawings,
+// plaques and houses. Commons' own search stems them; Openverse's answers are checked by titleFits.
+const subjectWords = (subject) => subject.toLowerCase().split(/[\s-]+/).filter(Boolean);
+export const commonsTerms = (subject) => `${subjectWords(subject).map((w) => `intitle:${w}`).join(" ")} -unsplash -pexels -pixabay`;
+export const titleFits = (subject, title = "") => subjectWords(subject).every((w) => title.toLowerCase().includes(w));
+
 export async function collect({ misses, subjects: subjectsFile, out, max = 50, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null }) {
     const subjects = new Set();
     
@@ -65,7 +71,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
     
     if (!commonsSearch) {
         commonsSearch = async (querySubject) => {
-            const search = `${querySubject} haswbstatement:P275=Q6938433|P6216=Q19652 filetype:bitmap -"MET" -museum`;
+            const search = `${commonsTerms(querySubject)} haswbstatement:P275=Q6938433|P6216=Q19652 filetype:bitmap -"MET" -museum`;
             const params = {
                 generator: "search",
                 gsrsearch: search,
@@ -111,7 +117,8 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     for (const r of data.results || []) {
                         if ((r.license || "").toLowerCase() !== "cc0") continue;
                         // Never these, whatever licence a search reports (their own terms are not CC0).
-                        if (BARRED.test(`${r.source} ${r.foreign_landing_url} ${r.url}`) || !isCommonsPage(r.foreign_landing_url)) continue;
+                        if (BARRED.test(`${r.source} ${r.foreign_landing_url} ${r.url} ${r.title} ${r.creator}`) || !isCommonsPage(r.foreign_landing_url)) continue;
+                        if (!titleFits(subject, r.title)) continue;
                         results.push({
                             id: String(r.id),
                             source: 'openverse',
@@ -133,6 +140,9 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                         if (!info) continue;
                         const licence = commonsLicence(info.extmetadata);
                         if (!licence.ok) continue;
+                        // Commons holds copies from these sites too: the title or the credit says so.
+                        const says = ["Credit", "Artist", "ImageDescription"].map((k) => info.extmetadata?.[k]?.value ?? "").join(" ");
+                        if (BARRED.test(`${p.title} ${info.descriptionurl} ${says}`)) continue;
                         results.push({
                             id: String(p.pageid || p.title.replace(/\s+/g, '_')),
                             source: 'commons',
