@@ -213,6 +213,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, w
                     mkdirSync(dir, { recursive: true });
                     
                     await sharp(Buffer.from(buf))
+                        .rotate()
                         .resize({ width: 1600, height: 1600, fit: 'inside', withoutEnlargement: true })
                         .webp({ quality: 80 })
                         .toFile(join(dir, `${name}.webp`));

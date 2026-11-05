@@ -265,3 +265,12 @@ test("a long description makes a short folder", async (t) => {
   assert.ok(name.length <= 60);
   assert.equal(readdirSync(join(o.out, name)).length, 2);
 });
+
+test("a photograph is saved the way up its camera says", async (t) => {
+  const o = setup(t);
+  const sideways = await sharp({ create: { width: 2000, height: 1500, channels: 3, background: "#888" } }).withMetadata({ orientation: 6 }).jpeg().toBuffer();
+  const fetchFn = fetcher({ bike: [ov("a")] }, { "https://img.example/a.jpg": sideways });
+  await collect({ ...o, fetchFn, commonsSearch: noCommons });
+  const { width, height } = await sharp(join(o.out, "bike", "openverse-a.webp")).metadata();
+  assert.ok(height > width, `${width}x${height}`);
+});

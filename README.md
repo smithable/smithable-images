@@ -28,6 +28,8 @@ SMITHABLE_DOCS_BUCKET=<bucket> SMITHABLE_DOCS_DISTRIBUTION=<id> node scripts/mak
 node scripts/make-images.mjs --tar                 # images-<date>.tar for a release
 ```
 
+`scripts/collect.mjs` gathers CC0 candidates slowly into a review folder, never the library; `scripts/review-sheet.mjs --review <dir> --out <dir>` then makes one numbered contact sheet per subject of the pictures not yet shown, with a pre-pick by plain rules and a small vision model (needs `ANTHROPIC_API_KEY`; `--no-vision` makes the sheets alone).
+
 A rerun only makes what is missing; get the current pictures first from the latest release's tarball. Contact sheets are kept in `sheets/`.
 
 **Replacing a picture.** Served pictures are cached for a year, so an id that has been uploaded (listed in `uploaded.json`) never gets a new picture. To replace a rejected one, give its manifest entry a new id (`hero-salon` → `hero-salon-b`) and a better prompt, run `--only hero-salon-b`, then `--upload`: the old id is no longer in the manifest, so its object is deleted from the bucket. The script refuses to regenerate an uploaded id. Commit `uploaded.json` after every upload. A picture never uploaded can simply be deleted and made again with `--only <id>`. Batch ids are kept in `batches.json` until fetched.
