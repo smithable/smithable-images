@@ -7,7 +7,7 @@ const API = "https://commons.wikimedia.org/w/api.php";
 
 export async function commonsQuery(params) {
   const url = `${API}?${new URLSearchParams({ action: "query", format: "json", formatversion: "1", ...params })}`;
-  const res = await fetch(url, { headers: { "user-agent": UA } });
+  const res = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(60000) });
   if (!res.ok) throw new Error(`Commons answered ${res.status}`);
   return res.json();
 }
