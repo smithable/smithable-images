@@ -150,6 +150,8 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                     pixabaySearches++;
                     for (const h of await pixabaySearch(subject, pixabayKey, rateLimitedFetch)) {
                         if (refusal(h)) continue;
+                        // Its popular pictures for a query are often rooms that hold the thing: its tags must name it.
+                        if (!titleFits(subject, h.tags)) continue;
                         // The 1280 px copy is what the API gives without full access; its size, not the original's.
                         const long = Math.max(h.imageWidth, h.imageHeight);
                         const scale = long > 1280 ? 1280 / long : 1;

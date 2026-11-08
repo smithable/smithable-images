@@ -18,7 +18,7 @@ const hit = (id, more = {}) => ({
   largeImageURL: `https://pixabay.com/get/${id}_1280.jpg`,
   user: "someone",
   type: "photo",
-  tags: "lamp, old, light",
+  tags: "lamp, old, light, vintage",
   imageWidth: 4000,
   imageHeight: 2667,
   isGRated: true,
@@ -139,4 +139,12 @@ test("a night asks Pixabay at most twenty times, and the rest wait their turn", 
   assert.equal(fetchFn.calls.filter((u) => u.startsWith("https://pixabay.com/api/")).length, 20);
   await collect({ ...o, fetchFn, commonsSearch: noCommons, pixabayKey: "k" });
   assert.equal(fetchFn.calls.filter((u) => u.startsWith("https://pixabay.com/api/")).length, 25);
+});
+
+test("a picture whose tags do not name the subject is not fetched", async (t) => {
+  quiet(t);
+  const o = setup(t);
+  const fetchFn = fetcher([hit(1834265, { tags: "living room, sofa, lamp" })]);
+  await collect({ ...o, fetchFn, commonsSearch: noCommons, pixabayKey: "k" });
+  assert.ok(!existsSync(join(o.out, "vintage-lamp")));
 });
