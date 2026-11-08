@@ -2033,7 +2033,7 @@ images:
   - id: ceramic-bowl-p2
     kind: sample
     photo: "https://commons.wikimedia.org/wiki/File:Bowl_with_orchids,_by_J._Jurriaan_Kok_(form)_%26_J._Schellink_(decoration),_Haagsche_Plateelbakkerij,_Rozenburg,_Den_Haag,_1903,_ceramic_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00826.jpg"
-    alt: "A shallow glazed ceramic dish decorated with irises"
+    alt: "A shallow glazed ceramic bowl decorated with orchids"
     tags: [sample, ceramic-bowl, ceramic, bowl, ceramics, photo-real]
   - id: chest-of-drawers-p1
     kind: sample

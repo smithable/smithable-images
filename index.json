@@ -589,6 +589,93 @@
     "generated": true
   },
   {
+    "id": "bookshelf-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/bookshelf-p1.webp",
+    "alt": "An outdoor book cabinet on a street, its shelves of books lit",
+    "tags": [
+      "sample",
+      "bookshelf",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 109590,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_22_333000.jpeg",
+      "author": "Shisma",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "bookshelf-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/bookshelf-p2.webp",
+    "alt": "A wooden book cabinet with shelves of books in daylight",
+    "tags": [
+      "sample",
+      "bookshelf",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 65080,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_25_905000.jpeg",
+      "author": "Shisma",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "bookshelf-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/bookshelf-p3.webp",
+    "alt": "Wooden library shelves packed with books",
+    "tags": [
+      "sample",
+      "bookshelf",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 126866,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#787868",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Library_bookshelf.jpg",
+      "author": "Mshuang2",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "cafe-barista-b",
     "kind": "hero",
     "url": "https://docs.smithable.ai/images/hero/cafe-barista-b.webp",
@@ -990,6 +1077,68 @@
     "generated": true
   },
   {
+    "id": "ceramic-bowl-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/ceramic-bowl-p1.webp",
+    "alt": "A red-painted prehistoric ceramic bowl on a pedestal",
+    "tags": [
+      "sample",
+      "ceramic-bowl",
+      "ceramic",
+      "bowl",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 53556,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#d8e8d8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Ceramic_bowl_from_the_5th_millennium_BC,_Durankulak.jpg",
+      "author": "Ivano Giambattista",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "ceramic-bowl-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/ceramic-bowl-p2.webp",
+    "alt": "A shallow glazed ceramic bowl decorated with orchids",
+    "tags": [
+      "sample",
+      "ceramic-bowl",
+      "ceramic",
+      "bowl",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 107598,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#181808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Bowl_with_orchids,_by_J._Jurriaan_Kok_(form)_%26_J._Schellink_(decoration),_Haagsche_Plateelbakkerij,_Rozenburg,_Den_Haag,_1903,_ceramic_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00826.jpg",
+      "author": "Daderot",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "chair-armchair-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/chair-armchair-b.webp",
@@ -1056,6 +1205,161 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "chest-of-drawers-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/chest-of-drawers-p1.webp",
+    "alt": "A wooden four-drawer chest on bun feet",
+    "tags": [
+      "sample",
+      "chest-of-drawers",
+      "chest",
+      "drawers",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 46266,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers,_Boston,_1680-1700,_red_cedar_with_oak_and_white_pine_-_Chazen_Museum_of_Art_-_DSC02590.JPG",
+      "author": "Daderot",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "chest-of-drawers-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/chest-of-drawers-p2.webp",
+    "alt": "A mahogany serpentine chest of drawers with brass oval pulls",
+    "tags": [
+      "sample",
+      "chest-of-drawers",
+      "chest",
+      "drawers",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 45808,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#989898",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Chest_of_drawers_MET_DP-16170-005.jpg",
+      "author": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "chest-of-drawers-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/chest-of-drawers-p3.webp",
+    "alt": "An ornate marquetry commode with a marble top and gilded mounts",
+    "tags": [
+      "sample",
+      "chest-of-drawers",
+      "chest",
+      "drawers",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 86276,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#a89888",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers_(Commode),_1770-1780,_Jean-Henri_Riesener,_France,_oak,_mahogany,_kingwood,_purple_heart_and_unidentified_exotic_woods,_gilt_bronze,_marble_-_Art_Institute_of_Chicago_-_DSC09797.JPG",
+      "author": "Daderot",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "chest-of-drawers-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/chest-of-drawers-p4.webp",
+    "alt": "A marquetry commode with a marble top and gilt mounts",
+    "tags": [
+      "sample",
+      "chest-of-drawers",
+      "chest",
+      "drawers",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 47392,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#e8e8e8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_1989.158.jpg",
+      "author": "Etienne Doirat",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "chest-of-drawers-p5",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/chest-of-drawers-p5.webp",
+    "alt": "A mahogany chest of drawers with brass pulls and claw feet",
+    "tags": [
+      "sample",
+      "chest-of-drawers",
+      "chest",
+      "drawers",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 32678,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#a8a8a8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Chippendale_Carved_Cherrywood_Block_Front_Chest_of_Drawers_MET_DP269069.jpg",
+      "author": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
   },
   {
     "id": "clothes-bag-b",
@@ -4157,6 +4461,64 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "houseplant-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/houseplant-p1.webp",
+    "alt": "A wall of ferns, nerve plants and ivy in maroon pots",
+    "tags": [
+      "sample",
+      "houseplant",
+      "plants",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 93962,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#081848",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Vertical_houseplant_garden.jpg",
+      "author": "Satin66Flower",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "houseplant-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/houseplant-p2.webp",
+    "alt": "An umbrella plant in a grey pot on a wooden table",
+    "tags": [
+      "sample",
+      "houseplant",
+      "plants",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 31476,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#c8b898",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg",
+      "author": "Kolano123",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
   },
   {
     "id": "instrument-drums-b",
@@ -7581,6 +7943,64 @@
     "generated": true
   },
   {
+    "id": "pottery-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/pottery-p1.webp",
+    "alt": "A grey stemmed earthenware bowl on a clear stand",
+    "tags": [
+      "sample",
+      "pottery",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 13156,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#988878",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "pottery-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/pottery-p2.webp",
+    "alt": "A round reddish-brown pot with incised bands",
+    "tags": [
+      "sample",
+      "pottery",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 45416,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#483828",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Horned_figure_on_pottery._Pr%C3%A9-Indus_civilization._Kashmir.jpg",
+      "author": "Ismoon (talk) 20:49, 21 February 2012 (UTC)",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "product-bottle-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/product-bottle-b.webp",
@@ -8005,6 +8425,35 @@
     "generated": true
   },
   {
+    "id": "second-hand-clothes-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/second-hand-clothes-p1.webp",
+    "alt": "A market stall of used coats and clothes on hangers",
+    "tags": [
+      "sample",
+      "second-hand-clothes",
+      "clothes",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 179898,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:View_on_the_flea_market_Waterlooplein_with_second_hand_clothes_stables;_free_photo_Amsterdam_city_by_Fons_Heijnsbroek,_12-10-2021.jpg",
+      "author": "Fons Heijnsbroek",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "service-cleaning-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/service-cleaning-b.webp",
@@ -8188,6 +8637,93 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "sideboard-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/sideboard-p1.webp",
+    "alt": "A mahogany sideboard with inlay and brass pulls",
+    "tags": [
+      "sample",
+      "sideboard",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 31364,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#a8a8a8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DP318023.jpg",
+      "author": "Creator:Nathan Lombard",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "sideboard-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/sideboard-p2.webp",
+    "alt": "A carved wooden sideboard with an ornate top",
+    "tags": [
+      "sample",
+      "sideboard",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 78284,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#e8e8e8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DT7030.jpg",
+      "author": "Alexander Roux",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "sideboard-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/sideboard-p3.webp",
+    "alt": "A mahogany sideboard with brass pulls and inlaid legs",
+    "tags": [
+      "sample",
+      "sideboard",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 32504,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#482818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:American_sideboard,_late_18th_century,_Honolulu_Museum_of_Art,_3407.1.JPG",
+      "author": "Hiart",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
   },
   {
     "id": "sofa-gray-b",
@@ -8525,6 +9061,161 @@
     "generated": true
   },
   {
+    "id": "table-lamp-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p1.webp",
+    "alt": "A stained-glass table lamp with a tulip pattern on a green base",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 27844,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#181818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Tulip_Table_Lamp_-_2018.268_-_Cleveland_Museum_of_Art.jpg",
+      "author": "Cleveland Museum of Art",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "table-lamp-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p2.webp",
+    "alt": "A stained-glass table lamp with a leaf pattern and a bronze base",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 47094,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#282828",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Clara_Wolcott_Driscoll_(American,_1861-1944),_Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Woodbine_Table_Lamp_-_2018.283_-_Cleveland_Museum_of_Art.jpg",
+      "author": "Cleveland Museum of Art",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "table-lamp-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p3.webp",
+    "alt": "A table lamp with a beaded metal shade and an amber glass base",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 38706,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#e8e8e8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Table_lamp_MET_DP254463.jpg",
+      "author": "Tiffany Studios",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "table-lamp-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p4.webp",
+    "alt": "A mosaic-shade table lamp on a wooden cabinet",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 52966,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#888848",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+      "author": "Daderot",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "table-lamp-p5",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p5.webp",
+    "alt": "A mushroom-shaped table lamp with a dragonfly shade",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 23934,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#989898",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Table_Lamp_MET_DT4342.jpg",
+      "author": "Fulper Pottery Co.",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "tools-drill-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/tools-drill-b.webp",
@@ -8745,5 +9436,332 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "vintage-camera-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p1.webp",
+    "alt": "An old black camera with its lid raised on a floral tablecloth",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 117858,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#c87838",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Inside_view_of_a_vintage_film_camera,_photographed_in_West_Bengal,_India,_on_December_1,_2023.jpg",
+      "author": "Billjones94",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p2.webp",
+    "alt": "Glass cabinets full of vintage film cameras",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 67996,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#483828",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg",
+      "author": "Pr7013",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p3.webp",
+    "alt": "A silver and black compact film camera on a wooden table",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 53662,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#181818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg",
+      "author": "StockyPics",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p4.webp",
+    "alt": "Two vintage cameras on a wooden table",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 47910,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg",
+      "author": "StockyPics",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "wardrobe-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/wardrobe-p1.webp",
+    "alt": "A light wooden wardrobe with a mirror door in a bedroom",
+    "tags": [
+      "sample",
+      "wardrobe",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 60480,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#783818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Chevening_Flats_wardrobe.jpg",
+      "author": "Siobhan Leachman",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "wardrobe-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/wardrobe-p2.webp",
+    "alt": "A black lacquered wardrobe with gold floral inlay",
+    "tags": [
+      "sample",
+      "wardrobe",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 40706,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#483828",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Wardrobe,_Herter_Brothers,_1875-83,_Metropolitan_Museum_of_Art.JPG",
+      "author": "Wmpearl",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "wardrobe-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/wardrobe-p3.webp",
+    "alt": "A black lacquered wardrobe with gold floral decoration",
+    "tags": [
+      "sample",
+      "wardrobe",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 36264,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#181818",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Wardrobe_MET_DP235302.jpg",
+      "author": "Herter Brothers",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "yoga-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/yoga-p1.webp",
+    "alt": "A yoga class stretching on mats in a gym",
+    "tags": [
+      "sample",
+      "yoga",
+      "wellness",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 45702,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218589).jpg",
+      "author": "U.S. Air Force photo by Staff Sgt. JaNae Jensen",
+      "licence": "Public domain",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "yoga-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/yoga-p2.webp",
+    "alt": "A yoga class seated on mats, seen from behind",
+    "tags": [
+      "sample",
+      "yoga",
+      "wellness",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 47234,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#d8c8b8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218607).jpg",
+      "author": "U.S. Air Force photo by Staff Sgt. JaNae Jensen",
+      "licence": "Public domain",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "yoga-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/yoga-p3.webp",
+    "alt": "A bright attic yoga studio with mats and large windows",
+    "tags": [
+      "sample",
+      "yoga",
+      "wellness",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 65122,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#8888a8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg",
+      "author": "Unknown authorUnknown author",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "yoga-studio-p1",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/yoga-studio-p1.webp",
+    "alt": "Two people meditating on a sunny wooden deck, seen from behind",
+    "tags": [
+      "sample",
+      "yoga-studio",
+      "yoga",
+      "studio",
+      "wellness",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 96768,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:The_Views_From_Your_Private_Yoga_Studio_(194407539).jpeg",
+      "author": "Bali Real Estate",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
   }
 ]

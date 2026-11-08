@@ -1,10 +1,94 @@
 {
+  "bookshelf-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_22_333000.jpeg",
+    "author": "Shisma",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "bookshelf-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_25_905000.jpeg",
+    "author": "Shisma",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "bookshelf-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:Library_bookshelf.jpg",
+    "author": "Mshuang2",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "ceramic-bowl-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Ceramic_bowl_from_the_5th_millennium_BC,_Durankulak.jpg",
+    "author": "Ivano Giambattista",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "ceramic-bowl-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Bowl_with_orchids,_by_J._Jurriaan_Kok_(form)_%26_J._Schellink_(decoration),_Haagsche_Plateelbakkerij,_Rozenburg,_Den_Haag,_1903,_ceramic_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00826.jpg",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "chest-of-drawers-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers,_Boston,_1680-1700,_red_cedar_with_oak_and_white_pine_-_Chazen_Museum_of_Art_-_DSC02590.JPG",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "chest-of-drawers-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chest_of_drawers_MET_DP-16170-005.jpg",
+    "author": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "chest-of-drawers-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers_(Commode),_1770-1780,_Jean-Henri_Riesener,_France,_oak,_mahogany,_kingwood,_purple_heart_and_unidentified_exotic_woods,_gilt_bronze,_marble_-_Art_Institute_of_Chicago_-_DSC09797.JPG",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "chest-of-drawers-p4": {
+    "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_1989.158.jpg",
+    "author": "Etienne Doirat",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "chest-of-drawers-p5": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chippendale_Carved_Cherrywood_Block_Front_Chest_of_Drawers_MET_DP269069.jpg",
+    "author": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
   "hero-food-truck-evening-p": {
     "page": "https://commons.wikimedia.org/wiki/File:Food_truck_292_S%27Archittu_2.jpg",
     "author": "Air fans",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-27"
+  },
+  "houseplant-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Vertical_houseplant_garden.jpg",
+    "author": "Satin66Flower",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "houseplant-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg",
+    "author": "Kolano123",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
   },
   "market-armchair-p": {
     "page": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Sheraton_Grand_Macao_%E5%AE%A2%E6%88%BF_hotel_room_%E7%81%B0%E8%89%B2_%E6%A2%B3%E5%8C%96%E6%A4%85_armchair_sofa_n_%E5%95%A1%E8%89%B2%E6%9C%A8%E8%A3%BD%E8%8C%B6%E5%B9%BE_brown_wooden_tea_table_%E6%97%A9%E4%B8%8A_morning_November_2023_R12S_03.jpg",
@@ -89,5 +173,157 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
+  },
+  "pottery-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg",
+    "author": "Gary Todd from Xinzheng, China",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "pottery-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Horned_figure_on_pottery._Pr%C3%A9-Indus_civilization._Kashmir.jpg",
+    "author": "Ismoon (talk) 20:49, 21 February 2012 (UTC)",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "second-hand-clothes-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:View_on_the_flea_market_Waterlooplein_with_second_hand_clothes_stables;_free_photo_Amsterdam_city_by_Fons_Heijnsbroek,_12-10-2021.jpg",
+    "author": "Fons Heijnsbroek",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "sideboard-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DP318023.jpg",
+    "author": "Creator:Nathan Lombard",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "sideboard-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DT7030.jpg",
+    "author": "Alexander Roux",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "sideboard-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:American_sideboard,_late_18th_century,_Honolulu_Museum_of_Art,_3407.1.JPG",
+    "author": "Hiart",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "table-lamp-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Tulip_Table_Lamp_-_2018.268_-_Cleveland_Museum_of_Art.jpg",
+    "author": "Cleveland Museum of Art",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "table-lamp-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Clara_Wolcott_Driscoll_(American,_1861-1944),_Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Woodbine_Table_Lamp_-_2018.283_-_Cleveland_Museum_of_Art.jpg",
+    "author": "Cleveland Museum of Art",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "table-lamp-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:Table_lamp_MET_DP254463.jpg",
+    "author": "Tiffany Studios",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "table-lamp-p4": {
+    "page": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "table-lamp-p5": {
+    "page": "https://commons.wikimedia.org/wiki/File:Table_Lamp_MET_DT4342.jpg",
+    "author": "Fulper Pottery Co.",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Inside_view_of_a_vintage_film_camera,_photographed_in_West_Bengal,_India,_on_December_1,_2023.jpg",
+    "author": "Billjones94",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg",
+    "author": "Pr7013",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg",
+    "author": "StockyPics",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p4": {
+    "page": "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg",
+    "author": "StockyPics",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "wardrobe-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chevening_Flats_wardrobe.jpg",
+    "author": "Siobhan Leachman",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "wardrobe-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Wardrobe,_Herter_Brothers,_1875-83,_Metropolitan_Museum_of_Art.JPG",
+    "author": "Wmpearl",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "wardrobe-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:Wardrobe_MET_DP235302.jpg",
+    "author": "Herter Brothers",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "yoga-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218589).jpg",
+    "author": "U.S. Air Force photo by Staff Sgt. JaNae Jensen",
+    "licence": "Public domain",
+    "fetched": "2026-11-08"
+  },
+  "yoga-p2": {
+    "page": "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218607).jpg",
+    "author": "U.S. Air Force photo by Staff Sgt. JaNae Jensen",
+    "licence": "Public domain",
+    "fetched": "2026-11-08"
+  },
+  "yoga-p3": {
+    "page": "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg",
+    "author": "Unknown authorUnknown author",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "yoga-studio-p1": {
+    "page": "https://commons.wikimedia.org/wiki/File:The_Views_From_Your_Private_Yoga_Studio_(194407539).jpeg",
+    "author": "Bali Real Estate",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
   }
 }
