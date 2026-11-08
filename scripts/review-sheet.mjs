@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // The weekly look at what collect.mjs found: for each subject in the review folder, the pictures not
 // yet shown get a pre-pick and go on one numbered contact sheet for a person to pick from. Nothing
-// enters the library here, and only Commons' pictures are looked at. The pre-pick is plain rules (size, aspect), then a small vision model's
+// enters the library here, and only Commons' pictures and Pixabay's with their date evidence are
+// looked at (the label says Pixabay's). The pre-pick is plain rules (size, aspect), then a small vision model's
 // reading (on subject, a photograph, no logo, no text over it, no watermark, no recognisable person);
 // a picture the model could not read is shown but not pre-picked, and a run where it read none stops. What the person sees is in
 // <out>/candidates.json, each picture's number, file, provenance, verdict and reasons.
@@ -16,6 +17,7 @@ import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import sharp from "sharp";
 import { isCommonsPage } from "./commons.mjs";
+import { pixabayEvidenceHolds } from "./pixabay.mjs";
 
 const MIN_LONG = 1280;
 const MAX_ASPECT = 2.2;
@@ -82,13 +84,15 @@ export function claudeReader(client, model) {
   };
 }
 
-function label(n, pick, why) {
+function label(n, pick, why, from = "") {
   const esc = (s) => s.replace(/[<>&"']/g, "");
   const colour = pick ? "#15803d" : "#111827";
   const words = pick ? "pre-pick" : esc(why).slice(0, 44);
   return Buffer.from(
     `<svg width="${W}" height="${H}">` +
       `<rect width="56" height="34" fill="${colour}"/><text x="10" y="25" font-size="22" font-family="sans-serif" fill="white">${n}</text>` +
+      // Where it is from, as Pixabay's API asks wherever its results are shown.
+      `${from ? `<rect x="${W - 92}" width="92" height="26" fill="#111827" opacity="0.85"/><text x="${W - 84}" y="19" font-size="16" font-family="sans-serif" fill="white">${esc(from)}</text>` : ""}` +
       `<rect y="${H - 30}" width="${W}" height="30" fill="${colour}" opacity="0.85"/><text x="10" y="${H - 9}" font-size="17" font-family="sans-serif" fill="white">${words}</text>` +
       `${pick ? `<rect x="2" y="2" width="${W - 4}" height="${H - 4}" fill="none" stroke="${colour}" stroke-width="5"/>` : ""}</svg>`,
   );
@@ -99,11 +103,13 @@ function atomicJson(file, value) {
   renameSync(`${file}.tmp`, file);
 }
 
-function pageOf(sidecar) {
+/** Whether a picture may be shown: from Commons, or from Pixabay with evidence that holds. */
+function mayShow(sidecar) {
   try {
-    return JSON.parse(readFileSync(sidecar, "utf8")).pageUrl;
+    const prov = JSON.parse(readFileSync(sidecar, "utf8"));
+    return isCommonsPage(prov.pageUrl) || pixabayEvidenceHolds(prov);
   } catch {
-    return undefined; // A damaged list of where it came from: not shown.
+    return false; // A damaged list of where it came from: not shown.
   }
 }
 
@@ -119,8 +125,8 @@ export async function reviewSheets({ review, out, perSubject = 24, read }) {
     const dir = join(review, slug);
     const fresh = readdirSync(dir)
       .filter((f) => f.endsWith(".webp") && !shown.has(`${slug}/${f}`) && existsSync(join(dir, f.replace(/\.webp$/, ".json"))))
-      // Only Commons' pictures can reach the library, so no other is read, pre-picked or shown.
-      .filter((f) => isCommonsPage(pageOf(join(dir, f.replace(/\.webp$/, ".json")))))
+      // Only these can reach the library, so no other is read, pre-picked or shown.
+      .filter((f) => mayShow(join(dir, f.replace(/\.webp$/, ".json"))))
       .sort()
       .slice(0, perSubject);
     if (!fresh.length) continue;
@@ -157,7 +163,7 @@ export async function reviewSheets({ review, out, perSubject = 24, read }) {
       candidates.map(async (c, i) => ({
         input: await sharp(join(review, c.file))
           .resize(W, H, { fit: "cover" })
-          .composite([{ input: label(c.n, c.prePick, c.reasons.join(", ")) }])
+          .composite([{ input: label(c.n, c.prePick, c.reasons.join(", "), c.source === "pixabay" ? "Pixabay" : "") }])
           .png()
           .toBuffer(),
         left: (i % ACROSS) * (W + GAP),

@@ -4,8 +4,11 @@ import { parseArgs } from 'node:util';
 import sharp from 'sharp';
 import { commonsLicence, commonsQuery, UA, isCommonsPage } from './commons.mjs';
 import { fileURLToPath } from 'node:url';
+import { LICENCE_CHANGE, PER_SUBJECT, SEARCHES_A_NIGHT, THRESHOLD_ID, CUTOFF, pixabaySearch, refusal, uploadDate, wayback } from './pixabay.mjs';
 
 const MAX_BYTES = 50 * 1024 * 1024;
+// Never from these through Commons or Openverse: a copy's licence there is someone's word. Pixabay's
+// own pictures come only from its API, with their date evidence (pixabay.mjs).
 const BARRED = /unsplash|pexels|pixabay/i;
 
 // A subject's words, each in the file's title: a word only in a long description brought drawings,
@@ -14,7 +17,10 @@ const subjectWords = (subject) => subject.toLowerCase().split(/[^\p{L}\p{N}]+/u)
 export const commonsTerms = (subject) => `${subjectWords(subject).map((w) => `intitle:${w}`).join(" ")} -unsplash -pexels -pixabay`;
 export const titleFits = (subject, title) => subjectWords(subject).every((w) => (title ?? "").toLowerCase().includes(w));
 
-export async function collect({ misses, subjects: subjectsFile, out, max = 50, perSubject = 12, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null }) {
+export async function collect({ misses, subjects: subjectsFile, out, max = 50, perSubject = 12, wait = 3000, dryRun = false, fetchFn = globalThis.fetch, sleep = (ms) => new Promise(r => setTimeout(r, ms)), commonsSearch = null, pixabayKey = undefined }) {
+    // Pixabay only with a key; without one it is not a source tonight, not a failure.
+    const sources = ['openverse', 'commons', ...(pixabayKey ? ['pixabay'] : [])];
+    let pixabaySearches = 0;
     const subjects = new Set();
     
     if (subjectsFile && existsSync(subjectsFile)) {
@@ -96,15 +102,17 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
     
     for (const subject of subjects) {
         if (saved >= max) break;
-        if (['openverse', 'commons'].every((s) => state.searched[subject]?.includes(s))) continue;
+        if (sources.every((s) => state.searched[subject]?.includes(s))) continue;
         subjectsSearched++;
         // Enough of one subject leaves the night's cap to the others.
         let subjectSaved = 0;
         
-        for (const source of ['openverse', 'commons']) {
+        for (const source of sources) {
             if (saved >= max) break;
             if (stoppedSources.has(source)) continue;
             if (state.searched[subject]?.includes(source)) continue;
+            // Not marked searched: the subject's turn comes another night.
+            if (source === 'pixabay' && pixabaySearches >= SEARCHES_A_NIGHT) continue;
             if (subjectSaved >= perSubject) {
                 state.searched[subject] = [...(state.searched[subject] ?? []), source];
                 continue;
@@ -136,6 +144,32 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                             width: r.width,
                             height: r.height,
                             query: subject
+                        });
+                    }
+                } else if (source === 'pixabay') {
+                    pixabaySearches++;
+                    for (const h of await pixabaySearch(subject, pixabayKey, rateLimitedFetch)) {
+                        if (refusal(h)) continue;
+                        // The 1280 px copy is what the API gives without full access; its size, not the original's.
+                        const long = Math.max(h.imageWidth, h.imageHeight);
+                        const scale = long > 1280 ? 1280 / long : 1;
+                        results.push({
+                            id: String(h.id),
+                            source: 'pixabay',
+                            pageUrl: h.pageURL,
+                            imageUrl: h.largeImageURL,
+                            author: h.user,
+                            licence: `CC0 1.0: published on Pixabay before ${LICENCE_CHANGE} (uploaded ${uploadDate(h.previewURL)})`,
+                            width: Math.round(h.imageWidth * scale),
+                            height: Math.round(h.imageHeight * scale),
+                            query: subject,
+                            evidence: {
+                                pixabayId: h.id,
+                                uploaded: uploadDate(h.previewURL),
+                                uploadedFrom: new URL(h.previewURL).pathname,
+                                rule: `uploaded before ${CUTOFF} and id at most ${THRESHOLD_ID} (the licence changed ${LICENCE_CHANGE})`,
+                                tags: h.tags,
+                            },
                         });
                     }
                 } else {
@@ -178,6 +212,8 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                     break;
                 }
                 if (subjectSaved >= perSubject) break;
+                // Downloads tried, not only kept: a few of a subject, never more.
+                if (c.source === 'pixabay' && results.filter((r) => r.tried).length >= PER_SUBJECT) break;
                 if (c.width === undefined || c.height === undefined || c.width === null || c.height === null || Math.max(c.width, c.height) < 1280) {
                     skipped++;
                     continue;
@@ -192,9 +228,11 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                     seen.add(c.imageUrl);
                     saved++;
                     subjectSaved++;
+                    c.tried = true;
                     continue;
                 }
                 
+                c.tried = true;
                 const host = new URL(c.imageUrl).host;
                 if (stoppedHosts.has(host)) {
                     skipped++;
@@ -236,6 +274,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                         .webp({ quality: 80 })
                         .toFile(join(dir, `${name}.webp`));
                         
+                    if (c.source === 'pixabay') c.evidence.wayback = await wayback(c.pageUrl, rateLimitedFetch);
                     const prov = {
                         source: c.source,
                         ...(c.via ? { via: c.via } : {}),
@@ -246,6 +285,7 @@ export async function collect({ misses, subjects: subjectsFile, out, max = 50, p
                         width: c.width,
                         height: c.height,
                         query: c.query,
+                        ...(c.evidence ? { evidence: c.evidence } : {}),
                         subject: subject,
                         collectedAt: new Date().toISOString()
                     };
@@ -307,6 +347,7 @@ if (typeof process !== 'undefined' && process.argv && process.argv[1] === fileUR
         process.exit(1);
     }
     await collect({
+        pixabayKey: process.env.PIXABAY_API_KEY || undefined,
         misses: values.misses,
         subjects: values.subjects,
         out: values.out,

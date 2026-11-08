@@ -1,6 +1,6 @@
 # Smithable images
 
-Photographs and marks for Smithable's starters, sample data and picture picker. Most pictures here we generated with an image model (or made by hand); some are real photographs that their authors dedicated to the public domain (CC0) on Wikimedia Commons. The whole repository, pictures and scripts, is dedicated to the public domain under [CC0 1.0](LICENSE): use them for anything, no attribution needed. `credits.json` names each real photograph's source all the same.
+Photographs and marks for Smithable's starters, sample data and picture picker. Most pictures here we generated with an image model (or made by hand); some are real photographs that their authors dedicated to the public domain (CC0), on Wikimedia Commons or, before its licence changed, on Pixabay. The whole repository, pictures and scripts, is dedicated to the public domain under [CC0 1.0](LICENSE): use them for anything, no attribution needed. `credits.json` names each real photograph's source all the same.
 
 ## What is here
 
@@ -28,7 +28,7 @@ SMITHABLE_DOCS_BUCKET=<bucket> SMITHABLE_DOCS_DISTRIBUTION=<id> node scripts/mak
 node scripts/make-images.mjs --tar                 # images-<date>.tar for a release
 ```
 
-`scripts/collect.mjs` gathers CC0 candidates from Commons slowly into a review folder, never the library (Openverse is only another way to find Commons' files); `scripts/review-sheet.mjs --review <dir> --out <dir>` then makes one numbered contact sheet per subject of the pictures not yet shown, with a pre-pick by plain rules and a small vision model (needs `ANTHROPIC_API_KEY`; `--no-vision` makes the sheets alone).
+`scripts/collect.mjs` gathers CC0 candidates from Commons, and from Pixabay with `PIXABAY_API_KEY` set, slowly into a review folder, never the library (Openverse is only another way to find Commons' files); `scripts/review-sheet.mjs --review <dir> --out <dir>` then makes one numbered contact sheet per subject of the pictures not yet shown, with a pre-pick by plain rules and a small vision model (needs `ANTHROPIC_API_KEY`; `--no-vision` makes the sheets alone).
 
 A rerun only makes what is missing; get the current pictures first from the latest release's tarball. Contact sheets are kept in `sheets/`.
 
@@ -36,7 +36,13 @@ A rerun only makes what is missing; get the current pictures first from the late
 
 ## Real photographs
 
-Only CC0 or public domain, only from Wikimedia Commons (whose volunteers review licences; a CC0 mark on Flickr or a stock site is the uploader's own word), never under a stock site's own licence. `find-photos.mjs` searches Commons by its structured data and makes a numbered contact sheet; the file chosen goes in the manifest as `photo:`; `make-images.mjs` reads its licence again from its page, refuses anything but CC0 or public domain and any file with restrictions (personality rights, trademarks), cuts it to 3:2 at the kind's size and writes it without its metadata.
+Only CC0 or public domain, from Wikimedia Commons (whose volunteers review licences) or Pixabay's pictures from before its licence changed, never under a stock site's own licence (a CC0 mark on Flickr or another stock site is the uploader's own word, and copies of Pixabay's, Unsplash's or Pexels' pictures elsewhere are not taken).
+
+**Pixabay.** Pixabay's terms (section 4) name content published before 9 January 2019 CC0; what came later is under its own licence and never taken. The API gives each picture's upload date (in its preview's path, `/photo/YYYY/MM/DD/…`), not the published date, and a picture can wait some days in review, so the rule keeps a fortnight's margin: uploaded before 2018-12-26 **and** an id at or below **3895010**, the last id uploaded on 2018-12-25. The ids grow with time; the threshold was found on 2026-11-08 by bisecting ids through the API's own id lookup (3895010 uploaded 2018-12-25, 3895049 on 2018-12-26; around the change itself 3922314 on 2019-01-08 and 3922357 on 2019-01-09). Beside every picture kept, its evidence: the Pixabay id, the date and the path it was read from, the rule it met, its tags, and a Wayback Machine snapshot of its page from before the change where one exists (most have none; the addresses asked are kept either way). The collector asks the API once per subject, ever, twenty subjects a night at most, and tries six pictures of a subject at most, as the API's terms ask (about 100 requests a minute at most, answers cached a day, no systematic mass downloads): a need, never a harvest. The sheet shows a Pixabay picture only while its evidence meets the rule, labelled as Pixabay's. A Pixabay pick does not enter the manifest yet: `make-images.mjs` learns it with the first one.
+
+**People and brands.** CC0 waives the photographer's rights, not a pictured person's, a brand's or a building's, and Pixabay never asked for model releases. So no recognisable face, no logo or brand as the subject, from either source: the collector skips Pixabay pictures whose tags name people, the sheet's reading marks a recognisable person or a logo, and a person decides.
+
+From Commons: `find-photos.mjs` searches Commons by its structured data and makes a numbered contact sheet; the file chosen goes in the manifest as `photo:`; `make-images.mjs` reads its licence again from its page, refuses anything but CC0 or public domain and any file with restrictions (personality rights, trademarks), cuts it to 3:2 at the kind's size and writes it without its metadata.
 
 ```sh
 node scripts/find-photos.mjs "intitle:armchair" --out /tmp/armchair   # sheet.webp and candidates.json; --pd adds public domain
