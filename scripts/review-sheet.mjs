@@ -162,7 +162,8 @@ export async function reviewSheets({ review, out, perSubject = 24, read }) {
     const tiles = await Promise.all(
       candidates.map(async (c, i) => ({
         input: await sharp(join(review, c.file))
-          .resize(W, H, { fit: "cover" })
+          // The whole photograph, never cropped: a person judges all of it, and the crop comes later.
+          .resize(W, H, { fit: "contain", background: "#e5e7eb" })
           .composite([{ input: label(c.n, c.prePick, c.reasons.join(", "), c.source === "pixabay" ? "Pixabay" : "") }])
           .png()
           .toBuffer(),
