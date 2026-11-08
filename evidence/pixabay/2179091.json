@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2179091,
+  "page": "https://pixabay.com/photos/ancient-pottery-pots-clay-antique-2179091/",
+  "uploaded": "2017-03-27",
+  "uploadedFrom": "/photo/2017/03/27/14/33/ancient-2179091_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/ancient-pottery-pots-clay-antique-2179091/",
+      "https://pixabay.com/en/ancient-pottery-pots-clay-antique-2179091/"
+    ],
+    "snapshot": null
+  },
+  "author": "Pexels",
+  "tags": "ancient, pottery, pots, clay, antique, art, artisan, artistic, brown, ceramic, crafts, culture, handcraft, handicraft, handmade, india, indian",
+  "size": {
+    "original": [
+      6000,
+      4000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

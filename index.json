@@ -4521,6 +4521,66 @@
     }
   },
   {
+    "id": "houseplant-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/houseplant-p3.webp",
+    "alt": "Potted succulents and cacti on a wooden windowsill above a kitchen sink",
+    "tags": [
+      "sample",
+      "houseplant",
+      "plants",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 40410,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/cactus-kitchen-design-interior-2556000/",
+      "author": "TheVirtualDenise",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2017-07-30",
+      "evidence": "evidence/pixabay/2556000.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "houseplant-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/houseplant-p4.webp",
+    "alt": "Potted cacti and succulents on a windowsill beside the blinds",
+    "tags": [
+      "sample",
+      "houseplant",
+      "plants",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 39470,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#f8f8f8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/pots-plants-cactus-succulents-716579/",
+      "author": "milivigerova",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2015-04-10",
+      "evidence": "evidence/pixabay/716579.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "instrument-drums-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/instrument-drums-b.webp",
@@ -8001,6 +8061,66 @@
     }
   },
   {
+    "id": "pottery-p3",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/pottery-p3.webp",
+    "alt": "Stacked terracotta pots and vases on stone shelves",
+    "tags": [
+      "sample",
+      "pottery",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 69082,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#080808",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/ancient-pottery-pots-clay-antique-2179091/",
+      "author": "Pexels",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2017-03-27",
+      "evidence": "evidence/pixabay/2179091.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "pottery-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/pottery-p4.webp",
+    "alt": "Hands shaping a clay bowl on a potter's wheel",
+    "tags": [
+      "sample",
+      "pottery",
+      "ceramics",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 73416,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#b8b8b8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/ceramic-clay-pottery-art-old-3050615/",
+      "author": "enricsagarra",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2017-12-30",
+      "evidence": "evidence/pixabay/3050615.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "product-bottle-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/product-bottle-b.webp",
@@ -8454,6 +8574,36 @@
     }
   },
   {
+    "id": "second-hand-clothes-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/second-hand-clothes-p2.webp",
+    "alt": "Racks of clothes on white hangers in a thrift shop",
+    "tags": [
+      "sample",
+      "second-hand-clothes",
+      "clothes",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 31672,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#989898",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/clothing-thrift-store-shopping-3739798/",
+      "author": "angelsover",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2018-10-11",
+      "evidence": "evidence/pixabay/3739798.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "service-cleaning-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/service-cleaning-b.webp",
@@ -8722,6 +8872,66 @@
       "author": "Hiart",
       "licence": "CC0",
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "sideboard-p4",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/sideboard-p4.webp",
+    "alt": "A wooden sideboard in a blue room with a colourful painting and bookshelves",
+    "tags": [
+      "sample",
+      "sideboard",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 50772,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#081828",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/wall-furniture-design-apartment-416060/",
+      "author": "keresi72",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2014-08-11",
+      "evidence": "evidence/pixabay/416060.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "sideboard-p5",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/sideboard-p5.webp",
+    "alt": "A mahogany serpentine sideboard with brass oval handles on black",
+    "tags": [
+      "sample",
+      "sideboard",
+      "furniture",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 44264,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/antique-sideboard-antique-furniture-948527/",
+      "author": "27707",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2015-09-20",
+      "evidence": "evidence/pixabay/948527.json",
       "fetched": "2026-11-08"
     }
   },
@@ -9216,6 +9426,38 @@
     }
   },
   {
+    "id": "table-lamp-p6",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/table-lamp-p6.webp",
+    "alt": "A lit wicker table lamp beside an open book on a wooden table",
+    "tags": [
+      "sample",
+      "table-lamp",
+      "table",
+      "lamp",
+      "lighting",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 43378,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/light-lamp-bedside-lamp-465350/",
+      "author": "stevepb",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2014-09-28",
+      "evidence": "evidence/pixabay/465350.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
     "id": "tools-drill-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/tools-drill-b.webp",
@@ -9558,6 +9800,166 @@
       "author": "StockyPics",
       "licence": "CC0",
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p5",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p5.webp",
+    "alt": "A vintage film camera beside its lens on wood",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 68024,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#383848",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/camera-slr-dslr-lens-vintage-1248682/",
+      "author": "Joshua_Willson",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2016-03-10",
+      "evidence": "evidence/pixabay/1248682.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p6",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p6.webp",
+    "alt": "A film SLR camera hanging from its strap",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 853,
+    "height": 600,
+    "bytes": 11684,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "cool",
+    "color": "#c8c8d8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/camera-film-camera-photography-1705135/",
+      "author": "markusspiske",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2016-09-30",
+      "evidence": "evidence/pixabay/1705135.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p7",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p7.webp",
+    "alt": "Nine vintage film cameras in a grid on white",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 68106,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#e8e8e8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/cameras-old-retro-film-vintage-3480569/",
+      "author": "FreeCreativeStuff",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2018-06-17",
+      "evidence": "evidence/pixabay/3480569.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p8",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p8.webp",
+    "alt": "A hand holding an amber filter in front of a vintage camera",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 53844,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/yashica-filter-camera-vintage-711794/",
+      "author": "ClickerHappy",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2015-04-07",
+      "evidence": "evidence/pixabay/711794.json",
+      "fetched": "2026-11-08"
+    }
+  },
+  {
+    "id": "vintage-camera-p9",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p9.webp",
+    "alt": "A vintage rangefinder camera on dark wooden planks",
+    "tags": [
+      "sample",
+      "vintage-camera",
+      "vintage",
+      "camera",
+      "cameras",
+      "photo-real"
+    ],
+    "width": 900,
+    "height": 600,
+    "bytes": 41042,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "neutral",
+    "color": "#181818",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/camera-vintage-retro-old-820018/",
+      "author": "Republica",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2015-06-24",
+      "evidence": "evidence/pixabay/820018.json",
       "fetched": "2026-11-08"
     }
   },

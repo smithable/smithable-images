@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3739798,
+  "page": "https://pixabay.com/photos/clothing-thrift-store-shopping-3739798/",
+  "uploaded": "2018-10-11",
+  "uploadedFrom": "/photo/2018/10/11/13/37/clothing-3739798_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/clothing-thrift-store-shopping-3739798/",
+      "https://pixabay.com/en/clothing-thrift-store-shopping-3739798/"
+    ],
+    "snapshot": null
+  },
+  "author": "angelsover",
+  "tags": "clothing, thrift store, shopping, garments, hangers, clothes, gray shopping, gray clothes, gray shop",
+  "size": {
+    "original": [
+      5456,
+      3064
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

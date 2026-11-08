@@ -1,0 +1,27 @@
+{
+  "pixabayId": 416060,
+  "page": "https://pixabay.com/photos/wall-furniture-design-apartment-416060/",
+  "uploaded": "2014-08-11",
+  "uploadedFrom": "/photo/2014/08/11/21/39/wall-416060_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/wall-furniture-design-apartment-416060/",
+      "https://pixabay.com/en/wall-furniture-design-apartment-416060/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20151106085637/https://pixabay.com/en/wall-furniture-design-apartment-416060/",
+      "timestamp": "20151106085637"
+    }
+  },
+  "author": "keresi72",
+  "tags": "wall, furniture, design, apartment, room, painting, bookcases, bookshelves, indoors, interior design, decoration, interior decoration",
+  "size": {
+    "original": [
+      1920,
+      1080
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3480569,
+  "page": "https://pixabay.com/photos/cameras-old-retro-film-vintage-3480569/",
+  "uploaded": "2018-06-17",
+  "uploadedFrom": "/photo/2018/06/17/13/59/cameras-3480569_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/cameras-old-retro-film-vintage-3480569/",
+      "https://pixabay.com/en/cameras-old-retro-film-vintage-3480569/"
+    ],
+    "snapshot": null
+  },
+  "author": "FreeCreativeStuff",
+  "tags": "cameras, old, retro, film, vintage, classic, photography, photo, analog, photographic, hobby, photographer",
+  "size": {
+    "original": [
+      5616,
+      3645
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3050615,
+  "page": "https://pixabay.com/photos/ceramic-clay-pottery-art-old-3050615/",
+  "uploaded": "2017-12-30",
+  "uploadedFrom": "/photo/2017/12/30/17/56/ceramic-3050615_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/ceramic-clay-pottery-art-old-3050615/",
+      "https://pixabay.com/en/ceramic-clay-pottery-art-old-3050615/"
+    ],
+    "snapshot": null
+  },
+  "author": "enricsagarra",
+  "tags": "ceramic, clay, pottery, art, old, sculpture, earthenware, craftsman, handmade, mud, traditional, culture, brown art, brown culture, brown old",
+  "size": {
+    "original": [
+      3789,
+      3264
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

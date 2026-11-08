@@ -1,0 +1,24 @@
+{
+  "pixabayId": 465350,
+  "page": "https://pixabay.com/photos/light-lamp-bedside-lamp-465350/",
+  "uploaded": "2014-09-28",
+  "uploadedFrom": "/photo/2014/09/28/21/30/light-465350_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/light-lamp-bedside-lamp-465350/",
+      "https://pixabay.com/en/light-lamp-bedside-lamp-465350/"
+    ],
+    "snapshot": null
+  },
+  "author": "stevepb",
+  "tags": "light, lamp, bedside lamp, illumination, lampshade, illuminate, book, reading, literature, study, knowledge, wisdom, reading lamp, open book",
+  "size": {
+    "original": [
+      4534,
+      3587
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

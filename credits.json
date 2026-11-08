@@ -90,6 +90,22 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
   },
+  "houseplant-p3": {
+    "page": "https://pixabay.com/photos/cactus-kitchen-design-interior-2556000/",
+    "author": "TheVirtualDenise",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2017-07-30",
+    "evidence": "evidence/pixabay/2556000.json",
+    "fetched": "2026-11-08"
+  },
+  "houseplant-p4": {
+    "page": "https://pixabay.com/photos/pots-plants-cactus-succulents-716579/",
+    "author": "milivigerova",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2015-04-10",
+    "evidence": "evidence/pixabay/716579.json",
+    "fetched": "2026-11-08"
+  },
   "market-armchair-p": {
     "page": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Sheraton_Grand_Macao_%E5%AE%A2%E6%88%BF_hotel_room_%E7%81%B0%E8%89%B2_%E6%A2%B3%E5%8C%96%E6%A4%85_armchair_sofa_n_%E5%95%A1%E8%89%B2%E6%9C%A8%E8%A3%BD%E8%8C%B6%E5%B9%BE_brown_wooden_tea_table_%E6%97%A9%E4%B8%8A_morning_November_2023_R12S_03.jpg",
     "author": "Bita RmJohnson Liuosa",
@@ -188,11 +204,35 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
   },
+  "pottery-p3": {
+    "page": "https://pixabay.com/photos/ancient-pottery-pots-clay-antique-2179091/",
+    "author": "Pexels",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2017-03-27",
+    "evidence": "evidence/pixabay/2179091.json",
+    "fetched": "2026-11-08"
+  },
+  "pottery-p4": {
+    "page": "https://pixabay.com/photos/ceramic-clay-pottery-art-old-3050615/",
+    "author": "enricsagarra",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2017-12-30",
+    "evidence": "evidence/pixabay/3050615.json",
+    "fetched": "2026-11-08"
+  },
   "second-hand-clothes-p1": {
     "page": "https://commons.wikimedia.org/wiki/File:View_on_the_flea_market_Waterlooplein_with_second_hand_clothes_stables;_free_photo_Amsterdam_city_by_Fons_Heijnsbroek,_12-10-2021.jpg",
     "author": "Fons Heijnsbroek",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "second-hand-clothes-p2": {
+    "page": "https://pixabay.com/photos/clothing-thrift-store-shopping-3739798/",
+    "author": "angelsover",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2018-10-11",
+    "evidence": "evidence/pixabay/3739798.json",
     "fetched": "2026-11-08"
   },
   "sideboard-p1": {
@@ -214,6 +254,22 @@
     "author": "Hiart",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "sideboard-p4": {
+    "page": "https://pixabay.com/photos/wall-furniture-design-apartment-416060/",
+    "author": "keresi72",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2014-08-11",
+    "evidence": "evidence/pixabay/416060.json",
+    "fetched": "2026-11-08"
+  },
+  "sideboard-p5": {
+    "page": "https://pixabay.com/photos/antique-sideboard-antique-furniture-948527/",
+    "author": "27707",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2015-09-20",
+    "evidence": "evidence/pixabay/948527.json",
     "fetched": "2026-11-08"
   },
   "table-lamp-p1": {
@@ -251,6 +307,14 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
   },
+  "table-lamp-p6": {
+    "page": "https://pixabay.com/photos/light-lamp-bedside-lamp-465350/",
+    "author": "stevepb",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2014-09-28",
+    "evidence": "evidence/pixabay/465350.json",
+    "fetched": "2026-11-08"
+  },
   "vintage-camera-p1": {
     "page": "https://commons.wikimedia.org/wiki/File:Inside_view_of_a_vintage_film_camera,_photographed_in_West_Bengal,_India,_on_December_1,_2023.jpg",
     "author": "Billjones94",
@@ -277,6 +341,46 @@
     "author": "StockyPics",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p5": {
+    "page": "https://pixabay.com/photos/camera-slr-dslr-lens-vintage-1248682/",
+    "author": "Joshua_Willson",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2016-03-10",
+    "evidence": "evidence/pixabay/1248682.json",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p6": {
+    "page": "https://pixabay.com/photos/camera-film-camera-photography-1705135/",
+    "author": "markusspiske",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2016-09-30",
+    "evidence": "evidence/pixabay/1705135.json",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p7": {
+    "page": "https://pixabay.com/photos/cameras-old-retro-film-vintage-3480569/",
+    "author": "FreeCreativeStuff",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2018-06-17",
+    "evidence": "evidence/pixabay/3480569.json",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p8": {
+    "page": "https://pixabay.com/photos/yashica-filter-camera-vintage-711794/",
+    "author": "ClickerHappy",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2015-04-07",
+    "evidence": "evidence/pixabay/711794.json",
+    "fetched": "2026-11-08"
+  },
+  "vintage-camera-p9": {
+    "page": "https://pixabay.com/photos/camera-vintage-retro-old-820018/",
+    "author": "Republica",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2015-06-24",
+    "evidence": "evidence/pixabay/820018.json",
     "fetched": "2026-11-08"
   },
   "wardrobe-p1": {

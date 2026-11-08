@@ -1,0 +1,24 @@
+{
+  "pixabayId": 948527,
+  "page": "https://pixabay.com/photos/antique-sideboard-antique-furniture-948527/",
+  "uploaded": "2015-09-20",
+  "uploadedFrom": "/photo/2015/09/20/17/21/antique-sideboard-948527_150.png",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/antique-sideboard-antique-furniture-948527/",
+      "https://pixabay.com/en/antique-sideboard-antique-furniture-948527/"
+    ],
+    "snapshot": null
+  },
+  "author": "27707",
+  "tags": "antique sideboard, antique furniture, sideboard, wood, furniture, antique, mahogany, pine, old, interior, cabinet, old-fashioned, decoration, transparent background",
+  "size": {
+    "original": [
+      2097,
+      1431
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

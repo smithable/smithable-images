@@ -1,0 +1,24 @@
+{
+  "pixabayId": 716579,
+  "page": "https://pixabay.com/photos/pots-plants-cactus-succulents-716579/",
+  "uploaded": "2015-04-10",
+  "uploadedFrom": "/photo/2015/04/10/17/03/pots-716579_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/pots-plants-cactus-succulents-716579/",
+      "https://pixabay.com/en/pots-plants-cactus-succulents-716579/"
+    ],
+    "snapshot": null
+  },
+  "author": "milivigerova",
+  "tags": "pots, plants, cactus, succulents, shelf, window, nature, gardening, potted, design, home, interior, decor, potted plants, indoor plants",
+  "size": {
+    "original": [
+      4468,
+      2629
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

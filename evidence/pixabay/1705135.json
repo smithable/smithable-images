@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1705135,
+  "page": "https://pixabay.com/photos/camera-film-camera-photography-1705135/",
+  "uploaded": "2016-09-30",
+  "uploadedFrom": "/photo/2016/09/30/12/02/camera-1705135_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/camera-film-camera-photography-1705135/",
+      "https://pixabay.com/en/camera-film-camera-photography-1705135/"
+    ],
+    "snapshot": null
+  },
+  "author": "markusspiske",
+  "tags": "camera, film camera, photography, analog camera, analog, slr camera, exposure, classic, film, lens, media, photo, vintage, retro, background, iphone wallpaper",
+  "size": {
+    "original": [
+      3840,
+      5760
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}

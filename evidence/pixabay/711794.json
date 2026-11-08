@@ -1,0 +1,27 @@
+{
+  "pixabayId": 711794,
+  "page": "https://pixabay.com/photos/yashica-filter-camera-vintage-711794/",
+  "uploaded": "2015-04-07",
+  "uploadedFrom": "/photo/2015/04/07/21/10/yashica-711794_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/yashica-filter-camera-vintage-711794/",
+      "https://pixabay.com/en/yashica-filter-camera-vintage-711794/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20170426025211/https://pixabay.com/en/yashica-filter-camera-vintage-711794/",
+      "timestamp": "20170426025211"
+    }
+  },
+  "author": "ClickerHappy",
+  "tags": "yashica, filter, camera, vintage, photography, classic, design, camera filter, lens, camera lens, retro, old, old camera",
+  "size": {
+    "original": [
+      4928,
+      3264
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-08"
+}
