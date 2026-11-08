@@ -2008,3 +2008,175 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Food_truck_292_S%27Archittu_2.jpg"
     alt: "People at tables under string lights by a food truck on a summer evening"
     tags: [hero, starter-kiosk, food-truck, street-food, food, evening, outdoor, photo-real]
+
+  # Real photographs Johan picked from the weekly sheet of 2026-11-08 (CC0 or public domain on Wikimedia Commons; credits.json).
+  - id: bookshelf-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_22_333000.jpeg"
+    alt: "An outdoor book cabinet on a street, its shelves of books lit"
+    tags: [sample, bookshelf, furniture, photo-real]
+  - id: bookshelf-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Public_bookshelf_in_amsterdam_09_03_25_905000.jpeg"
+    alt: "A wooden book cabinet with shelves of books in daylight"
+    tags: [sample, bookshelf, furniture, photo-real]
+  - id: bookshelf-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Library_bookshelf.jpg"
+    alt: "Wooden library shelves packed with books"
+    tags: [sample, bookshelf, furniture, photo-real]
+  - id: ceramic-bowl-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Ceramic_bowl_from_the_5th_millennium_BC,_Durankulak.jpg"
+    alt: "A red-painted prehistoric ceramic bowl on a pedestal"
+    tags: [sample, ceramic-bowl, ceramic, bowl, ceramics, photo-real]
+  - id: ceramic-bowl-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Bowl_with_orchids,_by_J._Jurriaan_Kok_(form)_%26_J._Schellink_(decoration),_Haagsche_Plateelbakkerij,_Rozenburg,_Den_Haag,_1903,_ceramic_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00826.jpg"
+    alt: "A shallow glazed ceramic dish decorated with irises"
+    tags: [sample, ceramic-bowl, ceramic, bowl, ceramics, photo-real]
+  - id: chest-of-drawers-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers,_Boston,_1680-1700,_red_cedar_with_oak_and_white_pine_-_Chazen_Museum_of_Art_-_DSC02590.JPG"
+    alt: "A wooden four-drawer chest on bun feet"
+    tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
+  - id: chest-of-drawers-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Chest_of_drawers_MET_DP-16170-005.jpg"
+    alt: "A mahogany serpentine chest of drawers with brass oval pulls"
+    tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
+  - id: chest-of-drawers-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers_(Commode),_1770-1780,_Jean-Henri_Riesener,_France,_oak,_mahogany,_kingwood,_purple_heart_and_unidentified_exotic_woods,_gilt_bronze,_marble_-_Art_Institute_of_Chicago_-_DSC09797.JPG"
+    alt: "An ornate marquetry commode with a marble top and gilded mounts"
+    tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
+  - id: chest-of-drawers-p4
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Clevelandart_1989.158.jpg"
+    alt: "A marquetry commode with a marble top and gilt mounts"
+    tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
+  - id: chest-of-drawers-p5
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Chippendale_Carved_Cherrywood_Block_Front_Chest_of_Drawers_MET_DP269069.jpg"
+    alt: "A mahogany chest of drawers with brass pulls and claw feet"
+    tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
+  - id: houseplant-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Vertical_houseplant_garden.jpg"
+    alt: "A wall of ferns, nerve plants and ivy in maroon pots"
+    tags: [sample, houseplant, plants, photo-real]
+  - id: houseplant-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg"
+    alt: "An umbrella plant in a grey pot on a wooden table"
+    tags: [sample, houseplant, plants, photo-real]
+  - id: pottery-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg"
+    alt: "A grey stemmed earthenware bowl on a clear stand"
+    tags: [sample, pottery, ceramics, photo-real]
+  - id: pottery-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Horned_figure_on_pottery._Pr%C3%A9-Indus_civilization._Kashmir.jpg"
+    alt: "A round reddish-brown pot with incised bands"
+    tags: [sample, pottery, ceramics, photo-real]
+  - id: second-hand-clothes-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:View_on_the_flea_market_Waterlooplein_with_second_hand_clothes_stables;_free_photo_Amsterdam_city_by_Fons_Heijnsbroek,_12-10-2021.jpg"
+    alt: "A market stall of used coats and clothes on hangers"
+    tags: [sample, second-hand-clothes, clothes, photo-real]
+  - id: sideboard-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DP318023.jpg"
+    alt: "A mahogany sideboard with inlay and brass pulls"
+    tags: [sample, sideboard, furniture, photo-real]
+  - id: sideboard-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DT7030.jpg"
+    alt: "A carved wooden sideboard with an ornate top"
+    tags: [sample, sideboard, furniture, photo-real]
+  - id: sideboard-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:American_sideboard,_late_18th_century,_Honolulu_Museum_of_Art,_3407.1.JPG"
+    alt: "A mahogany sideboard with brass pulls and inlaid legs"
+    tags: [sample, sideboard, furniture, photo-real]
+  - id: table-lamp-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Tulip_Table_Lamp_-_2018.268_-_Cleveland_Museum_of_Art.jpg"
+    alt: "A stained-glass table lamp with a tulip pattern on a green base"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: table-lamp-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Clara_Wolcott_Driscoll_(American,_1861-1944),_Tiffany_Glass_%5E_Decorating_Co._(American,_1892-1900),_Tiffany_Studios_(American,_1902-1932)_-_Woodbine_Table_Lamp_-_2018.283_-_Cleveland_Museum_of_Art.jpg"
+    alt: "A stained-glass table lamp with a leaf pattern and a bronze base"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: table-lamp-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Table_lamp_MET_DP254463.jpg"
+    alt: "A table lamp with a beaded metal shade and an amber glass base"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: table-lamp-p4
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+    alt: "A mosaic-shade table lamp on a wooden cabinet"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: table-lamp-p5
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Table_Lamp_MET_DT4342.jpg"
+    alt: "A mushroom-shaped table lamp with a dragonfly shade"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: vintage-camera-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Inside_view_of_a_vintage_film_camera,_photographed_in_West_Bengal,_India,_on_December_1,_2023.jpg"
+    alt: "An old black camera with its lid raised on a floral tablecloth"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg"
+    alt: "Glass cabinets full of vintage film cameras"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg"
+    alt: "A silver and black compact film camera on a wooden table"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p4
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg"
+    alt: "Two vintage cameras on a wooden table"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: wardrobe-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Chevening_Flats_wardrobe.jpg"
+    alt: "A light wooden wardrobe with a mirror door in a bedroom"
+    tags: [sample, wardrobe, furniture, photo-real]
+  - id: wardrobe-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Wardrobe,_Herter_Brothers,_1875-83,_Metropolitan_Museum_of_Art.JPG"
+    alt: "A black lacquered wardrobe with gold floral inlay"
+    tags: [sample, wardrobe, furniture, photo-real]
+  - id: wardrobe-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Wardrobe_MET_DP235302.jpg"
+    alt: "A black lacquered wardrobe with gold floral decoration"
+    tags: [sample, wardrobe, furniture, photo-real]
+  - id: yoga-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218589).jpg"
+    alt: "A yoga class stretching on mats in a gym"
+    tags: [sample, yoga, wellness, photo-real]
+  - id: yoga-p2
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218607).jpg"
+    alt: "A yoga class seated on mats, seen from behind"
+    tags: [sample, yoga, wellness, photo-real]
+  - id: yoga-p3
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg"
+    alt: "A bright attic yoga studio with mats and large windows"
+    tags: [sample, yoga, wellness, photo-real]
+  - id: yoga-studio-p1
+    kind: sample
+    photo: "https://commons.wikimedia.org/wiki/File:The_Views_From_Your_Private_Yoga_Studio_(194407539).jpeg"
+    alt: "Two people meditating on a sunny wooden deck, seen from behind"
+    tags: [sample, yoga-studio, yoga, studio, wellness, photo-real]
