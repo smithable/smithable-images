@@ -2180,3 +2180,70 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:The_Views_From_Your_Private_Yoga_Studio_(194407539).jpeg"
     alt: "Two people meditating on a sunny wooden deck, seen from behind"
     tags: [sample, yoga-studio, yoga, studio, wellness, photo-real]
+
+  # Pixabay pictures Johan picked from the sheet of 2026-11-08 23:27 (CC0: published before 2019-01-09; evidence/pixabay/<id>.json and credits.json).
+  - id: houseplant-p3
+    kind: sample
+    pixabay: 2556000
+    alt: "Potted succulents and cacti on a wooden windowsill above a kitchen sink"
+    tags: [sample, houseplant, plants, photo-real]
+  - id: houseplant-p4
+    kind: sample
+    pixabay: 716579
+    alt: "Potted cacti and succulents on a windowsill beside the blinds"
+    tags: [sample, houseplant, plants, photo-real]
+  - id: pottery-p3
+    kind: sample
+    pixabay: 2179091
+    alt: "Stacked terracotta pots and vases on stone shelves"
+    tags: [sample, pottery, ceramics, photo-real]
+  - id: pottery-p4
+    kind: sample
+    pixabay: 3050615
+    alt: "Hands shaping a clay bowl on a potter's wheel"
+    tags: [sample, pottery, ceramics, photo-real]
+  - id: second-hand-clothes-p2
+    kind: sample
+    pixabay: 3739798
+    alt: "Racks of clothes on white hangers in a thrift shop"
+    tags: [sample, second-hand-clothes, clothes, photo-real]
+  - id: sideboard-p4
+    kind: sample
+    pixabay: 416060
+    alt: "A wooden sideboard in a blue room with a colourful painting and bookshelves"
+    tags: [sample, sideboard, furniture, photo-real]
+  - id: sideboard-p5
+    kind: sample
+    pixabay: 948527
+    alt: "A mahogany serpentine sideboard with brass oval handles on black"
+    tags: [sample, sideboard, furniture, photo-real]
+  - id: table-lamp-p6
+    kind: sample
+    pixabay: 465350
+    alt: "A lit wicker table lamp beside an open book on a wooden table"
+    tags: [sample, table-lamp, table, lamp, lighting, photo-real]
+  - id: vintage-camera-p5
+    kind: sample
+    pixabay: 1248682
+    alt: "A vintage film camera beside its lens on wood"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p6
+    kind: sample
+    pixabay: 1705135
+    alt: "A film SLR camera hanging from its strap"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p7
+    kind: sample
+    pixabay: 3480569
+    alt: "Nine vintage film cameras in a grid on white"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p8
+    kind: sample
+    pixabay: 711794
+    alt: "A hand holding an amber filter in front of a vintage camera"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  - id: vintage-camera-p9
+    kind: sample
+    pixabay: 820018
+    alt: "A vintage rangefinder camera on dark wooden planks"
+    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]

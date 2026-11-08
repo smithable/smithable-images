@@ -23,6 +23,7 @@ import { parseArgs } from "node:util";
 import sharp from "sharp";
 import { parse } from "yaml";
 import { commonsFile, UA } from "./commons.mjs";
+import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -63,8 +64,9 @@ const manifest = parse(readFileSync(join(ROOT, "manifest.yml"), "utf8"));
 const defaults = manifest.defaults ?? {};
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
-  if ([e.prompt, e.from, e.photo].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from or photo`);
-  if (e.photo && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
+  if ([e.prompt, e.from, e.photo, e.pixabay].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo or pixabay`);
+  if (e.pixabay !== undefined && !(Number.isInteger(e.pixabay) && e.pixabay > 0)) throw new Error(`${e.id}: pixabay is the picture's id, a number`);
+  if ((e.photo || e.pixabay) && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
   if (!e.alt || !e.tags?.length) throw new Error(`${e.id}: alt and tags are required`);
   if (e.style && !defaults.style?.[e.style]) throw new Error(`${e.id}: no style ${e.style} in defaults`);
   return {
@@ -157,7 +159,7 @@ async function store(e, input) {
   const kind = KINDS[e.kind];
   mkdirSync(dirname(e.file), { recursive: true });
   if (kind.transparent) input = await clearHaze(input);
-  const resize = e.photo
+  const resize = e.photo || e.pixabay
     ? { width: kind.long, height: Math.round((kind.long * 2) / 3), fit: "cover", position: "attention", withoutEnlargement: true }
     : { width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true };
   await sharp(input)
@@ -188,14 +190,14 @@ async function describe(e) {
     tone: luminance > 0.6 ? "light" : luminance < 0.3 ? "dark" : "mid",
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
-    source: e.photo ? "wikimedia-commons" : e.from ? "file" : e.model,
+    source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.from ? "file" : e.model,
     // A photograph or drawn as one (heroes and samples, the abstract heroes included); marks are
     // drawn as marks.
     photo: !KINDS[e.kind].transparent,
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
-    generated: !e.photo && !e.from,
-    ...(e.photo ? { credit: credits[e.id] } : {}),
+    generated: !e.photo && !e.pixabay && !e.from,
+    ...(e.photo || e.pixabay ? { credit: credits[e.id] } : {}),
   };
 }
 
@@ -235,7 +237,7 @@ function dryRun() {
     byModel[key].count++;
     byModel[key].cost += priceOf(e);
   }
-  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : e.photo ? `photo ${e.photo}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
+  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : e.photo ? `photo ${e.photo}` : e.pixabay ? `pixabay ${e.pixabay}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
   console.log(`\n${missing.length - toMake.length} to copy or fetch, ${toMake.length} to generate, ${selected.length - missing.length} present`);
   let total = 0;
   for (const [key, { count, cost }] of Object.entries(byModel)) {
@@ -274,8 +276,51 @@ async function fetchPhotos() {
   }
 }
 
+// Pixabay's pictures from before its licence change (pixabay.mjs, README): the picture is looked up
+// again by its id through the API (PIXABAY_API_KEY), the rule checked again on what the API says
+// now, and the evidence written to evidence/pixabay/<id>.json beside the credit. The key is in the
+// request only, never in a file or a message.
+async function fetchPixabay() {
+  const todo = missing.filter((m) => m.pixabay);
+  if (!todo.length) return;
+  const key = process.env.PIXABAY_API_KEY;
+  if (!key) throw new Error("PIXABAY_API_KEY is not set: the pixabay: entries need it");
+  for (const e of todo) {
+    const res = await fetch(`https://pixabay.com/api/?${new URLSearchParams({ key, id: String(e.pixabay) })}`, { headers: { "user-agent": UA } });
+    if (!res.ok) throw new Error(`${e.id}: Pixabay answered ${res.status}`);
+    const hit = (await res.json()).hits?.[0];
+    if (!hit || hit.id !== e.pixabay) throw new Error(`${e.id}: Pixabay has no picture ${e.pixabay}`);
+    const why = refusal(hit);
+    if (why) throw new Error(`${e.id}: Pixabay ${e.pixabay} does not meet the rule: ${why}`);
+    const img = await fetch(hit.largeImageURL, { headers: { "user-agent": UA } });
+    if (!img.ok) throw new Error(`${e.id}: the picture answered ${img.status}`);
+    await store(e, Buffer.from(await img.arrayBuffer()));
+    const fetched = new Date().toISOString().slice(0, 10);
+    const uploaded = uploadDate(hit.previewURL);
+    const evidence = `evidence/pixabay/${hit.id}.json`;
+    mkdirSync(join(ROOT, "evidence", "pixabay"), { recursive: true });
+    writeFileSync(join(ROOT, evidence), `${JSON.stringify({
+      pixabayId: hit.id,
+      page: hit.pageURL,
+      uploaded,
+      uploadedFrom: new URL(hit.previewURL).pathname,
+      rule: `uploaded before ${CUTOFF} and id at most ${THRESHOLD_ID} (the licence changed ${LICENCE_CHANGE}; README, Pixabay)`,
+      wayback: await wayback(hit.pageURL, (u) => fetch(u, { headers: { "user-agent": UA } })),
+      author: hit.user,
+      tags: hit.tags,
+      size: { original: [hit.imageWidth, hit.imageHeight], fetched: "1280 px long side (largeImageURL)" },
+      fetched,
+    }, null, 2)}\n`);
+    credits[e.id] = { page: hit.pageURL, author: hit.user, licence: "CC0 1.0 (Pixabay, published before " + LICENCE_CHANGE + ")", uploaded, evidence, fetched };
+    writeFileSync(CREDITS, `${JSON.stringify(Object.fromEntries(Object.entries(credits).sort()), null, 2)}\n`);
+    console.log(`✓ ${e.kind}/${e.id} (Pixabay ${hit.id}, uploaded ${uploaded})`);
+    await new Promise((r) => setTimeout(r, 2000));
+  }
+}
+
 async function copyFiles() {
   await fetchPhotos();
+  await fetchPixabay();
   for (const e of missing.filter((m) => m.from)) {
     const source = resolve(ROOT, e.from.replace(/^~(?=\/)/, homedir()));
     await store(e, source);
