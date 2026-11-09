@@ -6,7 +6,7 @@ import { test } from "node:test";
 import sharp from "sharp";
 import { plainReasons, readingReasons, reviewSheets } from "./review-sheet.mjs";
 
-const good = { onSubject: true, photograph: true, logo: false, textOver: false, watermark: false, person: false, note: "a lamp" };
+const good = { onSubject: true, photograph: true, logo: false, textOver: false, signText: false, watermark: false, monochrome: false, blurry: false, person: false, note: "a lamp" };
 
 async function picture(review, slug, name, extra = {}) {
   mkdirSync(join(review, slug), { recursive: true });
@@ -29,8 +29,8 @@ test("the plain rules refuse a small or a narrow picture", () => {
 test("each thing the model reads can refuse a picture", () => {
   assert.deepEqual(readingReasons(good), []);
   assert.deepEqual(
-    readingReasons({ onSubject: false, photograph: false, logo: true, textOver: true, watermark: true, person: true, note: "" }),
-    ["off subject", "not a photograph", "a logo", "text over it", "a watermark", "a recognisable person"],
+    readingReasons({ onSubject: false, photograph: false, logo: true, textOver: true, signText: true, watermark: true, monochrome: true, blurry: true, person: true, note: "" }),
+    ["off subject", "not a photograph", "a logo", "text over it", "words in the scene", "a watermark", "one tone", "blurred", "a recognisable person"],
   );
 });
 

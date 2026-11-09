@@ -3,7 +3,9 @@
 // yet shown get a pre-pick and go on one numbered contact sheet for a person to pick from. Nothing
 // enters the library here, and only Commons' pictures and Pixabay's with their date evidence are
 // looked at (the label says Pixabay's). The pre-pick is plain rules (size, aspect), then a small vision model's
-// reading (on subject, a photograph, no logo, no text over it, no watermark, no recognisable person);
+// reading (the subject the main thing, a photograph in colour and in focus, no logo or brand character,
+// no words over it or in the scene, no watermark, no recognisable person; tightened 2026-11-09 from
+// what Johan left out of the first two sheets);
 // a picture the model could not read is shown but not pre-picked, and a run where it read none stops. What the person sees is in
 // <out>/candidates.json, each picture's number, file, provenance, verdict and reasons.
 //
@@ -29,15 +31,18 @@ const ACROSS = 4;
 const READING = {
   type: "object",
   properties: {
-    onSubject: { type: "boolean", description: "the subject is plainly what the picture shows" },
+    onSubject: { type: "boolean", description: "the subject itself is the main thing shown: a bookshelf, not the books on one; a wardrobe, not clothes on a rack" },
     photograph: { type: "boolean", description: "a real photograph, not a drawing, scan of a page, chart or screenshot" },
-    logo: { type: "boolean", description: "a logo or a brand's name is the main thing in it" },
+    logo: { type: "boolean", description: "a logo or a brand's name is the main thing in it, or a brand's character (a cartoon figure, a mascot) is in it; the maker's name on a product does not count" },
     textOver: { type: "boolean", description: "words are laid over or fill the picture; a small sign in a scene does not count" },
+    signText: { type: "boolean", description: "a large readable sign or notice takes up a good part of the picture (a shop front's name, a poster); a small label, a book's spine or lettering on the subject itself does not count" },
     watermark: { type: "boolean" },
+    monochrome: { type: "boolean", description: "black and white, sepia or another single tone" },
+    blurry: { type: "boolean", description: "the subject is out of focus or blurred by motion" },
     person: { type: "boolean", description: "a person's face can be recognised" },
     note: { type: "string", description: "what it shows, and its look, in under twelve words" },
   },
-  required: ["onSubject", "photograph", "logo", "textOver", "watermark", "person", "note"],
+  required: ["onSubject", "photograph", "logo", "textOver", "signText", "watermark", "monochrome", "blurry", "person", "note"],
   additionalProperties: false,
 };
 
@@ -55,7 +60,10 @@ export function readingReasons(r) {
   if (!r.photograph) reasons.push("not a photograph");
   if (r.logo) reasons.push("a logo");
   if (r.textOver) reasons.push("text over it");
+  if (r.signText) reasons.push("words in the scene");
   if (r.watermark) reasons.push("a watermark");
+  if (r.monochrome) reasons.push("one tone");
+  if (r.blurry) reasons.push("blurred");
   if (r.person) reasons.push("a recognisable person");
   return reasons;
 }
