@@ -1669,7 +1669,7 @@ images:
     kind: logo
     prompt: "A key with a round bow, in amber."
     alt: "A key"
-    tags: [logo, mark, property, rental, cabin, hotel, home, apartment, booking]
+    tags: [logo, mark, property, rental, cabin, hotel, home, apartment, booking, locksmith]
   - id: logo-coins-c
     kind: logo
     prompt: "Three coins stacked, in amber, with one coin beside them in teal."
