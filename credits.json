@@ -28,6 +28,20 @@
     "evidence": "evidence/pixabay/2472243.json",
     "fetched": "2026-11-18"
   },
+  "cafe-window-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Interior_of_1UP_Cafe_2024-02-18.jpg",
+    "author": "Andy Li",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "car-wheel-sunset-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Chrome_rim_on_a_black_car_on_sunset_(Unsplash).jpg",
+    "author": "Jiafeng Wang jeff_wong",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
   "ceramic-bowl-p1": {
     "page": "https://commons.wikimedia.org/wiki/File:Ceramic_bowl_from_the_5th_millennium_BC,_Durankulak.jpg",
     "author": "Ivano Giambattista",
@@ -77,6 +91,20 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
   },
+  "church-interior-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Holy_Trinity,_Quebec_city,_Canada_001.jpg",
+    "author": "Wilfredor",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "concert-crowd-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Concert_crowd_(Unsplash).jpg",
+    "author": "Hannah Rodrigo hannahrodrigo",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
   "drink-juice-p": {
     "page": "https://pixabay.com/photos/fresh-orange-juice-squeezed-1614822/",
     "author": "stevepb",
@@ -99,6 +127,20 @@
     "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
     "uploaded": "2015-05-31",
     "evidence": "evidence/pixabay/791891.json",
+    "fetched": "2026-11-18"
+  },
+  "forest-canopy-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Remote_forest_path_(Unsplash).jpg",
+    "author": "Geran de Klerk geran",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "forest-path-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Forest_path,_%C3%85nnaboda.jpg",
+    "author": "DimiTalen",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-18"
   },
   "hero-fitness-yoga-class-p": {
@@ -144,6 +186,34 @@
     "uploaded": "2015-04-10",
     "evidence": "evidence/pixabay/716579.json",
     "fetched": "2026-11-08"
+  },
+  "laptop-bookshelf-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Desk-laptop-working-technology_(24299511976).jpg",
+    "author": "www.Pixel.la Free Stock Photos",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "laptop-notes-desk-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Desk-laptop-notebook-pen_(23958719819).jpg",
+    "author": "www.Pixel.la Free Stock Photos",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "laptop-white-desk-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Coffee-desk-laptop-notebook_(24244320481).jpg",
+    "author": "www.Pixel.la Free Stock Photos",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
+  },
+  "living-room-laptop-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Laptop_in_the_living_room_(Unsplash).jpg",
+    "author": "Oliur Rahman ultralinx",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
   },
   "market-armchair-p": {
     "page": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Sheraton_Grand_Macao_%E5%AE%A2%E6%88%BF_hotel_room_%E7%81%B0%E8%89%B2_%E6%A2%B3%E5%8C%96%E6%A4%85_armchair_sofa_n_%E5%95%A1%E8%89%B2%E6%9C%A8%E8%A3%BD%E8%8C%B6%E5%B9%BE_brown_wooden_tea_table_%E6%97%A9%E4%B8%8A_morning_November_2023_R12S_03.jpg",
@@ -228,6 +298,13 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
+  },
+  "pine-forest-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:Overgrown_forest_path_(Unsplash).jpg",
+    "author": "Kirill Nechmonya nech",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
   },
   "pottery-p1": {
     "page": "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg",

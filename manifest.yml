@@ -3230,3 +3230,82 @@ images:
     model: gpt-image-2
     alt: "A rolled lavender yoga mat and a water bottle on a pale wooden studio floor"
     tags: [sample, booking, ink-wash, illustration, yoga, mat]
+  # Johan's picks from daily CC0 batch 1 (T933, fact decisions.daily-photo-picks-1), Wikimedia Commons;
+  # each described from the picture itself (decisions.cc0-picks-processing).
+  - id: cafe-window-p
+    kind: hero
+    style: photographs
+    subject: cafe-window
+    photo: "https://commons.wikimedia.org/wiki/File:Interior_of_1UP_Cafe_2024-02-18.jpg"
+    alt: "A small cafe with armchairs and wooden tables by a large window onto a street"
+    tags: [hero, photo-real, cafe, coffee, interior, restaurant, seating, window, kiosk, table-booking, venue]
+  - id: forest-canopy-p
+    kind: hero
+    style: photographs
+    subject: forest-canopy
+    photo: "https://commons.wikimedia.org/wiki/File:Remote_forest_path_(Unsplash).jpg"
+    alt: "A dense spruce forest seen from straight above, with a narrow road through the trees"
+    tags: [hero, photo-real, forest, nature, aerial, trees, green, outdoor, calm, hiking, forestry]
+  - id: pine-forest-p
+    kind: hero
+    style: photographs
+    subject: pine-forest
+    photo: "https://commons.wikimedia.org/wiki/File:Overgrown_forest_path_(Unsplash).jpg"
+    alt: "Tall pine trunks in rows above green undergrowth and a faint track"
+    tags: [hero, photo-real, forest, nature, pine, trees, outdoor, calm, hiking, wildlife]
+  - id: forest-path-p
+    kind: hero
+    style: photographs
+    subject: forest-path
+    photo: "https://commons.wikimedia.org/wiki/File:Forest_path,_%C3%85nnaboda.jpg"
+    alt: "A dirt path through a sunlit pine forest with blueberry undergrowth"
+    tags: [hero, photo-real, forest, path, nature, nordic, sweden, outdoor, hiking, running, trail, calm]
+  - id: church-interior-p
+    kind: hero
+    style: photographs
+    subject: church-interior
+    photo: "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Holy_Trinity,_Quebec_city,_Canada_001.jpg"
+    alt: "A church interior with white columns, gilded vaults and rows of wooden pews"
+    tags: [hero, photo-real, church, interior, venue, wedding, concert, events, booking, architecture]
+  - id: living-room-laptop-p
+    kind: hero
+    style: photographs
+    subject: living-room-laptop
+    photo: "https://commons.wikimedia.org/wiki/File:Laptop_in_the_living_room_(Unsplash).jpg"
+    alt: "A laptop on a grey sofa in a bright white living room, with a television and tulips behind"
+    tags: [hero, photo-real, living-room, home, laptop, remote-work, interior, bright, rental, office]
+  - id: laptop-white-desk-p
+    kind: hero
+    style: photographs
+    subject: laptop-white-desk
+    photo: "https://commons.wikimedia.org/wiki/File:Coffee-desk-laptop-notebook_(24244320481).jpg"
+    alt: "A white laptop on a white desk beside yellow flowers in a glass and a takeaway cup"
+    tags: [hero, photo-real, laptop, desk, office, work, bright, minimal, crm, admin]
+  - id: laptop-notes-desk-p
+    kind: hero
+    style: photographs
+    subject: laptop-notes-desk
+    photo: "https://commons.wikimedia.org/wiki/File:Desk-laptop-notebook-pen_(23958719819).jpg"
+    alt: "A laptop, a notebook with coloured tabs, a pen and sticky notes on a wooden desk, seen from above"
+    tags: [hero, photo-real, laptop, desk, notes, planning, office, work, tasks, project, crm]
+  - id: laptop-bookshelf-p
+    kind: hero
+    style: photographs
+    subject: laptop-bookshelf
+    photo: "https://commons.wikimedia.org/wiki/File:Desk-laptop-working-technology_(24299511976).jpg"
+    alt: "An open laptop on a wooden table in front of shelves of books"
+    tags: [hero, photo-real, laptop, desk, books, library, study, office, work, school, reading]
+  - id: car-wheel-sunset-p
+    kind: hero
+    style: photographs
+    subject: car-wheel-sunset
+    photo: "https://commons.wikimedia.org/wiki/File:Chrome_rim_on_a_black_car_on_sunset_(Unsplash).jpg"
+    alt: "The chrome wheel of a black car on a forest road at sunset"
+    tags: [hero, photo-real, car, wheel, road, sunset, transport, garage, workshop, rental, dark]
+  - id: concert-crowd-p
+    kind: hero
+    style: photographs
+    subject: concert-crowd
+    photo: "https://commons.wikimedia.org/wiki/File:Concert_crowd_(Unsplash).jpg"
+    alt: "A concert crowd seen from behind in black and white, hands raised towards a hazy stage"
+    tags: [hero, photo-real, concert, crowd, music, events, tickets, festival, black-and-white, night]
