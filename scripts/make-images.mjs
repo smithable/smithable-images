@@ -11,10 +11,12 @@
 //   node scripts/make-images.mjs --upload                        images/ to the docs bucket (SMITHABLE_DOCS_BUCKET)
 //   node scripts/make-images.mjs --tar                           images-<date>.tar, for a release asset
 //   node scripts/make-images.mjs --index                         copies `from:`, fetches `photo:` and writes index.json; no model
+//   node scripts/make-images.mjs --version                       writes versions/<id>.json when the library changed (--upload does it too)
 //
 // The key is read from OPENAI_API_KEY or ~/.config/smithable/openai.env and never printed.
 import { spawnSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { copyFileSync, existsSync, linkSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { createInterface } from "node:readline";
@@ -38,6 +40,7 @@ const { values: args } = parseArgs({
     upload: { type: "boolean" },
     tar: { type: "boolean" },
     index: { type: "boolean" },
+    version: { type: "boolean" },
     out: { type: "string", default: "/mnt/c/Users/johan/Pictures/claude/images" },
     concurrency: { type: "string", default: "4" },
   },
@@ -62,13 +65,28 @@ const BATCH_MODELS = new Set(["gpt-image-1", "gpt-image-1-mini", "gpt-image-1.5"
 
 const manifest = parse(readFileSync(join(ROOT, "manifest.yml"), "utf8"));
 const defaults = manifest.defaults ?? {};
+// The styles a picture can be in, with their words per language (Studio shows them).
+const styles = manifest.styles ?? [];
+for (const st of styles)
+  if (!st.id || typeof st.generated !== "boolean" || !st.words?.en?.name || !st.words?.en?.line)
+    throw new Error(`styles: ${st.id ?? "an entry"} needs id, generated and words.en's name and line`);
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
   if ([e.prompt, e.from, e.photo, e.pixabay].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo or pixabay`);
   if (e.pixabay !== undefined && !(Number.isInteger(e.pixabay) && e.pixabay > 0)) throw new Error(`${e.id}: pixabay is the picture's id, a number`);
   if ((e.photo || e.pixabay) && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
   if (!e.alt || !e.tags?.length) throw new Error(`${e.id}: alt and tags are required`);
-  if (e.style && !defaults.style?.[e.style]) throw new Error(`${e.id}: no style ${e.style} in defaults`);
+  if (e["prompt-style"] && !defaults.style?.[e["prompt-style"]]) throw new Error(`${e.id}: no prompt style ${e["prompt-style"]} in defaults`);
+  // A picture's style (Photographs, Lifelike …) and its subject: a style dresses an app by
+  // matching subjects, so heroes and samples made by a model or photographed name both.
+  if (e.style) {
+    const style = styles.find((x) => x.id === e.style);
+    if (!style) throw new Error(`${e.id}: no style ${e.style} in styles`);
+    if (e.from) throw new Error(`${e.id}: a picture made by hand has no style`);
+    if (style.generated !== !(e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is ${style.generated ? "" : "not "}made by an image model`);
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.subject ?? "")) throw new Error(`${e.id}: a picture with a style names its subject (lower case and hyphens)`);
+  } else if (e.subject) throw new Error(`${e.id}: a subject without a style`);
+  if (!e.style && !e.from && (e.kind === "hero" || e.kind === "sample")) throw new Error(`${e.id}: give its style and subject`);
   return {
     ...e,
     model: e.model ?? defaults.models?.[e.kind] ?? "gpt-image-1-mini",
@@ -77,9 +95,14 @@ const entries = manifest.images.map((e) => {
   };
 });
 const ids = new Set();
+const subjects = new Set();
 for (const e of entries) {
   if (ids.has(e.id)) throw new Error(`duplicate id ${e.id}`);
   ids.add(e.id);
+  if (!e.style) continue;
+  const key = `${e.style} ${e.subject}`;
+  if (subjects.has(key)) throw new Error(`${e.id}: a second picture of ${e.subject} in ${e.style}`);
+  subjects.add(key);
 }
 const selected = entries.filter((e) => !args.only || e.id === args.only || e.kind === args.only || e.tags.includes(args.only));
 // Pictures already served are cached for a year, so an uploaded id never gets a new picture:
@@ -95,7 +118,7 @@ if (reused.length && !args.upload && !args["dry-run"])
 
 // A picture may name its style (a product shot in the sample kind); otherwise its kind's.
 const promptOf = (e) =>
-  [e.prompt, defaults.style?.[e.style ?? e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");
+  [e.prompt, defaults.style?.[e["prompt-style"] ?? e.kind] ?? defaults.style?.all].filter(Boolean).join(" ");
 const priceOf = (e) => {
   const p = PRICE[e.model]?.[e.quality];
   if (!p) throw new Error(`${e.id}: no price for ${e.model} at ${e.quality}`);
@@ -183,6 +206,8 @@ async function describe(e) {
     url: `${IMAGES_URL}/${e.kind}/${e.id}.webp`,
     alt: e.alt,
     tags: e.tags,
+    ...(e.style ? { style: e.style, subject: e.subject } : {}),
+    sha256: sha256(e.file),
     width,
     height,
     bytes: readFileSync(e.file).length,
@@ -201,6 +226,8 @@ async function describe(e) {
   };
 }
 
+const sha256 = (file) => createHash("sha256").update(readFileSync(file)).digest("hex");
+
 async function writeIndex() {
   const present = entries.filter((e) => existsSync(e.file));
   const index = [];
@@ -208,7 +235,46 @@ async function writeIndex() {
   index.sort((a, b) => a.id.localeCompare(b.id));
   writeFileSync(join(ROOT, "index.json"), `${JSON.stringify(index, null, 2)}\n`);
   console.log(`index.json: ${index.length} of ${entries.length} pictures`);
+  return index;
 }
+
+// A version of the library: the styles and the entries, each file named by its SHA-256 under
+// images/files/, so a version once published never changes (look picker, step 1). index.json
+// stays as it was for the CLI that reads it; latest.json names the latest version.
+const VERSIONS = join(ROOT, "versions");
+async function writeVersion(index) {
+  index ??= await writeIndex();
+  const body = {
+    styles,
+    entries: index.map((x) => ({ ...x, url: `${IMAGES_URL}/files/${x.sha256}.webp` })),
+  };
+  mkdirSync(VERSIONS, { recursive: true });
+  const known = readdirSync(VERSIONS).filter((n) => /^\d{4}-\d{2}-\d{2}\.\d+\.json$/.test(n)).sort(byVersion);
+  const latest = known.at(-1);
+  if (latest) {
+    const { version, ...was } = JSON.parse(readFileSync(join(VERSIONS, latest), "utf8"));
+    if (JSON.stringify(was) === JSON.stringify(body)) {
+      writeLatest(version);
+      console.log(`versions: ${version} is current`);
+      return version;
+    }
+  }
+  const day = new Date().toISOString().slice(0, 10);
+  const n = Math.max(0, ...known.filter((v) => v.startsWith(`${day}.`)).map((v) => Number(v.split(".")[1]))) + 1;
+  const version = `${day}.${n}`;
+  const file = join(VERSIONS, `${version}.json`);
+  if (existsSync(file)) throw new Error(`${file} exists; a version is never rewritten`);
+  writeFileSync(file, `${JSON.stringify({ version, ...body }, null, 2)}\n`);
+  writeLatest(version);
+  console.log(`versions/${version}.json written; commit it with latest.json`);
+  return version;
+}
+const writeLatest = (version) =>
+  writeFileSync(join(ROOT, "latest.json"), `${JSON.stringify({ version, index: `versions/${version}.json` }, null, 2)}\n`);
+const byVersion = (a, b) => {
+  const [da, na] = a.split("."), [db, nb] = b.split(".");
+  return da.localeCompare(db) || Number(na) - Number(nb);
+};
 
 async function pool(items, n, fn) {
   const queue = [...items];
@@ -492,10 +558,46 @@ async function upload() {
   console.log(`uploaded.json: ${Object.keys(sorted).length} pictures served; commit it`);
   // The index too, where the CLI and the service fetch it: cached for a day, not a year, and
   // invalidated at CloudFront when SMITHABLE_DOCS_DISTRIBUTION names the distribution.
-  await writeIndex();
+  const index = await writeIndex();
+  // Each file again under its SHA-256, never overwritten, then the versions (never changed
+  // once there), and last the pointer to the latest, so a reader never sees a version whose
+  // files are not up yet.
+  const version = await writeVersion(index);
+  // Every file any version names must be here or already in the bucket, or nothing goes up.
+  const here = new Map(index.map((x) => [x.sha256, join(ROOT, "images", x.kind, `${x.id}.webp`)]));
+  const versionFiles = readdirSync(VERSIONS).filter((n) => n.endsWith(".json"));
+  const inBucket = (key) => spawnSync("aws", ["s3api", "head-object", "--bucket", bucket, "--key", key], { env, stdio: "ignore" }).status === 0;
+  const named = new Set(versionFiles.flatMap((n) => JSON.parse(readFileSync(join(VERSIONS, n), "utf8")).entries.map((x) => x.sha256)));
+  const lost = [...named].filter((h) => !here.has(h) && !inBucket(`images/files/${h}.webp`));
+  if (lost.length) throw new Error(`${lost.length} files a version names are neither here nor in the bucket (${lost[0]} …); nothing uploaded`);
+  const staged = join(ROOT, ".files");
+  rmSync(staged, { recursive: true, force: true });
+  mkdirSync(staged);
+  for (const [hash, file] of here) {
+    try {
+      linkSync(file, join(staged, `${hash}.webp`));
+    } catch {
+      copyFileSync(file, join(staged, `${hash}.webp`)); // another file system
+    }
+  }
+  run("aws", ["s3", "sync", ".files/", `s3://${bucket}/images/files/`, "--size-only", "--cache-control", "public, max-age=31536000, immutable", "--content-type", "image/webp"], env);
+  rmSync(staged, { recursive: true, force: true });
+  // A version is created only if the bucket has none of that name (S3's If-None-Match); one
+  // already there must be the same bytes, or another checkout published a different one.
+  for (const n of versionFiles) {
+    const key = `images/versions/${n}`;
+    const put = spawnSync("aws", ["s3api", "put-object", "--bucket", bucket, "--key", key, "--body", join(VERSIONS, n), "--if-none-match", "*", "--content-type", "application/json", "--cache-control", "public, max-age=31536000, immutable"], { env, encoding: "utf8" });
+    if (put.status === 0) continue;
+    if (!/PreconditionFailed|412/.test(put.stderr)) throw new Error(`${key}: ${put.stderr.trim()}`);
+    const remote = spawnSync("aws", ["s3", "cp", `s3://${bucket}/${key}`, "-"], { env, maxBuffer: 64 * 1024 * 1024 });
+    if (remote.status !== 0 || !Buffer.from(remote.stdout).equals(readFileSync(join(VERSIONS, n))))
+      throw new Error(`${key} is already in the bucket with other content; a version is never changed, make a new one`);
+  }
   run("aws", ["s3", "cp", "index.json", `s3://${bucket}/images/index.json`, "--content-type", "application/json", "--cache-control", "public, max-age=86400"], env);
+  run("aws", ["s3", "cp", "latest.json", `s3://${bucket}/images/latest.json`, "--content-type", "application/json", "--cache-control", "public, max-age=300"], env);
+  console.log(`latest.json: ${version}`);
   const distribution = process.env.SMITHABLE_DOCS_DISTRIBUTION;
-  if (distribution) run("aws", ["cloudfront", "create-invalidation", "--distribution-id", distribution, "--paths", "/images/index.json", "--query", "Invalidation.Id", "--output", "text"], env);
+  if (distribution) run("aws", ["cloudfront", "create-invalidation", "--distribution-id", distribution, "--paths", "/images/index.json", "/images/latest.json", "--query", "Invalidation.Id", "--output", "text"], env);
   else console.log("set SMITHABLE_DOCS_DISTRIBUTION to refresh the cached index at once; otherwise it updates within a day");
 }
 
@@ -510,6 +612,7 @@ if (args["dry-run"]) dryRun();
 else if (args.upload) await upload();
 else if (args.tar) tar();
 else if (args.sheet) await sheets();
+else if (args.version) await writeVersion();
 else if (args.index) {
   await copyFiles();
   await writeIndex();
