@@ -14,6 +14,9 @@ export async function commonsQuery(params) {
 
 const plain = (html) => (html ?? "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 
+/** Sites whose CC0 marks are their uploaders' word: a Commons copy credited to one is refused. */
+export const STOCK = ["unsplash.com", "flickr.com", "pixel.la", "pexels.com", "pixabay.com", "stocksnap.io", "burst.shopify.com"];
+
 /** The file's licence from its extmetadata: ok only for CC0 or public domain with no restrictions. */
 export function commonsLicence(meta = {}) {
   const value = (k) => plain(meta[k]?.value);
@@ -22,7 +25,10 @@ export function commonsLicence(meta = {}) {
   const author = value("Artist") || value("Credit") || "unknown";
   const restricted = value("Restrictions") !== "";
   const free = code === "cc0" || code === "pd" || /^public domain$/i.test(name) || /^cc0/i.test(name);
-  return { ok: free && !restricted, name, author, restricted, url: value("LicenseUrl") };
+  // Read with its links (a credit is often only a link to the source). A copy on Commons of a stock site's or Flickr's picture carries that site's CC0 mark, the
+  // uploader's own word there, not a licence Commons' volunteers established (README).
+  const copiedFrom = STOCK.find((site) => `${meta.Credit?.value ?? ""} ${meta.Artist?.value ?? ""}`.toLowerCase().includes(site)) ?? null;
+  return { ok: free && !restricted && !copiedFrom, name, author, restricted, copiedFrom, url: value("LicenseUrl") };
 }
 
 /** One file's page, URL (scaled by Commons to `width` when given), size and licence, from its
