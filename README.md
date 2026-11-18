@@ -56,3 +56,23 @@ node scripts/make-images.mjs --index --only <id>                       # fetch a
 ## Prompts
 
 Prompts ask for natural light, Nordic settings, one subject, no text, logos or brands, and people from behind or at a distance except in portraits. Write `alt` by hand: it is what screen readers say and what the picker searches.
+
+## Withdrawn
+
+Pictures taken out of the library. They are gone from the index and from every version after their
+withdrawal, so no new app gets them. Apps already made keep their copies, and the served files stay
+in the bucket: `--upload` never deletes an id listed under `withdrawn:` in the manifest.
+
+| Id | Reason | Withdrawn |
+| - | - | - |
+| market-table-chairs-p | a Commons copy of an Unsplash picture: its CC0 rests on that site's word | 2026-11-18 (T933) |
+| market-laptop-p | a Commons copy of an Unsplash picture | 2026-11-18 (T933) |
+| market-headphones-p | a Commons copy of an Unsplash picture | 2026-11-18 (T933) |
+| market-rowboat-p | a Commons copy of a Flickr picture: its CC0 rests on the uploader's word | 2026-11-18 (T933) |
+| pottery-p1 | a Commons copy of a Flickr picture | 2026-11-18 (T933) |
+| vintage-camera-p3 | a Commons copy of a Flickr picture | 2026-11-18 (T933) |
+| vintage-camera-p4 | a Commons copy of a Flickr picture | 2026-11-18 (T933) |
+
+The three marketplace subjects (market-table-chairs, market-laptop, market-headphones) have no
+photograph until new picks refill them, so the marketplace starter's Photographs set is incomplete
+and not offered; after two daily batches without one, a marked AI filler takes the place.

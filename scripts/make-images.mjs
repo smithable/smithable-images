@@ -80,6 +80,14 @@ for (const st of styles) {
       throw new Error(`styles: ${st.id}: words.${lang} must be exactly { name, line }, both text (has ${keys || "nothing"})`);
   }
 }
+// Pictures taken out of the library (README, "Withdrawn"): gone from the index and every new version,
+// but their served files stay where apps already made may fetch them, so --upload never deletes them.
+const withdrawn = new Map((manifest.withdrawn ?? []).map((w) => [w.id, w]));
+for (const w of manifest.withdrawn ?? []) {
+  if (typeof w.id !== "string" || typeof w.reason !== "string" || !w.reason) throw new Error(`withdrawn: each needs an id and a reason`);
+  if (manifest.images.some((e) => e.id === w.id)) throw new Error(`withdrawn: ${w.id} is still among the images`);
+}
+
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
   if ([e.prompt, e.from, e.photo, e.pixabay, e.wordpress].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo, pixabay or wordpress`);
@@ -600,10 +608,10 @@ async function upload() {
   console.log(existsSync(file) ? `using the key in ${file}` : "using the default AWS profile");
   const env = { ...process.env, ...scoped };
   run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"], env);
-  // Ids gone from the manifest (rejected and replaced under a new id) leave the bucket.
+  // Ids gone from the manifest (rejected and replaced under a new id) leave the bucket; withdrawn ones stay.
   const inManifest = new Map(entries.map((e) => [e.id, e.kind]));
   for (const [id, kind] of Object.entries(uploaded))
-    if (!inManifest.has(id)) {
+    if (!inManifest.has(id) && !withdrawn.has(id)) {
       run("aws", ["s3", "rm", `s3://${bucket}/images/${kind}/${id}.webp`], env);
       delete uploaded[id];
     }

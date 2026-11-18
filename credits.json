@@ -264,23 +264,9 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
   },
-  "market-headphones-p": {
-    "page": "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg",
-    "author": "Alphacolor 13 duck58cth",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-10-25"
-  },
   "market-lamp-p": {
     "page": "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png",
     "author": "Mamcmi",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-10-25"
-  },
-  "market-laptop-p": {
-    "page": "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg",
-    "author": "www.Pixel.la Free Stock Photos",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
@@ -295,20 +281,6 @@
   "market-road-bike-p": {
     "page": "https://commons.wikimedia.org/wiki/File:Triban_RC520_Decathlon_road_bike.jpg",
     "author": "Moklys",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-10-25"
-  },
-  "market-rowboat-p": {
-    "page": "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg",
-    "author": "Mustang Joe",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-10-25"
-  },
-  "market-table-chairs-p": {
-    "page": "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg",
-    "author": "Breather breather",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
@@ -333,13 +305,6 @@
     "licence": "CC0 1.0 (WordPress Photo Directory)",
     "evidence": "evidence/wordpress/56963d94ed.json",
     "fetched": "2026-11-18"
-  },
-  "pottery-p1": {
-    "page": "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg",
-    "author": "Gary Todd from Xinzheng, China",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-11-08"
   },
   "pottery-p2": {
     "page": "https://commons.wikimedia.org/wiki/File:Horned_figure_on_pottery._Pr%C3%A9-Indus_civilization._Kashmir.jpg",
@@ -476,20 +441,6 @@
   "vintage-camera-p2": {
     "page": "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg",
     "author": "Pr7013",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-11-08"
-  },
-  "vintage-camera-p3": {
-    "page": "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg",
-    "author": "StockyPics",
-    "licence": "CC0",
-    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "fetched": "2026-11-08"
-  },
-  "vintage-camera-p4": {
-    "page": "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg",
-    "author": "StockyPics",
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
