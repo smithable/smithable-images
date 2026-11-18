@@ -27,6 +27,7 @@ import { parse } from "yaml";
 import { commonsFile, UA } from "./commons.mjs";
 import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
 import { isPhotoId, pageOf, readPhotoPage } from "./wordpress.mjs";
+import { planUpload } from "./upload-plan.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -607,7 +608,34 @@ async function upload() {
     : {};
   console.log(existsSync(file) ? `using the key in ${file}` : "using the default AWS profile");
   const env = { ...process.env, ...scoped };
-  run("aws", ["s3", "sync", "images/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp", "--exclude", "*", "--include", "*.webp"], env);
+  // What goes up is decided by the version being published (upload-plan.mjs): only its entries' files,
+  // never another picture lying in images/, and never a version listed as never published.
+  const index = await writeIndex();
+  const version = await writeVersion(index);
+  const plan = planUpload(index, readdirSync(VERSIONS));
+  // Every file a published version names must be here or already in the bucket, or nothing goes up.
+  const here = new Map(plan.byHash.map((f) => [f.key.replace(/^images\/files\/|\.webp$/g, ""), join(ROOT, f.src)]));
+  const versionFiles = plan.versions;
+  const inBucket = (key) => spawnSync("aws", ["s3api", "head-object", "--bucket", bucket, "--key", key], { env, stdio: "ignore" }).status === 0;
+  const named = new Set(versionFiles.flatMap((n) => JSON.parse(readFileSync(join(VERSIONS, n), "utf8")).entries.map((x) => x.sha256)));
+  const lost = [...named].filter((h) => !here.has(h) && !inBucket(`images/files/${h}.webp`));
+  if (lost.length) throw new Error(`${lost.length} files a version names are neither here nor in the bucket (${lost[0]} …); nothing uploaded`);
+  const stage = (dir, files) => {
+    rmSync(join(ROOT, dir), { recursive: true, force: true });
+    mkdirSync(join(ROOT, dir));
+    for (const { src, key } of files) {
+      const to = join(ROOT, dir, key.replace(/^images\/(files\/)?/, ""));
+      mkdirSync(dirname(to), { recursive: true });
+      try {
+        linkSync(join(ROOT, src), to);
+      } catch {
+        copyFileSync(join(ROOT, src), to); // another file system
+      }
+    }
+  };
+  stage(".served", plan.byId);
+  run("aws", ["s3", "sync", ".served/", `s3://${bucket}/images/`, "--cache-control", "public, max-age=31536000", "--content-type", "image/webp"], env);
+  rmSync(join(ROOT, ".served"), { recursive: true, force: true });
   // Ids gone from the manifest (rejected and replaced under a new id) leave the bucket; withdrawn ones stay.
   const inManifest = new Map(entries.map((e) => [e.id, e.kind]));
   for (const [id, kind] of Object.entries(uploaded))
@@ -619,20 +647,10 @@ async function upload() {
   const sorted = Object.fromEntries(Object.entries(uploaded).sort(([a], [b]) => a.localeCompare(b)));
   writeFileSync(UPLOADED, `${JSON.stringify(sorted, null, 2)}\n`);
   console.log(`uploaded.json: ${Object.keys(sorted).length} pictures served; commit it`);
-  // The index too, where the CLI and the service fetch it: cached for a day, not a year, and
-  // invalidated at CloudFront when SMITHABLE_DOCS_DISTRIBUTION names the distribution.
-  const index = await writeIndex();
-  // Each file again under its SHA-256, never overwritten, then the versions (never changed
-  // once there), and last the pointer to the latest, so a reader never sees a version whose
-  // files are not up yet.
-  const version = await writeVersion(index);
-  // Every file any version names must be here or already in the bucket, or nothing goes up.
-  const here = new Map(index.map((x) => [x.sha256, join(ROOT, "images", x.kind, `${x.id}.webp`)]));
-  const versionFiles = readdirSync(VERSIONS).filter((n) => n.endsWith(".json"));
-  const inBucket = (key) => spawnSync("aws", ["s3api", "head-object", "--bucket", bucket, "--key", key], { env, stdio: "ignore" }).status === 0;
-  const named = new Set(versionFiles.flatMap((n) => JSON.parse(readFileSync(join(VERSIONS, n), "utf8")).entries.map((x) => x.sha256)));
-  const lost = [...named].filter((h) => !here.has(h) && !inBucket(`images/files/${h}.webp`));
-  if (lost.length) throw new Error(`${lost.length} files a version names are neither here nor in the bucket (${lost[0]} …); nothing uploaded`);
+  // Each file again under its SHA-256, never overwritten, then the versions (never changed once
+  // there), then the index (cached for a day; invalidated at CloudFront when
+  // SMITHABLE_DOCS_DISTRIBUTION names the distribution), and last the pointer to the latest, so a
+  // reader never sees a version whose files are not up yet.
   const staged = join(ROOT, ".files");
   rmSync(staged, { recursive: true, force: true });
   mkdirSync(staged);

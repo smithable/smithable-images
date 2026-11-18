@@ -4,3 +4,4 @@ images-*.tar
 batches.json
 candidates/
 .files/
+.served/

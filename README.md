@@ -76,3 +76,12 @@ in the bucket: `--upload` never deletes an id listed under `withdrawn:` in the m
 The three marketplace subjects (market-table-chairs, market-laptop, market-headphones) have no
 photograph until new picks refill them, so the marketplace starter's Photographs set is incomplete
 and not offered; after two daily batches without one, a marked AI filler takes the place.
+
+## Versions never published
+
+`2026-11-18.5` was made and merged but never uploaded: it named eight Commons copies of stock-site
+pictures that the library's rule does not take (T933). Its file is removed from `versions/`, and
+`NEVER_PUBLISHED` in `scripts/upload-plan.mjs` keeps `--upload` from ever putting it, so the
+published numbers have a gap there. `--upload` sends only the files of the entries in the version it
+publishes; a picture lying in `images/` that no entry names (withdrawn, or taken out before
+publishing) never goes up.
