@@ -67,9 +67,18 @@ const manifest = parse(readFileSync(join(ROOT, "manifest.yml"), "utf8"));
 const defaults = manifest.defaults ?? {};
 // The styles a picture can be in, with their words per language (Studio shows them).
 const styles = manifest.styles ?? [];
-for (const st of styles)
-  if (!st.id || typeof st.generated !== "boolean" || !st.words?.en?.name || !st.words?.en?.line)
-    throw new Error(`styles: ${st.id ?? "an entry"} needs id, generated and words.en's name and line`);
+for (const st of styles) {
+  if (!st.id || typeof st.generated !== "boolean" || !st.words?.en)
+    throw new Error(`styles: ${st.id ?? "an entry"} needs id, generated and words.en`);
+  if (st.drawn !== undefined && typeof st.drawn !== "boolean") throw new Error(`styles: ${st.id}: drawn is true or false`);
+  // Each language's words are exactly a name and a line, both text: an unquoted comma in YAML's
+  // flow style splits a line into a key of its own.
+  for (const [lang, w] of Object.entries(st.words)) {
+    const keys = Object.keys(w ?? {}).sort().join(",");
+    if (keys !== "line,name" || typeof w.name !== "string" || typeof w.line !== "string" || !w.name || !w.line)
+      throw new Error(`styles: ${st.id}: words.${lang} must be exactly { name, line }, both text (has ${keys || "nothing"})`);
+  }
+}
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
   if ([e.prompt, e.from, e.photo, e.pixabay].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo or pixabay`);
@@ -219,9 +228,9 @@ async function describe(e) {
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
     source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.from && !madeBy(e) ? "file" : e.model,
-    // A photograph or drawn as one (heroes and samples, the abstract heroes included); marks are
-    // drawn as marks.
-    photo: !KINDS[e.kind].transparent,
+    // A photograph or made to look like one (heroes and samples, the abstract heroes included);
+    // marks, and the pictures of a drawn style (pastel, ink wash), are not.
+    photo: !KINDS[e.kind].transparent && !styles.find((x) => x.id === e.style)?.drawn,
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
     generated: !e.photo && !e.pixabay && (!e.from || madeBy(e)),

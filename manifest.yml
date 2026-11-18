@@ -61,8 +61,8 @@ styles:
   - id: photographs
     generated: false
     words:
-      en: { name: Photographs, line: Real photographs, dedicated to the public domain by their authors. }
-      sv: { name: Fotografier, line: Riktiga fotografier som deras upphovspersoner gett till allmän egendom. }
+      en: { name: Photographs, line: "Real photographs, dedicated to the public domain by their authors." }
+      sv: { name: Fotografier, line: "Riktiga fotografier som deras upphovspersoner gett till allmän egendom." }
   - id: lifelike
     generated: true
     words:
@@ -70,11 +70,13 @@ styles:
       sv: { name: Verklighetstrogen, line: "Bilder gjorda av en bildmodell för att se ut som fotografier." }
   - id: pastel
     generated: true
+    drawn: true
     words:
       en: { name: Pastel, line: "Soft drawings in light, chalky colours." }
       sv: { name: Pastell, line: "Mjuka teckningar i ljusa, kritiga färger." }
   - id: ink-wash
     generated: true
+    drawn: true
     words:
       en: { name: Ink wash, line: "Brush and ink in washes of grey, with a touch of colour." }
       sv: { name: Tuschlavering, line: "Pensel och tusch i grå laveringar, med en aning färg." }
