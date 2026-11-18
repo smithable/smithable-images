@@ -816,6 +816,33 @@
     "generated": true
   },
   {
+    "id": "cafe-cinnamon-buns-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/cafe-cinnamon-buns-ink.webp",
+    "alt": "Cinnamon buns in a bowl on a striped tea towel",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "cinnamon",
+      "buns"
+    ],
+    "style": "ink-wash",
+    "subject": "cafe-cinnamon-buns",
+    "sha256": "1463df28f38ab3003652f8a1f5191275a149efe8edeb01f4a3525f4a52f152ab",
+    "width": 900,
+    "height": 600,
+    "bytes": 100526,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "cafe-cinnamon-buns-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/cafe-cinnamon-buns-p.webp",
@@ -2617,6 +2644,32 @@
     "generated": true
   },
   {
+    "id": "drink-coffee-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/drink-coffee-ink.webp",
+    "alt": "A cup of black coffee on a saucer",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "coffee"
+    ],
+    "style": "ink-wash",
+    "subject": "drink-coffee",
+    "sha256": "72a560a0f00f61a83edc600e99fe65e8e7eb85ff9b3449469551518299c9d474",
+    "width": 900,
+    "height": 600,
+    "bytes": 88570,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "drink-juice-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/drink-juice-b.webp",
@@ -2638,6 +2691,32 @@
     "temperature": "warm",
     "color": "#887858",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "drink-juice-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/drink-juice-ink.webp",
+    "alt": "A glass of orange juice on a wooden table, squeezed orange halves behind it",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "juice"
+    ],
+    "style": "ink-wash",
+    "subject": "drink-juice",
+    "sha256": "4865568bc1434a7298c5d48bac30d9213cb85b34f5e283ccb3c79e27c9415bd2",
+    "width": 900,
+    "height": 600,
+    "bytes": 88998,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -2699,6 +2778,32 @@
     "temperature": "warm",
     "color": "#d8a878",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "drink-tea-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/drink-tea-ink.webp",
+    "alt": "Tea poured from a pot into a white cup",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "tea"
+    ],
+    "style": "ink-wash",
+    "subject": "drink-tea",
+    "sha256": "a40c22f952b6e63f559645006c3f0702feed0ff61a9d27b30f665938a449caea",
+    "width": 900,
+    "height": 600,
+    "bytes": 87716,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8f8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -3030,6 +3135,33 @@
     "generated": true
   },
   {
+    "id": "fitness-coast-run-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/fitness-coast-run-ink.webp",
+    "alt": "An adult runner on a coastal path at sunset, with the sea and grasses beside the path",
+    "tags": [
+      "sample",
+      "booking",
+      "ink-wash",
+      "illustration",
+      "coast",
+      "run"
+    ],
+    "style": "ink-wash",
+    "subject": "fitness-coast-run",
+    "sha256": "a95ce9ed97077483a3c28ea959e63e750ed6380317f378ceee113ed28e123fb4",
+    "width": 900,
+    "height": 600,
+    "bytes": 119754,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8e8d8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "fitness-gym-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/fitness-gym-b.webp",
@@ -3084,6 +3216,32 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "fitness-stretching-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/fitness-stretching-ink.webp",
+    "alt": "Three adults doing a standing side stretch on mats in an illustrated studio",
+    "tags": [
+      "sample",
+      "booking",
+      "ink-wash",
+      "illustration",
+      "stretching"
+    ],
+    "style": "ink-wash",
+    "subject": "fitness-stretching",
+    "sha256": "d9392aaa0d157d68149322dcbf7d907f68c7eb7ef57817844d319cf13acdeb0c",
+    "width": 900,
+    "height": 600,
+    "bytes": 77412,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -3145,6 +3303,33 @@
     "generated": true
   },
   {
+    "id": "fitness-yoga-class-ink",
+    "kind": "hero",
+    "url": "https://docs.smithable.ai/images/hero/fitness-yoga-class-ink.webp",
+    "alt": "Three adults doing a seated side stretch on yoga mats in a bright illustrated studio",
+    "tags": [
+      "hero",
+      "booking",
+      "ink-wash",
+      "illustration",
+      "yoga",
+      "class"
+    ],
+    "style": "ink-wash",
+    "subject": "fitness-yoga-class",
+    "sha256": "00873790d01a51984e6895bdfc444572cd84989e3c4cf1642f4e49f4c6079295",
+    "width": 1200,
+    "height": 1067,
+    "bytes": 169782,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "fitness-yoga-mat-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/fitness-yoga-mat-b.webp",
@@ -3171,6 +3356,33 @@
     "temperature": "warm",
     "color": "#582808",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "fitness-yoga-mat-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/fitness-yoga-mat-ink.webp",
+    "alt": "A rolled lavender yoga mat and a water bottle on a pale wooden studio floor",
+    "tags": [
+      "sample",
+      "booking",
+      "ink-wash",
+      "illustration",
+      "yoga",
+      "mat"
+    ],
+    "style": "ink-wash",
+    "subject": "fitness-yoga-mat",
+    "sha256": "89193f65f84a3afc7ddaa5cc639827b4c560c502982c8d514d82668032b00cc5",
+    "width": 900,
+    "height": 600,
+    "bytes": 73506,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -3363,6 +3575,32 @@
     "generated": true
   },
   {
+    "id": "food-bread-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-bread-ink.webp",
+    "alt": "A loaf of sourdough bread on a board",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "bread"
+    ],
+    "style": "ink-wash",
+    "subject": "food-bread",
+    "sha256": "a3d6311d1695faa0ae1a220f166e0983b8194090aa42a049a650721acead7841",
+    "width": 900,
+    "height": 600,
+    "bytes": 116450,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "food-breakfast-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/food-breakfast-b.webp",
@@ -3414,6 +3652,32 @@
     "generated": true
   },
   {
+    "id": "food-burger-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-burger-ink.webp",
+    "alt": "A burger with fries on a board",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "burger"
+    ],
+    "style": "ink-wash",
+    "subject": "food-burger",
+    "sha256": "b7457cfb0b5cc6a712af5ba0ffbdb88457dab32ed75516f9383fc7f3bb2a514b",
+    "width": 900,
+    "height": 600,
+    "bytes": 100954,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "food-cake-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/food-cake-b.webp",
@@ -3437,6 +3701,32 @@
     "temperature": "warm",
     "color": "#282808",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "food-cake-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-cake-ink.webp",
+    "alt": "A slice of berry cake on a plate",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "cake"
+    ],
+    "style": "ink-wash",
+    "subject": "food-cake",
+    "sha256": "9f8832a9adf15bda0bd4e58afe635516aec583ee54a953e519d7deb2df26e2f8",
+    "width": 900,
+    "height": 600,
+    "bytes": 93356,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -3466,6 +3756,32 @@
     "generated": true
   },
   {
+    "id": "food-cheese-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-cheese-ink.webp",
+    "alt": "A board of cheeses and crackers",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "cheese"
+    ],
+    "style": "ink-wash",
+    "subject": "food-cheese",
+    "sha256": "ed8bb6129022f7a5cfafc043fe6bd664180460837bcab35bfcf335d43c4075eb",
+    "width": 900,
+    "height": 600,
+    "bytes": 99660,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "food-fish-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/food-fish-b.webp",
@@ -3488,6 +3804,32 @@
     "temperature": "warm",
     "color": "#c8a888",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "food-fish-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-fish-ink.webp",
+    "alt": "A plate of salmon with potatoes and dill",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "fish"
+    ],
+    "style": "ink-wash",
+    "subject": "food-fish",
+    "sha256": "dd82d611b78dec4f89c05de0c441e8b03b55f5b92a57903953fa01fc24422052",
+    "width": 900,
+    "height": 600,
+    "bytes": 103338,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -3595,6 +3937,32 @@
     "generated": true
   },
   {
+    "id": "food-salad-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-salad-ink.webp",
+    "alt": "A bowl of mixed salad with tomatoes, radishes and greens",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "salad"
+    ],
+    "style": "ink-wash",
+    "subject": "food-salad",
+    "sha256": "0487a95f1abdb0df2821de7887ba7fd587b96d5240b08a5eb73cf0e51b00cd12",
+    "width": 900,
+    "height": 600,
+    "bytes": 109852,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "food-salad-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/food-salad-p.webp",
@@ -3652,6 +4020,32 @@
     "temperature": "warm",
     "color": "#a89888",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "food-soup-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-soup-ink.webp",
+    "alt": "A bowl of soup with bread",
+    "tags": [
+      "sample",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "soup"
+    ],
+    "style": "ink-wash",
+    "subject": "food-soup",
+    "sha256": "4ca2bcc461f5cdddbc093618b47d91b2fd983174972a01d29066bfd81fb6a5ca",
+    "width": 900,
+    "height": 600,
+    "bytes": 97926,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8e8d8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -4209,6 +4603,33 @@
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "fetched": "2026-11-18"
     }
+  },
+  {
+    "id": "hero-food-truck-evening-ink",
+    "kind": "hero",
+    "url": "https://docs.smithable.ai/images/hero/hero-food-truck-evening-ink.webp",
+    "alt": "People at tables under string lights by a food truck on a summer evening",
+    "tags": [
+      "hero",
+      "kiosk",
+      "ink-wash",
+      "illustration",
+      "truck",
+      "evening"
+    ],
+    "style": "ink-wash",
+    "subject": "hero-food-truck-evening",
+    "sha256": "79df4b694592e13ac0eb6218a3aa0f30c1e051432d3a99669dedb08b578e5b5e",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 299296,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
   },
   {
     "id": "hero-food-truck-evening-p",
@@ -7269,6 +7690,32 @@
     "generated": true
   },
   {
+    "id": "market-armchair-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-armchair-ink.webp",
+    "alt": "A gray wool armchair in a living room corner",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "armchair"
+    ],
+    "style": "ink-wash",
+    "subject": "market-armchair",
+    "sha256": "6e614b553d023430b4c91c9a52b7de32c77a3a3bb292dbd25f0db47dd0316a5d",
+    "width": 900,
+    "height": 600,
+    "bytes": 109698,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#d8c8c8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-armchair-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-armchair-p.webp",
@@ -7353,6 +7800,32 @@
     "temperature": "warm",
     "color": "#d8b888",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-books-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-books-ink.webp",
+    "alt": "A cardboard box of children's picture books on a floor",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "books"
+    ],
+    "style": "ink-wash",
+    "subject": "market-books",
+    "sha256": "712182dc0a7bf5d43d82919ca55257efafb731e2a5dfe5cdfff855601e663a2c",
+    "width": 900,
+    "height": 600,
+    "bytes": 82952,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -7471,6 +7944,33 @@
     "generated": true
   },
   {
+    "id": "market-city-bike-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-city-bike-ink.webp",
+    "alt": "A green city bike with a basket on a gravel drive",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "city",
+      "bike"
+    ],
+    "style": "ink-wash",
+    "subject": "market-city-bike",
+    "sha256": "7a2b30f758f98774fb480a561abf86936554539c0cf764f0e77e5e3390fc079c",
+    "width": 900,
+    "height": 600,
+    "bytes": 136492,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-city-bike-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-city-bike-p.webp",
@@ -7560,6 +8060,32 @@
     "generated": true
   },
   {
+    "id": "market-guitar-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-guitar-ink.webp",
+    "alt": "An acoustic guitar standing against a wall on a gray carpet",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "guitar"
+    ],
+    "style": "ink-wash",
+    "subject": "market-guitar",
+    "sha256": "47ed58bfbafe256f2217e26a78acc72b3926efb493d79c324fb7b563ddf22832",
+    "width": 900,
+    "height": 600,
+    "bytes": 82768,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-guitar-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-guitar-p.webp",
@@ -7618,6 +8144,32 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-headphones-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-headphones-ink.webp",
+    "alt": "Black over-ear headphones on a wooden table",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "headphones"
+    ],
+    "style": "ink-wash",
+    "subject": "market-headphones",
+    "sha256": "14c4c220dd91e1ea93ce83410f1946787021aebb1110254fc43ff9575f70d6a1",
+    "width": 900,
+    "height": 600,
+    "bytes": 109316,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -7684,6 +8236,32 @@
     "generated": true
   },
   {
+    "id": "market-lamp-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-lamp-ink.webp",
+    "alt": "A brass floor lamp with a linen shade against a wall",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "lamp"
+    ],
+    "style": "ink-wash",
+    "subject": "market-lamp",
+    "sha256": "c6dcf4b198bb6cdd8fc7e59a475846d47628204081aa952b1d37dee1159651f0",
+    "width": 900,
+    "height": 600,
+    "bytes": 32992,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-lamp-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-lamp-p.webp",
@@ -7746,6 +8324,32 @@
     "generated": true
   },
   {
+    "id": "market-laptop-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-laptop-ink.webp",
+    "alt": "An open laptop with its charger on a wooden table",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "laptop"
+    ],
+    "style": "ink-wash",
+    "subject": "market-laptop",
+    "sha256": "92654708b75aecd6e6320e901dfe0df32bcf8d8f0bd48763fdcf32e50eac77ba",
+    "width": 900,
+    "height": 600,
+    "bytes": 116100,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-laptop-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-laptop-p.webp",
@@ -7780,6 +8384,33 @@
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "fetched": "2026-10-25"
     }
+  },
+  {
+    "id": "market-record-player-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-record-player-ink.webp",
+    "alt": "A wooden record player on a low shelf beside records",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "record",
+      "player"
+    ],
+    "style": "ink-wash",
+    "subject": "market-record-player",
+    "sha256": "637bfde712e52d153f1cf357c082d8baaab78a6ddccccb82c00a82817be92dd6",
+    "width": 900,
+    "height": 600,
+    "bytes": 107230,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-record-player-p",
@@ -7845,6 +8476,33 @@
     "generated": true
   },
   {
+    "id": "market-road-bike-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-road-bike-ink.webp",
+    "alt": "A gray road bike leaning against a garage wall",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "road",
+      "bike"
+    ],
+    "style": "ink-wash",
+    "subject": "market-road-bike",
+    "sha256": "ab27179b8e6ce41e9cf58607ff32572731d45613192a275166ada8f8488fff50",
+    "width": 900,
+    "height": 600,
+    "bytes": 104780,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "neutral",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-road-bike-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-road-bike-p.webp",
@@ -7904,6 +8562,32 @@
     "temperature": "warm",
     "color": "#c8b898",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "market-rowboat-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-rowboat-ink.webp",
+    "alt": "A small white rowing boat with two wooden oars on the grass beside a lake",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "rowboat"
+    ],
+    "style": "ink-wash",
+    "subject": "market-rowboat",
+    "sha256": "0eeb136213da1279959a3e5c675f041550103f775d98804af53d61a2eedc6bad",
+    "width": 900,
+    "height": 600,
+    "bytes": 130004,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },
@@ -8024,6 +8708,33 @@
     "generated": true
   },
   {
+    "id": "market-table-chairs-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-table-chairs-ink.webp",
+    "alt": "A birch table with white chairs around it",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "table",
+      "chairs"
+    ],
+    "style": "ink-wash",
+    "subject": "market-table-chairs",
+    "sha256": "4e10f63938370ba6d909cd1578c19dc6136dc432edbb7aecc0f3688bdfaa0c6c",
+    "width": 900,
+    "height": 600,
+    "bytes": 100938,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
+  },
+  {
     "id": "market-table-chairs-p",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-table-chairs-p.webp",
@@ -8058,6 +8769,32 @@
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "fetched": "2026-10-25"
     }
+  },
+  {
+    "id": "market-toys-ink",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-toys-ink.webp",
+    "alt": "Three wooden pull-along toys: a car, a star and a duck",
+    "tags": [
+      "sample",
+      "marketplace",
+      "ink-wash",
+      "illustration",
+      "toys"
+    ],
+    "style": "ink-wash",
+    "subject": "market-toys",
+    "sha256": "affbb26af5feb0a0e6884da7e77a962bd14acfd1a2a65c21e805cf9fdf440bb5",
+    "width": 900,
+    "height": 600,
+    "bytes": 56330,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
+    "photo": true,
+    "generated": true
   },
   {
     "id": "market-toys-p",
@@ -8144,6 +8881,31 @@
     "temperature": "warm",
     "color": "#080808",
     "source": "gpt-image-1-mini",
+    "photo": true,
+    "generated": true
+  },
+  {
+    "id": "marketplace-hero-ink",
+    "kind": "hero",
+    "url": "https://docs.smithable.ai/images/hero/marketplace-hero-ink.webp",
+    "alt": "A summer waterfront second-hand market with stalls beside the sea",
+    "tags": [
+      "hero",
+      "marketplace",
+      "ink-wash",
+      "illustration"
+    ],
+    "style": "ink-wash",
+    "subject": "marketplace-hero",
+    "sha256": "732f4c831871851a1276ed31d2aa5030196edc3e578ac17e9d0a7c521c6dac59",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 257378,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8e8",
+    "source": "gpt-image-2",
     "photo": true,
     "generated": true
   },

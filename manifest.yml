@@ -2995,3 +2995,236 @@ images:
     pixabay: 791891
     alt: "A bowl of mixed salad with tomatoes, radishes and greens"
     tags: [sample, food, salad, vegetables, photo-real]
+  # Look picker, Ink wash sets (T940): drawn by an image model in Sol's round, copied from its delivery folder.
+  - id: marketplace-hero-ink
+    kind: hero
+    style: ink-wash
+    subject: marketplace-hero
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/marketplace-hero.webp"
+    model: gpt-image-2
+    alt: "A summer waterfront second-hand market with stalls beside the sea"
+    tags: [hero, marketplace, ink-wash, illustration]
+  - id: market-armchair-ink
+    kind: sample
+    style: ink-wash
+    subject: market-armchair
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-armchair.webp"
+    model: gpt-image-2
+    alt: "A gray wool armchair in a living room corner"
+    tags: [sample, marketplace, ink-wash, illustration, armchair]
+  - id: market-books-ink
+    kind: sample
+    style: ink-wash
+    subject: market-books
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-books.webp"
+    model: gpt-image-2
+    alt: "A cardboard box of children's picture books on a floor"
+    tags: [sample, marketplace, ink-wash, illustration, books]
+  - id: market-city-bike-ink
+    kind: sample
+    style: ink-wash
+    subject: market-city-bike
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-city-bike.webp"
+    model: gpt-image-2
+    alt: "A green city bike with a basket on a gravel drive"
+    tags: [sample, marketplace, ink-wash, illustration, city, bike]
+  - id: market-guitar-ink
+    kind: sample
+    style: ink-wash
+    subject: market-guitar
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-guitar.webp"
+    model: gpt-image-2
+    alt: "An acoustic guitar standing against a wall on a gray carpet"
+    tags: [sample, marketplace, ink-wash, illustration, guitar]
+  - id: market-headphones-ink
+    kind: sample
+    style: ink-wash
+    subject: market-headphones
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-headphones.webp"
+    model: gpt-image-2
+    alt: "Black over-ear headphones on a wooden table"
+    tags: [sample, marketplace, ink-wash, illustration, headphones]
+  - id: market-lamp-ink
+    kind: sample
+    style: ink-wash
+    subject: market-lamp
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-lamp.webp"
+    model: gpt-image-2
+    alt: "A brass floor lamp with a linen shade against a wall"
+    tags: [sample, marketplace, ink-wash, illustration, lamp]
+  - id: market-laptop-ink
+    kind: sample
+    style: ink-wash
+    subject: market-laptop
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-laptop.webp"
+    model: gpt-image-2
+    alt: "An open laptop with its charger on a wooden table"
+    tags: [sample, marketplace, ink-wash, illustration, laptop]
+  - id: market-record-player-ink
+    kind: sample
+    style: ink-wash
+    subject: market-record-player
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-record-player.webp"
+    model: gpt-image-2
+    alt: "A wooden record player on a low shelf beside records"
+    tags: [sample, marketplace, ink-wash, illustration, record, player]
+  - id: market-road-bike-ink
+    kind: sample
+    style: ink-wash
+    subject: market-road-bike
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-road-bike.webp"
+    model: gpt-image-2
+    alt: "A gray road bike leaning against a garage wall"
+    tags: [sample, marketplace, ink-wash, illustration, road, bike]
+  - id: market-rowboat-ink
+    kind: sample
+    style: ink-wash
+    subject: market-rowboat
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-rowboat.webp"
+    model: gpt-image-2
+    alt: "A small white rowing boat with two wooden oars on the grass beside a lake"
+    tags: [sample, marketplace, ink-wash, illustration, rowboat]
+  - id: market-table-chairs-ink
+    kind: sample
+    style: ink-wash
+    subject: market-table-chairs
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-table-chairs.webp"
+    model: gpt-image-2
+    alt: "A birch table with white chairs around it"
+    tags: [sample, marketplace, ink-wash, illustration, table, chairs]
+  - id: market-toys-ink
+    kind: sample
+    style: ink-wash
+    subject: market-toys
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-toys.webp"
+    model: gpt-image-2
+    alt: "Three wooden pull-along toys: a car, a star and a duck"
+    tags: [sample, marketplace, ink-wash, illustration, toys]
+  - id: hero-food-truck-evening-ink
+    kind: hero
+    style: ink-wash
+    subject: hero-food-truck-evening
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/hero-food-truck-evening.webp"
+    model: gpt-image-2
+    alt: "People at tables under string lights by a food truck on a summer evening"
+    tags: [hero, kiosk, ink-wash, illustration, truck, evening]
+  - id: cafe-cinnamon-buns-ink
+    kind: sample
+    style: ink-wash
+    subject: cafe-cinnamon-buns
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/cafe-cinnamon-buns.webp"
+    model: gpt-image-2
+    alt: "Cinnamon buns in a bowl on a striped tea towel"
+    tags: [sample, kiosk, ink-wash, illustration, cinnamon, buns]
+  - id: drink-coffee-ink
+    kind: sample
+    style: ink-wash
+    subject: drink-coffee
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-coffee.webp"
+    model: gpt-image-2
+    alt: "A cup of black coffee on a saucer"
+    tags: [sample, kiosk, ink-wash, illustration, coffee]
+  - id: drink-juice-ink
+    kind: sample
+    style: ink-wash
+    subject: drink-juice
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-juice.webp"
+    model: gpt-image-2
+    alt: "A glass of orange juice on a wooden table, squeezed orange halves behind it"
+    tags: [sample, kiosk, ink-wash, illustration, juice]
+  - id: drink-tea-ink
+    kind: sample
+    style: ink-wash
+    subject: drink-tea
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-tea.webp"
+    model: gpt-image-2
+    alt: "Tea poured from a pot into a white cup"
+    tags: [sample, kiosk, ink-wash, illustration, tea]
+  - id: food-bread-ink
+    kind: sample
+    style: ink-wash
+    subject: food-bread
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-bread.webp"
+    model: gpt-image-2
+    alt: "A loaf of sourdough bread on a board"
+    tags: [sample, kiosk, ink-wash, illustration, bread]
+  - id: food-burger-ink
+    kind: sample
+    style: ink-wash
+    subject: food-burger
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-burger.webp"
+    model: gpt-image-2
+    alt: "A burger with fries on a board"
+    tags: [sample, kiosk, ink-wash, illustration, burger]
+  - id: food-cake-ink
+    kind: sample
+    style: ink-wash
+    subject: food-cake
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-cake.webp"
+    model: gpt-image-2
+    alt: "A slice of berry cake on a plate"
+    tags: [sample, kiosk, ink-wash, illustration, cake]
+  - id: food-cheese-ink
+    kind: sample
+    style: ink-wash
+    subject: food-cheese
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-cheese.webp"
+    model: gpt-image-2
+    alt: "A board of cheeses and crackers"
+    tags: [sample, kiosk, ink-wash, illustration, cheese]
+  - id: food-fish-ink
+    kind: sample
+    style: ink-wash
+    subject: food-fish
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-fish.webp"
+    model: gpt-image-2
+    alt: "A plate of salmon with potatoes and dill"
+    tags: [sample, kiosk, ink-wash, illustration, fish]
+  - id: food-salad-ink
+    kind: sample
+    style: ink-wash
+    subject: food-salad
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-salad.webp"
+    model: gpt-image-2
+    alt: "A bowl of mixed salad with tomatoes, radishes and greens"
+    tags: [sample, kiosk, ink-wash, illustration, salad]
+  - id: food-soup-ink
+    kind: sample
+    style: ink-wash
+    subject: food-soup
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-soup.webp"
+    model: gpt-image-2
+    alt: "A bowl of soup with bread"
+    tags: [sample, kiosk, ink-wash, illustration, soup]
+  - id: fitness-yoga-class-ink
+    kind: hero
+    style: ink-wash
+    subject: fitness-yoga-class
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-yoga-class.webp"
+    model: gpt-image-2
+    alt: "Three adults doing a seated side stretch on yoga mats in a bright illustrated studio"
+    tags: [hero, booking, ink-wash, illustration, yoga, class]
+  - id: fitness-stretching-ink
+    kind: sample
+    style: ink-wash
+    subject: fitness-stretching
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-stretching.webp"
+    model: gpt-image-2
+    alt: "Three adults doing a standing side stretch on mats in an illustrated studio"
+    tags: [sample, booking, ink-wash, illustration, stretching]
+  - id: fitness-coast-run-ink
+    kind: sample
+    style: ink-wash
+    subject: fitness-coast-run
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-coast-run.webp"
+    model: gpt-image-2
+    alt: "An adult runner on a coastal path at sunset, with the sea and grasses beside the path"
+    tags: [sample, booking, ink-wash, illustration, coast, run]
+  - id: fitness-yoga-mat-ink
+    kind: sample
+    style: ink-wash
+    subject: fitness-yoga-mat
+    from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-yoga-mat.webp"
+    model: gpt-image-2
+    alt: "A rolled lavender yoga mat and a water bottle on a pale wooden studio floor"
+    tags: [sample, booking, ink-wash, illustration, yoga, mat]
