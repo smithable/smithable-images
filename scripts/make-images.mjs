@@ -82,7 +82,8 @@ const entries = manifest.images.map((e) => {
   if (e.style) {
     const style = styles.find((x) => x.id === e.style);
     if (!style) throw new Error(`${e.id}: no style ${e.style} in styles`);
-    if (e.from) throw new Error(`${e.id}: a picture made by hand has no style`);
+    // A copied file has a style only when an image model made it elsewhere (it names the model).
+    if (e.from && !e.model) throw new Error(`${e.id}: a picture made by hand has no style; a copied one made by a model names its model`);
     // A style made by an image model holds only such pictures; a photographic one may hold a
     // generated filler where no photograph was found, which keeps its own generated flag.
     if (style.generated && (e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is made by an image model, not photographed`);
@@ -217,17 +218,21 @@ async function describe(e) {
     tone: luminance > 0.6 ? "light" : luminance < 0.3 ? "dark" : "mid",
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
-    source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.from ? "file" : e.model,
+    source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.from && !madeBy(e) ? "file" : e.model,
     // A photograph or drawn as one (heroes and samples, the abstract heroes included); marks are
     // drawn as marks.
     photo: !KINDS[e.kind].transparent,
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
-    generated: !e.photo && !e.pixabay && !e.from,
+    generated: !e.photo && !e.pixabay && (!e.from || madeBy(e)),
     ...(e.photo || e.pixabay ? { credit: credits[e.id] } : {}),
   };
 }
 
+// A copied file says it was made by an image model by naming the model in the manifest.
+// (entries default their model, so the manifest as written is read).
+const copiedByModel = new Set(manifest.images.filter((m) => m.from && m.model).map((m) => m.id));
+const madeBy = (e) => copiedByModel.has(e.id);
 const sha256 = (file) => createHash("sha256").update(readFileSync(file)).digest("hex");
 
 async function writeIndex() {
