@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2472243,
+  "page": "https://pixabay.com/photos/bowl-floral-home-kitchen-bake-2472243/",
+  "uploaded": "2017-07-04",
+  "uploadedFrom": "/photo/2017/07/04/19/15/bowl-2472243_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/bowl-floral-home-kitchen-bake-2472243/",
+      "https://pixabay.com/en/bowl-floral-home-kitchen-bake-2472243/"
+    ],
+    "snapshot": null
+  },
+  "author": "monicore",
+  "tags": "bowl, floral, home, kitchen, bake, towel, flowers, enameled, vintage, colors, food, cooking, rolls, pot, design, folk, homemade, bun, brown home, brown kitchen, brown cooking",
+  "size": {
+    "original": [
+      4003,
+      2921
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-18"
+}

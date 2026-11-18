@@ -2841,7 +2841,7 @@ images:
   - id: yoga-p1
     kind: sample
     style: photographs
-    subject: yoga
+    subject: fitness-stretching
     photo: "https://commons.wikimedia.org/wiki/File:Operation-_Flintlock_80th_Anniversary-_Sunrise_Yoga_at_CRC_Gym_(8218589).jpg"
     alt: "A yoga class stretching on mats in a gym"
     tags: [sample, yoga, wellness, photo-real]
@@ -2959,3 +2959,39 @@ images:
     pixabay: 820018
     alt: "A vintage rangefinder camera on dark wooden planks"
     tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
+  # Look picker, Photographs sets (T941): from Johan's CC0 picks of 2026-11-17, one per starter subject.
+  - id: hero-fitness-yoga-class-p
+    kind: hero
+    style: photographs
+    subject: fitness-yoga-class
+    photo: "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg"
+    alt: "A bright attic yoga studio with mats and large windows"
+    tags: [hero, fitness, yoga, wellness, studio, indoor, photo-real]
+  - id: cafe-cinnamon-buns-p
+    kind: sample
+    style: photographs
+    subject: cafe-cinnamon-buns
+    pixabay: 2472243
+    alt: "Cinnamon buns in a bowl on a striped tea towel"
+    tags: [sample, cafe, food, bakery, cinnamon-bun, pastry, photo-real]
+  - id: drink-tea-p
+    kind: sample
+    style: photographs
+    subject: drink-tea
+    pixabay: 2356764
+    alt: "Tea poured from a pot into a white cup"
+    tags: [sample, cafe, drink, tea, photo-real]
+  - id: drink-juice-p
+    kind: sample
+    style: photographs
+    subject: drink-juice
+    pixabay: 1614822
+    alt: "A glass of orange juice on a wooden table, squeezed orange halves behind it"
+    tags: [sample, cafe, drink, juice, orange, photo-real]
+  - id: food-salad-p
+    kind: sample
+    style: photographs
+    subject: food-salad
+    pixabay: 791891
+    alt: "A bowl of mixed salad with tomatoes, radishes and greens"
+    tags: [sample, food, salad, vegetables, photo-real]

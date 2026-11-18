@@ -20,6 +20,14 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
   },
+  "cafe-cinnamon-buns-p": {
+    "page": "https://pixabay.com/photos/bowl-floral-home-kitchen-bake-2472243/",
+    "author": "monicore",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2017-07-04",
+    "evidence": "evidence/pixabay/2472243.json",
+    "fetched": "2026-11-18"
+  },
   "ceramic-bowl-p1": {
     "page": "https://commons.wikimedia.org/wiki/File:Ceramic_bowl_from_the_5th_millennium_BC,_Durankulak.jpg",
     "author": "Ivano Giambattista",
@@ -68,6 +76,37 @@
     "licence": "CC0",
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-11-08"
+  },
+  "drink-juice-p": {
+    "page": "https://pixabay.com/photos/fresh-orange-juice-squeezed-1614822/",
+    "author": "stevepb",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2016-08-23",
+    "evidence": "evidence/pixabay/1614822.json",
+    "fetched": "2026-11-18"
+  },
+  "drink-tea-p": {
+    "page": "https://pixabay.com/photos/tea-hot-cup-table-tea-time-break-2356764/",
+    "author": "dungthuyvunguyen",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2017-05-30",
+    "evidence": "evidence/pixabay/2356764.json",
+    "fetched": "2026-11-18"
+  },
+  "food-salad-p": {
+    "page": "https://pixabay.com/photos/salad-fresh-veggies-vegetables-791891/",
+    "author": "JillWellington",
+    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+    "uploaded": "2015-05-31",
+    "evidence": "evidence/pixabay/791891.json",
+    "fetched": "2026-11-18"
+  },
+  "hero-fitness-yoga-class-p": {
+    "page": "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg",
+    "author": "Unknown authorUnknown author",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fetched": "2026-11-18"
   },
   "hero-food-truck-evening-p": {
     "page": "https://commons.wikimedia.org/wiki/File:Food_truck_292_S%27Archittu_2.jpg",

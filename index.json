@@ -816,6 +816,42 @@
     "generated": true
   },
   {
+    "id": "cafe-cinnamon-buns-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/cafe-cinnamon-buns-p.webp",
+    "alt": "Cinnamon buns in a bowl on a striped tea towel",
+    "tags": [
+      "sample",
+      "cafe",
+      "food",
+      "bakery",
+      "cinnamon-bun",
+      "pastry",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "cafe-cinnamon-buns",
+    "sha256": "317d42999825d71477f2e23ef85cbc97ff0b0e58aa3a2ac450ce89e2c315b117",
+    "width": 900,
+    "height": 600,
+    "bytes": 163942,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/bowl-floral-home-kitchen-bake-2472243/",
+      "author": "monicore",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2017-07-04",
+      "evidence": "evidence/pixabay/2472243.json",
+      "fetched": "2026-11-18"
+    }
+  },
+  {
     "id": "cafe-cup-street-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/cafe-cup-street-b.webp",
@@ -2606,6 +2642,41 @@
     "generated": true
   },
   {
+    "id": "drink-juice-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/drink-juice-p.webp",
+    "alt": "A glass of orange juice on a wooden table, squeezed orange halves behind it",
+    "tags": [
+      "sample",
+      "cafe",
+      "drink",
+      "juice",
+      "orange",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "drink-juice",
+    "sha256": "aabfdf790df88d549346f31c52859047d442c745f1d780965985e54f784b6723",
+    "width": 900,
+    "height": 600,
+    "bytes": 54548,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#f8a828",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/fresh-orange-juice-squeezed-1614822/",
+      "author": "stevepb",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2016-08-23",
+      "evidence": "evidence/pixabay/1614822.json",
+      "fetched": "2026-11-18"
+    }
+  },
+  {
     "id": "drink-tea-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/drink-tea-b.webp",
@@ -2630,6 +2701,40 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "drink-tea-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/drink-tea-p.webp",
+    "alt": "Tea poured from a pot into a white cup",
+    "tags": [
+      "sample",
+      "cafe",
+      "drink",
+      "tea",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "drink-tea",
+    "sha256": "67dd7a0205eb139e2698447f21e83f83c14774a97e686cd40c251e06367c40b4",
+    "width": 900,
+    "height": 600,
+    "bytes": 24402,
+    "orientation": "landscape",
+    "tone": "dark",
+    "temperature": "warm",
+    "color": "#180808",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/tea-hot-cup-table-tea-time-break-2356764/",
+      "author": "dungthuyvunguyen",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2017-05-30",
+      "evidence": "evidence/pixabay/2356764.json",
+      "fetched": "2026-11-18"
+    }
   },
   {
     "id": "drink-wine-b",
@@ -3490,6 +3595,40 @@
     "generated": true
   },
   {
+    "id": "food-salad-p",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/food-salad-p.webp",
+    "alt": "A bowl of mixed salad with tomatoes, radishes and greens",
+    "tags": [
+      "sample",
+      "food",
+      "salad",
+      "vegetables",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "food-salad",
+    "sha256": "9da5a6e6c23b84d0554b3c517d9546897b47a58ece9f4b5a93087e05fd2e171c",
+    "width": 900,
+    "height": 600,
+    "bytes": 62802,
+    "orientation": "landscape",
+    "tone": "light",
+    "temperature": "warm",
+    "color": "#f8f8f8",
+    "source": "pixabay",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://pixabay.com/photos/salad-fresh-veggies-vegetables-791891/",
+      "author": "JillWellington",
+      "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
+      "uploaded": "2015-05-31",
+      "evidence": "evidence/pixabay/791891.json",
+      "fetched": "2026-11-18"
+    }
+  },
+  {
     "id": "food-soup-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/food-soup-b.webp",
@@ -4035,6 +4174,41 @@
     "source": "gpt-image-2",
     "photo": true,
     "generated": true
+  },
+  {
+    "id": "hero-fitness-yoga-class-p",
+    "kind": "hero",
+    "url": "https://docs.smithable.ai/images/hero/hero-fitness-yoga-class-p.webp",
+    "alt": "A bright attic yoga studio with mats and large windows",
+    "tags": [
+      "hero",
+      "fitness",
+      "yoga",
+      "wellness",
+      "studio",
+      "indoor",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "fitness-yoga-class",
+    "sha256": "bc9e65430469cb083b355fc08ac98b44ff07d096b79253dafd53fbf36f76419b",
+    "width": 1200,
+    "height": 1067,
+    "bytes": 129686,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "neutral",
+    "color": "#8888a8",
+    "source": "wikimedia-commons",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg",
+      "author": "Unknown authorUnknown author",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fetched": "2026-11-18"
+    }
   },
   {
     "id": "hero-food-truck-evening-p",
@@ -11146,7 +11320,7 @@
       "photo-real"
     ],
     "style": "photographs",
-    "subject": "yoga",
+    "subject": "fitness-stretching",
     "sha256": "737e48efb04fd5be717ff0ec6bef69a69f4df0a945c2d9cf9ebf53759e4648dd",
     "width": 900,
     "height": 600,
