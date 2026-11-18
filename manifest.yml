@@ -3231,7 +3231,8 @@ images:
     alt: "A rolled lavender yoga mat and a water bottle on a pale wooden studio floor"
     tags: [sample, booking, ink-wash, illustration, yoga, mat]
   # Johan's picks from daily CC0 batch 1 (T933, fact decisions.daily-photo-picks-1), Wikimedia Commons;
-  # each described from the picture itself (decisions.cc0-picks-processing).
+  # each described from the picture itself (decisions.cc0-picks-processing). Eight more picks were
+  # Commons copies of Unsplash or Flickr pictures, which the README's rule does not take.
   - id: cafe-window-p
     kind: hero
     style: photographs
@@ -3239,20 +3240,6 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Interior_of_1UP_Cafe_2024-02-18.jpg"
     alt: "A small cafe with armchairs and wooden tables by a large window onto a street"
     tags: [hero, photo-real, cafe, coffee, interior, restaurant, seating, window, kiosk, table-booking, venue]
-  - id: forest-canopy-p
-    kind: hero
-    style: photographs
-    subject: forest-canopy
-    photo: "https://commons.wikimedia.org/wiki/File:Remote_forest_path_(Unsplash).jpg"
-    alt: "A dense spruce forest seen from straight above, with a narrow road through the trees"
-    tags: [hero, photo-real, forest, nature, aerial, trees, green, outdoor, calm, hiking, forestry]
-  - id: pine-forest-p
-    kind: hero
-    style: photographs
-    subject: pine-forest
-    photo: "https://commons.wikimedia.org/wiki/File:Overgrown_forest_path_(Unsplash).jpg"
-    alt: "Tall pine trunks in rows above green undergrowth and a faint track"
-    tags: [hero, photo-real, forest, nature, pine, trees, outdoor, calm, hiking, wildlife]
   - id: forest-path-p
     kind: hero
     style: photographs
@@ -3267,45 +3254,96 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Holy_Trinity,_Quebec_city,_Canada_001.jpg"
     alt: "A church interior with white columns, gilded vaults and rows of wooden pews"
     tags: [hero, photo-real, church, interior, venue, wedding, concert, events, booking, architecture]
-  - id: living-room-laptop-p
+  # The same batch's picks from the WordPress Photo Directory (CC0 1.0 on each photo's page; the source
+  # added on Fable's word, T933, 2026-11-18), each described from the picture itself.
+  - id: autumn-forest-road-p
     kind: hero
     style: photographs
-    subject: living-room-laptop
-    photo: "https://commons.wikimedia.org/wiki/File:Laptop_in_the_living_room_(Unsplash).jpg"
-    alt: "A laptop on a grey sofa in a bright white living room, with a television and tulips behind"
-    tags: [hero, photo-real, living-room, home, laptop, remote-work, interior, bright, rental, office]
-  - id: laptop-white-desk-p
+    subject: autumn-forest-road
+    wordpress: "79635261b4"
+    alt: "A dirt road through a deciduous forest in warm low sunlight"
+    tags: [hero, photo-real, forest, road, autumn, sunlight, nature, outdoor, calm, walking, hiking]
+  - id: park-path-p
     kind: hero
     style: photographs
-    subject: laptop-white-desk
-    photo: "https://commons.wikimedia.org/wiki/File:Coffee-desk-laptop-notebook_(24244320481).jpg"
-    alt: "A white laptop on a white desk beside yellow flowers in a glass and a takeaway cup"
-    tags: [hero, photo-real, laptop, desk, office, work, bright, minimal, crm, admin]
-  - id: laptop-notes-desk-p
+    subject: park-path
+    wordpress: "56963d94ed"
+    alt: "A paved path curving between green trees, edged by a wooden rail fence"
+    tags: [hero, photo-real, path, park, trail, green, nature, outdoor, walking, running, cycling]
+  - id: city-offices-p
     kind: hero
     style: photographs
-    subject: laptop-notes-desk
-    photo: "https://commons.wikimedia.org/wiki/File:Desk-laptop-notebook-pen_(23958719819).jpg"
-    alt: "A laptop, a notebook with coloured tabs, a pen and sticky notes on a wooden desk, seen from above"
-    tags: [hero, photo-real, laptop, desk, notes, planning, office, work, tasks, project, crm]
-  - id: laptop-bookshelf-p
+    subject: city-offices
+    wordpress: "39568ef6ff"
+    alt: "Office buildings of glass and brick around a city square with parked cars, in evening light"
+    tags: [hero, photo-real, city, offices, buildings, downtown, street, business, parking, urban]
+  - id: archive-shelves-p
     kind: hero
     style: photographs
-    subject: laptop-bookshelf
-    photo: "https://commons.wikimedia.org/wiki/File:Desk-laptop-working-technology_(24299511976).jpg"
-    alt: "An open laptop on a wooden table in front of shelves of books"
-    tags: [hero, photo-real, laptop, desk, books, library, study, office, work, school, reading]
-  - id: car-wheel-sunset-p
+    subject: archive-shelves
+    wordpress: "44561eb320"
+    alt: "Old leather-bound ledgers lying on grey archive shelves"
+    tags: [hero, photo-real, archive, records, ledgers, books, shelves, history, accounting, documents, library]
+  - id: bookshelf-wall-p
     kind: hero
     style: photographs
-    subject: car-wheel-sunset
-    photo: "https://commons.wikimedia.org/wiki/File:Chrome_rim_on_a_black_car_on_sunset_(Unsplash).jpg"
-    alt: "The chrome wheel of a black car on a forest road at sunset"
-    tags: [hero, photo-real, car, wheel, road, sunset, transport, garage, workshop, rental, dark]
-  - id: concert-crowd-p
+    subject: bookshelf-wall
+    wordpress: "56633defe8"
+    alt: "Two wooden shelves with books in rainbow order, vases and a plant against a stone wall"
+    tags: [hero, photo-real, books, shelf, home, interior, reading, library, colourful, decor]
+  - id: open-road-p
     kind: hero
     style: photographs
-    subject: concert-crowd
-    photo: "https://commons.wikimedia.org/wiki/File:Concert_crowd_(Unsplash).jpg"
-    alt: "A concert crowd seen from behind in black and white, hands raised towards a hazy stage"
-    tags: [hero, photo-real, concert, crowd, music, events, tickets, festival, black-and-white, night]
+    subject: open-road
+    wordpress: "10163e3274"
+    alt: "A two-lane road running straight ahead between green trees under a cloudy sky"
+    tags: [hero, photo-real, road, travel, transport, trees, driving, journey, outdoor]
+  - id: desert-highway-p
+    kind: hero
+    style: photographs
+    subject: desert-highway
+    wordpress: "57365a60d0"
+    alt: "A highway through dry hills under a blue sky, seen over a car's bonnet"
+    tags: [hero, photo-real, road, highway, road-trip, travel, car, driving, sunny, transport]
+  - id: city-traffic-p
+    kind: hero
+    style: photographs
+    subject: city-traffic
+    wordpress: "58768ef752"
+    alt: "Heavy traffic on a city motorway between tall buildings at dusk"
+    tags: [hero, photo-real, traffic, city, cars, motorway, commute, transport, logistics, dusk, urban]
+  - id: couple-walking-street-p
+    kind: hero
+    style: photographs
+    subject: couple-walking-street
+    wordpress: "591665d7cd"
+    alt: "Two people seen from behind walking along a sunny city pavement, one pushing a pushchair"
+    tags: [hero, photo-real, people, family, walking, pushchair, street, city, pavement, sunny, urban]
+  - id: running-shoes-p
+    kind: hero
+    style: photographs
+    subject: running-shoes
+    wordpress: "7556441307"
+    alt: "Two running shoes on a weathered wooden boardwalk, seen from above"
+    tags: [hero, photo-real, running, shoes, sport, fitness, exercise, boardwalk, outdoor]
+  - id: beach-sunset-p
+    kind: hero
+    style: photographs
+    subject: beach-sunset
+    wordpress: "2816a780a2"
+    alt: "A wide beach at sunset under a pink and orange sky, a few small figures by the water"
+    tags: [hero, photo-real, beach, sunset, sea, coast, sky, travel, holiday, calm, evening]
+  - id: market-gourds-p
+    kind: hero
+    style: photographs
+    subject: market-gourds
+    wordpress: "88169e1c22"
+    alt: "Green gourds, beans and potatoes in baskets and bowls at a market stall"
+    tags: [hero, photo-real, market, vegetables, produce, food, fresh, stall, green, shop, farm]
+  - id: market-corn-p
+    kind: hero
+    style: photographs
+    subject: market-corn
+    wordpress: "37569366ea"
+    alt: "A heap of husked white corn cobs at a market"
+    tags: [hero, photo-real, market, corn, vegetables, produce, food, harvest, stall, farm]

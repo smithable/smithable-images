@@ -26,6 +26,7 @@ import sharp from "sharp";
 import { parse } from "yaml";
 import { commonsFile, UA } from "./commons.mjs";
 import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
+import { isPhotoId, pageOf, readPhotoPage } from "./wordpress.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -81,9 +82,10 @@ for (const st of styles) {
 }
 const entries = manifest.images.map((e) => {
   if (!KINDS[e.kind]) throw new Error(`${e.id}: unknown kind ${e.kind}`);
-  if ([e.prompt, e.from, e.photo, e.pixabay].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo or pixabay`);
+  if ([e.prompt, e.from, e.photo, e.pixabay, e.wordpress].filter(Boolean).length !== 1) throw new Error(`${e.id}: give one of prompt, from, photo, pixabay or wordpress`);
+  if (e.wordpress !== undefined && !isPhotoId(e.wordpress)) throw new Error(`${e.id}: wordpress is the photo's id, the ten hex digits in its page address`);
   if (e.pixabay !== undefined && !(Number.isInteger(e.pixabay) && e.pixabay > 0)) throw new Error(`${e.id}: pixabay is the picture's id, a number`);
-  if ((e.photo || e.pixabay) && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
+  if (photographed(e) && KINDS[e.kind].transparent) throw new Error(`${e.id}: a photo is a hero or a sample, not a ${e.kind}`);
   if (!e.alt || !e.tags?.length) throw new Error(`${e.id}: alt and tags are required`);
   if (e["prompt-style"] && !defaults.style?.[e["prompt-style"]]) throw new Error(`${e.id}: no prompt style ${e["prompt-style"]} in defaults`);
   // A picture's style (Photographs, Lifelike …) and its subject: a style dresses an app by
@@ -95,7 +97,7 @@ const entries = manifest.images.map((e) => {
     if (e.from && !e.model) throw new Error(`${e.id}: a picture made by hand has no style; a copied one made by a model names its model`);
     // A style made by an image model holds only such pictures; a photographic one may hold a
     // generated filler where no photograph was found, which keeps its own generated flag.
-    if (style.generated && (e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is made by an image model, not photographed`);
+    if (style.generated && photographed(e)) throw new Error(`${e.id}: style ${e.style} is made by an image model, not photographed`);
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.subject ?? "")) throw new Error(`${e.id}: a picture with a style names its subject (lower case and hyphens)`);
   } else if (e.subject) throw new Error(`${e.id}: a subject without a style`);
   if (!e.style && !e.from && (e.kind === "hero" || e.kind === "sample")) throw new Error(`${e.id}: give its style and subject`);
@@ -194,7 +196,7 @@ async function store(e, input) {
   const kind = KINDS[e.kind];
   mkdirSync(dirname(e.file), { recursive: true });
   if (kind.transparent) input = await clearHaze(input);
-  const resize = e.photo || e.pixabay
+  const resize = photographed(e)
     ? { width: kind.long, height: Math.round((kind.long * 2) / 3), fit: "cover", position: "attention", withoutEnlargement: true }
     : { width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true };
   await sharp(input)
@@ -227,18 +229,22 @@ async function describe(e) {
     tone: luminance > 0.6 ? "light" : luminance < 0.3 ? "dark" : "mid",
     temperature: warmth > 15 ? "warm" : warmth < -10 ? "cool" : "neutral",
     color: hex,
-    source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.from && !madeBy(e) ? "file" : e.model,
+    source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.wordpress ? "wordpress-photo-directory" : e.from && !madeBy(e) ? "file" : e.model,
     // A photograph or made to look like one (heroes and samples, the abstract heroes included);
     // marks, and the pictures of a drawn style (pastel, ink wash), are not.
     photo: !KINDS[e.kind].transparent && !styles.find((x) => x.id === e.style)?.drawn,
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
-    generated: !e.photo && !e.pixabay && (!e.from || madeBy(e)),
-    ...(e.photo || e.pixabay ? { credit: credits[e.id] } : {}),
+    generated: !photographed(e) && (!e.from || madeBy(e)),
+    ...(photographed(e) ? { credit: credits[e.id] } : {}),
   };
 }
 
 // A copied file says it was made by an image model by naming the model in the manifest.
+// A photographed picture comes from one of the photo sources, and carries their credit.
+function photographed(e) {
+  return Boolean(e.photo || e.pixabay || e.wordpress);
+}
 // (entries default their model, so the manifest as written is read).
 const copiedByModel = new Set(manifest.images.filter((m) => m.from && m.model).map((m) => m.id));
 const madeBy = (e) => copiedByModel.has(e.id);
@@ -319,7 +325,7 @@ function dryRun() {
     byModel[key].count++;
     byModel[key].cost += priceOf(e);
   }
-  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : e.photo ? `photo ${e.photo}` : e.pixabay ? `pixabay ${e.pixabay}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
+  for (const e of missing) console.log(`${e.kind}/${e.id}  ${e.from ? `from ${e.from}` : e.photo ? `photo ${e.photo}` : e.pixabay ? `pixabay ${e.pixabay}` : e.wordpress ? `wordpress ${e.wordpress}` : `${e.model} ${e.quality}: ${promptOf(e)}`}`);
   console.log(`\n${missing.length - toMake.length} to copy or fetch, ${toMake.length} to generate, ${selected.length - missing.length} present`);
   let total = 0;
   for (const [key, { count, cost }] of Object.entries(byModel)) {
@@ -340,7 +346,9 @@ async function fetchPhotos() {
   for (const e of missing.filter((m) => m.photo)) {
     const file = await commonsFile(e.photo);
     if (!file.licence.ok)
-      throw new Error(`${e.id}: ${file.page} is ${file.licence.name}${file.licence.restricted ? " with restrictions" : ""}, not CC0 or public domain without restrictions`);
+      throw new Error(file.licence.copiedFrom
+        ? `${e.id}: ${file.page} is a copy of a picture from ${file.licence.copiedFrom}, whose CC0 mark is its uploader's word`
+        : `${e.id}: ${file.page} is ${file.licence.name}${file.licence.restricted ? " with restrictions" : ""}, not CC0 or public domain without restrictions`);
     // Commons scales on its side; twice the kind's size leaves room for the 3:2 cut.
     const { url } = await commonsFile(e.photo, KINDS[e.kind].long * 2);
     const res = await fetch(url, { headers: { "user-agent": UA } });
@@ -400,9 +408,40 @@ async function fetchPixabay() {
   }
 }
 
+// The WordPress Photo Directory (wordpress.mjs, README): the photo's own page is read again, its
+// CC0 statement, picture and author taken from its structured data and refused when it does not
+// say so plainly, and the page as read kept as evidence/wordpress/<id>.json beside the credit.
+async function fetchWordPress() {
+  for (const e of missing.filter((m) => m.wordpress)) {
+    const page = pageOf(e.wordpress);
+    const res = await fetch(page, { headers: { "user-agent": UA } });
+    if (!res.ok) throw new Error(`${e.id}: ${page} answered ${res.status}`);
+    const read = readPhotoPage(await res.text(), e.wordpress);
+    if (read.refused) throw new Error(`${e.id}: WordPress photo ${e.wordpress} refused: ${read.refused}`);
+    const img = await fetch(read.image, { headers: { "user-agent": UA } });
+    if (!img.ok) throw new Error(`${e.id}: the picture answered ${img.status}`);
+    await store(e, Buffer.from(await img.arrayBuffer()));
+    const fetched = new Date().toISOString().slice(0, 10);
+    const evidence = `evidence/wordpress/${e.wordpress}.json`;
+    mkdirSync(join(ROOT, "evidence", "wordpress"), { recursive: true });
+    writeFileSync(join(ROOT, evidence), `${JSON.stringify({
+      photoId: e.wordpress,
+      page,
+      stated: { licence: read.licence, author: read.author, image: read.image },
+      rule: "the photo page's structured data names CC0 1.0 (README, WordPress Photo Directory)",
+      fetched,
+    }, null, 2)}\n`);
+    credits[e.id] = { page, author: read.author, licence: "CC0 1.0 (WordPress Photo Directory)", evidence, fetched };
+    writeFileSync(CREDITS, `${JSON.stringify(Object.fromEntries(Object.entries(credits).sort()), null, 2)}\n`);
+    console.log(`✓ ${e.kind}/${e.id} (WordPress ${e.wordpress}, ${read.author})`);
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+}
+
 async function copyFiles() {
   await fetchPhotos();
   await fetchPixabay();
+  await fetchWordPress();
   for (const e of missing.filter((m) => m.from)) {
     const source = resolve(ROOT, e.from.replace(/^~(?=\/)/, homedir()));
     await store(e, source);
