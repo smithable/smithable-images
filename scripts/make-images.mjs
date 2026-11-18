@@ -16,7 +16,7 @@
 // The key is read from OPENAI_API_KEY or ~/.config/smithable/openai.env and never printed.
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, linkSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, linkSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { createInterface } from "node:readline";
@@ -82,7 +82,8 @@ const entries = manifest.images.map((e) => {
   if (e.style) {
     const style = styles.find((x) => x.id === e.style);
     if (!style) throw new Error(`${e.id}: no style ${e.style} in styles`);
-    if (style.generated !== !(e.photo || e.pixabay || e.from)) throw new Error(`${e.id}: style ${e.style} is ${style.generated ? "" : "not "}made by an image model`);
+    if (e.from) throw new Error(`${e.id}: a picture made by hand has no style`);
+    if (style.generated !== !(e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is ${style.generated ? "" : "not "}made by an image model`);
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.subject ?? "")) throw new Error(`${e.id}: a picture with a style names its subject (lower case and hyphens)`);
   } else if (e.subject) throw new Error(`${e.id}: a subject without a style`);
   if (!e.style && !e.from && (e.kind === "hero" || e.kind === "sample")) throw new Error(`${e.id}: give its style and subject`);
@@ -259,7 +260,7 @@ async function writeVersion(index) {
     }
   }
   const day = new Date().toISOString().slice(0, 10);
-  const n = known.filter((v) => v.startsWith(day)).length + 1;
+  const n = Math.max(0, ...known.filter((v) => v.startsWith(`${day}.`)).map((v) => Number(v.split(".")[1]))) + 1;
   const version = `${day}.${n}`;
   const file = join(VERSIONS, `${version}.json`);
   if (existsSync(file)) throw new Error(`${file} exists; a version is never rewritten`);
@@ -572,7 +573,13 @@ async function upload() {
   const staged = join(ROOT, ".files");
   rmSync(staged, { recursive: true, force: true });
   mkdirSync(staged);
-  for (const [hash, file] of here) linkSync(file, join(staged, `${hash}.webp`));
+  for (const [hash, file] of here) {
+    try {
+      linkSync(file, join(staged, `${hash}.webp`));
+    } catch {
+      copyFileSync(file, join(staged, `${hash}.webp`)); // another file system
+    }
+  }
   run("aws", ["s3", "sync", ".files/", `s3://${bucket}/images/files/`, "--size-only", "--cache-control", "public, max-age=31536000, immutable", "--content-type", "image/webp"], env);
   rmSync(staged, { recursive: true, force: true });
   // A version is created only if the bucket has none of that name (S3's If-None-Match); one
