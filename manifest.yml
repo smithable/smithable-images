@@ -80,6 +80,30 @@ styles:
     words:
       en: { name: Ink wash, line: "Brush and ink in washes of grey, with a touch of colour." }
       sv: { name: Tuschlavering, line: "Pensel och tusch i grå laveringar, med en aning färg." }
+withdrawn:
+  # Commons copies of stock-site or Flickr pictures: their CC0 rests on that site's or an uploader's word,
+  # which the library's rule does not take (Fable, T933, 2026-11-18). Served files stay; README, Withdrawn.
+  - id: market-table-chairs-p
+    reason: "a Commons copy of a picture from unsplash.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg"
+  - id: market-laptop-p
+    reason: "a Commons copy of a picture from unsplash.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg"
+  - id: market-headphones-p
+    reason: "a Commons copy of a picture from unsplash.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg"
+  - id: market-rowboat-p
+    reason: "a Commons copy of a picture from flickr.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg"
+  - id: pottery-p1
+    reason: "a Commons copy of a picture from flickr.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg"
+  - id: vintage-camera-p3
+    reason: "a Commons copy of a picture from flickr.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg"
+  - id: vintage-camera-p4
+    reason: "a Commons copy of a picture from flickr.com"
+    photo: "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg"
 images:
   # The 2026-09-28 pilot (gpt-image-1-mini, and one gpt-image-2 per trade as the hero).
   - id: accounting-meeting-b
@@ -2508,13 +2532,6 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png"
     alt: "A green floor lamp against a pale green wall"
     tags: [sample, starter-marketplace, lamp, furniture, lighting, second-hand, photo-real]
-  - id: market-table-chairs-p
-    kind: sample
-    style: photographs
-    subject: market-table-chairs
-    photo: "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg"
-    alt: "A birch table with white chairs around it"
-    tags: [sample, starter-marketplace, table, chairs, furniture, dining, second-hand, photo-real]
   - id: market-city-bike-p
     kind: sample
     style: photographs
@@ -2529,20 +2546,6 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Triban_RC520_Decathlon_road_bike.jpg"
     alt: "A blue road bike leaning on a green railing by a beach"
     tags: [sample, starter-marketplace, bike, bicycle, road-bike, outdoor, second-hand, photo-real]
-  - id: market-laptop-p
-    kind: sample
-    style: photographs
-    subject: market-laptop
-    photo: "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg"
-    alt: "An open laptop, a phone and a notebook on a wooden desk"
-    tags: [sample, starter-marketplace, laptop, computer, electronics, desk, second-hand, photo-real]
-  - id: market-headphones-p
-    kind: sample
-    style: photographs
-    subject: market-headphones
-    photo: "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg"
-    alt: "Over-ear headphones resting on a loudspeaker"
-    tags: [sample, starter-marketplace, headphones, music, electronics, second-hand, photo-real]
   - id: market-record-player-p
     kind: sample
     style: photographs
@@ -2557,13 +2560,6 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Old_Books_01.JPG"
     alt: "A stack of old leather-bound books"
     tags: [sample, starter-marketplace, books, antique, reading, second-hand, photo-real]
-  - id: market-rowboat-p
-    kind: sample
-    style: photographs
-    subject: market-rowboat
-    photo: "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg"
-    alt: "White rowing boats with oars on a lakeside lawn"
-    tags: [sample, starter-marketplace, boat, rowboat, outdoor, water, sports, second-hand, photo-real]
   - id: market-guitar-p
     kind: sample
     style: photographs
@@ -2714,13 +2710,6 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg"
     alt: "An umbrella plant in a grey pot on a wooden table"
     tags: [sample, houseplant, plants, photo-real]
-  - id: pottery-p1
-    kind: sample
-    style: photographs
-    subject: pottery
-    photo: "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg"
-    alt: "A grey stemmed earthenware bowl on a clear stand"
-    tags: [sample, pottery, ceramics, photo-real]
   - id: pottery-p2
     kind: sample
     style: photographs
@@ -2804,20 +2793,6 @@ images:
     subject: vintage-camera-2
     photo: "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg"
     alt: "Glass cabinets full of vintage film cameras"
-    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
-  - id: vintage-camera-p3
-    kind: sample
-    style: photographs
-    subject: vintage-camera-3
-    photo: "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg"
-    alt: "A silver and black compact film camera on a wooden table"
-    tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
-  - id: vintage-camera-p4
-    kind: sample
-    style: photographs
-    subject: vintage-camera-4
-    photo: "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg"
-    alt: "Two vintage cameras on a wooden table"
     tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
   - id: wardrobe-p1
     kind: sample

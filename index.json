@@ -8677,41 +8677,6 @@
     "generated": true
   },
   {
-    "id": "market-headphones-p",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-headphones-p.webp",
-    "alt": "Over-ear headphones resting on a loudspeaker",
-    "tags": [
-      "sample",
-      "starter-marketplace",
-      "headphones",
-      "music",
-      "electronics",
-      "second-hand",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "market-headphones",
-    "sha256": "bd480a372c806779ce000318bc461c19f148564486f136f231b14d4f1be88fa3",
-    "width": 900,
-    "height": 600,
-    "bytes": 34196,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#584838",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Headphones_on_a_loudspeaker_(Unsplash).jpg",
-      "author": "Alphacolor 13 duck58cth",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-10-25"
-    }
-  },
-  {
     "id": "market-lamp-1-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-lamp-1-b.webp",
@@ -8851,42 +8816,6 @@
     "source": "gpt-image-2",
     "photo": false,
     "generated": true
-  },
-  {
-    "id": "market-laptop-p",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-laptop-p.webp",
-    "alt": "An open laptop, a phone and a notebook on a wooden desk",
-    "tags": [
-      "sample",
-      "starter-marketplace",
-      "laptop",
-      "computer",
-      "electronics",
-      "desk",
-      "second-hand",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "market-laptop",
-    "sha256": "07cbed8bc0235141cd6dbcd97cf8b732165cbd1f19e695f73d4ec9da9c7e8eb5",
-    "width": 900,
-    "height": 600,
-    "bytes": 60646,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#080808",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Apple-iphone-laptop-notebook_(24216913612).jpg",
-      "author": "www.Pixel.la Free Stock Photos",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-10-25"
-    }
   },
   {
     "id": "market-record-player-ink",
@@ -9095,43 +9024,6 @@
     "generated": true
   },
   {
-    "id": "market-rowboat-p",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-rowboat-p.webp",
-    "alt": "White rowing boats with oars on a lakeside lawn",
-    "tags": [
-      "sample",
-      "starter-marketplace",
-      "boat",
-      "rowboat",
-      "outdoor",
-      "water",
-      "sports",
-      "second-hand",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "market-rowboat",
-    "sha256": "818587605170d54181186930214fe6e4887857e6611900d1d51a48f83ca1de41",
-    "width": 900,
-    "height": 600,
-    "bytes": 104174,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "cool",
-    "color": "#b8b8b8",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Rowboats_at_the_Ch%C3%A2teau_de_Fontainebleau_(53747683385).jpg",
-      "author": "Mustang Joe",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-10-25"
-    }
-  },
-  {
     "id": "market-sideboard-1-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-sideboard-1-b.webp",
@@ -9236,42 +9128,6 @@
     "source": "gpt-image-2",
     "photo": false,
     "generated": true
-  },
-  {
-    "id": "market-table-chairs-p",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/market-table-chairs-p.webp",
-    "alt": "A birch table with white chairs around it",
-    "tags": [
-      "sample",
-      "starter-marketplace",
-      "table",
-      "chairs",
-      "furniture",
-      "dining",
-      "second-hand",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "market-table-chairs",
-    "sha256": "af092daa5343fdf0948cb925fe733ab9dac2736bf31610d2f53b9f55b544d29f",
-    "width": 900,
-    "height": 600,
-    "bytes": 23284,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#888888",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Wooden_table_and_chairs_(Unsplash).jpg",
-      "author": "Breather breather",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-10-25"
-    }
   },
   {
     "id": "market-toys-ink",
@@ -10360,38 +10216,6 @@
     "source": "gpt-image-1-mini",
     "photo": true,
     "generated": true
-  },
-  {
-    "id": "pottery-p1",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/pottery-p1.webp",
-    "alt": "A grey stemmed earthenware bowl on a clear stand",
-    "tags": [
-      "sample",
-      "pottery",
-      "ceramics",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "pottery",
-    "sha256": "33eaeab7cc6bf46213ec11d9df5d4eaaf4a348bd2e8bf650c1d4c6d51729f0f0",
-    "width": 900,
-    "height": 600,
-    "bytes": 13156,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#988878",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Mawangdui_Pottery_Dish_(10112728715).jpg",
-      "author": "Gary Todd from Xinzheng, China",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-11-08"
-    }
   },
   {
     "id": "pottery-p2",
@@ -12342,74 +12166,6 @@
     "credit": {
       "page": "https://commons.wikimedia.org/wiki/File:Vintage_camera.jpg",
       "author": "Pr7013",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-11-08"
-    }
-  },
-  {
-    "id": "vintage-camera-p3",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p3.webp",
-    "alt": "A silver and black compact film camera on a wooden table",
-    "tags": [
-      "sample",
-      "vintage-camera",
-      "vintage",
-      "camera",
-      "cameras",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "vintage-camera-3",
-    "sha256": "1f9d669efff438b8419bd94ea73dab49a04a23e9112a346cc85728beb737cdbd",
-    "width": 900,
-    "height": 600,
-    "bytes": 53662,
-    "orientation": "landscape",
-    "tone": "dark",
-    "temperature": "neutral",
-    "color": "#181818",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Vintage_Konica_C35_Camera_(24235671772).jpg",
-      "author": "StockyPics",
-      "licence": "CC0",
-      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fetched": "2026-11-08"
-    }
-  },
-  {
-    "id": "vintage-camera-p4",
-    "kind": "sample",
-    "url": "https://docs.smithable.ai/images/sample/vintage-camera-p4.webp",
-    "alt": "Two vintage cameras on a wooden table",
-    "tags": [
-      "sample",
-      "vintage-camera",
-      "vintage",
-      "camera",
-      "cameras",
-      "photo-real"
-    ],
-    "style": "photographs",
-    "subject": "vintage-camera-4",
-    "sha256": "ae5ce62feb9ba55cf994a1907f4edbb3ccb9a86cdcf960f991bb4b87e91b490d",
-    "width": 900,
-    "height": 600,
-    "bytes": 47910,
-    "orientation": "landscape",
-    "tone": "mid",
-    "temperature": "warm",
-    "color": "#080808",
-    "source": "wikimedia-commons",
-    "photo": true,
-    "generated": false,
-    "credit": {
-      "page": "https://commons.wikimedia.org/wiki/File:Vintage_cameras_(21698523515).jpg",
-      "author": "StockyPics",
       "licence": "CC0",
       "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "fetched": "2026-11-08"
