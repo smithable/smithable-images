@@ -1,0 +1,27 @@
+{
+  "pixabayId": 1614822,
+  "page": "https://pixabay.com/photos/fresh-orange-juice-squeezed-1614822/",
+  "uploaded": "2016-08-23",
+  "uploadedFrom": "/photo/2016/08/23/15/52/fresh-orange-juice-1614822_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fresh-orange-juice-squeezed-1614822/",
+      "https://pixabay.com/en/fresh-orange-juice-squeezed-1614822/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20170316054902/https://pixabay.com/en/fresh-orange-juice-squeezed-1614822/",
+      "timestamp": "20170316054902"
+    }
+  },
+  "author": "stevepb",
+  "tags": "fresh orange juice, squeezed, refreshing, citrus, drink, vitamin c, orange juice, juice, juice glass, glass, healthy, organic, nutrition, fruit juice, natural, nutritious, diet, nourishing",
+  "size": {
+    "original": [
+      5472,
+      3648
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-18"
+}

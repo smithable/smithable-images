@@ -83,7 +83,9 @@ const entries = manifest.images.map((e) => {
     const style = styles.find((x) => x.id === e.style);
     if (!style) throw new Error(`${e.id}: no style ${e.style} in styles`);
     if (e.from) throw new Error(`${e.id}: a picture made by hand has no style`);
-    if (style.generated !== !(e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is ${style.generated ? "" : "not "}made by an image model`);
+    // A style made by an image model holds only such pictures; a photographic one may hold a
+    // generated filler where no photograph was found, which keeps its own generated flag.
+    if (style.generated && (e.photo || e.pixabay)) throw new Error(`${e.id}: style ${e.style} is made by an image model, not photographed`);
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.subject ?? "")) throw new Error(`${e.id}: a picture with a style names its subject (lower case and hyphens)`);
   } else if (e.subject) throw new Error(`${e.id}: a subject without a style`);
   if (!e.style && !e.from && (e.kind === "hero" || e.kind === "sample")) throw new Error(`${e.id}: give its style and subject`);
