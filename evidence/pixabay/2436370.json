@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2436370,
+  "page": "https://pixabay.com/photos/loaf-bakery-preparation-fresh-bread-2436370/",
+  "uploaded": "2017-06-23",
+  "uploadedFrom": "/photo/2017/06/23/23/57/bread-2436370_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/loaf-bakery-preparation-fresh-bread-2436370/",
+      "https://pixabay.com/en/loaf-bakery-preparation-fresh-bread-2436370/"
+    ],
+    "snapshot": null
+  },
+  "author": "Intuitivmedia",
+  "tags": "loaf, bakery, preparation, fresh bread, baker, meal, nourishment, baguette, dough, flour, craft, authentic, rye bread, wheat bread, to bake, biological",
+  "size": {
+    "original": [
+      5760,
+      3840
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

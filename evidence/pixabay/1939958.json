@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1939958,
+  "page": "https://pixabay.com/photos/fish-food-grilled-fish-meal-1939958/",
+  "uploaded": "2016-12-30",
+  "uploadedFrom": "/photo/2016/12/30/04/26/fish-1939958_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fish-food-grilled-fish-meal-1939958/",
+      "https://pixabay.com/en/fish-food-grilled-fish-meal-1939958/"
+    ],
+    "snapshot": null
+  },
+  "author": "takedahrs",
+  "tags": "fish, food, grilled fish, meal, restaurant, japanese food, hairtail, gourmand, japan contest",
+  "size": {
+    "original": [
+      4704,
+      3136
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

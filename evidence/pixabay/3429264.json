@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3429264,
+  "page": "https://pixabay.com/photos/morocco-essaouira-harbour-fish-3429264/",
+  "uploaded": "2018-05-25",
+  "uploadedFrom": "/photo/2018/05/25/14/43/morocco-3429264_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/morocco-essaouira-harbour-fish-3429264/",
+      "https://pixabay.com/en/morocco-essaouira-harbour-fish-3429264/"
+    ],
+    "snapshot": null
+  },
+  "author": "2427999",
+  "tags": "morocco, essaouira, harbour, fish, sardine, catch, sale, food, gray food, gray fish, gray sales, gray fishing",
+  "size": {
+    "original": [
+      5858,
+      3905
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

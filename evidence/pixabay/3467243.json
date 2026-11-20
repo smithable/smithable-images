@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3467243,
+  "page": "https://pixabay.com/photos/bread-buns-baked-food-3467243/",
+  "uploaded": "2018-06-10",
+  "uploadedFrom": "/photo/2018/06/10/20/30/bread-3467243_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/bread-buns-baked-food-3467243/",
+      "https://pixabay.com/en/bread-buns-baked-food-3467243/"
+    ],
+    "snapshot": null
+  },
+  "author": "manfredrichter",
+  "tags": "bread, buns, baked, food, carbohydrates, baked goods, fresh bread rolls, crust, product, food photography",
+  "size": {
+    "original": [
+      4272,
+      2848
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

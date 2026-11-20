@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3054627,
+  "page": "https://pixabay.com/photos/fish-soup-soup-from-seafood-3054627/",
+  "uploaded": "2018-01-01",
+  "uploadedFrom": "/photo/2018/01/01/17/57/fish-soup-3054627_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fish-soup-soup-from-seafood-3054627/",
+      "https://pixabay.com/en/fish-soup-soup-from-seafood-3054627/"
+    ],
+    "snapshot": null
+  },
+  "author": "ivabalk",
+  "tags": "fish soup, soup from seafood, gifts of the sea, shells, mussels, food, dish, seafood",
+  "size": {
+    "original": [
+      5456,
+      3632
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

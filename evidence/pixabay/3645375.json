@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3645375,
+  "page": "https://pixabay.com/photos/pumpkin-soup-soup-food-3645375/",
+  "uploaded": "2018-08-31",
+  "uploadedFrom": "/photo/2018/08/31/19/13/pumpkin-soup-3645375_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/pumpkin-soup-soup-food-3645375/",
+      "https://pixabay.com/en/pumpkin-soup-soup-food-3645375/"
+    ],
+    "snapshot": null
+  },
+  "author": "RitaE",
+  "tags": "pumpkin soup, soup, food, hokkaido soup, ginger soup, fall soup, autumn soup, dish, meal, spicy, appetizing, delicious, tasty, closeup",
+  "size": {
+    "original": [
+      3906,
+      2778
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

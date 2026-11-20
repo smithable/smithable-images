@@ -1,0 +1,27 @@
+{
+  "pixabayId": 184421,
+  "page": "https://pixabay.com/photos/beach-ocean-grass-sand-ocean-blue-184421/",
+  "uploaded": "2013-09-21",
+  "uploadedFrom": "/photo/2013/09/21/04/39/beach-184421_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/beach-ocean-grass-sand-ocean-blue-184421/",
+      "https://pixabay.com/en/beach-ocean-grass-sand-ocean-blue-184421/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20150508185143/http://pixabay.com:80/en/beach-ocean-grass-sand-ocean-blue-184421/",
+      "timestamp": "20150508185143"
+    }
+  },
+  "author": "Greyerbaby",
+  "tags": "beach, ocean, grass, sand ocean, blue, green, nature, view",
+  "size": {
+    "original": [
+      4272,
+      2848
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3419713,
+  "page": "https://pixabay.com/photos/barbecue-hamburger-food-burger-3419713/",
+  "uploaded": "2018-05-21",
+  "uploadedFrom": "/photo/2018/05/21/22/02/barbecue-3419713_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/barbecue-hamburger-food-burger-3419713/",
+      "https://pixabay.com/en/barbecue-hamburger-food-burger-3419713/"
+    ],
+    "snapshot": null
+  },
+  "author": "ClickerHappy",
+  "tags": "barbecue, hamburger, food, burger, meat, beef, meal, grilled, american, grill, snack, bbq, restaurant, bun, cooking, tomato, bread, fresh, classic",
+  "size": {
+    "original": [
+      4401,
+      2938
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

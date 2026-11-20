@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1761866,
+  "page": "https://pixabay.com/photos/fishing-basket-the-fishing-church-1761866/",
+  "uploaded": "2016-10-22",
+  "uploadedFrom": "/photo/2016/10/22/22/48/feskekorka-1761866_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fishing-basket-the-fishing-church-1761866/",
+      "https://pixabay.com/en/fishing-basket-the-fishing-church-1761866/"
+    ],
+    "snapshot": null
+  },
+  "author": "mammela",
+  "tags": "fishing basket, the fishing church, roselund, gothenburg, water, channel, sweden, night, mirroring, sky, beautifully, cloud, landscape, night photo, views, sunset, city, the coast, horizons, reflection, still, house",
+  "size": {
+    "original": [
+      5194,
+      3467
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2193537,
+  "page": "https://pixabay.com/photos/bread-loaves-crust-freshly-baked-2193537/",
+  "uploaded": "2017-04-01",
+  "uploadedFrom": "/photo/2017/04/01/12/36/bread-2193537_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/bread-loaves-crust-freshly-baked-2193537/",
+      "https://pixabay.com/en/bread-loaves-crust-freshly-baked-2193537/"
+    ],
+    "snapshot": null
+  },
+  "author": "Couleur",
+  "tags": "bread, loaves, crust, freshly baked, bakery, bread crust, crispy, fresh, food, baked goods, homemade, baked bread, baked, flour",
+  "size": {
+    "original": [
+      4896,
+      3264
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2179028,
+  "page": "https://pixabay.com/photos/coffee-cup-caffeine-drink-latte-2179028/",
+  "uploaded": "2017-03-27",
+  "uploadedFrom": "/photo/2017/03/27/14/18/coffee-2179028_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/coffee-cup-caffeine-drink-latte-2179028/",
+      "https://pixabay.com/en/coffee-cup-caffeine-drink-latte-2179028/"
+    ],
+    "snapshot": null
+  },
+  "author": "Pexels",
+  "tags": "coffee, cup, caffeine, drink, latte, latte art, coffee cup, morning coffee, coffee break, hot coffee, beverage, hot, mug, rustic, saucer, table, wooden table",
+  "size": {
+    "original": [
+      4613,
+      3075
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

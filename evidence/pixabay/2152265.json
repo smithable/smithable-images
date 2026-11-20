@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2152265,
+  "page": "https://pixabay.com/photos/potato-soup-potato-soup-wild-garlic-2152265/",
+  "uploaded": "2017-03-17",
+  "uploadedFrom": "/photo/2017/03/17/17/37/potato-soup-2152265_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/potato-soup-potato-soup-wild-garlic-2152265/",
+      "https://pixabay.com/en/potato-soup-potato-soup-wild-garlic-2152265/"
+    ],
+    "snapshot": null
+  },
+  "author": "RitaE",
+  "tags": "potato soup, potato, soup, wild garlic, edible, food, nourishment, having lunch, healthy, enjoy the meal, meal, cook, kitchen, plate, tasty, naturally, fresh, carrots, vegetarian, vegan",
+  "size": {
+    "original": [
+      6000,
+      3368
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

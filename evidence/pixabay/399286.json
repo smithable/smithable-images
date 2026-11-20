@@ -1,0 +1,24 @@
+{
+  "pixabayId": 399286,
+  "page": "https://pixabay.com/photos/bread-food-baked-artisan-breads-399286/",
+  "uploaded": "2014-07-22",
+  "uploadedFrom": "/photo/2014/07/22/09/59/bread-399286_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/bread-food-baked-artisan-breads-399286/",
+      "https://pixabay.com/en/bread-food-baked-artisan-breads-399286/"
+    ],
+    "snapshot": null
+  },
+  "author": "TiBine",
+  "tags": "bread, food, baked, artisan breads, homemade bread, freshly baked, carbohydrates, dough, baked goods, fresh, tasty, eat, food photography",
+  "size": {
+    "original": [
+      5184,
+      3456
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

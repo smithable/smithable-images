@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3015546,
+  "page": "https://pixabay.com/photos/sun-north-sea-beach-dune-vacations-3015546/",
+  "uploaded": "2017-12-12",
+  "uploadedFrom": "/photo/2017/12/12/21/49/sun-3015546_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/sun-north-sea-beach-dune-vacations-3015546/",
+      "https://pixabay.com/en/sun-north-sea-beach-dune-vacations-3015546/"
+    ],
+    "snapshot": null
+  },
+  "author": "fotoblend",
+  "tags": "sun, north sea, beach, dune, vacations, coast, denmark, water, mood, nature, horizon, north, heaven, sea, clouds, background, sand, waters",
+  "size": {
+    "original": [
+      4800,
+      3200
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

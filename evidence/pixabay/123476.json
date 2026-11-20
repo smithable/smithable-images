@@ -1,0 +1,27 @@
+{
+  "pixabayId": 123476,
+  "page": "https://pixabay.com/photos/white-cliffs-cliffs-dover-sea-123476/",
+  "uploaded": "2013-06-08",
+  "uploadedFrom": "/photo/2013/06/08/22/49/white-cliffs-123476_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/white-cliffs-cliffs-dover-sea-123476/",
+      "https://pixabay.com/en/white-cliffs-cliffs-dover-sea-123476/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20180211232028/https://pixabay.com/en/white-cliffs-cliffs-dover-sea-123476/",
+      "timestamp": "20180211232028"
+    }
+  },
+  "author": "LoggaWiggler",
+  "tags": "white cliffs, cliffs, dover, sea, coast, path, coastal path, england, united kingdom",
+  "size": {
+    "original": [
+      4000,
+      3000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

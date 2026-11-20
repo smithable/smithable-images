@@ -1,0 +1,24 @@
+{
+  "pixabayId": 398966,
+  "page": "https://pixabay.com/photos/orange-cake-dessert-pastry-food-398966/",
+  "uploaded": "2014-07-21",
+  "uploadedFrom": "/photo/2014/07/21/23/00/orange-cake-398966_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/orange-cake-dessert-pastry-food-398966/",
+      "https://pixabay.com/en/orange-cake-dessert-pastry-food-398966/"
+    ],
+    "snapshot": null
+  },
+  "author": "JESHOOTS-com",
+  "tags": "orange cake, dessert, pastry, food, baked, cake, sweets, treat, tasty, delicious, food photography",
+  "size": {
+    "original": [
+      5472,
+      3648
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

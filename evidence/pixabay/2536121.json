@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2536121,
+  "page": "https://pixabay.com/photos/fish-freshly-caught-fishing-2536121/",
+  "uploaded": "2017-07-24",
+  "uploadedFrom": "/photo/2017/07/24/21/37/fish-2536121_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fish-freshly-caught-fishing-2536121/",
+      "https://pixabay.com/en/fish-freshly-caught-fishing-2536121/"
+    ],
+    "snapshot": null
+  },
+  "author": "anaterate",
+  "tags": "fish, freshly caught, fishing, fresh fish, sea animals, fresh, fish market, port, sea, sales booth, fisherman",
+  "size": {
+    "original": [
+      3648,
+      2144
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

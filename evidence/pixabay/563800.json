@@ -1,0 +1,27 @@
+{
+  "pixabayId": 563800,
+  "page": "https://pixabay.com/photos/coffee-milk-coffee-beans-563800/",
+  "uploaded": "2014-12-11",
+  "uploadedFrom": "/photo/2014/12/11/02/57/coffee-563800_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/coffee-milk-coffee-beans-563800/",
+      "https://pixabay.com/en/coffee-milk-coffee-beans-563800/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20181230030613/https://pixabay.com/en/coffee-milk-coffee-beans-563800/",
+      "timestamp": "20181230030613"
+    }
+  },
+  "author": "shixugang",
+  "tags": "coffee, milk, coffee beans, cup of coffee, coffee cup, cup, pouring, cream, caffeine, cafe, pour, latte, drink, beverage",
+  "size": {
+    "original": [
+      2720,
+      4080
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

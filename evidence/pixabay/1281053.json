@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1281053,
+  "page": "https://pixabay.com/photos/bread-baked-food-freshly-baked-1281053/",
+  "uploaded": "2016-03-26",
+  "uploadedFrom": "/photo/2016/03/26/18/23/bread-1281053_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/bread-baked-food-freshly-baked-1281053/",
+      "https://pixabay.com/en/bread-baked-food-freshly-baked-1281053/"
+    ],
+    "snapshot": null
+  },
+  "author": "Couleur",
+  "tags": "bread, baked, food, freshly baked, artisan bread, dough, homemade, homemade bread, carbohydrates, eat, food photography",
+  "size": {
+    "original": [
+      1920,
+      1286
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

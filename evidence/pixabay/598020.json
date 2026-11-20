@@ -1,0 +1,24 @@
+{
+  "pixabayId": 598020,
+  "page": "https://pixabay.com/photos/port-hamburg-fish-market-598020/",
+  "uploaded": "2015-01-13",
+  "uploadedFrom": "/photo/2015/01/13/08/28/port-598020_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/port-hamburg-fish-market-598020/",
+      "https://pixabay.com/en/port-hamburg-fish-market-598020/"
+    ],
+    "snapshot": null
+  },
+  "author": "Hewirsch",
+  "tags": "port, hamburg, fish market",
+  "size": {
+    "original": [
+      3888,
+      2592
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

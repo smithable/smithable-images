@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1743939,
+  "page": "https://pixabay.com/photos/baguette-loaf-baked-goods-food-1743939/",
+  "uploaded": "2016-10-15",
+  "uploadedFrom": "/photo/2016/10/15/23/13/baguette-1743939_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/baguette-loaf-baked-goods-food-1743939/",
+      "https://pixabay.com/en/baguette-loaf-baked-goods-food-1743939/"
+    ],
+    "snapshot": null
+  },
+  "author": "Alexas_Fotos",
+  "tags": "baguette, loaf, baked goods, food, meal, yummy, fresh, white bread, baked, bakery",
+  "size": {
+    "original": [
+      6000,
+      1795
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

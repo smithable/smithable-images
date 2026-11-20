@@ -1,0 +1,27 @@
+{
+  "pixabayId": 2972858,
+  "page": "https://pixabay.com/photos/pumpkin-soup-soup-2972858/",
+  "uploaded": "2017-11-23",
+  "uploadedFrom": "/photo/2017/11/23/13/50/pumpkin-soup-2972858_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/pumpkin-soup-soup-2972858/",
+      "https://pixabay.com/en/pumpkin-soup-soup-2972858/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20171209052830/https://pixabay.com/en/pumpkin-soup-soup-2972858/",
+      "timestamp": "20171209052830"
+    }
+  },
+  "author": "congerdesign",
+  "tags": "pumpkin soup, soup, cream of pumpkin soup, orange, pumpkin seeds, pumpkin, eat, meal, warm, food, cooked, vegetarian, lunch, nutrition, food photography",
+  "size": {
+    "original": [
+      6000,
+      4000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}
