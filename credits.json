@@ -264,6 +264,13 @@
     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fetched": "2026-10-25"
   },
+  "market-headphones-p2": {
+    "page": "https://wordpress.org/photos/photo/18766603c1/",
+    "author": "Nilo Velez",
+    "licence": "CC0 1.0 (WordPress Photo Directory)",
+    "evidence": "evidence/wordpress/18766603c1.json",
+    "fetched": "2026-11-20"
+  },
   "market-lamp-p": {
     "page": "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png",
     "author": "Mamcmi",

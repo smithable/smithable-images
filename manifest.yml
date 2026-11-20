@@ -2546,6 +2546,13 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Triban_RC520_Decathlon_road_bike.jpg"
     alt: "A blue road bike leaning on a green railing by a beach"
     tags: [sample, starter-marketplace, bike, bicycle, road-bike, outdoor, second-hand, photo-real]
+  - id: market-headphones-p2
+    kind: sample
+    style: photographs
+    subject: market-headphones
+    wordpress: "18766603c1"
+    alt: "Silver over-ear headphones with red rings and a red cable on a wooden desk"
+    tags: [sample, starter-marketplace, headphones, music, electronics, desk, second-hand, photo-real]
   - id: market-record-player-p
     kind: sample
     style: photographs

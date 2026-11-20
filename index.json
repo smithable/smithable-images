@@ -8677,6 +8677,42 @@
     "generated": true
   },
   {
+    "id": "market-headphones-p2",
+    "kind": "sample",
+    "url": "https://docs.smithable.ai/images/sample/market-headphones-p2.webp",
+    "alt": "Silver over-ear headphones with red rings and a red cable on a wooden desk",
+    "tags": [
+      "sample",
+      "starter-marketplace",
+      "headphones",
+      "music",
+      "electronics",
+      "desk",
+      "second-hand",
+      "photo-real"
+    ],
+    "style": "photographs",
+    "subject": "market-headphones",
+    "sha256": "f79a40eac7b48e8e8978f184e9c88b1afe4be1c90ce108c4a819b8f90302ed4d",
+    "width": 900,
+    "height": 600,
+    "bytes": 19402,
+    "orientation": "landscape",
+    "tone": "mid",
+    "temperature": "warm",
+    "color": "#080808",
+    "source": "wordpress-photo-directory",
+    "photo": true,
+    "generated": false,
+    "credit": {
+      "page": "https://wordpress.org/photos/photo/18766603c1/",
+      "author": "Nilo Velez",
+      "licence": "CC0 1.0 (WordPress Photo Directory)",
+      "evidence": "evidence/wordpress/18766603c1.json",
+      "fetched": "2026-11-20"
+    }
+  },
+  {
     "id": "market-lamp-1-b",
     "kind": "sample",
     "url": "https://docs.smithable.ai/images/sample/market-lamp-1-b.webp",
