@@ -115,6 +115,7 @@ images:
     tags: [hero, accounting, meeting, people, indoor, calm, invoice, bookkeeping, client, payment]
   - id: accounting-review-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: accounting-review
     prompt: "An advisor pointing at a printed statement while a client listens."
@@ -122,6 +123,7 @@ images:
     tags: [sample, accounting, office, meeting, people, documents, indoor]
   - id: accounting-laptops-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: accounting-laptops
     prompt: "Two colleagues working on laptops across a light wooden table."
@@ -129,6 +131,7 @@ images:
     tags: [sample, accounting, office, laptop, people, indoor, calm]
   - id: accounting-calculator-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: accounting-calculator
     prompt: "A calculator, receipts and a laptop on a wooden desk."
@@ -137,6 +140,7 @@ images:
     tags: [sample, accounting, office, documents, calculator, invoice, indoor, calm, starter-invoicing]
   - id: accounting-team-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: accounting-team
     prompt: "Four people in a meeting room with a view of houses."
@@ -144,6 +148,7 @@ images:
     tags: [sample, accounting, office, meeting, team, people, indoor]
   - id: accounting-signing-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: accounting-signing
     prompt: "A hand signing a document on a weathered table."
@@ -158,6 +163,7 @@ images:
     tags: [hero, cafe, barista, coffee, people, indoor, warm]
   - id: cafe-latte-art-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cafe-latte-art
     prompt: "A barista pouring latte art at a wooden counter."
@@ -165,6 +171,7 @@ images:
     tags: [sample, cafe, barista, coffee, people, indoor, warm]
   - id: cafe-readers-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cafe-readers
     prompt: "Two people reading quietly at separate tables in a calm, half-empty café, each with a cup of coffee, soft daylight through the window."
@@ -172,6 +179,7 @@ images:
     tags: [sample, cafe, coffee, books, people, indoor, warm, calm]
   - id: cafe-cinnamon-buns-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cafe-cinnamon-buns
     prompt: "A tray of cinnamon buns by a café window."
@@ -180,6 +188,7 @@ images:
     tags: [sample, cafe, food, bakery, buns, indoor, warm]
   - id: cafe-friends-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cafe-friends
     prompt: "Two friends talking over coffee at a window table."
@@ -187,6 +196,7 @@ images:
     tags: [sample, cafe, coffee, people, indoor, warm]
   - id: cafe-cup-street-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cafe-cup-street
     prompt: "Hands holding a ceramic cup on a quiet old-town street."
@@ -201,6 +211,7 @@ images:
     tags: [hero, construction, builder, timber, people, outdoor]
   - id: construction-frame-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: construction-frame
     prompt: "Builders putting up the timber frame of a house."
@@ -208,6 +219,7 @@ images:
     tags: [sample, construction, builder, timber, house, people, outdoor]
   - id: construction-measuring
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: construction-measuring
     prompt: "A builder in a hard hat measuring a plank."
@@ -215,6 +227,7 @@ images:
     tags: [sample, construction, builder, timber, tools, people, outdoor]
   - id: construction-wooden-house-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: construction-wooden-house
     prompt: "A small new wooden house with a green door."
@@ -222,6 +235,7 @@ images:
     tags: [sample, construction, house, building, property, outdoor]
   - id: construction-plans-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: construction-plans
     prompt: "A site manager in high-visibility gear reading plans on a street."
@@ -229,6 +243,7 @@ images:
     tags: [sample, construction, plans, documents, people, outdoor]
   - id: construction-living-room-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: construction-living-room
     prompt: "A finished living room with a sofa and a window onto the street."
@@ -243,6 +258,7 @@ images:
     tags: [hero, consulting, office, meeting, people, indoor, sales, crm, deal, lead, pipeline, agency]
   - id: consulting-workshop-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: consulting-workshop
     prompt: "A consultant presenting at a whiteboard to three colleagues."
@@ -250,6 +266,7 @@ images:
     tags: [sample, consulting, office, workshop, team, people, indoor]
   - id: consulting-conversation-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: consulting-conversation
     prompt: "Three people talking around a laptop at a table."
@@ -257,6 +274,7 @@ images:
     tags: [sample, consulting, office, meeting, people, indoor]
   - id: consulting-coworking-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: consulting-coworking
     prompt: "People working on laptops in a bright shared office."
@@ -264,6 +282,7 @@ images:
     tags: [sample, consulting, office, coworking, laptop, people, indoor]
   - id: consulting-video-call-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: consulting-video-call
     prompt: "A laptop showing a video call on a desk with a mug."
@@ -271,6 +290,7 @@ images:
     tags: [sample, consulting, office, laptop, remote, indoor, calm]
   - id: consulting-handshake-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: consulting-handshake
     prompt: "Two people shaking hands across a desk."
@@ -285,6 +305,7 @@ images:
     tags: [hero, dental, clinic, health, people, indoor, calm]
   - id: dental-dentist
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dental-dentist
     prompt: "A smiling dentist talking with a patient."
@@ -292,6 +313,7 @@ images:
     tags: [sample, dental, clinic, health, people, indoor]
   - id: dental-chair-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dental-chair
     prompt: "An empty dental chair in a treatment room."
@@ -299,6 +321,7 @@ images:
     tags: [sample, dental, clinic, health, room, indoor, calm]
   - id: dental-reception-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dental-reception
     prompt: "The reception desk of a dental clinic: a receptionist at a light wooden desk, one small plant, a display of toothbrushes and dental floss on a shelf, and through an open door behind, a dental treatment chair with its lamp."
@@ -306,6 +329,7 @@ images:
     tags: [sample, dental, clinic, reception, people, indoor, calm]
   - id: dental-instruments-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dental-instruments
     prompt: "A dental nurse laying out instruments on a tray."
@@ -314,6 +338,7 @@ images:
     tags: [sample, dental, clinic, health, tools, people, indoor]
   - id: dental-waiting-room-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dental-waiting-room
     prompt: "A patient smiling in a waiting room."
@@ -328,6 +353,7 @@ images:
     tags: [hero, fitness, yoga, studio, class, people, indoor, calm, starter-booking]
   - id: fitness-stretching
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: fitness-stretching
     prompt: "Three people side-stretching in a studio."
@@ -335,6 +361,7 @@ images:
     tags: [sample, gallery, fitness, yoga, class, studio, people, indoor, calm, starter-booking]
   - id: fitness-trainer-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: fitness-trainer
     prompt: "A personal trainer coaching a woman lifting light dumbbells in a bright gym; both smiling, the trainer standing beside her and encouraging, not holding her back."
@@ -342,6 +369,7 @@ images:
     tags: [sample, fitness, trainer, weights, people, outdoor]
   - id: fitness-yoga-mat-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: fitness-yoga-mat
     prompt: "A rolled yoga mat and a water bottle on a wooden floor."
@@ -350,6 +378,7 @@ images:
     tags: [sample, gallery, fitness, yoga, mat, studio, indoor, calm, starter-booking]
   - id: fitness-coast-run-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: fitness-coast-run
     prompt: "A runner on a coastal path at sunset."
@@ -357,6 +386,7 @@ images:
     tags: [sample, gallery, fitness, running, sea, coast, evening, people, outdoor, warm, starter-booking]
   - id: fitness-gym-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: fitness-gym
     prompt: "An empty gym with benches and weights."
@@ -371,6 +401,7 @@ images:
     tags: [hero, florist, flowers, people, indoor, warm]
   - id: florist-bouquet-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: florist-bouquet
     prompt: "A florist tying a bouquet of white roses."
@@ -378,6 +409,7 @@ images:
     tags: [sample, florist, flowers, bouquet, people, indoor, warm]
   - id: florist-buckets-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: florist-buckets
     prompt: "Buckets of fresh flowers outside a shop."
@@ -386,6 +418,7 @@ images:
     tags: [sample, florist, flowers, shop, outdoor]
   - id: florist-wrapped-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: florist-wrapped
     prompt: "A wrapped bouquet on a windowsill."
@@ -394,6 +427,7 @@ images:
     tags: [sample, florist, flowers, bouquet, product, indoor, calm]
   - id: florist-storefront-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: florist-storefront
     prompt: "Potted plants in front of a shop door."
@@ -401,6 +435,7 @@ images:
     tags: [sample, florist, plants, shop, storefront, outdoor]
   - id: florist-ribbon-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: florist-ribbon
     prompt: "Hands tying a ribbon around a bouquet."
@@ -415,6 +450,7 @@ images:
     tags: [hero, plumber, repair, kitchen, people, indoor]
   - id: plumber-sink-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plumber-sink
     prompt: "A plumber fitting a pipe under a sink."
@@ -422,6 +458,7 @@ images:
     tags: [sample, plumber, repair, pipes, people, indoor]
   - id: plumber-van-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plumber-van
     prompt: "A white van parked outside a yellow house."
@@ -429,6 +466,7 @@ images:
     tags: [sample, plumber, van, vehicle, car, house, outdoor]
   - id: plumber-tools-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plumber-tools
     prompt: "A case of spanners on a street."
@@ -437,6 +475,7 @@ images:
     tags: [sample, plumber, tools, product, outdoor]
   - id: plumber-customer-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plumber-customer
     prompt: "A plumber explaining a job to a customer in a bathroom."
@@ -444,6 +483,7 @@ images:
     tags: [sample, plumber, customer, bathroom, people, indoor]
   - id: plumber-bathroom-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plumber-bathroom
     prompt: "A new bathroom with a glass shower."
@@ -733,6 +773,7 @@ images:
   # Samples: things people list, book, sell or manage.
   - id: car-hatchback-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: car-hatchback
     prompt: "A new compact hatchback in a bright color, clean and modern, parked on a city street, seen from the front three-quarters."
@@ -741,6 +782,7 @@ images:
     tags: [sample, car, vehicle, outdoor]
   - id: car-estate-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: car-estate
     prompt: "A new estate car in a deep blue color, with no badge, emblem or lettering anywhere, parked on a driveway in front of a house, seen from the side three-quarters; a generic design of no recognizable make."
@@ -749,6 +791,7 @@ images:
     tags: [sample, car, vehicle, outdoor]
   - id: car-electric-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: car-electric
     prompt: "A white electric car charging at a charging post."
@@ -757,6 +800,7 @@ images:
     tags: [sample, car, vehicle, electric, outdoor]
   - id: car-vintage-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: car-vintage
     prompt: "A generic classic car from the 1960s, of no recognizable make, in a soft green color, parked by a wooden house; rounded lines, chrome bumpers, no badges."
@@ -765,6 +809,7 @@ images:
     tags: [sample, car, vehicle, vintage, outdoor]
   - id: car-van-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: car-van
     prompt: "A small white delivery van in a parking area."
@@ -773,6 +818,7 @@ images:
     tags: [sample, van, vehicle, car, outdoor]
   - id: bike-city-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: bike-city
     prompt: "A modern city bicycle with a front basket, parked at a bike rack on a busy city street outdoors, with shopfronts and caf\u00e9 tables softly out of focus behind; daylight."
@@ -781,6 +827,7 @@ images:
     tags: [sample, bike, bicycle, vehicle, outdoor]
   - id: bike-road-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: bike-road
     prompt: "A modern road bike leaning against a stone wall at the side of a quiet country road, nobody around."
@@ -789,6 +836,7 @@ images:
     tags: [sample, bike, bicycle, sports, outdoor]
   - id: bike-cargo-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: bike-cargo
     prompt: "A cargo bike parked outside a house."
@@ -797,6 +845,7 @@ images:
     tags: [sample, bike, bicycle, cargo, vehicle, outdoor]
   - id: bike-kids-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: bike-kids
     prompt: "A small child's bicycle on a garden lawn."
@@ -805,6 +854,7 @@ images:
     tags: [sample, bike, bicycle, kids, outdoor]
   - id: bike-mountain-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: bike-mountain
     prompt: "A mountain bike on a forest trail."
@@ -813,6 +863,7 @@ images:
     tags: [sample, bike, bicycle, sports, outdoor]
   - id: boat-rowing-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: boat-rowing
     prompt: "A wooden rowing boat moored at a jetty."
@@ -821,6 +872,7 @@ images:
     tags: [sample, boat, sea, lake, outdoor, calm]
   - id: boat-sail-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: boat-sail
     prompt: "A real small sailboat, about six meters long, with a white sail up, sailing on a sunny bay with green islands behind, photographed from another boat; a real boat on real water, not a picture or a model."
@@ -829,6 +881,7 @@ images:
     tags: [sample, boat, sailing, sea, outdoor]
   - id: boat-motor-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: boat-motor
     prompt: "A small motorboat at a harbor pontoon."
@@ -837,6 +890,7 @@ images:
     tags: [sample, boat, sea, harbor, outdoor]
   - id: boat-kayak-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: boat-kayak
     prompt: "A kayak pulled up on a rocky shore."
@@ -845,6 +899,7 @@ images:
     tags: [sample, boat, kayak, sports, sea, outdoor]
   - id: dog-labrador-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dog-labrador
     prompt: "A golden labrador sitting on a lawn."
@@ -852,6 +907,7 @@ images:
     tags: [sample, dog, pets, animal, outdoor]
   - id: dog-terrier-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dog-terrier
     prompt: "A small terrier sitting on a sofa, looking at the camera, nobody else in the picture."
@@ -859,6 +915,7 @@ images:
     tags: [sample, dog, pets, animal, indoor]
   - id: dog-shepherd-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dog-shepherd
     prompt: "A German shepherd standing in a forest."
@@ -866,6 +923,7 @@ images:
     tags: [sample, dog, pets, animal, outdoor]
   - id: dog-puppy-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dog-puppy
     prompt: "A puppy lying on a wooden floor."
@@ -873,6 +931,7 @@ images:
     tags: [sample, dog, puppy, pets, animal, indoor]
   - id: dog-walk-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: dog-walk
     prompt: "A dog on a leash on a beach, seen from behind with its walker."
@@ -880,6 +939,7 @@ images:
     tags: [sample, dog, pets, animal, walk, outdoor]
   - id: cat-tabby-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cat-tabby
     prompt: "A tabby cat on a windowsill."
@@ -887,6 +947,7 @@ images:
     tags: [sample, cat, pets, animal, indoor]
   - id: cat-black-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cat-black
     prompt: "A black cat on a wooden chair."
@@ -894,6 +955,7 @@ images:
     tags: [sample, cat, pets, animal, indoor]
   - id: cat-kitten-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cat-kitten
     prompt: "A gray kitten on a knitted blanket."
@@ -901,6 +963,7 @@ images:
     tags: [sample, cat, kitten, pets, animal, indoor]
   - id: cat-garden-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: cat-garden
     prompt: "A ginger cat in a garden."
@@ -908,6 +971,7 @@ images:
     tags: [sample, cat, pets, animal, outdoor]
   - id: horse-paddock-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: horse-paddock
     prompt: "A brown horse in a paddock."
@@ -915,6 +979,7 @@ images:
     tags: [sample, horse, animal, farm, outdoor]
   - id: horse-white-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: horse-white
     prompt: "A white horse by a wooden fence."
@@ -922,6 +987,7 @@ images:
     tags: [sample, horse, animal, farm, outdoor]
   - id: horse-pony-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: horse-pony
     prompt: "A small pony in a meadow."
@@ -929,6 +995,7 @@ images:
     tags: [sample, horse, pony, animal, farm, outdoor]
   - id: animal-rabbit-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: animal-rabbit
     prompt: "A rabbit on straw in a hutch."
@@ -936,6 +1003,7 @@ images:
     tags: [sample, rabbit, pets, animal, indoor]
   - id: animal-hens-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: animal-hens
     prompt: "Three brown hens pecking in a sunny farmyard by a red barn, no people."
@@ -943,6 +1011,7 @@ images:
     tags: [sample, hens, chicken, animal, farm, outdoor]
   - id: animal-sheep-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: animal-sheep
     prompt: "Sheep grazing on a hillside."
@@ -950,6 +1019,7 @@ images:
     tags: [sample, sheep, animal, farm, outdoor]
   - id: sofa-gray-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: sofa-gray
     prompt: "A light gray three-seat fabric sofa in a living room, shown whole from the front, with two cushions on it."
@@ -958,6 +1028,7 @@ images:
     tags: [A gray three-seater sofa in a bright room]
   - id: sofa-green-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: sofa-green
     prompt: "A green velvet sofa against a white wall."
@@ -966,6 +1037,7 @@ images:
     tags: [sample, sofa, furniture, indoor]
   - id: sofa-leather-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sofa-leather
     prompt: "A brown leather sofa with a wool throw."
@@ -974,6 +1046,7 @@ images:
     tags: [sample, sofa, furniture, indoor, warm]
   - id: table-dining-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: table-dining
     prompt: "An oak dining table with six chairs."
@@ -982,6 +1055,7 @@ images:
     tags: [sample, table, furniture, dining, indoor]
   - id: table-coffee-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: table-coffee
     prompt: "A round wooden coffee table, shown whole, on a rug in a living room, with a book on it."
@@ -990,6 +1064,7 @@ images:
     tags: [sample, table, furniture, indoor]
   - id: table-desk-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: table-desk
     prompt: "A wooden desk with a lamp and a notebook."
@@ -998,6 +1073,7 @@ images:
     tags: [sample, desk, table, furniture, office, indoor]
   - id: chair-wooden-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: chair-wooden
     prompt: "A bentwood chair on a plain floor."
@@ -1006,6 +1082,7 @@ images:
     tags: [sample, chair, furniture, indoor]
   - id: chair-armchair-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: chair-armchair
     prompt: "A wingback armchair by a window."
@@ -1014,6 +1091,7 @@ images:
     tags: [sample, chair, armchair, furniture, indoor]
   - id: chair-office-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: chair-office
     prompt: "An office chair at a desk."
@@ -1022,6 +1100,7 @@ images:
     tags: [sample, chair, furniture, office, indoor]
   - id: lamp-floor-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: lamp-floor
     prompt: "A brass floor lamp with a linen shade, shown whole, standing in the corner of a living room."
@@ -1030,6 +1109,7 @@ images:
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: lamp-desk-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: lamp-desk
     prompt: "A black desk lamp on a table."
@@ -1038,6 +1118,7 @@ images:
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: lamp-pendant-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: lamp-pendant
     prompt: "A white pendant lamp hanging from the ceiling, shown whole, against a plain wall."
@@ -1046,6 +1127,7 @@ images:
     tags: [sample, lamp, lighting, furniture, indoor]
   - id: furniture-bookshelf-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: furniture-bookshelf
     prompt: "A bookshelf full of books and plants."
@@ -1054,6 +1136,7 @@ images:
     tags: [sample, bookshelf, furniture, books, indoor]
   - id: furniture-bed-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: furniture-bed
     prompt: "A made double bed with linen covers."
@@ -1062,6 +1145,7 @@ images:
     tags: [sample, bed, furniture, bedroom, indoor]
   - id: furniture-wardrobe-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: furniture-wardrobe
     prompt: "A wooden wardrobe with its doors open."
@@ -1070,6 +1154,7 @@ images:
     tags: [sample, wardrobe, furniture, indoor]
   - id: phone-black-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: phone-black
     prompt: "A smartphone lying face down on a wooden table."
@@ -1078,6 +1163,7 @@ images:
     tags: [sample, phone, electronics, indoor]
   - id: phone-hand-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: phone-hand
     model: gpt-image-2  # the lock screen's clock and date are text: the small model misspells them
@@ -1086,6 +1172,7 @@ images:
     tags: [sample, phone, electronics, indoor]
   - id: laptop-open-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: laptop-open
     prompt: "An open laptop with a blank screen on a desk."
@@ -1094,6 +1181,7 @@ images:
     tags: [sample, laptop, computer, electronics, office, indoor]
   - id: laptop-closed-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: laptop-closed
     prompt: "A closed laptop and a coffee cup."
@@ -1102,6 +1190,7 @@ images:
     tags: [sample, laptop, computer, electronics, indoor]
   - id: camera-film-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: camera-film
     prompt: "A film camera on a wooden table."
@@ -1110,6 +1199,7 @@ images:
     tags: [sample, camera, electronics, photography, indoor]
   - id: camera-digital-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: camera-digital
     prompt: "A digital camera with a lens beside it."
@@ -1118,6 +1208,7 @@ images:
     tags: [sample, camera, electronics, photography, indoor]
   - id: electronics-headphones-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: electronics-headphones
     prompt: "Over-ear headphones resting on a wooden headphone stand on a desk."
@@ -1126,6 +1217,7 @@ images:
     tags: [sample, headphones, electronics, music, indoor]
   - id: electronics-speaker-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: electronics-speaker
     prompt: "A small speaker on a shelf."
@@ -1134,6 +1226,7 @@ images:
     tags: [sample, speaker, electronics, music, indoor]
   - id: electronics-tablet-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: electronics-tablet
     prompt: "A tablet on a sofa cushion."
@@ -1142,6 +1235,7 @@ images:
     tags: [sample, tablet, electronics, indoor]
   - id: electronics-monitor-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: electronics-monitor
     prompt: "A computer monitor and keyboard on a desk."
@@ -1150,6 +1244,7 @@ images:
     tags: [sample, monitor, computer, electronics, office, indoor]
   - id: clothes-jacket-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-jacket
     prompt: "A rain jacket on a hanger against a wall."
@@ -1158,6 +1253,7 @@ images:
     tags: [sample, jacket, clothes, fashion, indoor]
   - id: clothes-sweater-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-sweater
     prompt: "A folded knitted sweater."
@@ -1166,6 +1262,7 @@ images:
     tags: [sample, sweater, clothes, fashion, indoor]
   - id: clothes-shoes-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-shoes
     prompt: "A pair of brown leather boots standing on a doormat in a hallway."
@@ -1174,6 +1271,7 @@ images:
     tags: [sample, shoes, boots, clothes, fashion, indoor]
   - id: clothes-dress-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-dress
     prompt: "A linen dress on a hanger."
@@ -1182,6 +1280,7 @@ images:
     tags: [sample, dress, clothes, fashion, indoor]
   - id: clothes-rack-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-rack
     prompt: "A clothes rail with a row of shirts on hangers in calm colors, in a bright room."
@@ -1190,6 +1289,7 @@ images:
     tags: [sample, clothes, fashion, shop, indoor]
   - id: clothes-bag-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: clothes-bag
     prompt: "A canvas tote bag on a chair."
@@ -1198,6 +1298,7 @@ images:
     tags: [sample, bag, clothes, fashion, indoor]
   - id: books-stack-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: books-stack
     prompt: "A stack of hardback books on a table."
@@ -1206,6 +1307,7 @@ images:
     tags: [sample, books, reading, indoor]
   - id: books-open-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: books-open
     prompt: "An open book on a blanket."
@@ -1214,6 +1316,7 @@ images:
     tags: [sample, books, reading, indoor, calm]
   - id: books-shelf-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: books-shelf
     prompt: "A row of old books on a shelf."
@@ -1222,6 +1325,7 @@ images:
     tags: [sample, books, library, indoor]
   - id: tools-drill-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: tools-drill
     prompt: "A modern cordless drill lying on a wooden workbench."
@@ -1230,6 +1334,7 @@ images:
     tags: [sample, tools, drill, workshop, indoor]
   - id: tools-hand-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: tools-hand
     prompt: "Hand tools hanging neatly on a pegboard: a hammer, pliers, screwdrivers and a saw."
@@ -1238,6 +1343,7 @@ images:
     tags: [sample, tools, workshop, indoor]
   - id: tools-garden-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: tools-garden
     prompt: "Garden tools leaning against a shed."
@@ -1246,6 +1352,7 @@ images:
     tags: [sample, tools, garden, outdoor]
   - id: tools-ladder-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: tools-ladder
     prompt: "A wooden ladder against a house wall."
@@ -1254,6 +1361,7 @@ images:
     tags: [sample, tools, ladder, outdoor]
   - id: tools-toolbox-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: tools-toolbox
     prompt: "An open toolbox on a floor."
@@ -1262,6 +1370,7 @@ images:
     tags: [sample, tools, toolbox, indoor]
   - id: plant-monstera-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plant-monstera
     prompt: "A monstera plant in a ceramic pot."
@@ -1270,6 +1379,7 @@ images:
     tags: [sample, plant, plants, houseplant, indoor]
   - id: plant-succulents-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plant-succulents
     prompt: "Small succulents in terracotta pots on a sunny windowsill."
@@ -1278,6 +1388,7 @@ images:
     tags: [sample, plant, plants, houseplant, indoor]
   - id: plant-herbs-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plant-herbs
     prompt: "Pots of basil, parsley and rosemary on a kitchen windowsill."
@@ -1286,6 +1397,7 @@ images:
     tags: [sample, plant, plants, herbs, kitchen, indoor]
   - id: plant-tree-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plant-tree
     prompt: "A young apple tree in a garden."
@@ -1294,6 +1406,7 @@ images:
     tags: [sample, plant, tree, garden, outdoor]
   - id: plant-flowers-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: plant-flowers
     prompt: "A vase of tulips on a table."
@@ -1302,6 +1415,7 @@ images:
     tags: [sample, plant, flowers, indoor]
   - id: food-salad-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-salad
     prompt: "A bowl of green salad on a wooden table."
@@ -1310,6 +1424,7 @@ images:
     tags: [sample, food, dish, salad, indoor]
   - id: food-soup-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-soup
     prompt: "A bowl of soup with bread."
@@ -1318,6 +1433,7 @@ images:
     tags: [sample, food, dish, soup, indoor, warm]
   - id: food-pasta-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-pasta
     prompt: "A plate of pasta with tomato sauce."
@@ -1326,6 +1442,7 @@ images:
     tags: [sample, food, dish, pasta, indoor]
   - id: food-fish-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-fish
     prompt: "A plate of salmon with potatoes and dill."
@@ -1342,6 +1459,7 @@ images:
     tags: [sample, food, dish, burger, indoor]
   - id: food-pizza-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-pizza
     prompt: "A pizza on a wooden board."
@@ -1350,6 +1468,7 @@ images:
     tags: [sample, food, dish, pizza, indoor]
   - id: food-cake-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-cake
     prompt: "A slice of berry cake on a plate."
@@ -1358,6 +1477,7 @@ images:
     tags: [sample, food, cake, dessert, bakery, indoor]
   - id: food-bread-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-bread
     prompt: "A loaf of sourdough bread on a board."
@@ -1366,6 +1486,7 @@ images:
     tags: [sample, food, bread, bakery, indoor]
   - id: food-breakfast-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-breakfast
     prompt: "A breakfast of eggs, bread and coffee."
@@ -1374,6 +1495,7 @@ images:
     tags: [sample, food, breakfast, indoor]
   - id: food-vegetables-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-vegetables
     prompt: "A crate of fresh vegetables."
@@ -1382,6 +1504,7 @@ images:
     tags: [sample, food, vegetables, market, indoor]
   - id: food-fruit-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-fruit
     prompt: "A bowl of apples and pears."
@@ -1390,6 +1513,7 @@ images:
     tags: [sample, food, fruit, indoor]
   - id: food-cheese-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: food-cheese
     prompt: "A board of cheeses and crackers."
@@ -1398,6 +1522,7 @@ images:
     tags: [sample, food, cheese, indoor]
   - id: drink-coffee-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-coffee
     prompt: "A cup of black coffee on a saucer."
@@ -1406,6 +1531,7 @@ images:
     tags: [sample, drink, coffee, cafe, indoor]
   - id: drink-tea-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-tea
     prompt: "A teapot and a cup of tea."
@@ -1414,6 +1540,7 @@ images:
     tags: [sample, drink, tea, indoor, calm]
   - id: drink-juice-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-juice
     prompt: "A glass of orange juice by a window."
@@ -1422,6 +1549,7 @@ images:
     tags: [sample, drink, juice, indoor]
   - id: drink-wine-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-wine
     prompt: "Two glasses of red wine and the bottle on a dinner table."
@@ -1430,6 +1558,7 @@ images:
     tags: [sample, drink, wine, indoor, evening]
   - id: drink-beer-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-beer
     prompt: "A glass of beer with a foam head on a wooden bar counter."
@@ -1438,6 +1567,7 @@ images:
     tags: [sample, drink, beer, bar, indoor]
   - id: drink-cocktail-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: drink-cocktail
     prompt: "A cocktail in a glass with a lemon slice."
@@ -1446,6 +1576,7 @@ images:
     tags: [sample, drink, cocktail, bar, indoor]
   - id: room-bedroom-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-bedroom
     prompt: "A bedroom with a made bed and a window."
@@ -1453,6 +1584,7 @@ images:
     tags: [sample, room, bedroom, interior, property, indoor, calm]
   - id: room-kitchen-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-kitchen
     prompt: "A bright modern kitchen with wooden cupboards, a fruit bowl and a plant on the counter, nobody in it."
@@ -1460,6 +1592,7 @@ images:
     tags: [sample, room, kitchen, interior, property, indoor]
   - id: room-office-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-office
     prompt: "A home office with a desk by the window."
@@ -1467,6 +1600,7 @@ images:
     tags: [sample, room, office, interior, indoor]
   - id: room-living-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-living
     prompt: "A living room with a sofa and a rug."
@@ -1474,6 +1608,7 @@ images:
     tags: [sample, room, living-room, interior, property, indoor]
   - id: room-bathroom-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-bathroom
     prompt: "An empty bright modern bathroom with white tiles, a basin, a mirror and green towels; no people at all."
@@ -1481,6 +1616,7 @@ images:
     tags: [sample, room, bathroom, interior, property, indoor]
   - id: room-meeting-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-meeting
     prompt: "A meeting in progress in a small meeting room: four colleagues around a table, one sketching on a whiteboard while the others discuss, laptops and coffee cups on the table, lively and friendly."
@@ -1488,6 +1624,7 @@ images:
     tags: [sample, room, meeting-room, office, indoor]
   - id: room-hall-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: room-hall
     prompt: "An entrance hall with coats and a bench."
@@ -1495,6 +1632,7 @@ images:
     tags: [sample, room, hall, interior, indoor]
   - id: house-red-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: house-red
     prompt: "A red wooden house with white corners."
@@ -1502,6 +1640,7 @@ images:
     tags: [sample, house, property, building, outdoor]
   - id: house-yellow-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: house-yellow
     prompt: "A yellow two-story house with a garden."
@@ -1509,6 +1648,7 @@ images:
     tags: [sample, house, property, building, outdoor]
   - id: house-modern-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: house-modern
     prompt: "A modern detached house with large windows and wooden cladding, seen whole from the garden on a sunny day, nobody in front of it."
@@ -1516,6 +1656,7 @@ images:
     tags: [sample, house, property, building, outdoor]
   - id: house-cottage-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: house-cottage
     prompt: "A small cottage by a lake."
@@ -1523,6 +1664,7 @@ images:
     tags: [sample, house, cottage, property, rental, outdoor]
   - id: house-terrace-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: house-terrace
     prompt: "A row of terraced houses."
@@ -1530,6 +1672,7 @@ images:
     tags: [sample, house, property, building, outdoor]
   - id: apartment-block-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: apartment-block
     prompt: "A three-storey apartment building with balconies and plants, seen whole from across a green courtyard on a sunny day, nobody in front of it."
@@ -1537,6 +1680,7 @@ images:
     tags: [An apartment building with balconies]
   - id: apartment-interior-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: apartment-interior
     prompt: "A bright apartment living room with a balcony door."
@@ -1544,6 +1688,7 @@ images:
     tags: [sample, apartment, property, interior, indoor]
   - id: apartment-studio-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: apartment-studio
     prompt: "A cozy studio apartment with a made bed, a kitchenette and plants; a young woman sitting at the table with a cup of tea and a book, looking relaxed and content."
@@ -1551,6 +1696,7 @@ images:
     tags: [sample, apartment, property, interior, indoor]
   - id: apartment-balcony-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: apartment-balcony
     prompt: "A balcony with two chairs and plants."
@@ -1614,6 +1760,7 @@ images:
     tags: [sample, people, person, portrait, indoor]
   - id: people-chef-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-chef
     prompt: "A chef plating food in a kitchen."
@@ -1621,6 +1768,7 @@ images:
     tags: [sample, people, chef, restaurant, work, indoor]
   - id: people-carpenter-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-carpenter
     prompt: "A carpenter sanding a board."
@@ -1628,6 +1776,7 @@ images:
     tags: [sample, people, carpenter, craft, work, indoor]
   - id: people-farmer-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-farmer
     prompt: "A farmer carrying a crate of vegetables."
@@ -1635,6 +1784,7 @@ images:
     tags: [sample, people, farmer, farm, work, outdoor]
   - id: people-nurse-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-nurse
     prompt: "A nurse in blue scrubs kindly checking an elderly patient's blood pressure in a bright clinic room, both relaxed."
@@ -1642,6 +1792,7 @@ images:
     tags: [sample, people, nurse, health, work, indoor]
   - id: people-teacher-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-teacher
     prompt: "A teacher explaining something at a whiteboard to a small, attentive class of adults taking notes."
@@ -1649,6 +1800,7 @@ images:
     tags: [sample, people, teacher, school, work, indoor]
   - id: people-mechanic-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-mechanic
     prompt: "A mechanic working on an engine."
@@ -1656,6 +1808,7 @@ images:
     tags: [sample, people, mechanic, garage, work, indoor]
   - id: people-office-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-office
     prompt: "A smiling person working at a laptop in a bright, plant-filled office."
@@ -1663,6 +1816,7 @@ images:
     tags: [sample, people, office, work, indoor]
   - id: people-courier-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-courier
     prompt: "A courier carrying a parcel to a door."
@@ -1670,6 +1824,7 @@ images:
     tags: [sample, people, courier, delivery, work, outdoor]
   - id: people-shopkeeper-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-shopkeeper
     prompt: "A shopkeeper behind a counter."
@@ -1677,6 +1832,7 @@ images:
     tags: [sample, people, shop, work, indoor]
   - id: people-gardener-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-gardener
     prompt: "A gardener planting in a bed."
@@ -1684,6 +1840,7 @@ images:
     tags: [sample, people, gardener, garden, work, outdoor]
   - id: people-team-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-team
     prompt: "A small team around a table, seen from a distance."
@@ -1691,6 +1848,7 @@ images:
     tags: [sample, people, team, office, meeting, indoor]
   - id: people-hiker-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: people-hiker
     prompt: "A hiker on a mountain trail, seen from behind."
@@ -1706,6 +1864,7 @@ images:
     tags: [A printed contract with a pen]
   - id: document-invoice-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-invoice
     prompt: "A printed one-page invoice on a desk; its lines and figures are only thin gray bars, too small to read, with no letters or words anywhere."
@@ -1713,6 +1872,7 @@ images:
     tags: [sample, document, documents, invoice, office, indoor]
   - id: document-folder-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-folder
     prompt: "A stack of colored folders on a desk."
@@ -1721,6 +1881,7 @@ images:
     tags: [sample, document, documents, folder, office, indoor]
   - id: document-notebook-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-notebook
     prompt: "An open notebook with handwritten notes and a pen on a wooden desk."
@@ -1729,6 +1890,7 @@ images:
     tags: [sample, document, documents, notes, indoor]
   - id: document-letter-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-letter
     prompt: "A folded letter lying flat beside its open envelope on a wooden desk, seen from above at an angle."
@@ -1737,6 +1899,7 @@ images:
     tags: [sample, document, documents, mail, letter, indoor]
   - id: document-receipts-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-receipts
     prompt: "Receipts and a calculator."
@@ -1745,6 +1908,7 @@ images:
     tags: [sample, document, documents, receipt, accounting, indoor]
   - id: document-plans-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: document-plans
     prompt: "Building plans rolled out on a table."
@@ -1753,6 +1917,7 @@ images:
     tags: [sample, document, documents, plans, construction, indoor]
   - id: product-box-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-box
     prompt: "A plain cardboard box on a table."
@@ -1761,6 +1926,7 @@ images:
     tags: [sample, product, box, parcel, shipping, indoor]
   - id: product-boxes-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-boxes
     prompt: "A neat stack of three cardboard shipping boxes on a wooden floor."
@@ -1769,6 +1935,7 @@ images:
     tags: [sample, product, boxes, parcel, shipping, warehouse, indoor]
   - id: product-parcel-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-parcel
     prompt: "A parcel at a front door."
@@ -1777,6 +1944,7 @@ images:
     tags: [sample, product, parcel, delivery, outdoor]
   - id: product-bottle-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: product-bottle
     prompt: "A clear glass bottle with no label on a wooden table."
@@ -1785,6 +1953,7 @@ images:
     tags: [sample, product, bottle, indoor]
   - id: product-jar-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-jar
     prompt: "A jar of honey on a table."
@@ -1793,6 +1962,7 @@ images:
     tags: [sample, product, jar, food, indoor]
   - id: product-soap-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-soap
     prompt: "Handmade soap bars on a cloth."
@@ -1801,6 +1971,7 @@ images:
     tags: [sample, product, soap, craft, indoor]
   - id: product-candle-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-candle
     prompt: "A candle in a glass jar."
@@ -1809,6 +1980,7 @@ images:
     tags: [sample, product, candle, home, indoor, warm]
   - id: product-mug-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-mug
     prompt: "A ceramic mug on a shelf."
@@ -1817,6 +1989,7 @@ images:
     tags: [sample, product, mug, ceramics, craft, indoor]
   - id: product-vase-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-vase
     prompt: "A ceramic vase on a table."
@@ -1825,6 +1998,7 @@ images:
     tags: [sample, product, vase, ceramics, craft, indoor]
   - id: product-watch-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-watch
     prompt: "A wristwatch on a wooden surface."
@@ -1833,6 +2007,7 @@ images:
     tags: [sample, product, watch, fashion, indoor]
   - id: product-sunglasses-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: product-sunglasses
     prompt: "Sunglasses on a table."
@@ -1841,6 +2016,7 @@ images:
     tags: [sample, product, sunglasses, fashion, indoor]
   - id: instrument-guitar-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: instrument-guitar
     prompt: "An acoustic guitar against a wall."
@@ -1849,6 +2025,7 @@ images:
     tags: [sample, instrument, guitar, music, indoor]
   - id: instrument-piano-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: instrument-piano
     prompt: "An upright piano in a room."
@@ -1857,6 +2034,7 @@ images:
     tags: [sample, instrument, piano, music, indoor]
   - id: instrument-violin-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: instrument-violin
     prompt: "A violin on a chair."
@@ -1865,6 +2043,7 @@ images:
     tags: [sample, instrument, violin, music, indoor]
   - id: instrument-drums-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: instrument-drums
     prompt: "A drum kit in a rehearsal room."
@@ -1873,6 +2052,7 @@ images:
     tags: [sample, instrument, drums, music, indoor]
   - id: instrument-keyboard-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: instrument-keyboard
     prompt: "A digital keyboard on a stand."
@@ -1881,6 +2061,7 @@ images:
     tags: [sample, instrument, keyboard, music, indoor]
   - id: toy-blocks-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: toy-blocks
     prompt: "Colorful wooden building blocks stacked into a small tower on a play mat."
@@ -1889,6 +2070,7 @@ images:
     tags: [Wooden toy blocks on a floor]
   - id: toy-teddy-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: toy-teddy
     prompt: "A teddy bear on a bed."
@@ -1897,6 +2079,7 @@ images:
     tags: [sample, toy, toys, kids, indoor]
   - id: toy-train-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: toy-train
     prompt: "A wooden toy train set."
@@ -1905,6 +2088,7 @@ images:
     tags: [sample, toy, toys, kids, indoor]
   - id: toy-puzzle-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: toy-puzzle
     prompt: "A half-finished colorful jigsaw puzzle on a wooden table, loose pieces around it, seen from above at an angle."
@@ -1913,6 +2097,7 @@ images:
     tags: [sample, toy, toys, game, indoor]
   - id: toy-boardgame-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: toy-boardgame
     prompt: "A colorful board game set up on a table with its pieces and dice, ready to play, seen from above at an angle."
@@ -1921,6 +2106,7 @@ images:
     tags: [sample, toy, game, boardgame, indoor]
   - id: sports-skis-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-skis
     prompt: "A pair of cross-country skis with poles standing in the snow against a red wooden wall."
@@ -1929,6 +2115,7 @@ images:
     tags: [Cross-country skis in the snow]
   - id: sports-football-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-football
     prompt: "A football on the grass of a sunny outdoor football pitch, the goal softly out of focus behind."
@@ -1937,6 +2124,7 @@ images:
     tags: [sample, sports, football, ball, outdoor]
   - id: sports-tennis-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-tennis
     prompt: "A tennis racket and balls on a court."
@@ -1945,6 +2133,7 @@ images:
     tags: [sample, sports, tennis, outdoor]
   - id: sports-skates-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-skates
     prompt: "Ice skates on a frozen lake."
@@ -1953,6 +2142,7 @@ images:
     tags: [sample, sports, skates, winter, outdoor]
   - id: sports-tent-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: sports-tent
     prompt: "A tent pitched by a lake."
@@ -1961,6 +2151,7 @@ images:
     tags: [sample, sports, camping, tent, outdoor]
   - id: sports-backpack-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-backpack
     prompt: "A hiking backpack on a rock."
@@ -1969,6 +2160,7 @@ images:
     tags: [sample, sports, backpack, hiking, outdoor]
   - id: sports-weights-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-weights
     prompt: "A pair of dumbbells on a rubber gym floor."
@@ -1977,6 +2169,7 @@ images:
     tags: [sample, sports, weights, gym, fitness, indoor]
   - id: sports-golf-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: sports-golf
     prompt: "A golf bag with clubs standing on the green fairway of a golf course outdoors on a sunny day, trees in the distance."
@@ -1985,6 +2178,7 @@ images:
     tags: [sample, sports, golf, outdoor]
   - id: sports-fishing-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: sports-fishing
     prompt: "A fishing rod by a lake."
@@ -1993,6 +2187,7 @@ images:
     tags: [sample, sports, fishing, lake, outdoor]
   - id: event-concert-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: event-concert
     prompt: "A small band playing on a low stage in a caf\u00e9, the audience listening at tables with drinks in the foreground."
@@ -2000,6 +2195,7 @@ images:
     tags: [sample, event, concert, music, indoor, evening]
   - id: event-workshop-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: event-workshop
     prompt: "A lively workshop: a dozen people at tables working in groups with large paper sheets and markers while the host walks between them."
@@ -2007,6 +2203,7 @@ images:
     tags: [sample, event, workshop, class, indoor]
   - id: event-dinner-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: event-dinner
     prompt: "Friends around a long dinner table with candles and food, laughing and passing dishes, seen from the side."
@@ -2014,6 +2211,7 @@ images:
     tags: [sample, event, dinner, party, indoor, evening]
   - id: event-wedding-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: event-wedding
     prompt: "Chairs set out for an outdoor wedding."
@@ -2021,6 +2219,7 @@ images:
     tags: [sample, event, wedding, outdoor, summer]
   - id: event-tickets-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: event-tickets
     prompt: "Two printed paper tickets lying on a café table, with no readable text."
@@ -2029,6 +2228,7 @@ images:
     tags: [sample, event, tickets, indoor]
   - id: service-cleaning-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-cleaning
     prompt: "Cleaning supplies in a bucket."
@@ -2036,6 +2236,7 @@ images:
     tags: [sample, service, cleaning, indoor]
   - id: service-haircut-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-haircut
     prompt: "A hairdresser cutting a smiling customer's hair in a bright salon, both relaxed and chatting."
@@ -2043,6 +2244,7 @@ images:
     tags: [sample, service, salon, haircut, beauty, indoor]
   - id: service-massage-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-massage
     prompt: "A massage table in a calm room."
@@ -2050,6 +2252,7 @@ images:
     tags: [sample, service, massage, health, indoor, calm]
   - id: service-moving-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-moving
     prompt: "Two movers carrying a sofa out of a house to a van on a sunny day, working together."
@@ -2057,6 +2260,7 @@ images:
     tags: [sample, service, moving, boxes, indoor]
   - id: service-painting-b
     kind: sample
+    uses: [hero, filler]
     style: lifelike
     subject: service-painting
     prompt: "A freshly painted living-room wall in a soft sage green, with a paint roller and an open tin of the same green paint on a drop cloth in front of it."
@@ -2064,6 +2268,7 @@ images:
     tags: [sample, service, painting, decorating, indoor]
   - id: service-repair-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-repair
     prompt: "A bicycle being repaired on a stand."
@@ -2071,6 +2276,7 @@ images:
     tags: [sample, service, repair, bike, indoor]
   - id: service-tutoring-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-tutoring
     prompt: "A notebook and textbook on a desk."
@@ -2078,6 +2284,7 @@ images:
     tags: [sample, service, tutoring, education, indoor]
   - id: service-photography-b
     kind: sample
+    uses: [filler]
     style: lifelike
     subject: service-photography
     prompt: "A photographer taking a portrait of a smiling woman sitting on a stool in a bright studio with a softbox light and a backdrop; her hands rest in her lap, empty."
@@ -2527,6 +2734,7 @@ images:
     tags: [sample, starter-marketplace, armchair, furniture, chair, second-hand, photo-real]
   - id: market-lamp-p
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: market-lamp
     photo: "https://commons.wikimedia.org/wiki/File:Green_floor_lamp.png"
@@ -2534,6 +2742,7 @@ images:
     tags: [sample, starter-marketplace, lamp, furniture, lighting, second-hand, photo-real]
   - id: market-city-bike-p
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: market-city-bike
     photo: "https://commons.wikimedia.org/wiki/File:Bicycle_parked_near_a_seasonal_pond_at_Kumbakudi.jpg"
@@ -2663,6 +2872,7 @@ images:
     tags: [sample, ceramic-bowl, ceramic, bowl, ceramics, photo-real]
   - id: ceramic-bowl-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: ceramic-bowl-2
     photo: "https://commons.wikimedia.org/wiki/File:Bowl_with_orchids,_by_J._Jurriaan_Kok_(form)_%26_J._Schellink_(decoration),_Haagsche_Plateelbakkerij,_Rozenburg,_Den_Haag,_1903,_ceramic_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00826.jpg"
@@ -2670,6 +2880,7 @@ images:
     tags: [sample, ceramic-bowl, ceramic, bowl, ceramics, photo-real]
   - id: chest-of-drawers-p1
     kind: sample
+    uses: [filler]
     style: photographs
     subject: chest-of-drawers
     photo: "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers,_Boston,_1680-1700,_red_cedar_with_oak_and_white_pine_-_Chazen_Museum_of_Art_-_DSC02590.JPG"
@@ -2677,6 +2888,7 @@ images:
     tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
   - id: chest-of-drawers-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: chest-of-drawers-2
     photo: "https://commons.wikimedia.org/wiki/File:Chest_of_drawers_MET_DP-16170-005.jpg"
@@ -2684,6 +2896,7 @@ images:
     tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
   - id: chest-of-drawers-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: chest-of-drawers-3
     photo: "https://commons.wikimedia.org/wiki/File:Chest_of_Drawers_(Commode),_1770-1780,_Jean-Henri_Riesener,_France,_oak,_mahogany,_kingwood,_purple_heart_and_unidentified_exotic_woods,_gilt_bronze,_marble_-_Art_Institute_of_Chicago_-_DSC09797.JPG"
@@ -2691,6 +2904,7 @@ images:
     tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
   - id: chest-of-drawers-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: chest-of-drawers-4
     photo: "https://commons.wikimedia.org/wiki/File:Clevelandart_1989.158.jpg"
@@ -2698,6 +2912,7 @@ images:
     tags: [sample, chest-of-drawers, chest, drawers, furniture, photo-real]
   - id: chest-of-drawers-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: chest-of-drawers-5
     photo: "https://commons.wikimedia.org/wiki/File:Chippendale_Carved_Cherrywood_Block_Front_Chest_of_Drawers_MET_DP269069.jpg"
@@ -2712,6 +2927,7 @@ images:
     tags: [sample, houseplant, plants, photo-real]
   - id: houseplant-p2
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: houseplant-2
     photo: "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg"
@@ -2726,6 +2942,7 @@ images:
     tags: [sample, pottery, ceramics, photo-real]
   - id: second-hand-clothes-p1
     kind: sample
+    uses: [filler]
     style: photographs
     subject: second-hand-clothes
     photo: "https://commons.wikimedia.org/wiki/File:View_on_the_flea_market_Waterlooplein_with_second_hand_clothes_stables;_free_photo_Amsterdam_city_by_Fons_Heijnsbroek,_12-10-2021.jpg"
@@ -2733,6 +2950,7 @@ images:
     tags: [sample, second-hand-clothes, clothes, photo-real]
   - id: sideboard-p1
     kind: sample
+    uses: [filler]
     style: photographs
     subject: sideboard
     photo: "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DP318023.jpg"
@@ -2740,6 +2958,7 @@ images:
     tags: [sample, sideboard, furniture, photo-real]
   - id: sideboard-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: sideboard-2
     photo: "https://commons.wikimedia.org/wiki/File:Sideboard_MET_DT7030.jpg"
@@ -2747,6 +2966,7 @@ images:
     tags: [sample, sideboard, furniture, photo-real]
   - id: sideboard-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: sideboard-3
     photo: "https://commons.wikimedia.org/wiki/File:American_sideboard,_late_18th_century,_Honolulu_Museum_of_Art,_3407.1.JPG"
@@ -2768,6 +2988,7 @@ images:
     tags: [sample, table-lamp, table, lamp, lighting, photo-real]
   - id: table-lamp-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: table-lamp-3
     photo: "https://commons.wikimedia.org/wiki/File:Table_lamp_MET_DP254463.jpg"
@@ -2775,6 +2996,7 @@ images:
     tags: [sample, table-lamp, table, lamp, lighting, photo-real]
   - id: table-lamp-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: table-lamp-4
     photo: "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
@@ -2803,6 +3025,7 @@ images:
     tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
   - id: wardrobe-p1
     kind: sample
+    uses: [filler]
     style: photographs
     subject: wardrobe
     photo: "https://commons.wikimedia.org/wiki/File:Chevening_Flats_wardrobe.jpg"
@@ -2817,6 +3040,7 @@ images:
     tags: [sample, wardrobe, furniture, photo-real]
   - id: wardrobe-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: wardrobe-3
     photo: "https://commons.wikimedia.org/wiki/File:Wardrobe_MET_DP235302.jpg"
@@ -2838,6 +3062,7 @@ images:
     tags: [sample, yoga, wellness, photo-real]
   - id: yoga-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: yoga-3
     photo: "https://commons.wikimedia.org/wiki/File:VITC_Yoga.jpg"
@@ -2845,6 +3070,7 @@ images:
     tags: [sample, yoga, wellness, photo-real]
   - id: yoga-studio-p1
     kind: sample
+    uses: [filler]
     style: photographs
     subject: yoga-studio
     photo: "https://commons.wikimedia.org/wiki/File:The_Views_From_Your_Private_Yoga_Studio_(194407539).jpeg"
@@ -2854,6 +3080,7 @@ images:
   # Pixabay pictures Johan picked from the sheet of 2026-11-08 23:27 (CC0: published before 2019-01-09; evidence/pixabay/<id>.json and credits.json).
   - id: houseplant-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: houseplant-3
     pixabay: 2556000
@@ -2861,6 +3088,7 @@ images:
     tags: [sample, houseplant, plants, photo-real]
   - id: houseplant-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: houseplant-4
     pixabay: 716579
@@ -2868,6 +3096,7 @@ images:
     tags: [sample, houseplant, plants, photo-real]
   - id: pottery-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: pottery-3
     pixabay: 2179091
@@ -2875,6 +3104,7 @@ images:
     tags: [sample, pottery, ceramics, photo-real]
   - id: pottery-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: pottery-4
     pixabay: 3050615
@@ -2889,6 +3119,7 @@ images:
     tags: [sample, second-hand-clothes, clothes, photo-real]
   - id: sideboard-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: sideboard-4
     pixabay: 416060
@@ -2896,6 +3127,7 @@ images:
     tags: [sample, sideboard, furniture, photo-real]
   - id: sideboard-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: sideboard-5
     pixabay: 948527
@@ -2903,6 +3135,7 @@ images:
     tags: [sample, sideboard, furniture, photo-real]
   - id: table-lamp-p6
     kind: sample
+    uses: [filler]
     style: photographs
     subject: table-lamp-6
     pixabay: 465350
@@ -2938,6 +3171,7 @@ images:
     tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
   - id: vintage-camera-p9
     kind: sample
+    uses: [filler]
     style: photographs
     subject: vintage-camera-9
     pixabay: 820018
@@ -2953,6 +3187,7 @@ images:
     tags: [hero, fitness, yoga, wellness, studio, indoor, photo-real]
   - id: cafe-cinnamon-buns-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: cafe-cinnamon-buns
     pixabay: 2472243
@@ -2967,6 +3202,7 @@ images:
     tags: [sample, cafe, drink, tea, photo-real]
   - id: drink-juice-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: drink-juice
     pixabay: 1614822
@@ -2974,6 +3210,7 @@ images:
     tags: [sample, cafe, drink, juice, orange, photo-real]
   - id: food-salad-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-salad
     pixabay: 791891
@@ -2990,6 +3227,7 @@ images:
     tags: [hero, marketplace, ink-wash, illustration]
   - id: market-armchair-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-armchair
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-armchair.webp"
@@ -2998,6 +3236,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, armchair]
   - id: market-books-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-books
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-books.webp"
@@ -3006,6 +3245,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, books]
   - id: market-city-bike-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-city-bike
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-city-bike.webp"
@@ -3014,6 +3254,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, city, bike]
   - id: market-guitar-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-guitar
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-guitar.webp"
@@ -3022,6 +3263,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, guitar]
   - id: market-headphones-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-headphones
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-headphones.webp"
@@ -3030,6 +3272,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, headphones]
   - id: market-lamp-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-lamp
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-lamp.webp"
@@ -3038,6 +3281,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, lamp]
   - id: market-laptop-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-laptop
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-laptop.webp"
@@ -3046,6 +3290,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, laptop]
   - id: market-record-player-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-record-player
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-record-player.webp"
@@ -3054,6 +3299,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, record, player]
   - id: market-road-bike-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-road-bike
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-road-bike.webp"
@@ -3062,6 +3308,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, road, bike]
   - id: market-rowboat-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-rowboat
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-rowboat.webp"
@@ -3070,6 +3317,7 @@ images:
     tags: [sample, marketplace, ink-wash, illustration, rowboat]
   - id: market-table-chairs-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: market-table-chairs
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/marketplace/market-table-chairs.webp"
@@ -3094,6 +3342,7 @@ images:
     tags: [hero, kiosk, ink-wash, illustration, truck, evening]
   - id: cafe-cinnamon-buns-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: cafe-cinnamon-buns
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/cafe-cinnamon-buns.webp"
@@ -3102,6 +3351,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, cinnamon, buns]
   - id: drink-coffee-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: drink-coffee
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-coffee.webp"
@@ -3110,6 +3360,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, coffee]
   - id: drink-juice-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: drink-juice
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-juice.webp"
@@ -3118,6 +3369,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, juice]
   - id: drink-tea-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: drink-tea
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/drink-tea.webp"
@@ -3126,6 +3378,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, tea]
   - id: food-bread-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-bread
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-bread.webp"
@@ -3142,6 +3395,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, burger]
   - id: food-cake-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-cake
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-cake.webp"
@@ -3150,6 +3404,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, cake]
   - id: food-cheese-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-cheese
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-cheese.webp"
@@ -3158,6 +3413,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, cheese]
   - id: food-fish-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-fish
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-fish.webp"
@@ -3166,6 +3422,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, fish]
   - id: food-salad-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-salad
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-salad.webp"
@@ -3174,6 +3431,7 @@ images:
     tags: [sample, kiosk, ink-wash, illustration, salad]
   - id: food-soup-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: food-soup
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/kiosk/food-soup.webp"
@@ -3190,6 +3448,7 @@ images:
     tags: [hero, booking, ink-wash, illustration, yoga, class]
   - id: fitness-stretching-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: fitness-stretching
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-stretching.webp"
@@ -3198,6 +3457,7 @@ images:
     tags: [sample, booking, ink-wash, illustration, stretching]
   - id: fitness-coast-run-ink
     kind: sample
+    uses: [hero, filler]
     style: ink-wash
     subject: fitness-coast-run
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-coast-run.webp"
@@ -3206,6 +3466,7 @@ images:
     tags: [sample, booking, ink-wash, illustration, coast, run]
   - id: fitness-yoga-mat-ink
     kind: sample
+    uses: [filler]
     style: ink-wash
     subject: fitness-yoga-mat
     from: "/mnt/c/Users/johan/Pictures/claude/starters/2026-11-18-0742-ink-wash-complete-sets/pictures/booking/fitness-yoga-mat.webp"
@@ -3331,6 +3592,7 @@ images:
     tags: [hero, photo-real, market, corn, vegetables, produce, food, harvest, stall, farm]
   - id: drink-coffee-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: drink-coffee
     pixabay: 2306471
@@ -3338,6 +3600,7 @@ images:
     tags: [sample, starter-kiosk, drink, coffee, cafe, latte, notebook, photo-real]
   - id: drink-coffee-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: drink-coffee-2
     pixabay: 2714970
@@ -3352,6 +3615,7 @@ images:
     tags: [sample, starter-kiosk, drink, coffee, cafe, milk, beans, photo-real]
   - id: drink-coffee-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: drink-coffee-4
     pixabay: 563797
@@ -3359,6 +3623,7 @@ images:
     tags: [sample, starter-kiosk, drink, coffee, cafe, black-coffee, sugar, beans, dark, photo-real]
   - id: drink-coffee-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: drink-coffee-5
     pixabay: 2179028
@@ -3366,6 +3631,7 @@ images:
     tags: [sample, starter-kiosk, drink, coffee, cafe, cappuccino, latte-art, wood, photo-real]
   - id: food-bread-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread
     pixabay: 2436370
@@ -3373,6 +3639,7 @@ images:
     tags: [sample, starter-kiosk, food, bread, bakery, baguette, oven, photo-real]
   - id: food-bread-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread-2
     pixabay: 3467243
@@ -3380,6 +3647,7 @@ images:
     tags: [sample, starter-kiosk, food, bread, bakery, rolls, buns, photo-real]
   - id: food-bread-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread-3
     pixabay: 1743939
@@ -3387,6 +3655,7 @@ images:
     tags: [sample, starter-kiosk, food, bread, bakery, baguette, crust, wide, photo-real]
   - id: food-bread-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread-4
     pixabay: 1281053
@@ -3394,6 +3663,7 @@ images:
     tags: [sample, starter-kiosk, food, bread, bakery, loaves, rustic, photo-real]
   - id: food-bread-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread-5
     pixabay: 399286
@@ -3401,6 +3671,7 @@ images:
     tags: [sample, starter-kiosk, food, bread, bakery, wholegrain, sliced, photo-real]
   - id: food-bread-p6
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-bread-6
     pixabay: 2193537
@@ -3415,6 +3686,7 @@ images:
     tags: [sample, starter-kiosk, food, burger, fast-food, fries, cheeseburger, dark, photo-real]
   - id: food-burger-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-burger-2
     pixabay: 494706
@@ -3429,6 +3701,7 @@ images:
     tags: [sample, starter-kiosk, food, burger, fast-food, fries, belly, body, not-for-menus, photo-real]
   - id: food-burger-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-burger-4
     pixabay: 500054
@@ -3436,6 +3709,7 @@ images:
     tags: [sample, starter-kiosk, food, burger, fast-food, bacon, pickles, photo-real]
   - id: food-burger-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-burger-5
     pixabay: 3419713
@@ -3443,6 +3717,7 @@ images:
     tags: [sample, starter-kiosk, food, burger, fast-food, barbecue, grill, outdoor, photo-real]
   - id: food-burger-p6
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-burger-6
     pixabay: 3442227
@@ -3450,6 +3725,7 @@ images:
     tags: [sample, starter-kiosk, food, burger, fast-food, fries, bacon, photo-real]
   - id: food-cake-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cake
     pixabay: 1850011
@@ -3457,6 +3733,7 @@ images:
     tags: [sample, starter-kiosk, food, cake, dessert, chocolate, strawberry, slice, photo-real]
   - id: food-cake-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cake-2
     pixabay: 3060458
@@ -3464,6 +3741,7 @@ images:
     tags: [sample, starter-kiosk, food, cake, dessert, lemon, slice, table, photo-real]
   - id: food-cake-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cake-3
     pixabay: 1263099
@@ -3471,6 +3749,7 @@ images:
     tags: [sample, starter-kiosk, food, cake, dessert, strawberry, roll, cream, photo-real]
   - id: food-cake-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cake-4
     pixabay: 398966
@@ -3478,6 +3757,7 @@ images:
     tags: [sample, starter-kiosk, food, cake, dessert, orange, chocolate, photo-real]
   - id: food-cake-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cake-5
     pixabay: 1786311
@@ -3492,6 +3772,7 @@ images:
     tags: [sample, starter-kiosk, food, cake, dessert, matcha, green-tea, crepe, photo-real]
   - id: food-cheese-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cheese
     pixabay: 1887233
@@ -3499,6 +3780,7 @@ images:
     tags: [sample, starter-kiosk, food, cheese, cheese-board, wine, grapes, honey, photo-real]
   - id: food-cheese-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cheese-2
     pixabay: 1776657
@@ -3506,6 +3788,7 @@ images:
     tags: [sample, starter-kiosk, food, cheese, spread, dip, flowers, photo-real]
   - id: food-cheese-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cheese-3
     pixabay: 3640553
@@ -3513,6 +3796,7 @@ images:
     tags: [sample, starter-kiosk, food, cheese, fig, crostini, baguette, photo-real]
   - id: food-cheese-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cheese-4
     pixabay: 2785
@@ -3520,6 +3804,7 @@ images:
     tags: [sample, starter-kiosk, food, cheese, cheese-wheels, shelf, dairy, photo-real]
   - id: food-cheese-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-cheese-5
     pixabay: 1331447
@@ -3527,6 +3812,7 @@ images:
     tags: [sample, starter-kiosk, food, cheese, sandwich, ham, photo-real]
   - id: food-fish-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-fish
     pixabay: 3483465
@@ -3534,6 +3820,7 @@ images:
     tags: [sample, starter-kiosk, food, fish, dish, whole-fish, potatoes, lemon, photo-real]
   - id: food-fish-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-fish-2
     pixabay: 2073798
@@ -3541,6 +3828,7 @@ images:
     tags: [sample, starter-kiosk, food, fish, dish, grilled, whole-fish, platter, photo-real]
   - id: food-fish-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-fish-3
     pixabay: 1939958
@@ -3548,6 +3836,7 @@ images:
     tags: [sample, starter-kiosk, food, fish, dish, grilled, fillet, japanese, photo-real]
   - id: food-fish-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-fish-4
     pixabay: 2834177
@@ -3555,6 +3844,7 @@ images:
     tags: [sample, starter-kiosk, food, fish, dish, fillet, sauce, pastry, photo-real]
   - id: food-fish-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-fish-5
     pixabay: 3805768
@@ -3569,6 +3859,7 @@ images:
     tags: [sample, starter-kiosk, food, fish, dish, fried, salad, photo-real]
   - id: food-soup-p
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup
     pixabay: 2288056
@@ -3576,6 +3867,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, tomato, bowl, photo-real]
   - id: food-soup-p2
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup-2
     pixabay: 2972858
@@ -3583,6 +3875,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, pumpkin, jar, seeds, photo-real]
   - id: food-soup-p3
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup-3
     pixabay: 3645375
@@ -3590,6 +3883,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, pumpkin, bowl, photo-real]
   - id: food-soup-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup-4
     pixabay: 1050813
@@ -3597,6 +3891,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, asian, table, chopsticks, hand, not-soup, photo-real]
   - id: food-soup-p5
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup-5
     pixabay: 3054627
@@ -3604,6 +3899,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, seafood, mussels, photo-real]
   - id: food-soup-p6
     kind: sample
+    uses: [filler]
     style: photographs
     subject: food-soup-6
     pixabay: 2152265
@@ -3611,6 +3907,7 @@ images:
     tags: [sample, starter-kiosk, food, soup, dish, potato, wild-garlic, photo-real]
   - id: fitness-coast-run-p
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: fitness-coast-run
     pixabay: 3439836
@@ -3618,6 +3915,7 @@ images:
     tags: [sample, starter-booking, coast, sea, outdoor, path, boardwalk, dunes, photo-real]
   - id: fitness-coast-run-p2
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: fitness-coast-run-2
     pixabay: 1944724
@@ -3625,6 +3923,7 @@ images:
     tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, wide, photo-real]
   - id: fitness-coast-run-p3
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: fitness-coast-run-3
     pixabay: 3015546
@@ -3632,6 +3931,7 @@ images:
     tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, sand, photo-real]
   - id: fitness-coast-run-p4
     kind: sample
+    uses: [filler]
     style: photographs
     subject: fitness-coast-run-4
     pixabay: 123476
@@ -3639,6 +3939,7 @@ images:
     tags: [sample, starter-booking, coast, sea, outdoor, path, cliffs, chalk, photo-real]
   - id: fitness-coast-run-p5
     kind: sample
+    uses: [hero, filler]
     style: photographs
     subject: fitness-coast-run-5
     pixabay: 184421
