@@ -36,6 +36,29 @@ A rerun only makes what is missing; get the current pictures first from the late
 
 **Replacing a picture.** Served pictures are cached for a year, so an id that has been uploaded (listed in `uploaded.json`) never gets a new picture. To replace a rejected one, give its manifest entry a new id (`hero-salon` → `hero-salon-b`) and a better prompt, run `--only hero-salon-b`, then `--upload`: the old id is no longer in the manifest, so its object is deleted from the bucket. The script refuses to regenerate an uploaded id. Commit `uploaded.json` after every upload. A picture never uploaded can simply be deleted and made again with `--only <id>`. Batch ids are kept in `batches.json` until fetched.
 
+## Enlarged copies
+
+A picture narrower than one of its uses needs (hero 2400, filler and item page 1600) gets enlarged copies from a local AI upscaler, made by `scripts/upscale.mjs` (how it runs is in its header). The source stays as it is; `index.json` lists the copies' widths beside it, and an enlarged picture carries no AI label or credit line of its own.
+
+```sh
+node scripts/upscale.mjs --dry-run      # what is still to do, in order
+node scripts/upscale.mjs --limit 24     # the next 24, one at a time; a rerun skips what is done
+node scripts/upscale.mjs --sheet 24     # a crop sheet of the last 24 results, to judge by eye
+node scripts/make-images.mjs --index    # the copies' widths into index.json
+```
+
+Every result is judged before it is served, in two steps:
+
+1. **The check.** The 4x result scaled back down is compared with the source; a mean difference above 6 (0 to 255) is an outlier, and its copies are not used.
+2. **The eye.** Each crop sheet is looked at, and a result is *kept* (served at its source size, no copies) when the upscaler invented something:
+   - **Painted grass or foliage** in a photograph, or a changed depth of field (a blurred background made sharp). Ink and watercolour drawings keep their own texture and pass.
+   - **Synthetic textures or artefacts**: knit, skin or fabric turned to a pattern, a smear or blot that is not in the source.
+   - **Faces about a sixth of the picture's height or more**, or readable text or glyphs that change. Small faces in a group and text that comes out unchanged pass.
+
+   A kept result is a line `"status": "kept"` with its reason in `images/upscaled/results.jsonl`.
+
+The first full run (2026-11-20, 439 sources): 353 enlarged, 16 outliers, 70 kept by eye.
+
 ## Real photographs
 
 Only CC0 or public domain, from Wikimedia Commons (whose volunteers review licences), Pixabay's pictures from before its licence changed, or the WordPress Photo Directory (whose every photo is CC0 1.0), never under a stock site's own licence (a CC0 mark on Flickr or another stock site is the uploader's own word, and copies of Pixabay's, Unsplash's or Pexels' pictures elsewhere are not taken). That holds on Commons too: a Commons file whose credit points to Unsplash, Flickr, Pixel.la, Pexels, Pixabay or another stock site is a copy, and `make-images.mjs` refuses it (`STOCK` in `commons.mjs`).
