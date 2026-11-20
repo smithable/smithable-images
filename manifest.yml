@@ -2138,7 +2138,7 @@ images:
     kind: logo
     prompt: "Three nested arcs in teal, amber and coral."
     alt: "Three nested arcs"
-    tags: [logo, mark, abstract, geometric, rainbow, children]
+    tags: [logo, mark, abstract, geometric, rainbow]
   - id: logo-knot-c
     kind: logo
     prompt: "A thick rope tied in a simple overhand knot with both ends showing, in magenta."
@@ -2154,7 +2154,7 @@ images:
     kind: logo
     prompt: "Two interlinked rings, one clear blue and one amber."
     alt: "Two interlinked rings"
-    tags: [logo, mark, starter-crm, crm, sales, client, customer, deal, partners]
+    tags: [logo, mark, starter-crm, crm, sales, deal, partners]
   - id: logo-receipt-c
     kind: logo
     prompt: "A receipt with a zigzag torn bottom edge and three short lines on it, in teal with an amber coin at its corner."
@@ -2164,7 +2164,7 @@ images:
     kind: logo
     prompt: "The silhouette of a price tag with a round hole and a short string: a single solid coral shape and nothing inside it."
     alt: "A price tag"
-    tags: [logo, mark, starter-marketplace, market, second-hand, shop, sell, listing]
+    tags: [logo, mark, starter-marketplace, market, second-hand, sell, listing]
   - id: logo-cards-c
     kind: logo
     prompt: "Three plain rounded rectangles stacked with a slight offset, like a fanned deck of cards, in clear blue, teal and amber, with nothing drawn on them."
@@ -2214,7 +2214,7 @@ images:
     kind: logo
     prompt: "A football with a simple pattern of pentagons, in a fresh green and white."
     alt: "A football"
-    tags: [logo, mark, football, club, sports, match, league, team, player]
+    tags: [logo, mark, football, sports, match, league, team, player]
   - id: logo-dumbbell-c
     kind: logo
     prompt: "A dumbbell, in coral."
@@ -2249,7 +2249,7 @@ images:
     kind: logo
     prompt: "A key with a round bow, in amber."
     alt: "A key"
-    tags: [logo, mark, property, rental, cabin, hotel, home, apartment, booking, locksmith]
+    tags: [logo, mark, property, rental, cabin, cottage, holiday, hotel, home, apartment, locksmith]
   - id: logo-coins-c
     kind: logo
     prompt: "Three coins stacked, in amber, with one coin beside them in teal."
@@ -2264,7 +2264,7 @@ images:
     kind: logo
     prompt: "An open book seen from the front, in teal with lighter teal pages, no dark outlines, nothing drawn on the pages."
     alt: "An open book"
-    tags: [logo, mark, library, books, education, archive, reading, club]
+    tags: [logo, mark, library, books, education, archive, reading]
   - id: logo-ticket-c
     kind: logo
     prompt: "A plain ticket with a half-round notch on each side and a dashed line across it, solid magenta, with no letters or symbols on it."
@@ -2289,17 +2289,17 @@ images:
     kind: logo
     prompt: "A small car seen from the side, in clear blue."
     alt: "A car from the side"
-    tags: [logo, mark, car, garage, mechanic, repair, driving, taxi]
+    tags: [logo, mark, car, garage, mechanic, driving, taxi]
   - id: logo-bike-c
     kind: logo
     prompt: "A bicycle, in teal."
     alt: "A bicycle"
-    tags: [logo, mark, bike, cycling, repair, rental, delivery]
+    tags: [logo, mark, bike, cycling, rental, delivery]
   - id: logo-scissors-c
     kind: logo
     prompt: "Open scissors, in magenta."
     alt: "Open scissors"
-    tags: [logo, mark, salon, hair, hairdresser, barber, haircut, beauty, tailor]
+    tags: [starter-barbers, logo, mark, salon, hair, hairdresser, barber, haircut, beauty, tailor]
   - id: logo-plane-c
     kind: logo
     prompt: "A folded paper plane, in clear blue."
@@ -2339,7 +2339,7 @@ images:
     kind: logo
     prompt: "A rounded speech bubble with three dots, in clear blue."
     alt: "A speech bubble"
-    tags: [logo, mark, ticket, helpdesk, support, chat, contact, feedback]
+    tags: [starter-support, logo, mark, ticket, helpdesk, support, chat, contact, feedback]
   - id: logo-calendar-c
     kind: logo
     prompt: "A calendar page with one day marked, in coral with an amber mark."
@@ -2354,7 +2354,7 @@ images:
     kind: logo
     prompt: "The silhouette of a shopping bag with two handles: a single solid amber shape and nothing inside it."
     alt: "A shopping bag"
-    tags: [logo, mark, shop, retail, store, boutique, order]
+    tags: [logo, mark, shop, retail, store, boutique]
   - id: logo-pin-c
     kind: logo
     prompt: "A map pin, in coral."
@@ -2581,6 +2581,126 @@ images:
     photo: "https://commons.wikimedia.org/wiki/File:Wooden_toys_with_wheels.jpg"
     alt: "Three wooden pull-along toys: a car, a star and a duck"
     tags: [sample, starter-marketplace, toys, kids, wooden, second-hand, photo-real]
+  - id: logo-bolt
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A lightning bolt, in amber."
+    alt: "A lightning bolt"
+    tags: [logo, mark, electrician, electrical, electricity, solar, wiring]
+  - id: logo-roller
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A paint roller, in coral."
+    alt: "A paint roller"
+    tags: [logo, mark, painter, decorator, decorating, wallpaper]
+  - id: logo-sparkle
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A four-pointed sparkle star, in a clear blue."
+    alt: "A sparkle"
+    tags: [logo, mark, cleaning, cleaner, housekeeping, janitor]
+  - id: logo-stones
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "Three smooth stones stacked in balance, in teal."
+    alt: "Three stacked stones"
+    tags: [logo, mark, massage, spa, physiotherapy, physio, sauna, therapist]
+  - id: logo-polish
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A bottle of nail polish, in coral."
+    alt: "A bottle of nail polish"
+    tags: [logo, mark, manicure, pedicure, cosmetics, makeup]
+  - id: logo-hanger
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A clothes hanger, in a clear blue."
+    alt: "A clothes hanger"
+    tags: [logo, mark, laundry, launderette, clothing, clothes, wardrobe]
+  - id: logo-van
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A small delivery van seen from the side, in teal."
+    alt: "A small van"
+    tags: [logo, mark, removals, movers, courier, van, truck, starter-kiosk]
+  - id: logo-pizza
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A slice of pizza, in amber and coral."
+    alt: "A slice of pizza"
+    tags: [logo, mark, pizza, pizzeria, takeaway]
+  - id: logo-beer
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A glass of beer with foam, in amber."
+    alt: "A glass of beer"
+    tags: [logo, mark, brewery, beer, pub, bar, taproom]
+  - id: logo-fish
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A simple fish, in a clear blue."
+    alt: "A fish"
+    tags: [logo, mark, fish, fishmonger, fishing, angling, aquarium, sushi, seafood]
+  - id: logo-kite
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A kite with a short tail, in coral."
+    alt: "A kite"
+    tags: [logo, mark, daycare, preschool, kindergarten, childminding, childcare]
+  - id: logo-scales
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A pair of balance scales, in teal."
+    alt: "A pair of scales"
+    tags: [logo, mark, lawyer, law, legal, notary, mediation, attorney]
+  - id: logo-briefcase
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A briefcase, in a clear blue."
+    alt: "A briefcase"
+    tags: [logo, mark, consulting, consultant, office, coworking, recruitment, hiring, candidate, agency]
+  - id: logo-laptop
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "An open laptop, in teal."
+    alt: "An open laptop"
+    tags: [logo, mark, computer, laptop, software, website]
+  - id: logo-nib
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A fountain pen nib, in a clear blue."
+    alt: "A pen nib"
+    tags: [logo, mark, design, designer, writing, writer, translation, translator, printing, print]
+  - id: logo-racket
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A tennis racket, in a fresh green."
+    alt: "A tennis racket"
+    tags: [logo, mark, tennis, padel, badminton, racket]
+  - id: logo-glove
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A boxing glove, in coral."
+    alt: "A boxing glove"
+    tags: [logo, mark, boxing, martial, judo, karate, taekwondo, kickboxing, jujitsu, dojo]
+  - id: logo-snowflake
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A snowflake, in a clear blue."
+    alt: "A snowflake"
+    tags: [logo, mark, skiing, ski, snow, skating, rink]
+  - id: logo-flame
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A single flame, in amber and coral."
+    alt: "A flame"
+    tags: [logo, mark, heating, chimney, fireplace, stove, firewood, barbecue]
+  - id: logo-glasses
+    kind: logo
+    model: gpt-image-1.5
+    prompt: "A pair of round eyeglasses, in teal."
+    alt: "A pair of glasses"
+    tags: [logo, mark, optician, optometrist, eyewear, spectacles, eyeglasses]
   - id: logo-mono-stillwater-c
     kind: logo
     prompt-style: monogram
