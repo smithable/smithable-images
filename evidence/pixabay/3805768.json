@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3805768,
+  "page": "https://pixabay.com/photos/ayu-fish-food-grilled-fish-3805768/",
+  "uploaded": "2018-11-10",
+  "uploadedFrom": "/photo/2018/11/10/00/38/ayu-3805768_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/ayu-fish-food-grilled-fish-3805768/",
+      "https://pixabay.com/en/ayu-fish-food-grilled-fish-3805768/"
+    ],
+    "snapshot": null
+  },
+  "author": "takedahrs",
+  "tags": "ayu, fish, food, grilled fish, japanese food, gourmand, meal, river fish, freshwater fish, restaurant, food photo, grilled with salt, japan contest",
+  "size": {
+    "original": [
+      6000,
+      4000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

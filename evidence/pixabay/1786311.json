@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1786311,
+  "page": "https://pixabay.com/photos/dessert-berries-calories-ice-cream-1786311/",
+  "uploaded": "2016-10-31",
+  "uploadedFrom": "/photo/2016/10/31/18/14/dessert-1786311_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/dessert-berries-calories-ice-cream-1786311/",
+      "https://pixabay.com/en/dessert-berries-calories-ice-cream-1786311/"
+    ],
+    "snapshot": null
+  },
+  "author": "Einladung_zum_Essen",
+  "tags": "dessert, berries, calories, ice cream, fruits, frozen dessert, presentation",
+  "size": {
+    "original": [
+      5184,
+      3456
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 563797,
+  "page": "https://pixabay.com/photos/coffee-milk-sugar-cup-of-coffee-563797/",
+  "uploaded": "2014-12-11",
+  "uploadedFrom": "/photo/2014/12/11/02/56/coffee-563797_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/coffee-milk-sugar-cup-of-coffee-563797/",
+      "https://pixabay.com/en/coffee-milk-sugar-cup-of-coffee-563797/"
+    ],
+    "snapshot": null
+  },
+  "author": "shixugang",
+  "tags": "coffee, milk, sugar, cup of coffee, coffee cup, coffee beans, aroma, black coffee, caffeine, cafe, coffee break",
+  "size": {
+    "original": [
+      4080,
+      2720
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

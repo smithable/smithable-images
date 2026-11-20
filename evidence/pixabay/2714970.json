@@ -1,0 +1,27 @@
+{
+  "pixabayId": 2714970,
+  "page": "https://pixabay.com/photos/coffee-coffee-cup-cup-drink-beans-2714970/",
+  "uploaded": "2017-09-04",
+  "uploadedFrom": "/photo/2017/09/04/18/39/coffee-2714970_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/coffee-coffee-cup-cup-drink-beans-2714970/",
+      "https://pixabay.com/en/coffee-coffee-cup-cup-drink-beans-2714970/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20180914055755/https://pixabay.com/en/coffee-coffee-cup-cup-drink-beans-2714970/",
+      "timestamp": "20180914055755"
+    }
+  },
+  "author": "cocoparisienne",
+  "tags": "coffee, coffee cup, cup, drink, beans, coffee beans, wooden table, still life, cafe, aroma, coffee break, black coffee, brewed coffee, hot coffee, caffeine, morning coffee",
+  "size": {
+    "original": [
+      4000,
+      2666
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

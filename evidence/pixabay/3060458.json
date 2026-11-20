@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3060458,
+  "page": "https://pixabay.com/photos/cake-dessert-food-lemon-3060458/",
+  "uploaded": "2018-01-04",
+  "uploadedFrom": "/photo/2018/01/04/11/40/cake-3060458_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/cake-dessert-food-lemon-3060458/",
+      "https://pixabay.com/en/cake-dessert-food-lemon-3060458/"
+    ],
+    "snapshot": null
+  },
+  "author": "moiranazzari",
+  "tags": "cake, dessert, food, lemon, icing sugar, lemon cake, knife, fresh",
+  "size": {
+    "original": [
+      4893,
+      3381
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

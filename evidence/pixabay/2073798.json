@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2073798,
+  "page": "https://pixabay.com/photos/fish-grill-bbq-natural-food-dinner-2073798/",
+  "uploaded": "2017-02-17",
+  "uploadedFrom": "/photo/2017/02/17/10/45/fish-2073798_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/fish-grill-bbq-natural-food-dinner-2073798/",
+      "https://pixabay.com/en/fish-grill-bbq-natural-food-dinner-2073798/"
+    ],
+    "snapshot": null
+  },
+  "author": "pompi",
+  "tags": "fish, grill, bbq, natural food, dinner, food, fresh, healthy, kitchen, lunch",
+  "size": {
+    "original": [
+      3715,
+      2477
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

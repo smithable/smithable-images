@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2306471,
+  "page": "https://pixabay.com/photos/coffee-pen-notebook-open-notebook-2306471/",
+  "uploaded": "2017-05-12",
+  "uploadedFrom": "/photo/2017/05/12/08/29/coffee-2306471_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/coffee-pen-notebook-open-notebook-2306471/",
+      "https://pixabay.com/en/coffee-pen-notebook-open-notebook-2306471/"
+    ],
+    "snapshot": null
+  },
+  "author": "Engin_Akyurt",
+  "tags": "coffee, pen, notebook, open notebook, empty notebook, caffeine, cup, cafe, coffee cup, latte, latte art, cappuccino, morning coffee, coffee break, beverage",
+  "size": {
+    "original": [
+      7952,
+      5304
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

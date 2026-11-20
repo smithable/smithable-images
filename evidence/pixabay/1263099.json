@@ -1,0 +1,27 @@
+{
+  "pixabayId": 1263099,
+  "page": "https://pixabay.com/photos/strawberry-roll-strawberry-1263099/",
+  "uploaded": "2016-03-17",
+  "uploadedFrom": "/photo/2016/03/17/15/26/strawberry-roll-1263099_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/strawberry-roll-strawberry-1263099/",
+      "https://pixabay.com/en/strawberry-roll-strawberry-1263099/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20170227043335/https://pixabay.com/en/strawberry-roll-strawberry-1263099/",
+      "timestamp": "20170227043335"
+    }
+  },
+  "author": "RitaE",
+  "tags": "strawberry roll, strawberry, strawberrycake, bisquit, biscuit roll, cream, cakes, to bake, piece of cake, cute, meal, date of birth, yummy, strawberry slices, food",
+  "size": {
+    "original": [
+      6000,
+      4000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

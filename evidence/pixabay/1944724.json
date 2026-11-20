@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1944724,
+  "page": "https://pixabay.com/photos/ocean-dune-atlantic-coast-atlantic-1944724/",
+  "uploaded": "2017-01-01",
+  "uploadedFrom": "/photo/2017/01/01/15/04/ocean-1944724_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/ocean-dune-atlantic-coast-atlantic-1944724/",
+      "https://pixabay.com/en/ocean-dune-atlantic-coast-atlantic-1944724/"
+    ],
+    "snapshot": null
+  },
+  "author": "Counselling",
+  "tags": "ocean, dune, atlantic coast, atlantic, sand, sea, sand dune, expanse, shifting dune, heaven, freedom, beach, wooden planks, vacations, nature, coast, water, waves, summer, lonely, by the sea, landscape, beautiful beaches, quiet, beach hike, lonely beach, blue, sea view, relaxation, paradise, sun, relax, outlook, waters, meditation, mood, bay",
+  "size": {
+    "original": [
+      5184,
+      1771
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

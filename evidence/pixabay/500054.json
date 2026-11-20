@@ -1,0 +1,27 @@
+{
+  "pixabayId": 500054,
+  "page": "https://pixabay.com/photos/burger-bacon-snack-fast-food-bun-500054/",
+  "uploaded": "2014-10-23",
+  "uploadedFrom": "/photo/2014/10/23/18/05/burger-500054_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/burger-bacon-snack-fast-food-bun-500054/",
+      "https://pixabay.com/en/burger-bacon-snack-fast-food-bun-500054/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20161118065328/https://pixabay.com/en/burger-bacon-snack-fast-food-bun-500054/",
+      "timestamp": "20161118065328"
+    }
+  },
+  "author": "stevepb",
+  "tags": "burger, bacon, snack, fast food, bun, food, grilled, lunch, junk food, meal, gherkin, eat, hamburger",
+  "size": {
+    "original": [
+      5472,
+      3648
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

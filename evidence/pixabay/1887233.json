@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1887233,
+  "page": "https://pixabay.com/photos/cheese-snacks-appetizer-nutrition-1887233/",
+  "uploaded": "2016-12-06",
+  "uploadedFrom": "/photo/2016/12/06/18/27/cheese-1887233_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/cheese-snacks-appetizer-nutrition-1887233/",
+      "https://pixabay.com/en/cheese-snacks-appetizer-nutrition-1887233/"
+    ],
+    "snapshot": null
+  },
+  "author": "Daria-Yakovleva",
+  "tags": "cheese, snacks, appetizer, nutrition, gourmet, plate, rustic, gastronomy, dish, food",
+  "size": {
+    "original": [
+      3327,
+      4687
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

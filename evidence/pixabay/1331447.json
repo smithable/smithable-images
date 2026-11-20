@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1331447,
+  "page": "https://pixabay.com/photos/open-sandwich-bread-bread-and-butter-1331447/",
+  "uploaded": "2016-04-15",
+  "uploadedFrom": "/photo/2016/04/15/17/19/open-sandwich-1331447_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/open-sandwich-bread-bread-and-butter-1331447/",
+      "https://pixabay.com/en/open-sandwich-bread-bread-and-butter-1331447/"
+    ],
+    "snapshot": null
+  },
+  "author": "andreas160578",
+  "tags": "open sandwich, bread, bread and butter, cheese, ham, slice of bread, open-faced sandwich, healthy, meal, healthy food, breakfast, diet, eat, food, nutrition, food photography",
+  "size": {
+    "original": [
+      5616,
+      3744
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

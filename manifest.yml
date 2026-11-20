@@ -3329,3 +3329,360 @@ images:
     wordpress: "37569366ea"
     alt: "A heap of husked white corn cobs at a market"
     tags: [hero, photo-real, market, corn, vegetables, produce, food, harvest, stall, farm]
+  - id: drink-coffee-p
+    kind: sample
+    style: photographs
+    subject: drink-coffee
+    pixabay: 2306471
+    alt: "A latte with leaf-shaped art in a blue cup beside an open notebook and pen on a wooden table"
+    tags: [sample, starter-kiosk, drink, coffee, cafe, latte, notebook, photo-real]
+  - id: drink-coffee-p2
+    kind: sample
+    style: photographs
+    subject: drink-coffee-2
+    pixabay: 2714970
+    alt: "Black coffee in a white cup on a saucer with coffee beans and a spoon, seen from above on a cracked wooden stump"
+    tags: [sample, starter-kiosk, drink, coffee, cafe, black-coffee, beans, wood, photo-real]
+  - id: drink-coffee-p3
+    kind: sample
+    style: photographs
+    subject: drink-coffee-3
+    pixabay: 563800
+    alt: "Milk poured into a cup of coffee on a saucer, coffee beans around it and a red mask behind"
+    tags: [sample, starter-kiosk, drink, coffee, cafe, milk, beans, photo-real]
+  - id: drink-coffee-p4
+    kind: sample
+    style: photographs
+    subject: drink-coffee-4
+    pixabay: 563797
+    alt: "Black coffee with a sugar cube on a spoon, a white milk jug and coffee beans on a dark table"
+    tags: [sample, starter-kiosk, drink, coffee, cafe, black-coffee, sugar, beans, dark, photo-real]
+  - id: drink-coffee-p5
+    kind: sample
+    style: photographs
+    subject: drink-coffee-5
+    pixabay: 2179028
+    alt: "A cappuccino with heart-shaped art in a white cup marked Café on a weathered wooden table"
+    tags: [sample, starter-kiosk, drink, coffee, cafe, cappuccino, latte-art, wood, photo-real]
+  - id: food-bread-p
+    kind: sample
+    style: photographs
+    subject: food-bread
+    pixabay: 2436370
+    alt: "Crusty baguettes on a linen cloth in front of a brick bread oven"
+    tags: [sample, starter-kiosk, food, bread, bakery, baguette, oven, photo-real]
+  - id: food-bread-p2
+    kind: sample
+    style: photographs
+    subject: food-bread-2
+    pixabay: 3467243
+    alt: "A pile of crusty white bread rolls"
+    tags: [sample, starter-kiosk, food, bread, bakery, rolls, buns, photo-real]
+  - id: food-bread-p3
+    kind: sample
+    style: photographs
+    subject: food-bread-3
+    pixabay: 1743939
+    alt: "A close-up of a baguette's golden crust, a very wide crop"
+    tags: [sample, starter-kiosk, food, bread, bakery, baguette, crust, wide, photo-real]
+  - id: food-bread-p4
+    kind: sample
+    style: photographs
+    subject: food-bread-4
+    pixabay: 1281053
+    alt: "Rustic floured loaves of bread heaped together"
+    tags: [sample, starter-kiosk, food, bread, bakery, loaves, rustic, photo-real]
+  - id: food-bread-p5
+    kind: sample
+    style: photographs
+    subject: food-bread-5
+    pixabay: 399286
+    alt: "Sliced loaves of wholegrain and white bread"
+    tags: [sample, starter-kiosk, food, bread, bakery, wholegrain, sliced, photo-real]
+  - id: food-bread-p6
+    kind: sample
+    style: photographs
+    subject: food-bread-6
+    pixabay: 2193537
+    alt: "Large floured country loaves on a wooden board"
+    tags: [sample, starter-kiosk, food, bread, bakery, loaves, rustic, country, photo-real]
+  - id: food-burger-p
+    kind: sample
+    style: photographs
+    subject: food-burger
+    pixabay: 2635035
+    alt: "A cheeseburger and French fries on a wooden board against a dark background"
+    tags: [sample, starter-kiosk, food, burger, fast-food, fries, cheeseburger, dark, photo-real]
+  - id: food-burger-p2
+    kind: sample
+    style: photographs
+    subject: food-burger-2
+    pixabay: 494706
+    alt: "Two burgers with basil, mozzarella, tomato and onion on a wooden board"
+    tags: [sample, starter-kiosk, food, burger, fast-food, basil, gourmet, photo-real]
+  - id: food-burger-p3
+    kind: sample
+    style: photographs
+    subject: food-burger-3
+    pixabay: 2683042
+    alt: "A cheeseburger and fries on a board in front of a man's bare belly, a hand resting on it"
+    tags: [sample, starter-kiosk, food, burger, fast-food, fries, belly, body, not-for-menus, photo-real]
+  - id: food-burger-p4
+    kind: sample
+    style: photographs
+    subject: food-burger-4
+    pixabay: 500054
+    alt: "Two bacon burgers with jalapeños and onions, pickles on the plate"
+    tags: [sample, starter-kiosk, food, burger, fast-food, bacon, pickles, photo-real]
+  - id: food-burger-p5
+    kind: sample
+    style: photographs
+    subject: food-burger-5
+    pixabay: 3419713
+    alt: "Burger patties turned with tongs on a flaming barbecue grill outdoors"
+    tags: [sample, starter-kiosk, food, burger, fast-food, barbecue, grill, outdoor, photo-real]
+  - id: food-burger-p6
+    kind: sample
+    style: photographs
+    subject: food-burger-6
+    pixabay: 3442227
+    alt: "A sesame-bun burger with bacon and salad beside crinkle-cut fries in a metal pail, on a red checked cloth"
+    tags: [sample, starter-kiosk, food, burger, fast-food, fries, bacon, photo-real]
+  - id: food-cake-p
+    kind: sample
+    style: photographs
+    subject: food-cake
+    pixabay: 1850011
+    alt: "A slice of chocolate cake with a strawberry on top and a fork, on a white plate"
+    tags: [sample, starter-kiosk, food, cake, dessert, chocolate, strawberry, slice, photo-real]
+  - id: food-cake-p2
+    kind: sample
+    style: photographs
+    subject: food-cake-2
+    pixabay: 3060458
+    alt: "A lemon poppy-seed cake dusted with icing sugar, a slice on a floral plate, lemons and a knife beside it"
+    tags: [sample, starter-kiosk, food, cake, dessert, lemon, slice, table, photo-real]
+  - id: food-cake-p3
+    kind: sample
+    style: photographs
+    subject: food-cake-3
+    pixabay: 1263099
+    alt: "A strawberry cream roll on a plate with fresh strawberries and a small succulent"
+    tags: [sample, starter-kiosk, food, cake, dessert, strawberry, roll, cream, photo-real]
+  - id: food-cake-p4
+    kind: sample
+    style: photographs
+    subject: food-cake-4
+    pixabay: 398966
+    alt: "A small orange cake with chocolate shavings and an orange slice on a plate"
+    tags: [sample, starter-kiosk, food, cake, dessert, orange, chocolate, photo-real]
+  - id: food-cake-p5
+    kind: sample
+    style: photographs
+    subject: food-cake-5
+    pixabay: 1786311
+    alt: "Chocolate ice-cream cake slices with frozen blackberries, blueberries and redcurrants on a white plate"
+    tags: [sample, starter-kiosk, food, cake, dessert, ice-cream, berries, frozen, photo-real]
+  - id: food-cake-p6
+    kind: sample
+    style: photographs
+    subject: food-cake-6
+    pixabay: 847918
+    alt: "A slice of green-tea crêpe cake with matcha powder, a whisk and a tea bowl"
+    tags: [sample, starter-kiosk, food, cake, dessert, matcha, green-tea, crepe, photo-real]
+  - id: food-cheese-p
+    kind: sample
+    style: photographs
+    subject: food-cheese
+    pixabay: 1887233
+    alt: "A cheese board with blue cheese, cubes of hard cheese, crackers, grapes, honey and red and white wine"
+    tags: [sample, starter-kiosk, food, cheese, cheese-board, wine, grapes, honey, photo-real]
+  - id: food-cheese-p2
+    kind: sample
+    style: photographs
+    subject: food-cheese-2
+    pixabay: 1776657
+    alt: "Three bowls of spreads: a herb spread with daisies, a beetroot spread and cottage cheese"
+    tags: [sample, starter-kiosk, food, cheese, spread, dip, flowers, photo-real]
+  - id: food-cheese-p3
+    kind: sample
+    style: photographs
+    subject: food-cheese-3
+    pixabay: 3640553
+    alt: "Baguette slices with cream cheese and figs and with sliced cheese and pumpkin seeds on a board"
+    tags: [sample, starter-kiosk, food, cheese, fig, crostini, baguette, photo-real]
+  - id: food-cheese-p4
+    kind: sample
+    style: photographs
+    subject: food-cheese-4
+    pixabay: 2785
+    alt: "Round wheels of yellow cheese ripening on a wooden shelf"
+    tags: [sample, starter-kiosk, food, cheese, cheese-wheels, shelf, dairy, photo-real]
+  - id: food-cheese-p5
+    kind: sample
+    style: photographs
+    subject: food-cheese-5
+    pixabay: 1331447
+    alt: "An open sandwich of rye bread with cream cheese, ham, a cheese slice, chives and a cherry tomato"
+    tags: [sample, starter-kiosk, food, cheese, sandwich, ham, photo-real]
+  - id: food-fish-p
+    kind: sample
+    style: photographs
+    subject: food-fish
+    pixabay: 3483465
+    alt: "A pan-fried whole fish with lemon, parsley, potatoes and redcurrants on an oval plate"
+    tags: [sample, starter-kiosk, food, fish, dish, whole-fish, potatoes, lemon, photo-real]
+  - id: food-fish-p2
+    kind: sample
+    style: photographs
+    subject: food-fish-2
+    pixabay: 2073798
+    alt: "Two grilled sea bream on a silver platter with vegetables cut into flowers"
+    tags: [sample, starter-kiosk, food, fish, dish, grilled, whole-fish, platter, photo-real]
+  - id: food-fish-p3
+    kind: sample
+    style: photographs
+    subject: food-fish-3
+    pixabay: 1939958
+    alt: "A grilled fish fillet on a dark ceramic dish with a shiso leaf and lemon"
+    tags: [sample, starter-kiosk, food, fish, dish, grilled, fillet, japanese, photo-real]
+  - id: food-fish-p4
+    kind: sample
+    style: photographs
+    subject: food-fish-4
+    pixabay: 2834177
+    alt: "Pikeperch fillets in a herb sauce with potatoes in puff pastry, a salad behind"
+    tags: [sample, starter-kiosk, food, fish, dish, fillet, sauce, pastry, photo-real]
+  - id: food-fish-p5
+    kind: sample
+    style: photographs
+    subject: food-fish-5
+    pixabay: 3805768
+    alt: "A whole salt-grilled sweetfish on a wooden plate"
+    tags: [sample, starter-kiosk, food, fish, dish, grilled, whole-fish, japanese, photo-real]
+  - id: food-fish-p6
+    kind: sample
+    style: photographs
+    subject: food-fish-6
+    pixabay: 1101436
+    alt: "A fried fish with cucumber, lemon and lettuce, strawberries and a drink behind"
+    tags: [sample, starter-kiosk, food, fish, dish, fried, salad, photo-real]
+  - id: food-soup-p
+    kind: sample
+    style: photographs
+    subject: food-soup
+    pixabay: 2288056
+    alt: "A bowl of tomato soup topped with rocket and pesto"
+    tags: [sample, starter-kiosk, food, soup, dish, tomato, bowl, photo-real]
+  - id: food-soup-p2
+    kind: sample
+    style: photographs
+    subject: food-soup-2
+    pixabay: 2972858
+    alt: "Pumpkin soup in a glass jar with pumpkin seeds and a wooden spoon on a green cloth, seen from above"
+    tags: [sample, starter-kiosk, food, soup, dish, pumpkin, jar, seeds, photo-real]
+  - id: food-soup-p3
+    kind: sample
+    style: photographs
+    subject: food-soup-3
+    pixabay: 3645375
+    alt: "Pumpkin soup with dark oil and parsley in a red-rimmed bowl"
+    tags: [sample, starter-kiosk, food, soup, dish, pumpkin, bowl, photo-real]
+  - id: food-soup-p4
+    kind: sample
+    style: photographs
+    subject: food-soup-4
+    pixabay: 1050813
+    alt: "A table of shared Asian dishes seen from above, a hand with chopsticks taking food"
+    tags: [sample, starter-kiosk, food, soup, dish, asian, table, chopsticks, hand, not-soup, photo-real]
+  - id: food-soup-p5
+    kind: sample
+    style: photographs
+    subject: food-soup-5
+    pixabay: 3054627
+    alt: "Seafood soup with mussels, prawns and carrots in a dark blue pot"
+    tags: [sample, starter-kiosk, food, soup, dish, seafood, mussels, photo-real]
+  - id: food-soup-p6
+    kind: sample
+    style: photographs
+    subject: food-soup-6
+    pixabay: 2152265
+    alt: "Potato soup with carrots and herbs beside raw potatoes and wild garlic leaves"
+    tags: [sample, starter-kiosk, food, soup, dish, potato, wild-garlic, photo-real]
+  - id: fitness-coast-run-p
+    kind: sample
+    style: photographs
+    subject: fitness-coast-run
+    pixabay: 3439836
+    alt: "A wooden boardwalk with railings winding over green dunes to the sea"
+    tags: [sample, starter-booking, coast, sea, outdoor, path, boardwalk, dunes, photo-real]
+  - id: fitness-coast-run-p2
+    kind: sample
+    style: photographs
+    subject: fitness-coast-run-2
+    pixabay: 1944724
+    alt: "A wooden walkway across white sand dunes to a turquoise sea, a very wide crop"
+    tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, wide, photo-real]
+  - id: fitness-coast-run-p3
+    kind: sample
+    style: photographs
+    subject: fitness-coast-run-3
+    pixabay: 3015546
+    alt: "A sandy path between grassy dunes opening to the sea under a blue sky"
+    tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, sand, photo-real]
+  - id: fitness-coast-run-p4
+    kind: sample
+    style: photographs
+    subject: fitness-coast-run-4
+    pixabay: 123476
+    alt: "White chalk cliffs above the sea with a grassy coast path"
+    tags: [sample, starter-booking, coast, sea, outdoor, path, cliffs, chalk, photo-real]
+  - id: fitness-coast-run-p5
+    kind: sample
+    style: photographs
+    subject: fitness-coast-run-5
+    pixabay: 184421
+    alt: "Dune grass over white sand with a pale sea behind"
+    tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, grass, calm, photo-real]
+  - id: marketplace-hero-p
+    kind: hero
+    style: photographs
+    subject: marketplace-hero
+    pixabay: 1761866
+    alt: "A fish market hall shaped like a church beside a canal at dusk, its lit windows reflected in the water"
+    tags: [hero, starter-marketplace, market, fish, fish-market, canal, evening, building, photo-real]
+  - id: marketplace-hero-p2
+    kind: hero
+    style: photographs
+    subject: marketplace-hero-2
+    pixabay: 3429264
+    alt: "Fresh sardines on crushed ice"
+    tags: [hero, starter-marketplace, market, fish, sardines, ice, catch, photo-real]
+  - id: marketplace-hero-p3
+    kind: hero
+    style: photographs
+    subject: marketplace-hero-3
+    pixabay: 3429246
+    alt: "Rows of fresh fish heads packed tightly in a crate"
+    tags: [hero, starter-marketplace, market, fish, catch, crate, photo-real]
+  - id: marketplace-hero-p4
+    kind: hero
+    style: photographs
+    subject: marketplace-hero-4
+    pixabay: 1617442
+    alt: "Fresh red mullet, bream and other fish on ice at a fish stall"
+    tags: [hero, starter-marketplace, market, fish, fish-stall, ice, catch, photo-real]
+  - id: marketplace-hero-p5
+    kind: hero
+    style: photographs
+    subject: marketplace-hero-5
+    pixabay: 2536121
+    alt: "Two white boxes full of freshly caught mackerel, half a lemon on top"
+    tags: [hero, starter-marketplace, market, fish, mackerel, crate, catch, photo-real]
+  - id: marketplace-hero-p6
+    kind: hero
+    style: photographs
+    subject: marketplace-hero-6
+    pixabay: 598020
+    alt: "A red-brick fish auction hall with a glass dome on a river quay"
+    tags: [hero, starter-marketplace, market, fish, fish-market, building, harbour, photo-real]

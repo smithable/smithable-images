@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1850011,
+  "page": "https://pixabay.com/photos/cake-chocolate-chocolate-cake-1850011/",
+  "uploaded": "2016-11-22",
+  "uploadedFrom": "/photo/2016/11/22/18/52/cake-1850011_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/cake-chocolate-chocolate-cake-1850011/",
+      "https://pixabay.com/en/cake-chocolate-chocolate-cake-1850011/"
+    ],
+    "snapshot": null
+  },
+  "author": "Pexels",
+  "tags": "cake, chocolate, chocolate cake, sliced cake, cake slice, dessert, sweet, food, eat, food photography, delicious, indulgence, pastry, plate, sinful cake, slice",
+  "size": {
+    "original": [
+      6683,
+      4460
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

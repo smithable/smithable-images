@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1050813,
+  "page": "https://pixabay.com/photos/food-dishes-restaurant-meal-menu-1050813/",
+  "uploaded": "2015-11-19",
+  "uploadedFrom": "/photo/2015/11/19/10/38/food-1050813_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/food-dishes-restaurant-meal-menu-1050813/",
+      "https://pixabay.com/en/food-dishes-restaurant-meal-menu-1050813/"
+    ],
+    "snapshot": null
+  },
+  "author": "karriezhu",
+  "tags": "food, dishes, restaurant, meal, menu, dinner, tasty, delicious, table, chinese, asian, chopsticks, eat, flat lay",
+  "size": {
+    "original": [
+      1536,
+      2048
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

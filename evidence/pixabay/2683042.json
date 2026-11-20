@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2683042,
+  "page": "https://pixabay.com/photos/hamburger-p-french-fries-belly-2683042/",
+  "uploaded": "2017-08-26",
+  "uploadedFrom": "/photo/2017/08/26/13/32/hamburger-2683042_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/hamburger-p-french-fries-belly-2683042/",
+      "https://pixabay.com/en/hamburger-p-french-fries-belly-2683042/"
+    ],
+    "snapshot": null
+  },
+  "author": "Joenomias",
+  "tags": "hamburger, p, french fries, belly, abdominal fat, fat, full, filled, obesity, excess, overweight, snack, fast food, unhealthy, healthy, health, diet, food, eating habits, appetite",
+  "size": {
+    "original": [
+      5600,
+      3600
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-20"
+}

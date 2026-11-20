@@ -77,6 +77,12 @@ Two marketplace subjects (market-table-chairs, market-laptop) have no photograph
 refill them (market-headphones was refilled by market-headphones-p2 on 2026-11-20), so the marketplace starter's Photographs set is incomplete
 and not offered; after two daily batches without one, a marked AI filler takes the place.
 
+On 2026-11-20 Pixabay photographs filled nine subjects that had none (T941): the marketplace hero,
+the kiosk's coffee, bread, burger, cake, cheese, fish and soup, and the booking starter's coast run.
+Each subject's best fit is its `-p` entry; the others are alternates (`<subject>-2` and on). Two are
+tagged for what they really show: food-burger-3 has a bare belly behind the burger (`not-for-menus`),
+and food-soup-4 is a table of shared dishes, not a soup (`not-soup`).
+
 ## Versions never published
 
 `2026-11-18.5` was made and merged but never uploaded: it named eight Commons copies of stock-site
