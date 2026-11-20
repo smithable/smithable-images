@@ -35,8 +35,8 @@ test("done sources and logos are skipped", () => {
 });
 
 test("served widths come from the uses, above the source and up to the master", () => {
-  assert.deepEqual(widthsFor(hero("h", 1600), 3200), [2400, 3200]);
+  assert.deepEqual(widthsFor(hero("h", 1600), 3200), [2400]);
   assert.deepEqual(widthsFor(sample("s", 900), 3200), [1200, 1600]);
-  assert.deepEqual(widthsFor(sample("s", 900, ["filler", "hero"]), 3200), [1200, 1600, 2400, 3200]);
+  assert.deepEqual(widthsFor(sample("s", 900, ["filler", "hero"]), 3200), [800, 1200, 1600, 2400].filter((w) => w > 900));
   assert.deepEqual(widthsFor(sample("s", 600), 2400), [800, 1200, 1600]);
 });

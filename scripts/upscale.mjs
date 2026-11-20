@@ -32,7 +32,8 @@ const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const OUT = join(ROOT, "images", "upscaled");
 const RESULTS = join(OUT, "results.jsonl");
 const MIN = { hero: 2400, filler: 1600, item: 1600 };
-const SERVE = { hero: [1200, 1600, 2400, 3200], filler: [800, 1200, 1600], item: [800, 1200, 1600] };
+// Served widths (fact decisions.upscaling-plan): the master of up to 3200 is kept, not served.
+const SERVE = { hero: [800, 1600, 2400], filler: [800, 1200, 1600], item: [800, 1200, 1600] };
 const MASTER = 3200;
 const OUTLIER = Number(process.env.UPSCALE_OUTLIER ?? 6);
 const GATE_LOCK = "/var/lib/smithable-gate/.gate-lock";

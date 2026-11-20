@@ -21,3 +21,12 @@ test("a version never published is not put, and the others are, in order", () =>
   const plan = planUpload(index, ["2026-11-18.7.json", "2026-11-18.5.json", "2026-11-18.1.json", "notes.txt"]);
   assert.deepEqual(plan.versions, ["2026-11-18.1.json", "2026-11-18.7.json"]);
 });
+
+test("an enlarged entry sends its widths too, by id and by hash", () => {
+  const plan = planUpload([{ id: "sea-p", kind: "hero", sha256: "c".repeat(64), widths: [{ width: 2400, sha256: "d".repeat(64) }] }], []);
+  assert.deepEqual(plan.byId, [
+    { src: "images/hero/sea-p.webp", key: "images/hero/sea-p.webp" },
+    { src: "images/upscaled/hero/sea-p-2400.webp", key: "images/hero/sea-p-2400.webp" },
+  ]);
+  assert.deepEqual(plan.byHash.map((f) => f.key), [`images/files/${"c".repeat(64)}.webp`, `images/files/${"d".repeat(64)}.webp`]);
+});

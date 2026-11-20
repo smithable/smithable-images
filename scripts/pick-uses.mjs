@@ -54,7 +54,7 @@ async function gridOf(file) {
   return grid;
 }
 
-async function contactSheet(rows, file, title) {
+export async function contactSheet(rows, file, title) {
   const tw = 300, th = 200, lh = 18, cols = 6;
   const tiles = [];
   for (const [i, r] of rows.entries()) {
