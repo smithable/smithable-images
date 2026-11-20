@@ -12300,7 +12300,6 @@
       "brewery",
       "beer",
       "pub",
-      "bar",
       "taproom"
     ],
     "sha256": "679b5a2e36ce826ef7c166080b3bf278d51ffe0acc9ed3ae97221c0639b98c32",
@@ -12456,7 +12455,6 @@
       "mark",
       "consulting",
       "consultant",
-      "office",
       "coworking",
       "recruitment",
       "hiring",
@@ -13173,7 +13171,6 @@
       "rental",
       "cabin",
       "cottage",
-      "holiday",
       "hotel",
       "home",
       "apartment",
@@ -13253,8 +13250,7 @@
       "mark",
       "computer",
       "laptop",
-      "software",
-      "website"
+      "software"
     ],
     "sha256": "d420eec743ef87d8d91bb108ab21cb4701d88fb5648c880617c7acd856167f88",
     "width": 512,
@@ -13623,8 +13619,7 @@
       "logo",
       "mark",
       "pizza",
-      "pizzeria",
-      "takeaway"
+      "pizzeria"
     ],
     "sha256": "d7bd9768235d9a7750eef82c02ba95c6a8b38a989bf820339d92c2754e1ee6fe",
     "width": 512,
@@ -13808,6 +13803,7 @@
       "crm",
       "sales",
       "deal",
+      "relationship",
       "partners"
     ],
     "sha256": "6022b3269c26ce421c97037a503c130348c7c623832aea4cd64ae09a71d4798c",
@@ -14071,8 +14067,7 @@
       "spa",
       "physiotherapy",
       "physio",
-      "sauna",
-      "therapist"
+      "sauna"
     ],
     "sha256": "7d78451321337c9bef4f3d5a265cb97c336488b25031fe8f300529899693025e",
     "width": 512,

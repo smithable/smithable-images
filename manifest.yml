@@ -2361,7 +2361,7 @@ images:
     kind: logo
     prompt: "Two interlinked rings, one clear blue and one amber."
     alt: "Two interlinked rings"
-    tags: [logo, mark, starter-crm, crm, sales, deal, partners]
+    tags: [logo, mark, starter-crm, crm, sales, deal, relationship, partners]
   - id: logo-receipt-c
     kind: logo
     prompt: "A receipt with a zigzag torn bottom edge and three short lines on it, in teal with an amber coin at its corner."
@@ -2456,7 +2456,7 @@ images:
     kind: logo
     prompt: "A key with a round bow, in amber."
     alt: "A key"
-    tags: [logo, mark, property, rental, cabin, cottage, holiday, hotel, home, apartment, locksmith]
+    tags: [logo, mark, property, rental, cabin, cottage, hotel, home, apartment, locksmith]
   - id: logo-coins-c
     kind: logo
     prompt: "Three coins stacked, in amber, with one coin beside them in teal."
@@ -2813,7 +2813,7 @@ images:
     model: gpt-image-1.5
     prompt: "Three smooth stones stacked in balance, in teal."
     alt: "Three stacked stones"
-    tags: [logo, mark, massage, spa, physiotherapy, physio, sauna, therapist]
+    tags: [logo, mark, massage, spa, physiotherapy, physio, sauna]
   - id: logo-polish
     kind: logo
     model: gpt-image-1.5
@@ -2837,13 +2837,13 @@ images:
     model: gpt-image-1.5
     prompt: "A slice of pizza, in amber and coral."
     alt: "A slice of pizza"
-    tags: [logo, mark, pizza, pizzeria, takeaway]
+    tags: [logo, mark, pizza, pizzeria]
   - id: logo-beer
     kind: logo
     model: gpt-image-1.5
     prompt: "A glass of beer with foam, in amber."
     alt: "A glass of beer"
-    tags: [logo, mark, brewery, beer, pub, bar, taproom]
+    tags: [logo, mark, brewery, beer, pub, taproom]
   - id: logo-fish
     kind: logo
     model: gpt-image-1.5
@@ -2867,13 +2867,13 @@ images:
     model: gpt-image-1.5
     prompt: "A briefcase, in a clear blue."
     alt: "A briefcase"
-    tags: [logo, mark, consulting, consultant, office, coworking, recruitment, hiring, candidate, agency]
+    tags: [logo, mark, consulting, consultant, coworking, recruitment, hiring, candidate, agency]
   - id: logo-laptop
     kind: logo
     model: gpt-image-1.5
     prompt: "An open laptop, in teal."
     alt: "An open laptop"
-    tags: [logo, mark, computer, laptop, software, website]
+    tags: [logo, mark, computer, laptop, software]
   - id: logo-nib
     kind: logo
     model: gpt-image-1.5
