@@ -73,8 +73,8 @@ in the bucket: `--upload` never deletes an id listed under `withdrawn:` in the m
 | vintage-camera-p3 | a Commons copy of a Flickr picture | 2026-11-18 (T933) |
 | vintage-camera-p4 | a Commons copy of a Flickr picture | 2026-11-18 (T933) |
 
-The three marketplace subjects (market-table-chairs, market-laptop, market-headphones) have no
-photograph until new picks refill them, so the marketplace starter's Photographs set is incomplete
+Two marketplace subjects (market-table-chairs, market-laptop) have no photograph until new picks
+refill them (market-headphones was refilled by market-headphones-p2 on 2026-11-20), so the marketplace starter's Photographs set is incomplete
 and not offered; after two daily batches without one, a marked AI filler takes the place.
 
 ## Versions never published
