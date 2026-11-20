@@ -166,30 +166,46 @@ async function appEntries(paths) {
   return out;
 }
 
+// The top-left corner of the crop px square with the most detail (sum of absolute neighbour differences in grey).
+async function busiest(file, crop) {
+  const { data, info } = await sharp(file).greyscale().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  let best = [0, 0], most = -1;
+  for (let y = 0; y + crop <= h; y += crop / 4)
+    for (let x = 0; x + crop <= w; x += crop / 4) {
+      let sum = 0;
+      for (let j = y; j < y + crop - 1; j += 2) for (let i = x; i < x + crop - 1; i += 2) { const p = j * w + i; sum += Math.abs(data[p] - data[p + 1]) + Math.abs(data[p] - data[p + w]); }
+      if (sum > most) [most, best] = [sum, [x, y]];
+    }
+  return best;
+}
+
 async function sheet(n) {
   const rows = readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "done").slice(-n);
   const all = new Map((await libraryEntries()).map((e) => [e.id, e]));
-  const cell = 384, gap = 8, label = 24;
+  const cell = 384, gap = 8, label = 24, crop = 128, W = 4 * (cell + gap) + 3 * gap;
   const tiles = [];
   for (const [i, r] of rows.entries()) {
     const e = all.get(r.id);
     if (!e) continue;
-    // The most detailed spot of the source (sharp's attention), 96 px of it, shown at 4x by Lanczos and by the AI.
-    const crop = 96;
-    const { info } = await sharp(e.file).resize(crop, crop, { fit: "cover", position: "attention" }).toBuffer({ resolveWithObject: true });
-    const left = Math.max(0, Math.min(e.width - crop, -(info.cropOffsetLeft ?? 0)));
-    const top = Math.max(0, Math.min(e.height - crop, -(info.cropOffsetTop ?? 0)));
+    // Two spots of the source, crop px square each, shown at the same size by Lanczos and by the AI: the most
+    // detailed one (largest sum of neighbour differences) and the centre, where a face or a subject usually is.
     const k = r.master / e.width;
-    const lanczos = await sharp(e.file).extract({ left, top, width: crop, height: crop }).resize(cell, cell, { kernel: "lanczos3" }).toBuffer();
-    const ai = await sharp(join(OUT, e.kind, `${e.id}.webp`)).extract({ left: Math.round(left * k), top: Math.round(top * k), width: Math.round(crop * k), height: Math.round(crop * k) }).resize(cell, cell).toBuffer();
+    const spots = [await busiest(e.file, crop), [Math.round((e.width - crop) / 2), Math.round((e.height - crop) / 2)]];
+    const parts = [];
+    for (const [left, top] of spots) {
+      parts.push(await sharp(e.file).extract({ left, top, width: crop, height: crop }).resize(cell, cell, { kernel: "lanczos3" }).toBuffer());
+      parts.push(await sharp(join(OUT, e.kind, `${e.id}.webp`)).extract({ left: Math.round(left * k), top: Math.round(top * k), width: Math.round(crop * k), height: Math.round(crop * k) }).resize(cell, cell).toBuffer());
+    }
     const y = i * (cell + label + gap);
-    const text = `${r.id}  ${r.from}→${r.master}px  diff ${r.diff}  (left Lanczos, right AI)`;
-    tiles.push({ input: Buffer.from(`<svg width="${2 * cell + gap}" height="${label}"><text x="2" y="17" font-family="sans-serif" font-size="15" fill="#eee">${text}</text></svg>`), left: 0, top: y });
-    tiles.push({ input: lanczos, left: 0, top: y + label }, { input: ai, left: cell + gap, top: y + label });
+    const text = `${r.id}  ${r.from}→${r.master}px  diff ${r.diff}   detail: Lanczos | AI     centre: Lanczos | AI`;
+    tiles.push({ input: Buffer.from(`<svg width="${W}" height="${label}"><text x="2" y="17" font-family="sans-serif" font-size="15" fill="#eee">${text}</text></svg>`), left: 0, top: y });
+    parts.forEach((input, j) => tiles.push({ input, left: j * (cell + gap) + (j > 1 ? gap * 3 : 0), top: y + label }));
   }
-  const file = join(ROOT, "sheets", "upscale", `${new Date().toISOString().slice(0, 16).replace(/[:T]/g, "")}.jpg`);
+  const stamp = new Date().toLocaleString("sv-SE", { timeZone: "Europe/Mariehamn" }).slice(0, 16).replace(" ", "-").replace(":", "");
+  const file = join(ROOT, "images", "upscaled", "sheets", `${stamp}.jpg`);
   mkdirSync(dirname(file), { recursive: true });
-  await sharp({ create: { width: 2 * cell + gap, height: Math.max(1, tiles.length / 3) * (cell + label + gap), channels: 3, background: "#222" } })
+  await sharp({ create: { width: W, height: Math.max(1, tiles.length / 5) * (cell + label + gap), channels: 3, background: "#222" } })
     .composite(tiles).jpeg({ quality: 88 }).toFile(file);
   console.log(file);
 }
