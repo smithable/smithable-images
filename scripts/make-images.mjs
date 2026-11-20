@@ -219,14 +219,15 @@ async function store(e, input) {
     .toFile(e.file);
 }
 
-// Enlarged copies made by scripts/upscale.mjs: the last good result for each source file, by the
-// source's SHA-256, so a picture replaced since has none until it is enlarged again.
+// Enlarged copies made by scripts/upscale.mjs: the last result for each source file, by the source's
+// SHA-256, so a picture replaced since has none until it is enlarged again. Only a result "done" is
+// served; a later "kept" (judged on the crop sheet, the original stays) withdraws it.
 const UPSCALED = join(ROOT, "images", "upscaled");
-const upscaled = new Map(
-  existsSync(join(UPSCALED, "results.jsonl"))
-    ? readFileSync(join(UPSCALED, "results.jsonl"), "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "done").map((r) => [r.sha256, r])
-    : [],
-);
+const upscaled = new Map();
+if (existsSync(join(UPSCALED, "results.jsonl")))
+  for (const r of readFileSync(join(UPSCALED, "results.jsonl"), "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)))
+    if (r.status === "done") upscaled.set(r.sha256, r);
+    else upscaled.delete(r.sha256);
 
 // The served widths above the stored copy, each with its own address and hash (the stored copy stays
 // url, width and height, as old readers know them).

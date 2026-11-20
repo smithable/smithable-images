@@ -172,8 +172,8 @@ async function busiest(file, crop) {
   const { data, info } = await sharp(file).greyscale().raw().toBuffer({ resolveWithObject: true });
   const { width: w, height: h } = info;
   let best = [0, 0], most = -1;
-  for (let y = 0; y + crop <= h; y += crop / 4)
-    for (let x = 0; x + crop <= w; x += crop / 4) {
+  for (let y = 0; y + crop <= h; y += Math.max(1, Math.round(crop / 4)))
+    for (let x = 0; x + crop <= w; x += Math.max(1, Math.round(crop / 4))) {
       let sum = 0;
       for (let j = y; j < y + crop - 1; j += 2) for (let i = x; i < x + crop - 1; i += 2) { const p = j * w + i; sum += Math.abs(data[p] - data[p + 1]) + Math.abs(data[p] - data[p + w]); }
       if (sum > most) [most, best] = [sum, [x, y]];
@@ -182,24 +182,28 @@ async function busiest(file, crop) {
 }
 
 async function sheet(n) {
-  const rows = readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "done").slice(-n);
+  const kept = new Set(readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "kept").map((r) => r.sha256));
+  const rows = readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "done" && !kept.has(r.sha256)).slice(-n);
   const all = new Map((await libraryEntries()).map((e) => [e.id, e]));
-  const cell = 384, gap = 8, label = 24, crop = 128, W = 4 * (cell + gap) + 3 * gap;
+  const cell = 384, gap = 8, label = 24, W = 4 * (cell + gap) + 3 * gap;
   const tiles = [];
   for (const [i, r] of rows.entries()) {
     const e = all.get(r.id);
     if (!e) continue;
-    // Two spots of the source, crop px square each, shown at the same size by Lanczos and by the AI: the most
-    // detailed one (largest sum of neighbour differences) and the centre, where a face or a subject usually is.
-    const k = r.master / e.width;
-    const spots = [await busiest(e.file, crop), [Math.round((e.width - crop) / 2), Math.round((e.height - crop) / 2)]];
+    // Judged at the served size (Fable, 2026-11-20): two spots at 100% of the largest served width, Lanczos from
+    // the source beside the AI's file of that width: the most detailed spot and the centre, where a face or a
+    // subject usually is.
+    const w = Math.max(...widthsFor(e, r.master)), k = w / e.width, src = Math.round(cell / k);
+    const served = join(OUT, e.kind, `${e.id}-${w}.webp`);
+    const spots = [await busiest(e.file, src), [Math.round((e.width - src) / 2), Math.round((e.height - src) / 2)]];
     const parts = [];
     for (const [left, top] of spots) {
-      parts.push(await sharp(e.file).extract({ left, top, width: crop, height: crop }).resize(cell, cell, { kernel: "lanczos3" }).toBuffer());
-      parts.push(await sharp(join(OUT, e.kind, `${e.id}.webp`)).extract({ left: Math.round(left * k), top: Math.round(top * k), width: Math.round(crop * k), height: Math.round(crop * k) }).resize(cell, cell).toBuffer());
+      const at = { left: Math.round(left * k), top: Math.round(top * k), width: cell, height: cell };
+      parts.push(await sharp(await sharp(e.file).resize(w, null, { kernel: "lanczos3" }).toBuffer()).extract(at).toBuffer());
+      parts.push(await sharp(served).extract(at).toBuffer());
     }
     const y = i * (cell + label + gap);
-    const text = `${r.id}  ${r.from}→${r.master}px  diff ${r.diff}   detail: Lanczos | AI     centre: Lanczos | AI`;
+    const text = `${r.id}  ${r.from}→${w}px at 100%  diff ${r.diff}   detail: Lanczos | AI     centre: Lanczos | AI`;
     tiles.push({ input: Buffer.from(`<svg width="${W}" height="${label}"><text x="2" y="17" font-family="sans-serif" font-size="15" fill="#eee">${text}</text></svg>`), left: 0, top: y });
     parts.forEach((input, j) => tiles.push({ input, left: j * (cell + gap) + (j > 1 ? gap * 3 : 0), top: y + label }));
   }

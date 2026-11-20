@@ -939,7 +939,7 @@ images:
     tags: [sample, dog, pets, animal, walk, outdoor]
   - id: cat-tabby-b
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: lifelike
     subject: cat-tabby
     prompt: "A tabby cat on a windowsill."
@@ -2016,7 +2016,7 @@ images:
     tags: [sample, product, sunglasses, fashion, indoor]
   - id: instrument-guitar-b
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: lifelike
     subject: instrument-guitar
     prompt: "An acoustic guitar against a wall."
@@ -2034,7 +2034,7 @@ images:
     tags: [sample, instrument, piano, music, indoor]
   - id: instrument-violin-b
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: lifelike
     subject: instrument-violin
     prompt: "A violin on a chair."
@@ -2211,7 +2211,7 @@ images:
     tags: [sample, event, dinner, party, indoor, evening]
   - id: event-wedding-b
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: lifelike
     subject: event-wedding
     prompt: "Chairs set out for an outdoor wedding."
@@ -3135,7 +3135,7 @@ images:
     tags: [sample, sideboard, furniture, photo-real]
   - id: table-lamp-p6
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: photographs
     subject: table-lamp-6
     pixabay: 465350
@@ -3171,7 +3171,7 @@ images:
     tags: [sample, vintage-camera, vintage, camera, cameras, photo-real]
   - id: vintage-camera-p9
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: photographs
     subject: vintage-camera-9
     pixabay: 820018
@@ -3931,7 +3931,7 @@ images:
     tags: [sample, starter-booking, coast, sea, outdoor, path, beach, dunes, sand, photo-real]
   - id: fitness-coast-run-p4
     kind: sample
-    uses: [filler]
+    uses: [hero, filler]
     style: photographs
     subject: fitness-coast-run-4
     pixabay: 123476
