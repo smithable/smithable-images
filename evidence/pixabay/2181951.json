@@ -1,0 +1,27 @@
+{
+  "pixabayId": 2181951,
+  "page": "https://pixabay.com/photos/chairs-conference-room-furniture-2181951/",
+  "uploaded": "2017-03-28",
+  "uploadedFrom": "/photo/2017/03/28/12/10/chairs-2181951_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/chairs-conference-room-furniture-2181951/",
+      "https://pixabay.com/en/chairs-conference-room-furniture-2181951/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20180813111412/https://pixabay.com/en/chairs-conference-room-furniture-2181951/",
+      "timestamp": "20180813111412"
+    }
+  },
+  "author": "Pexels",
+  "tags": "chairs, conference room, furniture, indoors, interior design, office, room, table, boardroom, interior decoration",
+  "size": {
+    "original": [
+      5431,
+      3621
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

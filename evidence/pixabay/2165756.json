@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2165756,
+  "page": "https://pixabay.com/photos/kitchen-home-interior-modern-room-2165756/",
+  "uploaded": "2017-03-22",
+  "uploadedFrom": "/photo/2017/03/22/17/39/kitchen-2165756_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/kitchen-home-interior-modern-room-2165756/",
+      "https://pixabay.com/en/kitchen-home-interior-modern-room-2165756/"
+    ],
+    "snapshot": null
+  },
+  "author": "ClickerHappy",
+  "tags": "kitchen, home, interior, modern, room, floor, furniture, counter, wood, living, kitchen interior, residential, table, brown home, brown kitchen, brown wood, brown room, brown table, brown interior",
+  "size": {
+    "original": [
+      4596,
+      3044
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

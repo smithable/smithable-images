@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2982270,
+  "page": "https://pixabay.com/photos/computer-laptop-work-place-mouse-2982270/",
+  "uploaded": "2017-11-27",
+  "uploadedFrom": "/photo/2017/11/27/21/31/computer-2982270_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/computer-laptop-work-place-mouse-2982270/",
+      "https://pixabay.com/en/computer-laptop-work-place-mouse-2982270/"
+    ],
+    "snapshot": null
+  },
+  "author": "ClickerHappy",
+  "tags": "computer, laptop, work place, mouse, office, internet, pc, wireless, digital, business, communication, desk, working, home office, mockup, tidy, white, style, design, blue business, blue computer, blue office, blue home, blue laptop, blue work, blue community, blue internet, blue digital, blue communication, blue desk, blue design, blue company",
+  "size": {
+    "original": [
+      5667,
+      3679
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

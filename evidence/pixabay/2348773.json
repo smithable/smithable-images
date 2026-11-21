@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2348773,
+  "page": "https://pixabay.com/photos/horse-herd-mould-brown-2348773/",
+  "uploaded": "2017-05-27",
+  "uploadedFrom": "/photo/2017/05/27/15/49/horse-2348773_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/horse-herd-mould-brown-2348773/",
+      "https://pixabay.com/en/horse-herd-mould-brown-2348773/"
+    ],
+    "snapshot": null
+  },
+  "author": "rihaij",
+  "tags": "horse, herd, mould, brown, thoroughbred arabian, pasture, paddock, coupling, animal, gallop, mare",
+  "size": {
+    "original": [
+      4646,
+      3097
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

@@ -1,0 +1,24 @@
+{
+  "pixabayId": 276014,
+  "page": "https://pixabay.com/photos/flowers-meadow-sunlight-summer-276014/",
+  "uploaded": "2014-02-27",
+  "uploadedFrom": "/photo/2014/02/27/16/10/flowers-276014_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/flowers-meadow-sunlight-summer-276014/",
+      "https://pixabay.com/en/flowers-meadow-sunlight-summer-276014/"
+    ],
+    "snapshot": null
+  },
+  "author": "Larisa-K",
+  "tags": "flowers, meadow, sunlight, summer, light, rays, beams, wildlflowers, bloom, blossom, white flowers, wild grass, nature",
+  "size": {
+    "original": [
+      4090,
+      2602
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

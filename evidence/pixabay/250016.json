@@ -1,0 +1,24 @@
+{
+  "pixabayId": 250016,
+  "page": "https://pixabay.com/photos/flower-field-flowers-field-trees-250016/",
+  "uploaded": "2014-01-22",
+  "uploadedFrom": "/photo/2014/01/22/19/44/flower-field-250016_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/flower-field-flowers-field-trees-250016/",
+      "https://pixabay.com/en/flower-field-flowers-field-trees-250016/"
+    ],
+    "snapshot": null
+  },
+  "author": "DeltaWorks",
+  "tags": "flower field, flowers, field, trees, field of flowers, meadow, flower meadow, conifers, coniferous, colorful, colorful field, nature, landscape",
+  "size": {
+    "original": [
+      4984,
+      3607
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

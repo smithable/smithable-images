@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3722517,
+  "page": "https://pixabay.com/photos/cabbage-herb-white-cabbage-3722517/",
+  "uploaded": "2018-10-03",
+  "uploadedFrom": "/photo/2018/10/03/22/08/kohl-3722517_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/cabbage-herb-white-cabbage-3722517/",
+      "https://pixabay.com/en/cabbage-herb-white-cabbage-3722517/"
+    ],
+    "snapshot": null
+  },
+  "author": "ulleo",
+  "tags": "cabbage, herb, white cabbage, cultivation, vegetables, healthy, vitamins, winter vegetables, vegan, vegetarian, cabbage field, green, food, agriculture, vegetable cabbage, leaves, fresh",
+  "size": {
+    "original": [
+      6016,
+      4016
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

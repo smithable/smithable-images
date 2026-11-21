@@ -1,0 +1,27 @@
+{
+  "pixabayId": 766667,
+  "page": "https://pixabay.com/photos/dandelion-plant-nature-flower-766667/",
+  "uploaded": "2015-05-14",
+  "uploadedFrom": "/photo/2015/05/14/12/07/dandelion-766667_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/dandelion-plant-nature-flower-766667/",
+      "https://pixabay.com/en/dandelion-plant-nature-flower-766667/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20161005091432/https://pixabay.com/en/dandelion-plant-nature-flower-766667/",
+      "timestamp": "20161005091432"
+    }
+  },
+  "author": "Alexas_Fotos",
+  "tags": "dandelion, plant, nature, flower, close up, pointed flower, wildflower",
+  "size": {
+    "original": [
+      3010,
+      2768
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

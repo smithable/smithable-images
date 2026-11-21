@@ -1,0 +1,27 @@
+{
+  "pixabayId": 886462,
+  "page": "https://pixabay.com/photos/keyboard-computer-keys-white-886462/",
+  "uploaded": "2015-08-13",
+  "uploadedFrom": "/photo/2015/08/13/01/00/keyboard-886462_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/keyboard-computer-keys-white-886462/",
+      "https://pixabay.com/en/keyboard-computer-keys-white-886462/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20181230073916/https://pixabay.com/en/keyboard-computer-keys-white-886462/",
+      "timestamp": "20181230073916"
+    }
+  },
+  "author": "Simon",
+  "tags": "keyboard, computer, keys, white, periphery, chewing gum keyboard, input device, chiclet keyboard, letters, laptop, hardware, computer keyboard, datailaufnahme, tap, write, abc",
+  "size": {
+    "original": [
+      4608,
+      2592
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

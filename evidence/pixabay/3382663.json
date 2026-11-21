@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3382663,
+  "page": "https://pixabay.com/photos/dandelion-meadow-dandelion-meadow-3382663/",
+  "uploaded": "2018-05-08",
+  "uploadedFrom": "/photo/2018/05/08/10/17/dandelion-3382663_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/dandelion-meadow-dandelion-meadow-3382663/",
+      "https://pixabay.com/en/dandelion-meadow-dandelion-meadow-3382663/"
+    ],
+    "snapshot": null
+  },
+  "author": "pixel2013",
+  "tags": "dandelion, meadow, dandelion meadow, spring, yellow, summer, flower, nature, pointed flower, wildflower, boo, blossoms, grass, field, landscape, plant",
+  "size": {
+    "original": [
+      4736,
+      2553
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

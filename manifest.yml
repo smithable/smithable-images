@@ -3686,3 +3686,306 @@ images:
     pixabay: 598020
     alt: "A red-brick fish auction hall with a glass dome on a river quay"
     tags: [hero, starter-marketplace, market, fish, fish-market, building, harbour, photo-real]
+  # Johan's picks from daily batch 2026-11-21-0008 (T933): Pixabay from before its licence change,
+  # the WordPress Photo Directory and Commons; each described from the picture itself.
+  - id: horse-resting-p
+    kind: hero
+    style: photographs
+    subject: horse-resting
+    pixabay: 2572051
+    alt: "A dapple-grey horse lying in a sandy paddock, green fields and trees behind"
+    tags: [hero, photo-real, horse, paddock, farm, animal, countryside, stable, riding]
+  - id: horses-galloping-p
+    kind: hero
+    style: photographs
+    subject: horses-galloping
+    pixabay: 2348773
+    alt: "A bay horse and a grey horse galloping side by side across a grassy field"
+    tags: [hero, photo-real, horse, field, pasture, animal, countryside, riding, running]
+  - id: table-setting-p
+    kind: hero
+    style: photographs
+    subject: table-setting
+    pixabay: 3604064
+    alt: "Wine glasses, plates and folded teal napkins on a laid table in cool blue light"
+    tags: [hero, photo-real, table-setting, glasses, restaurant, dinner, event, catering]
+  - id: table-setting-2-p
+    kind: hero
+    style: photographs
+    subject: table-setting-2
+    pixabay: 449952
+    alt: "Restaurant tables laid with folded napkins and wine glasses, a garden through the windows"
+    tags: [hero, photo-real, table-setting, restaurant, dining, lunch, catering, venue]
+  - id: table-setting-3-p
+    kind: hero
+    style: photographs
+    subject: table-setting-3
+    pixabay: 791148
+    alt: "A festive table with roses, a decanter, candles, rosé wine and a chocolate cake"
+    tags: [hero, photo-real, table-setting, celebration, party, wine, dessert, event, wedding]
+  - id: table-setting-4-p
+    kind: hero
+    style: photographs
+    subject: table-setting-4
+    pixabay: 791133
+    alt: "Glasses of rosé wine and candles on a dinner table in soft evening light"
+    tags: [hero, photo-real, table-setting, wine, dinner, evening, candles, event]
+  - id: table-setting-5-p
+    kind: hero
+    style: photographs
+    subject: table-setting-5
+    pixabay: 2594762
+    alt: "A candlelit bistro table with red wine, glasses and square plates, bookshelves behind"
+    tags: [hero, photo-real, table-setting, bistro, restaurant, wine, dinner, evening, candles]
+  - id: cutlery-plate-p
+    kind: hero
+    style: photographs
+    subject: cutlery-plate
+    pixabay: 2754149
+    alt: "Close-up of a fork and a serrated knife on a dark grey plate, seen from above"
+    tags: [hero, photo-real, plate, cutlery, restaurant, menu, dining, wood]
+  - id: restaurant-interior-p
+    kind: hero
+    style: photographs
+    subject: restaurant-interior
+    wordpress: "95867dd383"
+    alt: "A light restaurant room with round tables and upholstered chairs, seen from above, wall lamps lit"
+    tags: [hero, photo-real, restaurant, cafe, interior, tables, chairs, venue, dining]
+  - id: metro-platform-p
+    kind: hero
+    style: photographs
+    subject: metro-platform
+    pixabay: 1853976
+    alt: "A silver subway train standing at an empty platform under green iron columns"
+    tags: [hero, photo-real, metro, subway, train, platform, station, transport, city]
+  - id: railway-station-p
+    kind: hero
+    style: photographs
+    subject: railway-station
+    pixabay: 619082
+    alt: "A red and white passenger train among many tracks and overhead wires outside a large station hall"
+    tags: [hero, photo-real, railway, train, station, tracks, transport, travel, city]
+  - id: train-platform-p
+    kind: hero
+    style: photographs
+    subject: train-platform
+    wordpress: "185684275c"
+    alt: "An empty railway platform with a long canopy on steel supports beside the tracks"
+    tags: [hero, photo-real, railway, platform, station, tracks, transport, travel]
+  - id: train-platform-2-p
+    kind: hero
+    style: photographs
+    subject: train-platform-2
+    wordpress: "453678aaf5"
+    alt: "An empty concrete railway platform under a roof, two tracks in front"
+    tags: [hero, photo-real, railway, platform, station, tracks, transport, concrete]
+  - id: keyboard-keys-p
+    kind: hero
+    style: photographs
+    subject: keyboard-keys
+    pixabay: 886462
+    alt: "Close-up of a white computer keyboard's keys"
+    tags: [hero, photo-real, keyboard, computer, keys, office, technology, white]
+  - id: laptop-notebook-p
+    kind: hero
+    style: photographs
+    subject: laptop-notebook
+    pixabay: 593327
+    alt: "A laptop and an open notebook with a pen on a wooden desk"
+    tags: [hero, photo-real, laptop, notebook, desk, office, work, study, wood]
+  - id: desk-from-above-p
+    kind: hero
+    style: photographs
+    subject: desk-from-above
+    pixabay: 2982270
+    alt: "A laptop, headphones, a camera, a phone, a mouse, a cup of tea and a plant on a white desk, seen from above"
+    tags: [hero, photo-real, desk, laptop, workspace, office, technology, flat-lay, white]
+  - id: home-office-desk-p
+    kind: hero
+    style: photographs
+    subject: home-office-desk
+    pixabay: 1867761
+    alt: "A desk with a large monitor, a laptop, a keyboard, a tablet and a plant in a grey room"
+    tags: [hero, photo-real, desk, computer, monitor, home-office, office, workspace, technology]
+  - id: laptop-code-p
+    kind: hero
+    style: photographs
+    subject: laptop-code
+    pixabay: 2620118
+    alt: "A laptop showing program code, a phone beside it on a desk"
+    tags: [hero, photo-real, laptop, code, programming, software, technology, office]
+  - id: conference-room-p
+    kind: hero
+    style: photographs
+    subject: conference-room
+    pixabay: 2181960
+    alt: "A bright meeting room with a long white table, grey chairs, a wall screen and black-framed windows"
+    tags: [hero, photo-real, conference-room, meeting, office, table, chairs, business, venue]
+  - id: conference-room-2-p
+    kind: hero
+    style: photographs
+    subject: conference-room-2
+    pixabay: 2181994
+    alt: "A long white table with dark chairs and a blue sofa in a light office room with tall windows"
+    tags: [hero, photo-real, conference-room, meeting, office, table, chairs, business, coworking]
+  - id: conference-room-3-p
+    kind: hero
+    style: photographs
+    subject: conference-room-3
+    pixabay: 2181951
+    alt: "A long white meeting table with grey chairs and a wall screen in a white room"
+    tags: [hero, photo-real, conference-room, meeting, office, table, chairs, business, minimal]
+  - id: carrots-in-soil-p
+    kind: hero
+    style: photographs
+    subject: carrots-in-soil
+    pixabay: 1565597
+    alt: "Carrots growing half out of the soil, their green tops above"
+    tags: [hero, photo-real, carrot, vegetables, garden, soil, harvest, farm, allotment]
+  - id: beetroot-p
+    kind: hero
+    style: photographs
+    subject: beetroot
+    pixabay: 687251
+    alt: "Fresh beetroots with their leaves on a weathered wooden table"
+    tags: [hero, photo-real, beetroot, vegetables, harvest, food, farm-shop, wood]
+  - id: beetroot-2-p
+    kind: hero
+    style: photographs
+    subject: beetroot-2
+    pixabay: 3490809
+    alt: "A bunch of beetroots tied with string on old wooden boards"
+    tags: [hero, photo-real, beetroot, vegetables, harvest, food, farm-shop, rustic]
+  - id: potatoes-sack-p
+    kind: hero
+    style: photographs
+    subject: potatoes-sack
+    pixabay: 1585075
+    alt: "New potatoes spilling from a burlap sack onto dark soil"
+    tags: [hero, photo-real, potato, vegetables, harvest, garden, soil, farm, food]
+  - id: cabbage-field-p
+    kind: hero
+    style: photographs
+    subject: cabbage-field
+    pixabay: 3722517
+    alt: "Rows of green cabbages growing in a field, one in focus"
+    tags: [hero, photo-real, cabbage, vegetables, field, farm, garden, harvest, green]
+  - id: cathedral-nave-p
+    kind: hero
+    style: photographs
+    subject: cathedral-nave
+    photo: "https://commons.wikimedia.org/wiki/File:St_Marys_Cathedral_Nave_Edinburgh.jpg"
+    alt: "A Gothic cathedral nave with rows of red chairs, stone arches and stained-glass windows"
+    tags: [hero, photo-real, church, cathedral, interior, architecture, venue, concert, wedding]
+  - id: study-room-p
+    kind: hero
+    style: photographs
+    subject: study-room
+    photo: "https://commons.wikimedia.org/wiki/File:Abbotsford_House_Study_Room.jpg"
+    alt: "A historic study with dark wooden bookcases, a gallery, a fireplace and a writing desk"
+    tags: [hero, photo-real, library, study, books, interior, history, museum, architecture]
+  - id: kitchen-bright-p
+    kind: hero
+    style: photographs
+    subject: kitchen-bright
+    pixabay: 2165756
+    alt: "A bright white kitchen with a wooden table and chair, a range cooker and plants on the windowsill"
+    tags: [hero, photo-real, kitchen, home, interior, table, real-estate, rental, white]
+  - id: executive-office-p
+    kind: hero
+    style: photographs
+    subject: executive-office
+    pixabay: 730681
+    alt: "A modern office with a large desk, an office chair, white armchairs and a city view through the windows"
+    tags: [hero, photo-real, office, desk, interior, business, chairs, city, real-estate]
+  - id: garden-chair-flowers-p
+    kind: hero
+    style: photographs
+    subject: garden-chair-flowers
+    pixabay: 779386
+    alt: "A white wooden chair with daisies in a vase and a checked cloth in sunlit tall grass"
+    tags: [hero, photo-real, chair, flowers, garden, summer, daisies, outdoor, calm]
+  - id: tulips-vase-p
+    kind: hero
+    style: photographs
+    subject: tulips-vase
+    pixabay: 1715054
+    alt: "Yellow tulips in a glass vase on a wooden chair against a warm orange wall"
+    tags: [hero, photo-real, tulips, flowers, vase, chair, interior, spring, yellow]
+  - id: flower-field-p
+    kind: hero
+    style: photographs
+    subject: flower-field
+    pixabay: 250016
+    alt: "Stripes of pink, red, white and purple flowers in a field below pine trees and a cloudy blue sky"
+    tags: [hero, photo-real, flowers, field, nature, summer, colourful, landscape, outdoor]
+  - id: poppy-field-p
+    kind: hero
+    style: photographs
+    subject: poppy-field
+    pixabay: 815270
+    alt: "A field of red poppies under a golden sunset sky"
+    tags: [hero, photo-real, poppies, flowers, field, sunset, nature, summer, landscape]
+  - id: dandelion-meadow-p
+    kind: hero
+    style: photographs
+    subject: dandelion-meadow
+    pixabay: 3382663
+    alt: "A meadow full of yellow dandelions under a pale sky"
+    tags: [hero, photo-real, dandelion, meadow, flowers, spring, nature, yellow, landscape]
+  - id: dandelion-seed-head-p
+    kind: hero
+    style: photographs
+    subject: dandelion-seed-head
+    pixabay: 766667
+    alt: "A dandelion seed head close up against a green background"
+    tags: [hero, photo-real, dandelion, seed-head, nature, close-up, calm, green]
+  - id: meadow-sunlight-p
+    kind: hero
+    style: photographs
+    subject: meadow-sunlight
+    pixabay: 276014
+    alt: "Small white flowers in green grass by a tree trunk, sunlight through the leaves"
+    tags: [hero, photo-real, meadow, flowers, grass, sunlight, nature, summer, calm]
+  - id: tulip-field-p
+    kind: hero
+    style: photographs
+    subject: tulip-field
+    pixabay: 3359902
+    alt: "Red, yellow, orange and pink tulips in bloom, close together"
+    tags: [hero, photo-real, tulips, flowers, field, spring, colourful, nature, garden]
+  - id: mustard-field-p
+    kind: hero
+    style: photographs
+    subject: mustard-field
+    wordpress: "1926976fc8"
+    alt: "A field of yellow mustard flowers with palm trees on the horizon"
+    tags: [hero, photo-real, mustard, flowers, field, farm, yellow, landscape, nature]
+  - id: flower-shop-p
+    kind: hero
+    style: photographs
+    subject: flower-shop
+    pixabay: 1139083
+    alt: "Potted flowers and plants in crates and baskets outside a shop on a paved street"
+    tags: [hero, photo-real, flower-shop, florist, plants, flowers, shop, street, retail]
+  - id: flower-shop-2-p
+    kind: hero
+    style: photographs
+    subject: flower-shop-2
+    pixabay: 966459
+    alt: "A street flower stall with buckets of bouquets under an awning on a wet city pavement"
+    tags: [hero, photo-real, flower-shop, florist, flowers, market-stall, shop, street, city]
+  - id: tennis-racket-ball-p
+    kind: hero
+    style: photographs
+    subject: tennis-racket-ball
+    pixabay: 2042725
+    alt: "A tennis ball resting on a racket's strings beside the net"
+    tags: [hero, photo-real, tennis, racket, ball, sport, court, club]
+  - id: tennis-court-p
+    kind: hero
+    style: photographs
+    subject: tennis-court
+    wordpress: "494657ee66"
+    alt: "Tennis balls scattered on a red and blue hard court"
+    tags: [hero, photo-real, tennis, court, ball, sport, club, outdoor]

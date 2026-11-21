@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1565597,
+  "page": "https://pixabay.com/photos/carrot-growth-vegetables-1565597/",
+  "uploaded": "2016-08-03",
+  "uploadedFrom": "/photo/2016/08/03/01/09/carrot-1565597_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/carrot-growth-vegetables-1565597/",
+      "https://pixabay.com/en/carrot-growth-vegetables-1565597/"
+    ],
+    "snapshot": null
+  },
+  "author": "klimkin",
+  "tags": "carrot, growth, vegetables, agriculture, closeup, vitamins, harvest",
+  "size": {
+    "original": [
+      3464,
+      2309
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}
