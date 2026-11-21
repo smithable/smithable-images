@@ -34,7 +34,7 @@ const ENTRY = {
   photo: leaf(flag),
   generated: leaf(flag),
   tags: leaf(texts),
-  credit: (v, where) => checkRecord(v, CREDIT, where),
+  credit: (v, where) => checkRecord(v, CREDIT, where, ["page", "author", "licence", "fetched"]),
 };
 // A style's words: per language, exactly a name and a line. Three versions of 2026-11-18 were
 // published before make-images.mjs refused an unquoted comma in YAML, so their English line for
@@ -88,7 +88,7 @@ test("no shape allows a key of the needs file", () => {
 
 test("latest.json names a version file that is published", () => {
   const latest = read("latest.json");
-  checkRecord(latest, { version: leaf(text), index: leaf(text) }, "latest.json");
+  checkRecord(latest, { version: leaf(text), index: leaf(text) }, "latest.json", ["version", "index"]);
   assert.equal(latest.index, `versions/${latest.version}.json`);
   assert.ok(versionFiles().includes(latest.index), `${latest.index} is in versions/`);
 });
@@ -101,16 +101,17 @@ test("index.json and every version carry only the index's own keys, down to thei
 });
 
 test("the checks catch a key or a value out of shape at any depth", () => {
-  const entry = { id: "a", kind: "photo", url: "u", alt: "A", tags: ["x"], sha256: "h", width: 1, height: 1, bytes: 1, source: "s", photo: true, generated: false, credit: { page: "p" } };
+  const entry = { id: "a", kind: "photo", url: "u", alt: "A", tags: ["x"], sha256: "h", width: 1, height: 1, bytes: 1, source: "s", photo: true, generated: false, credit: { page: "p", author: "a", licence: "l", fetched: "f" } };
   const bad = [
     { ...entry, points: ["booking"] },
     { ...entry, tags: [{ people: true }] },
-    { ...entry, credit: { page: "p", count: 3 } },
+    { ...entry, credit: { ...entry.credit, count: 3 } },
     { ...entry, credit: [] },
+    { ...entry, credit: {} },
     42,
     { ...entry, url: undefined },
   ];
-  delete bad[5].url;
+  delete bad[6].url;
   for (const b of bad) assert.throws(() => list(ENTRY, ENTRY_REQUIRED)([b], "x"));
   assert.doesNotThrow(() => list(ENTRY, ENTRY_REQUIRED)([entry], "x"));
   const style = { id: "s", generated: false, words: { en: { name: "N", line: "L" } } };
@@ -124,5 +125,8 @@ test("the checks catch a key or a value out of shape at any depth", () => {
   const other = { ...split, id: "lifelike", words: { en: { name: "N", line: "L", [SPLIT_LINE]: null } } };
   assert.throws(() => checkVersion({ version: "v", styles: [other], entries: [] }, SPLIT_IN[0]));
   assert.doesNotThrow(() => checkVersion({ version: "v", styles: [{ ...split, words: { en: { name: "N", line: "L", [SPLIT_LINE]: null } } }], entries: [] }, SPLIT_IN[0]));
+  const nullSplit = { ...split, words: { en: { name: "N", line: "L", [SPLIT_LINE]: null } } };
+  assert.throws(() => checkVersion({ version: "v", styles: [nullSplit], entries: [] }, "versions/2026-11-21.2.json"));
+  assert.throws(() => checkVersion({ version: "v", styles: [{ ...split, words: { en: { name: "N", line: "L" }, sv: { name: "N", line: "L", [SPLIT_LINE]: null } } }], entries: [] }, SPLIT_IN[0]));
   assert.doesNotThrow(() => checkVersion({ version: "v", styles: [style], entries: [entry] }, "v"));
 });
