@@ -16,8 +16,9 @@ const flag = (v) => typeof v === "boolean";
 const texts = (v) => Array.isArray(v) && v.every(text);
 const isRecord = (v) => typeof v === "object" && v !== null && !Array.isArray(v);
 // A record whose keys are all in shape, each value passing its check; failures name the path.
-function checkRecord(value, shape, where) {
+function checkRecord(value, shape, where, required = []) {
   assert.ok(isRecord(value), `${where} is a record`);
+  for (const key of required) assert.ok(Object.hasOwn(value, key), `${where} has its ${key}`);
   for (const [key, v] of Object.entries(value)) {
     assert.ok(Object.hasOwn(shape, key), `${where} has the key ${key}`);
     shape[key](v, `${where}.${key}`);
@@ -41,23 +42,34 @@ const ENTRY = {
 const WORDS = { name: leaf(text), line: leaf(text) };
 const SPLIT_LINE = "dedicated to the public domain by their authors.";
 const SPLIT_IN = ["versions/2026-11-18.1.json", "versions/2026-11-18.2.json", "versions/2026-11-18.3.json"];
-const STYLE = {
-  id: leaf(text),
-  generated: leaf(flag),
-  drawn: leaf(flag),
-  words: (v, where) => {
-    assert.ok(isRecord(v), `${where} is a record`);
-    for (const [lang, w] of Object.entries(v)) {
-      const split = SPLIT_IN.some((file) => where.startsWith(`${file}.`)) && lang === "en" && Object.hasOwn(w, SPLIT_LINE);
-      checkRecord(split ? { ...w, [SPLIT_LINE]: undefined } : w, split ? { ...WORDS, [SPLIT_LINE]: leaf((x) => x === undefined || x === null) } : WORDS, `${where}.${lang}`);
-    }
-  },
+// Language codes as the publisher writes them (en, sv, pt-BR), each with exactly a name and a line.
+const words = (splitLetBy) => (v, where) => {
+  assert.ok(isRecord(v), `${where} is a record`);
+  assert.ok(Object.hasOwn(v, "en"), `${where} has English`);
+  for (const [lang, w] of Object.entries(v)) {
+    assert.match(lang, /^[a-z]{2}(-[A-Z]{2})?$/, `${where} has a language code`);
+    const shape = splitLetBy && lang === "en" ? { ...WORDS, [SPLIT_LINE]: leaf((x) => x === null) } : WORDS;
+    checkRecord(w, shape, `${where}.${lang}`, ["name", "line"]);
+  }
 };
-const list = (shape) => (v, where) => {
+const STYLE = { id: leaf(text), generated: leaf(flag), drawn: leaf(flag), words: words(false) };
+const STYLE_REQUIRED = ["id", "generated", "words"];
+const ENTRY_REQUIRED = ["id", "kind", "url", "alt", "tags", "sha256", "width", "height", "bytes", "source", "photo", "generated"];
+const list = (shape, required) => (v, where) => {
   assert.ok(Array.isArray(v), `${where} is a list`);
-  v.forEach((item, i) => checkRecord(item, shape, `${where}[${i}]`));
+  v.forEach((item, i) => checkRecord(item, shape, `${where}[${i}]`, required));
 };
-const VERSION = { version: leaf(text), styles: list(STYLE), entries: list(ENTRY) };
+// The split key is let by only on the photographs style of those three files.
+const styles = (v, where) => {
+  assert.ok(Array.isArray(v), `${where} is a list`);
+  const file = where.slice(0, -".styles".length);
+  v.forEach((s, i) => {
+    const splitLetBy = SPLIT_IN.includes(file) && isRecord(s) && s.id === "photographs";
+    checkRecord(s, splitLetBy ? { ...STYLE, words: words(true) } : STYLE, `${where}[${i}]`, STYLE_REQUIRED);
+  });
+};
+const VERSION = { version: leaf(text), styles, entries: list(ENTRY, ENTRY_REQUIRED) };
+const checkVersion = (v, where) => checkRecord(v, VERSION, where, ["version", "styles", "entries"]);
 // The needs file's own keys, as gaps.mjs describes them (kind and subject are the library's words,
 // which the needs borrow).
 const NEEDS_KEYS = ["name", "trade", "class", "count", "pictures", "slot", "target", "people"];
@@ -82,25 +94,35 @@ test("latest.json names a version file that is published", () => {
 });
 
 test("index.json and every version carry only the index's own keys, down to their leaves", () => {
-  list(ENTRY)(read("index.json"), "index.json");
+  list(ENTRY, ENTRY_REQUIRED)(read("index.json"), "index.json");
   const files = versionFiles();
   assert.ok(files.length > 0, "versions/ holds the published versions");
-  for (const file of files) checkRecord(read(file), VERSION, file);
+  for (const file of files) checkVersion(read(file), file);
 });
 
 test("the checks catch a key or a value out of shape at any depth", () => {
-  const entry = { id: "a", tags: ["x"], credit: { page: "p" } };
+  const entry = { id: "a", kind: "photo", url: "u", alt: "A", tags: ["x"], sha256: "h", width: 1, height: 1, bytes: 1, source: "s", photo: true, generated: false, credit: { page: "p" } };
   const bad = [
     { ...entry, points: ["booking"] },
     { ...entry, tags: [{ people: true }] },
     { ...entry, credit: { page: "p", count: 3 } },
     { ...entry, credit: [] },
     42,
+    { ...entry, url: undefined },
   ];
-  for (const b of bad) assert.throws(() => list(ENTRY)([b], "x"));
-  assert.doesNotThrow(() => list(ENTRY)([entry], "x"));
+  delete bad[5].url;
+  for (const b of bad) assert.throws(() => list(ENTRY, ENTRY_REQUIRED)([b], "x"));
+  assert.doesNotThrow(() => list(ENTRY, ENTRY_REQUIRED)([entry], "x"));
   const style = { id: "s", generated: false, words: { en: { name: "N", line: "L" } } };
-  assert.throws(() => checkRecord({ version: "v", styles: [{ ...style, words: { en: { name: "N", line: "L", slot: "x" } } }], entries: [] }, VERSION, "v"));
-  assert.throws(() => checkRecord({ version: "v", styles: [false], entries: [] }, VERSION, "v"));
-  assert.doesNotThrow(() => checkRecord({ version: "v", styles: [style], entries: [entry] }, VERSION, "v"));
+  assert.throws(() => checkVersion({ version: "v", styles: [{ ...style, words: { en: { name: "N", line: "L", slot: "x" } } }], entries: [] }, "v"));
+  assert.throws(() => checkVersion({ version: "v", styles: [false], entries: [] }, "v"));
+  assert.throws(() => checkVersion({ version: "v", styles: [{ ...style, words: { en: { name: "N", line: "L" }, people: { name: "N", line: "L" } } }], entries: [] }, "v"));
+  assert.throws(() => checkVersion({ version: "v", styles: [{ ...style, words: { en: {} } }], entries: [] }, "v"));
+  assert.throws(() => checkVersion({}, "v"));
+  const split = { id: "photographs", generated: false, words: { en: { name: "N", line: "L", [SPLIT_LINE]: { people: true } } } };
+  assert.throws(() => checkVersion({ version: "v", styles: [split], entries: [] }, SPLIT_IN[0]));
+  const other = { ...split, id: "lifelike", words: { en: { name: "N", line: "L", [SPLIT_LINE]: null } } };
+  assert.throws(() => checkVersion({ version: "v", styles: [other], entries: [] }, SPLIT_IN[0]));
+  assert.doesNotThrow(() => checkVersion({ version: "v", styles: [{ ...split, words: { en: { name: "N", line: "L", [SPLIT_LINE]: null } } }], entries: [] }, SPLIT_IN[0]));
+  assert.doesNotThrow(() => checkVersion({ version: "v", styles: [style], entries: [entry] }, "v"));
 });
