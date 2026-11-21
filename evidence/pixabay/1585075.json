@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1585075,
+  "page": "https://pixabay.com/photos/potatoes-vegetables-tuber-1585075/",
+  "uploaded": "2016-08-11",
+  "uploadedFrom": "/photo/2016/08/11/08/49/potatoes-1585075_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/potatoes-vegetables-tuber-1585075/",
+      "https://pixabay.com/en/potatoes-vegetables-tuber-1585075/"
+    ],
+    "snapshot": null
+  },
+  "author": "Couleur",
+  "tags": "potatoes, vegetables, tuber, root vegetables, tuber crops, harvest, garden, produce, organic, fresh, fresh potatoes, raw, raw potatoes, fresh produce",
+  "size": {
+    "original": [
+      4896,
+      3264
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

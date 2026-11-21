@@ -1,0 +1,24 @@
+{
+  "pixabayId": 815270,
+  "page": "https://pixabay.com/photos/sunset-poppies-field-red-poppies-815270/",
+  "uploaded": "2015-06-19",
+  "uploadedFrom": "/photo/2015/06/19/20/13/sunset-815270_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/sunset-poppies-field-red-poppies-815270/",
+      "https://pixabay.com/en/sunset-poppies-field-red-poppies-815270/"
+    ],
+    "snapshot": null
+  },
+  "author": "diego_torres",
+  "tags": "sunset, poppies, field, red poppies, poppy field, red flowers, meadow, flower meadow, flower field, dusk, twilight, horizon, sky, sun, nature",
+  "size": {
+    "original": [
+      5147,
+      3400
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

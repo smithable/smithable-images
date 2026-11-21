@@ -1,0 +1,24 @@
+{
+  "pixabayId": 593327,
+  "page": "https://pixabay.com/photos/desk-laptop-notebook-pen-workspace-593327/",
+  "uploaded": "2015-01-08",
+  "uploadedFrom": "/photo/2015/01/08/18/25/desk-593327_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/desk-laptop-notebook-pen-workspace-593327/",
+      "https://pixabay.com/en/desk-laptop-notebook-pen-workspace-593327/"
+    ],
+    "snapshot": null
+  },
+  "author": "StartupStockPhotos",
+  "tags": "desk, laptop, notebook, pen, workspace, workplace, home office, work from home, macbook, computer, office",
+  "size": {
+    "original": [
+      5472,
+      3648
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

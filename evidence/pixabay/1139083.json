@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1139083,
+  "page": "https://pixabay.com/photos/flowers-flower-shop-sale-trade-1139083/",
+  "uploaded": "2016-01-13",
+  "uploadedFrom": "/photo/2016/01/13/23/00/flowers-1139083_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/flowers-flower-shop-sale-trade-1139083/",
+      "https://pixabay.com/en/flowers-flower-shop-sale-trade-1139083/"
+    ],
+    "snapshot": null
+  },
+  "author": "LubosHouska",
+  "tags": "flowers, flower shop, sale, trade, shop, street, arrangement",
+  "size": {
+    "original": [
+      5803,
+      3563
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

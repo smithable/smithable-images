@@ -1,0 +1,27 @@
+{
+  "pixabayId": 1867761,
+  "page": "https://pixabay.com/photos/home-office-computer-desk-display-1867761/",
+  "uploaded": "2016-11-29",
+  "uploadedFrom": "/photo/2016/11/29/06/18/home-office-1867761_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/home-office-computer-desk-display-1867761/",
+      "https://pixabay.com/en/home-office-computer-desk-display-1867761/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20181229050516/https://pixabay.com/en/home-office-computer-desk-display-1867761/",
+      "timestamp": "20181229050516"
+    }
+  },
+  "author": "Pexels",
+  "tags": "home office, computer, desk, display, iphone, keyboard, laptop, luxury, macbook, modern, organized, table, tablet, technology, work place",
+  "size": {
+    "original": [
+      4000,
+      2669
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

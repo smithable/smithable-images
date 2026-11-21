@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2568755,
+  "page": "https://pixabay.com/photos/apple-computer-browser-business-2568755/",
+  "uploaded": "2017-08-01",
+  "uploadedFrom": "/photo/2017/08/01/23/51/apple-2568755_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/apple-computer-browser-business-2568755/",
+      "https://pixabay.com/en/apple-computer-browser-business-2568755/"
+    ],
+    "snapshot": null
+  },
+  "author": "StockSnap",
+  "tags": "apple, computer, browser, business, office, work, desk, table, chairs, interior, display, green",
+  "size": {
+    "original": [
+      7806,
+      5304
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

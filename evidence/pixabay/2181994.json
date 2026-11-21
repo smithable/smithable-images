@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2181994,
+  "page": "https://pixabay.com/photos/chairs-conference-room-contemporary-2181994/",
+  "uploaded": "2017-03-28",
+  "uploadedFrom": "/photo/2017/03/28/12/17/chairs-2181994_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/chairs-conference-room-contemporary-2181994/",
+      "https://pixabay.com/en/chairs-conference-room-contemporary-2181994/"
+    ],
+    "snapshot": null
+  },
+  "author": "Pexels",
+  "tags": "chairs, conference room, contemporary, furniture, indoors, interior design, room, sofa, table, windows, meeting room, interior decoration",
+  "size": {
+    "original": [
+      7360,
+      4912
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

@@ -1,0 +1,27 @@
+{
+  "pixabayId": 730681,
+  "page": "https://pixabay.com/photos/office-sitting-room-executive-730681/",
+  "uploaded": "2015-04-20",
+  "uploadedFrom": "/photo/2015/04/20/06/46/office-730681_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/office-sitting-room-executive-730681/",
+      "https://pixabay.com/en/office-sitting-room-executive-730681/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20181230095453/https://pixabay.com/en/office-sitting-room-executive-730681/",
+      "timestamp": "20181230095453"
+    }
+  },
+  "author": "MagicDesk",
+  "tags": "office, sitting room, executive, business, desk, workplace, furniture, corporate, table, office interiors, interior design, interior decoration, office furniture",
+  "size": {
+    "original": [
+      5669,
+      3785
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}
