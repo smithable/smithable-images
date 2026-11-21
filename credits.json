@@ -234,14 +234,6 @@
     "evidence": "evidence/wordpress/57365a60d0.json",
     "fetched": "2026-11-18"
   },
-  "desk-calendar-p": {
-    "page": "https://pixabay.com/photos/apple-computer-browser-business-2568755/",
-    "author": "StockSnap",
-    "licence": "CC0 1.0 (Pixabay, published before 2019-01-09)",
-    "uploaded": "2017-08-01",
-    "evidence": "evidence/pixabay/2568755.json",
-    "fetched": "2026-11-21"
-  },
   "desk-from-above-p": {
     "page": "https://pixabay.com/photos/computer-laptop-work-place-mouse-2982270/",
     "author": "ClickerHappy",
