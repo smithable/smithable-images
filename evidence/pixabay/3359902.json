@@ -1,0 +1,24 @@
+{
+  "pixabayId": 3359902,
+  "page": "https://pixabay.com/photos/tulips-tulip-field-tulip-blossom-3359902/",
+  "uploaded": "2018-04-29",
+  "uploadedFrom": "/photo/2018/04/29/12/48/tulips-3359902_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/tulips-tulip-field-tulip-blossom-3359902/",
+      "https://pixabay.com/en/tulips-tulip-field-tulip-blossom-3359902/"
+    ],
+    "snapshot": null
+  },
+  "author": "Ralphs_Fotos",
+  "tags": "tulips, tulip field, tulip blossom, blossomed, field of flowers, bloom, spring flower, beginning of spring, multicoloured, flower, red yellow, coloured, spring colors, blossoms, colorful, spring",
+  "size": {
+    "original": [
+      5028,
+      3215
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

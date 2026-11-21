@@ -1,0 +1,27 @@
+{
+  "pixabayId": 779386,
+  "page": "https://pixabay.com/photos/summer-still-life-daisies-yellow-779386/",
+  "uploaded": "2015-05-22",
+  "uploadedFrom": "/photo/2015/05/22/17/22/summer-still-life-779386_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/summer-still-life-daisies-yellow-779386/",
+      "https://pixabay.com/en/summer-still-life-daisies-yellow-779386/"
+    ],
+    "snapshot": {
+      "url": "http://web.archive.org/web/20170413114758/https://pixabay.com/en/summer-still-life-daisies-yellow-779386/",
+      "timestamp": "20170413114758"
+    }
+  },
+  "author": "JillWellington",
+  "tags": "summer still-life, daisies, yellow, garden, flowers",
+  "size": {
+    "original": [
+      5760,
+      3840
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

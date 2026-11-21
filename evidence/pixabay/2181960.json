@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2181960,
+  "page": "https://pixabay.com/photos/chairs-table-contemporary-furniture-2181960/",
+  "uploaded": "2017-03-28",
+  "uploadedFrom": "/photo/2017/03/28/12/11/chairs-2181960_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/chairs-table-contemporary-furniture-2181960/",
+      "https://pixabay.com/en/chairs-table-contemporary-furniture-2181960/"
+    ],
+    "snapshot": null
+  },
+  "author": "Pexels",
+  "tags": "chairs, table, contemporary, furniture, indoors, interior design, office, room, spacious, windows, interior decoration, office furniture, meeting room, boardroom",
+  "size": {
+    "original": [
+      5616,
+      3744
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

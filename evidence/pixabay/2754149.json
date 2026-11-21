@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2754149,
+  "page": "https://pixabay.com/photos/knife-and-fork-plate-dish-2754149/",
+  "uploaded": "2017-09-16",
+  "uploadedFrom": "/photo/2017/09/16/00/36/knife-and-fork-2754149_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/knife-and-fork-plate-dish-2754149/",
+      "https://pixabay.com/en/knife-and-fork-plate-dish-2754149/"
+    ],
+    "snapshot": null
+  },
+  "author": "Mimzy",
+  "tags": "knife and fork, plate, dish, menu design, empty plate, cutting board, wooden, kitchen, cutlery, cooking, table, food, cuisine, traditional, diet, menu, culinary, brown, meal, preparation, kitchenware, utensil, equipment, tool, household, restaurant, dinner, blue food, blue kitchen, blue cooking, blue restaurant, blue table, blue tools, blue diet, blue dinner, blue board",
+  "size": {
+    "original": [
+      4000,
+      6000
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

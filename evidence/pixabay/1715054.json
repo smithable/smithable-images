@@ -1,0 +1,24 @@
+{
+  "pixabayId": 1715054,
+  "page": "https://pixabay.com/photos/tulip-bouquet-tulips-1715054/",
+  "uploaded": "2016-10-04",
+  "uploadedFrom": "/photo/2016/10/04/18/20/tulip-bouquet-1715054_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/tulip-bouquet-tulips-1715054/",
+      "https://pixabay.com/en/tulip-bouquet-tulips-1715054/"
+    ],
+    "snapshot": null
+  },
+  "author": "cocoparisienne",
+  "tags": "tulip bouquet, tulips, bunch of flowers, vase, flower vase, decoration, still life, chair, wooden chair, flower, decorative, interior design, vintage, antique, grunge, yellow tulips, texture, romantic, design, rustic, postcard",
+  "size": {
+    "original": [
+      2666,
+      3714
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

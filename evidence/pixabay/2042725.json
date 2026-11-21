@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2042725,
+  "page": "https://pixabay.com/photos/tennis-ball-tennis-court-2042725/",
+  "uploaded": "2017-02-06",
+  "uploadedFrom": "/photo/2017/02/06/11/57/tennis-2042725_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/tennis-ball-tennis-court-2042725/",
+      "https://pixabay.com/en/tennis-ball-tennis-court-2042725/"
+    ],
+    "snapshot": null
+  },
+  "author": "nike159",
+  "tags": "tennis, ball, tennis court, tennis ball, sports, bat",
+  "size": {
+    "original": [
+      3872,
+      2592
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}

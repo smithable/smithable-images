@@ -1,0 +1,24 @@
+{
+  "pixabayId": 2620118,
+  "page": "https://pixabay.com/photos/laptop-macbook-codes-coding-2620118/",
+  "uploaded": "2017-08-10",
+  "uploadedFrom": "/photo/2017/08/10/08/47/laptop-2620118_150.jpg",
+  "rule": "uploaded before 2018-12-26 and id at most 3895010 (the licence changed 2019-01-09; README, Pixabay)",
+  "wayback": {
+    "asked": [
+      "https://pixabay.com/photos/laptop-macbook-codes-coding-2620118/",
+      "https://pixabay.com/en/laptop-macbook-codes-coding-2620118/"
+    ],
+    "snapshot": null
+  },
+  "author": "StockSnap",
+  "tags": "laptop, macbook, codes, coding, programming, css, computer, technology, work, computer programming",
+  "size": {
+    "original": [
+      5472,
+      3648
+    ],
+    "fetched": "1280 px long side (largeImageURL)"
+  },
+  "fetched": "2026-11-21"
+}
