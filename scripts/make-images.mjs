@@ -28,6 +28,7 @@ import { commonsFile, UA } from "./commons.mjs";
 import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
 import { isPhotoId, pageOf, readPhotoPage } from "./wordpress.mjs";
 import { planUpload } from "./upload-plan.mjs";
+import { widthsFor } from "./upscale.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -110,6 +111,9 @@ const entries = manifest.images.map((e) => {
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.subject ?? "")) throw new Error(`${e.id}: a picture with a style names its subject (lower case and hyphens)`);
   } else if (e.subject) throw new Error(`${e.id}: a subject without a style`);
   if (!e.style && !e.from && (e.kind === "hero" || e.kind === "sample")) throw new Error(`${e.id}: give its style and subject`);
+  // What else a sample may serve as besides an item's picture (T1040): a hero under a title, a filler beside text.
+  if (e.uses !== undefined && (e.kind !== "sample" || !Array.isArray(e.uses) || !e.uses.length || e.uses.some((u) => !["hero", "filler"].includes(u))))
+    throw new Error(`${e.id}: uses is a list of hero and filler, on a sample`);
   return {
     ...e,
     model: e.model ?? defaults.models?.[e.kind] ?? "gpt-image-1-mini",
@@ -215,9 +219,33 @@ async function store(e, input) {
     .toFile(e.file);
 }
 
+// Enlarged copies made by scripts/upscale.mjs: the last result for each source file, by the source's
+// SHA-256, so a picture replaced since has none until it is enlarged again. Only a result "done" is
+// served; a later "kept" (judged on the crop sheet, the original stays) withdraws it.
+const UPSCALED = join(ROOT, "images", "upscaled");
+const upscaled = new Map();
+if (existsSync(join(UPSCALED, "results.jsonl")))
+  for (const r of readFileSync(join(UPSCALED, "results.jsonl"), "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)))
+    if (r.status === "done") upscaled.set(r.sha256, r);
+    else upscaled.delete(r.sha256);
+
+// The served widths above the stored copy, each with its own address and hash (the stored copy stays
+// url, width and height, as old readers know them).
+function widthsOf(e, hash, width, height) {
+  const r = upscaled.get(hash);
+  const served = new Set(r ? widthsFor({ ...e, width }, r.master) : []);
+  return (r?.widths ?? [])
+    .filter((w) => served.has(w))
+    .map((w) => ({ w, file: join(UPSCALED, e.kind, `${e.id}-${w}.webp`) }))
+    .filter(({ w, file }) => w > width && existsSync(file))
+    .map(({ w, file }) => ({ width: w, height: Math.round((height * w) / width), url: `${IMAGES_URL}/${e.kind}/${e.id}-${w}.webp`, sha256: sha256(file) }));
+}
+
 async function describe(e) {
   const img = sharp(e.file);
   const { width, height } = await img.metadata();
+  const hash = sha256(e.file);
+  const widths = widthsOf(e, hash, width, height);
   const { dominant, channels } = await img.stats();
   const hex = `#${[dominant.r, dominant.g, dominant.b].map((c) => c.toString(16).padStart(2, "0")).join("")}`;
   const mean = channels.slice(0, 3).map((c) => c.mean);
@@ -230,7 +258,7 @@ async function describe(e) {
     alt: e.alt,
     tags: e.tags,
     ...(e.style ? { style: e.style, subject: e.subject } : {}),
-    sha256: sha256(e.file),
+    sha256: hash,
     width,
     height,
     bytes: readFileSync(e.file).length,
@@ -245,7 +273,10 @@ async function describe(e) {
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
     generated: !photographed(e) && (!e.from || madeBy(e)),
-    ...(photographed(e) ? { credit: credits[e.id] } : {}),
+    // An enlarged real photograph stays generated: false (no AI badge); its credit says how it was enlarged.
+    ...(photographed(e) ? { credit: widths.length ? { ...credits[e.id], enlarged: "with an AI model (Real-ESRGAN)" } : credits[e.id] } : {}),
+    ...(e.uses ? { uses: e.uses } : {}),
+    ...(widths.length ? { upscaled: true, widths } : {}),
   };
 }
 
@@ -277,7 +308,11 @@ async function writeVersion(index) {
   index ??= await writeIndex();
   const body = {
     styles,
-    entries: index.map((x) => ({ ...x, url: `${IMAGES_URL}/files/${x.sha256}.webp` })),
+    entries: index.map((x) => ({
+      ...x,
+      url: `${IMAGES_URL}/files/${x.sha256}.webp`,
+      ...(x.widths ? { widths: x.widths.map((w) => ({ ...w, url: `${IMAGES_URL}/files/${w.sha256}.webp` })) } : {}),
+    })),
   };
   mkdirSync(VERSIONS, { recursive: true });
   const known = readdirSync(VERSIONS).filter((n) => /^\d{4}-\d{2}-\d{2}\.\d+\.json$/.test(n)).sort(byVersion);
@@ -617,7 +652,7 @@ async function upload() {
   const here = new Map(plan.byHash.map((f) => [f.key.replace(/^images\/files\/|\.webp$/g, ""), join(ROOT, f.src)]));
   const versionFiles = plan.versions;
   const inBucket = (key) => spawnSync("aws", ["s3api", "head-object", "--bucket", bucket, "--key", key], { env, stdio: "ignore" }).status === 0;
-  const named = new Set(versionFiles.flatMap((n) => JSON.parse(readFileSync(join(VERSIONS, n), "utf8")).entries.map((x) => x.sha256)));
+  const named = new Set(versionFiles.flatMap((n) => JSON.parse(readFileSync(join(VERSIONS, n), "utf8")).entries.flatMap((x) => [x.sha256, ...(x.widths ?? []).map((w) => w.sha256)])));
   const lost = [...named].filter((h) => !here.has(h) && !inBucket(`images/files/${h}.webp`));
   if (lost.length) throw new Error(`${lost.length} files a version names are neither here nor in the bucket (${lost[0]} …); nothing uploaded`);
   const stage = (dir, files) => {

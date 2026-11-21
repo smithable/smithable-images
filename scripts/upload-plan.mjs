@@ -8,17 +8,22 @@ export const NEVER_PUBLISHED = ["2026-11-18.5"];
 /**
  * index: the entries of the version being published ({ id, kind, sha256 }).
  * versionNames: the file names in versions/ ("2026-11-18.7.json", …).
- * Returns the files by id (images/<kind>/<id>.webp, the address today's CLI reads), the files by hash
- * (images/files/<sha256>.webp, what versions name), and the versions to put.
+ * Returns the files by id (images/<kind>/<id>.webp, the address today's CLI reads, and an enlarged
+ * width as images/<kind>/<id>-<width>.webp), the files by hash (images/files/<sha256>.webp, what
+ * versions name), and the versions to put.
  */
 export function planUpload(index, versionNames) {
-  const byId = index.map((e) => ({ src: `images/${e.kind}/${e.id}.webp`, key: `images/${e.kind}/${e.id}.webp` }));
+  const files = index.flatMap((e) => [
+    { src: `images/${e.kind}/${e.id}.webp`, name: `${e.kind}/${e.id}.webp`, sha256: e.sha256 },
+    ...(e.widths ?? []).map((w) => ({ src: `images/upscaled/${e.kind}/${e.id}-${w.width}.webp`, name: `${e.kind}/${e.id}-${w.width}.webp`, sha256: w.sha256 })),
+  ]);
+  const byId = files.map((f) => ({ src: f.src, key: `images/${f.name}` }));
   const seen = new Set();
   const byHash = [];
-  for (const e of index) {
-    if (seen.has(e.sha256)) continue;
-    seen.add(e.sha256);
-    byHash.push({ src: `images/${e.kind}/${e.id}.webp`, key: `images/files/${e.sha256}.webp` });
+  for (const f of files) {
+    if (seen.has(f.sha256)) continue;
+    seen.add(f.sha256);
+    byHash.push({ src: f.src, key: `images/files/${f.sha256}.webp` });
   }
   const versions = versionNames.filter((n) => n.endsWith(".json") && !NEVER_PUBLISHED.includes(n.replace(/\.json$/, ""))).sort();
   return { byId, byHash, versions };

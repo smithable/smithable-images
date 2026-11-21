@@ -25,7 +25,7 @@ function checkRecord(value, shape, where, required = []) {
   }
 }
 const leaf = (check) => (v, where) => assert.ok(check(v), `${where} has a value of the wrong shape`);
-const CREDIT = Object.fromEntries(["page", "author", "licence", "licenceUrl", "uploaded", "evidence", "fetched"].map((k) => [k, leaf(text)]));
+const CREDIT = Object.fromEntries(["page", "author", "licence", "licenceUrl", "uploaded", "evidence", "fetched", "enlarged"].map((k) => [k, leaf(text)]));
 const ENTRY = {
   ...Object.fromEntries(
     ["id", "kind", "url", "alt", "style", "subject", "sha256", "orientation", "tone", "temperature", "color", "source"].map((k) => [k, leaf(text)]),
@@ -35,7 +35,12 @@ const ENTRY = {
   generated: leaf(flag),
   tags: leaf(texts),
   credit: (v, where) => checkRecord(v, CREDIT, where, ["page", "author", "licence", "fetched"]),
+  // A sample marked for the landing page or as filler, and the enlarged copies served beside it.
+  uses: leaf((v) => texts(v) && v.length > 0 && v.every((u) => u === "hero" || u === "filler")),
+  upscaled: leaf(flag),
+  widths: (v, where) => list(WIDTH, Object.keys(WIDTH))(v, where),
 };
+const WIDTH = { width: leaf(number), height: leaf(number), url: leaf(text), sha256: leaf(text) };
 // A style's words: per language, exactly a name and a line. Three versions of 2026-11-18 were
 // published before make-images.mjs refused an unquoted comma in YAML, so their English line for
 // photographs split into a second, empty key; they stay as published, and only that key is let by.
