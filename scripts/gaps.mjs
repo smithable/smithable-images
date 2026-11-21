@@ -12,7 +12,7 @@
 // picture per subject, at most target. The needs are ranked by how many groups have them, then by
 // the groups' counts. Nothing is written back to the library: the output goes to --out or stdout.
 
-import { existsSync, readdirSync, readFileSync, realpathSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, realpathSync, renameSync, writeFileSync } from "node:fs";
 import { basename, dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
@@ -68,9 +68,11 @@ export function starterFiles(dir) {
     const samples = join(dir, starter, "samples");
     if (!existsSync(samples)) continue;
     for (const f of readdirSync(samples).filter((f) => f.endsWith(".yml")).sort()) {
+      const seen = new WeakSet();
       const walk = (v) => {
+        if (!v || typeof v !== "object" || seen.has(v)) return;
+        seen.add(v);
         if (Array.isArray(v)) return v.forEach(walk);
-        if (!v || typeof v !== "object") return;
         for (const [k, x] of Object.entries(v)) {
           if (k === "file" && typeof x === "string" && x.endsWith(".webp")) {
             const name = x.slice(0, -".webp".length);
@@ -158,9 +160,12 @@ function main(argv) {
   if (out) {
     // Never into the library: the report goes beside the needs file or elsewhere, not over index.json.
     const library = realpathSync(fileURLToPath(new URL("..", import.meta.url)));
-    const at = existsSync(out) ? realpathSync(out) : join(realpathSync(dirname(resolve(out))), basename(out));
-    if (at === library || at.startsWith(library + sep)) throw new Error(`--out ${out} is inside the library; write it elsewhere`);
-    writeFileSync(at, text);
+    // The folder is checked, and a new file renamed over the entry, so no link can lead the write into it.
+    const dir = realpathSync(dirname(resolve(out)));
+    if (dir === library || dir.startsWith(library + sep)) throw new Error(`--out ${out} is inside the library; write it elsewhere`);
+    const tmp = join(dir, `.${basename(out)}.${process.pid}.tmp`);
+    writeFileSync(tmp, text, { flag: "wx" });
+    renameSync(tmp, join(dir, basename(out)));
   }
   else process.stdout.write(text);
   const missing = (result.groups ?? []).reduce((a, g) => a + g.pictures.reduce((b, n) => b + n.missing, 0), 0);

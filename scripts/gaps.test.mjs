@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { existsSync, linkSync, mkdirSync, mkdtempSync, readFileSync, symlinkSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
@@ -98,14 +98,24 @@ test("an alternate's starter tag counts for its subject; a repeated key counts o
   assert.equal(matchNeed(index, { kind: "sample", subject: ["food-bread", "food-bread"], people: false, target: 2 }, styles).missing, 1);
   const dir = mkdtempSync(join(tmpdir(), "gaps-"));
   mkdirSync(join(dir, "kiosk", "samples"), { recursive: true });
-  writeFileSync(join(dir, "kiosk", "samples", "Dish.yml"), "# file: ghost.webp\n- cover: { file: 'bread-b.webp' }\n");
+  writeFileSync(join(dir, "kiosk", "samples", "Dish.yml"), "# file: ghost.webp\n- &a { cover: { file: 'bread-b.webp' } }\n- *a\n");
   assert.deepEqual(starterFiles(dir), { kiosk: ["bread-b"] });
 });
 
 test("--out refuses a path inside the library", () => {
-  const r = spawnSync(process.execPath, [fileURLToPath(new URL("./gaps.mjs", import.meta.url)), "--out", fileURLToPath(new URL("../index.json", import.meta.url))], { encoding: "utf8" });
+  const script = fileURLToPath(new URL("./gaps.mjs", import.meta.url));
+  const inside = fileURLToPath(new URL("./.gaps-test-out.json", import.meta.url));
+  const r = spawnSync(process.execPath, [script, "--out", inside], { encoding: "utf8" });
   assert.notEqual(r.status, 0);
   assert.match(r.stderr, /inside the library/);
-  const out = join(mkdtempSync(join(tmpdir(), "gaps-")), "gaps.json");
-  assert.equal(spawnSync(process.execPath, [fileURLToPath(new URL("./gaps.mjs", import.meta.url)), "--out", out]).status, 0);
+  assert.equal(existsSync(inside), false);
+  // A link outside the library that points into it is replaced, never written through.
+  const dir = mkdtempSync(join(tmpdir(), "gaps-"));
+  writeFileSync(join(dir, "target.json"), "keep");
+  symlinkSync(join(dir, "target.json"), join(dir, "sym.json"));
+  linkSync(join(dir, "target.json"), join(dir, "hard.json"));
+  symlinkSync(join(dir, "missing.json"), join(dir, "dangling.json"));
+  for (const f of ["sym.json", "hard.json", "dangling.json", "gaps.json"]) assert.equal(spawnSync(process.execPath, [script, "--out", join(dir, f)]).status, 0);
+  assert.equal(readFileSync(join(dir, "target.json"), "utf8"), "keep");
+  assert.equal(existsSync(join(dir, "missing.json")), false);
 });
