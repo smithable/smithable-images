@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
+import { fileURLToPath } from "node:url";
 import { groupGaps, matchNeed, newSubjects, starterFiles, starterGaps } from "./gaps.mjs";
 
 const e = (id, kind, style, subject, tags = [], orientation = "landscape") => ({ id, kind, style, subject, tags, orientation });
@@ -84,4 +86,26 @@ test("starters' needs: tagged subjects and their sample files, an alternate coun
     ],
     unknown: [{ starter: "kiosk", file: "0" }],
   });
+});
+
+test("an alternate's starter tag counts for its subject; a repeated key counts once; YAML comments are not files", () => {
+  const ix = [...index, e("coffee-p2", "sample", "photographs", "drink-coffee-3", ["starter-cafe"])];
+  assert.deepEqual(starterGaps(ix, ["ink-wash"]).starters.find((s) => s.starter === "cafe"), {
+    starter: "cafe",
+    style: "ink-wash",
+    missing: [{ subject: "drink-coffee", kind: "sample" }],
+  });
+  assert.equal(matchNeed(index, { kind: "sample", subject: ["food-bread", "food-bread"], people: false, target: 2 }, styles).missing, 1);
+  const dir = mkdtempSync(join(tmpdir(), "gaps-"));
+  mkdirSync(join(dir, "kiosk", "samples"), { recursive: true });
+  writeFileSync(join(dir, "kiosk", "samples", "Dish.yml"), "# file: ghost.webp\n- cover: { file: 'bread-b.webp' }\n");
+  assert.deepEqual(starterFiles(dir), { kiosk: ["bread-b"] });
+});
+
+test("--out refuses a path inside the library", () => {
+  const r = spawnSync(process.execPath, [fileURLToPath(new URL("./gaps.mjs", import.meta.url)), "--out", fileURLToPath(new URL("../index.json", import.meta.url))], { encoding: "utf8" });
+  assert.notEqual(r.status, 0);
+  assert.match(r.stderr, /inside the library/);
+  const out = join(mkdtempSync(join(tmpdir(), "gaps-")), "gaps.json");
+  assert.equal(spawnSync(process.execPath, [fileURLToPath(new URL("./gaps.mjs", import.meta.url)), "--out", out]).status, 0);
 });

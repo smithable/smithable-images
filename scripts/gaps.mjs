@@ -12,8 +12,9 @@
 // picture per subject, at most target. The needs are ranked by how many groups have them, then by
 // the groups' counts. Nothing is written back to the library: the output goes to --out or stdout.
 
-import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, readdirSync, readFileSync, realpathSync, writeFileSync } from "node:fs";
+import { basename, dirname, join, resolve, sep } from "node:path";
+import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 
 const PEOPLE = ["people", "person"];
@@ -22,19 +23,20 @@ export function starterGaps(index, styles, files = {}) {
   const starters = new Map();
   const subjects = new Set(index.map((e) => e.subject).filter(Boolean));
   const base = (s) => s.replace(/-\d+$/, "");
-  // An alternate (<subject>-2 and on) is another picture of its subject, not a subject of its own.
+  // An alternate (<subject>-N: -2 and on, and the Lifelike set's -1 names) is another picture of its
+  // subject, not a subject of its own.
   const alternate = (s) => /-\d+$/.test(s) && subjects.has(base(s));
+  const fold = (s) => (alternate(s) ? base(s) : s);
   const add = (starter, subject, kind) => {
     if (!starters.has(starter)) starters.set(starter, new Map());
     starters.get(starter).set(subject, kind);
   };
   for (const e of index) {
-    if (!e.subject || alternate(e.subject)) continue;
-    for (const t of e.tags) if (t.startsWith("starter-") && t !== "starter-") add(t.slice("starter-".length), e.subject, e.kind);
+    if (!e.subject) continue;
+    for (const t of e.tags) if (t.startsWith("starter-") && t !== "starter-") add(t.slice("starter-".length), fold(e.subject), e.kind);
   }
   // A sample file is named by its entry id (food-soup-b) or by its subject with a number (market-laptop-1).
   const byId = new Map(index.filter((e) => e.subject).map((e) => [e.id, e.subject]));
-  const fold = (s) => (alternate(s) ? base(s) : s);
   const unknown = [];
   for (const [starter, names] of Object.entries(files)) {
     for (const name of names) {
@@ -66,9 +68,17 @@ export function starterFiles(dir) {
     const samples = join(dir, starter, "samples");
     if (!existsSync(samples)) continue;
     for (const f of readdirSync(samples).filter((f) => f.endsWith(".yml")).sort()) {
-      for (const m of readFileSync(join(samples, f), "utf8").matchAll(/file:\s*"?([\w-]+)\.webp/g)) {
-        (files[starter] ??= []).includes(m[1]) || files[starter].push(m[1]);
-      }
+      const walk = (v) => {
+        if (Array.isArray(v)) return v.forEach(walk);
+        if (!v || typeof v !== "object") return;
+        for (const [k, x] of Object.entries(v)) {
+          if (k === "file" && typeof x === "string" && x.endsWith(".webp")) {
+            const name = x.slice(0, -".webp".length);
+            (files[starter] ??= []).includes(name) || files[starter].push(name);
+          } else walk(x);
+        }
+      };
+      walk(parse(readFileSync(join(samples, f), "utf8")));
     }
   }
   return files;
@@ -83,11 +93,11 @@ export function matchNeed(index, need, styles) {
     if (e.tags.some((t) => PEOPLE.includes(t)) !== Boolean(need.people)) continue;
     if (!bySubject.has(e.subject)) bySubject.set(e.subject, e.id);
   }
-  const matched_ids = need.subject.filter((s) => bySubject.has(s)).map((s) => bySubject.get(s)).slice(0, need.target);
+  const matched_ids = [...subjects].filter((s) => bySubject.has(s)).map((s) => bySubject.get(s)).slice(0, need.target);
   return { matched_ids, missing: Math.max(0, need.target - matched_ids.length) };
 }
 
-/** Subject keys the index does not have, each with the index's subjects that share a word with it. */
+/** Subject keys the index does not have, each with the index's subjects that share a word (three letters or more). */
 export function newSubjects(index, keys) {
   const known = [...new Set(index.filter((e) => e.subject).map((e) => e.subject))].sort();
   const words = (k) => k.split("-").filter((w) => w.length > 2);
@@ -145,7 +155,13 @@ function main(argv) {
   }
   const text = `${JSON.stringify(result, null, 2)}\n`;
   const out = arg("--out");
-  if (out) writeFileSync(out, text);
+  if (out) {
+    // Never into the library: the report goes beside the needs file or elsewhere, not over index.json.
+    const library = realpathSync(fileURLToPath(new URL("..", import.meta.url)));
+    const at = existsSync(out) ? realpathSync(out) : join(realpathSync(dirname(resolve(out))), basename(out));
+    if (at === library || at.startsWith(library + sep)) throw new Error(`--out ${out} is inside the library; write it elsewhere`);
+    writeFileSync(at, text);
+  }
   else process.stdout.write(text);
   const missing = (result.groups ?? []).reduce((a, g) => a + g.pictures.reduce((b, n) => b + n.missing, 0), 0);
   console.error(
