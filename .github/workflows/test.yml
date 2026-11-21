@@ -1,0 +1,26 @@
+# The library's own tests (scripts/*.test.mjs) on every pull request and push to main: the index's
+# shape and keys, the make script's checks, the gap script. CodeQL runs beside this by itself.
+name: Test
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions: { contents: read }
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: node --test scripts/*.test.mjs
