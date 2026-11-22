@@ -74,6 +74,8 @@ for (const st of styles) {
   if (!st.id || typeof st.generated !== "boolean" || !st.words?.en)
     throw new Error(`styles: ${st.id ?? "an entry"} needs id, generated and words.en`);
   if (st.drawn !== undefined && typeof st.drawn !== "boolean") throw new Error(`styles: ${st.id}: drawn is true or false`);
+  if (st.washHue !== undefined && (!st.drawn || !st.generated || !Number.isFinite(st.washHue) || st.washHue < 0 || st.washHue >= 360))
+    throw new Error(`styles: ${st.id}: washHue must be a hue from 0 up to 360 on a generated drawn style`);
   // Each language's words are exactly a name and a line, both text: an unquoted comma in YAML's
   // flow style splits a line into a key of its own.
   for (const [lang, w] of Object.entries(st.words)) {
