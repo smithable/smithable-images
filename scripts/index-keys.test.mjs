@@ -57,7 +57,7 @@ const words = (splitLetBy) => (v, where) => {
     checkRecord(w, shape, `${where}.${lang}`, ["name", "line"]);
   }
 };
-const STYLE = { id: leaf(text), generated: leaf(flag), drawn: leaf(flag), words: words(false) };
+const STYLE = { id: leaf(text), generated: leaf(flag), drawn: leaf(flag), washHue: leaf((value) => Number.isFinite(value) && value >= 0 && value < 360), words: words(false) };
 const STYLE_REQUIRED = ["id", "generated", "words"];
 const ENTRY_REQUIRED = ["id", "kind", "url", "alt", "tags", "sha256", "width", "height", "bytes", "source", "photo", "generated"];
 const list = (shape, required) => (v, where) => {
@@ -71,6 +71,7 @@ const styles = (v, where) => {
   v.forEach((s, i) => {
     const splitLetBy = SPLIT_IN.includes(file) && isRecord(s) && s.id === "photographs";
     checkRecord(s, splitLetBy ? { ...STYLE, words: words(true) } : STYLE, `${where}[${i}]`, STYLE_REQUIRED);
+    if (Object.hasOwn(s, "washHue")) assert.ok(s.drawn && s.generated, `${where}[${i}] has a wash hue only for a generated drawn style`);
   });
 };
 const VERSION = { version: leaf(text), styles, entries: list(ENTRY, ENTRY_REQUIRED) };
@@ -103,6 +104,12 @@ test("index.json and every version carry only the index's own keys, down to thei
   const files = versionFiles();
   assert.ok(files.length > 0, "versions/ holds the published versions");
   for (const file of files) checkVersion(read(file), file);
+});
+
+test("the latest Ink wash style names its wash hue", () => {
+  const { styles: current } = read(read("latest.json").index);
+  assert.equal(current.find((style) => style.id === "ink-wash")?.washHue, 300);
+  assert.equal(current.filter((style) => Object.hasOwn(style, "washHue")).length, 1);
 });
 
 test("the checks catch a key or a value out of shape at any depth", () => {
