@@ -163,12 +163,12 @@ async function libraryEntries() {
 }
 
 // Pictures outside the manifest (newly generated app pictures): a folder, or a file with one path a line.
-async function appEntries(paths) {
+export async function appEntries(paths) {
   const out = [];
   for (const file of paths) {
     const { width, height } = await sharp(file).metadata();
     const sha256 = createHash("sha256").update(readFileSync(file)).digest("hex");
-    out.push({ id: basename(file).replace(/\.\w+$/, ""), kind: "app", app: true, uses: ["hero"], file, width, height, sha256 });
+    out.push({ id: basename(file).replace(/\.\w+$/, ""), kind: "app", app: true, generated: true, uses: ["hero"], file, width, height, sha256 });
   }
   return out;
 }

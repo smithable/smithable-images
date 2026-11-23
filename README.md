@@ -129,8 +129,9 @@ XMP statement on generated originals and resized copies. Before making a new ver
 `node scripts/make-images.mjs --backfill-provenance` once on the local library to mark older
 generated files without re-encoding. It preserves the association between the original and its
 resized copies. Run it while the upscaler is idle. Existing XMP with another statement needs a
-manual metadata merge. The read-only `--check-provenance` command verifies local outputs.
-Each new version uses the resulting content hashes. Previously published version files and the
+manual metadata merge. The upscaler's `--dir` and `--list` inputs are for app pictures already
+known to be generated. The read-only `--check-provenance` command verifies local outputs.
+Versioning needs the local WebP files and uses their resulting content hashes. Previously published version files and the
 immutable files they reference keep their original bytes.
 
 ### Provenance sample

@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { test } from "node:test";
 import sharp from "sharp";
 import { assertGeneratedWebp, backfillGeneratedWebp, encodedPicture } from "./image-provenance.mjs";
+import { appEntries } from "./upscale.mjs";
 
 const image = () => sharp({ create: { width: 40, height: 24, channels: 3, background: "#bd6a2f" } });
 
@@ -96,4 +97,17 @@ images:
   assert.equal(entry.widths[0].sha256, sha256(readFileSync(widthPath)));
   await assertGeneratedWebp(originalPath, "original");
   await assertGeneratedWebp(widthPath, "copy");
+});
+
+test("an app image supplied to the upscaler is encoded as generated", async (t) => {
+  const root = mkdtempSync(join(tmpdir(), "smithable-app-picture-"));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  const file = join(root, "tour.png");
+  await image().png().toFile(file);
+  const [entry] = await appEntries([file]);
+  assert.equal(entry.generated, true);
+  for (const width of [80, 20]) {
+    const copy = await encodedPicture(sharp(entry.file).resize(width).webp(), entry.generated, entry.id);
+    await assertGeneratedWebp(copy, `upscaled app picture at ${width}px`);
+  }
 });
