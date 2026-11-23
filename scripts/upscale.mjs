@@ -27,6 +27,7 @@ import { basename, dirname, join, resolve } from "node:path";
 import { homedir } from "node:os";
 import sharp from "sharp";
 import { parse } from "yaml";
+import { encodedPicture } from "./image-provenance.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const OUT = join(ROOT, "images", "upscaled");
@@ -137,9 +138,14 @@ async function one(e, tmp) {
   const meta = await sharp(big).metadata();
   const master = Math.min(MASTER, meta.width);
   const dir = join(OUT, e.kind);
-  put(join(dir, `${e.id}.webp`), await sharp(big).resize(master).webp({ quality: 92, effort: 6 }).toBuffer());
+  const masterFile = join(dir, `${e.id}.webp`);
+  put(masterFile, await encodedPicture(sharp(big).resize(master).webp({ quality: 92, effort: 6 }), e.generated, masterFile));
   const widths = widthsFor(e, master);
-  for (const w of widths) put(join(dir, `${e.id}-${w}.webp`), await sharp(big).resize(w, null, { kernel: "lanczos3" }).webp({ quality: 82, effort: 6 }).toBuffer());
+  for (const w of widths) {
+    const file = join(dir, `${e.id}-${w}.webp`);
+    const output = sharp(big).resize(w, null, { kernel: "lanczos3" }).webp({ quality: 82, effort: 6 });
+    put(file, await encodedPicture(output, e.generated, file));
+  }
   rmSync(big);
   return { ...row, status: "done", master, widths };
 }

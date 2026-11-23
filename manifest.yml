@@ -59,22 +59,26 @@ defaults:
 # generated: whether an image model makes it (an app placing it shows the AI badge).
 styles:
   - id: photographs
+    kind: photograph
     generated: false
     words:
       en: { name: Photographs, line: "Real photographs, dedicated to the public domain by their authors." }
       sv: { name: Fotografier, line: "Riktiga fotografier som deras upphovspersoner gett till allmän egendom." }
   - id: lifelike
+    kind: ai-realistic
     generated: true
     words:
       en: { name: Lifelike, line: "Pictures made by an image model to look like photographs." }
       sv: { name: Verklighetstrogen, line: "Bilder gjorda av en bildmodell för att se ut som fotografier." }
   - id: pastel
+    kind: ai-drawn
     generated: true
     drawn: true
     words:
       en: { name: Pastel, line: "Soft drawings in light, chalky colours." }
       sv: { name: Pastell, line: "Mjuka teckningar i ljusa, kritiga färger." }
   - id: ink-wash
+    kind: ai-drawn
     generated: true
     drawn: true
     washHue: 300

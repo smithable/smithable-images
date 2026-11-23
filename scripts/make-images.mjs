@@ -11,12 +11,14 @@
 //   node scripts/make-images.mjs --upload                        images/ to the docs bucket (SMITHABLE_DOCS_BUCKET)
 //   node scripts/make-images.mjs --tar                           images-<date>.tar, for a release asset
 //   node scripts/make-images.mjs --index                         copies `from:`, fetches `photo:` and writes index.json; no model
+//   node scripts/make-images.mjs --backfill-provenance [--only <id|kind|tag>]  stamps local generated files without re-encoding
+//   node scripts/make-images.mjs --check-provenance [--only <id|kind|tag>]  checks local generated files, read-only
 //   node scripts/make-images.mjs --version                       writes versions/<id>.json when the library changed (--upload does it too)
 //
 // The key is read from OPENAI_API_KEY or ~/.config/smithable/openai.env and never printed.
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFileSync, existsSync, linkSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { appendFileSync, copyFileSync, existsSync, linkSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { createInterface } from "node:readline";
@@ -25,6 +27,7 @@ import { parseArgs } from "node:util";
 import sharp from "sharp";
 import { parse } from "yaml";
 import { commonsFile, UA } from "./commons.mjs";
+import { assertGeneratedWebp, backfillGeneratedWebp, encodedPicture } from "./image-provenance.mjs";
 import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
 import { isPhotoId, pageOf, readPhotoPage } from "./wordpress.mjs";
 import { planUpload } from "./upload-plan.mjs";
@@ -44,6 +47,8 @@ const { values: args } = parseArgs({
     tar: { type: "boolean" },
     index: { type: "boolean" },
     version: { type: "boolean" },
+    "check-provenance": { type: "boolean" },
+    "backfill-provenance": { type: "boolean" },
     out: { type: "string", default: "/mnt/c/Users/johan/Pictures/claude/images" },
     concurrency: { type: "string", default: "4" },
   },
@@ -74,6 +79,8 @@ for (const st of styles) {
   if (!st.id || typeof st.generated !== "boolean" || !st.words?.en)
     throw new Error(`styles: ${st.id ?? "an entry"} needs id, generated and words.en`);
   if (st.drawn !== undefined && typeof st.drawn !== "boolean") throw new Error(`styles: ${st.id}: drawn is true or false`);
+  const expectedKind = !st.generated ? "photograph" : st.drawn ? "ai-drawn" : "ai-realistic";
+  if (st.kind !== expectedKind) throw new Error(`styles: ${st.id}: expected kind ${expectedKind}`);
   if (st.washHue !== undefined && (!st.drawn || !st.generated || !Number.isFinite(st.washHue) || st.washHue < 0 || st.washHue >= 360))
     throw new Error(`styles: ${st.id}: washHue must be a hue from 0 up to 360 on a generated drawn style`);
   // Each language's words are exactly a name and a line, both text: an unquoted comma in YAML's
@@ -214,20 +221,21 @@ async function store(e, input) {
   const resize = photographed(e)
     ? { width: kind.long, height: Math.round((kind.long * 2) / 3), fit: "cover", position: "attention", withoutEnlargement: true }
     : { width: kind.long, height: kind.long, fit: "inside", withoutEnlargement: true };
-  await sharp(input)
+  const output = sharp(input)
     .rotate()
     .resize(resize)
-    .webp({ quality: kind.quality, effort: 6, alphaQuality: kind.transparent ? 100 : 90 })
-    .toFile(e.file);
+    .webp({ quality: kind.quality, effort: 6, alphaQuality: kind.transparent ? 100 : 90 });
+  writeFileSync(e.file, await encodedPicture(output, generated(e), e.id));
 }
 
 // Enlarged copies made by scripts/upscale.mjs: the last result for each source file, by the source's
 // SHA-256, so a picture replaced since has none until it is enlarged again. Only a result "done" is
 // served; a later "kept" (judged on the crop sheet, the original stays) withdraws it.
 const UPSCALED = join(ROOT, "images", "upscaled");
+const UPSCALE_RESULTS = join(UPSCALED, "results.jsonl");
 const upscaled = new Map();
-if (existsSync(join(UPSCALED, "results.jsonl")))
-  for (const r of readFileSync(join(UPSCALED, "results.jsonl"), "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)))
+if (existsSync(UPSCALE_RESULTS))
+  for (const r of readFileSync(UPSCALE_RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)))
     if (r.status === "done") upscaled.set(r.sha256, r);
     else upscaled.delete(r.sha256);
 
@@ -244,6 +252,8 @@ function widthsOf(e, hash, width, height) {
 }
 
 async function describe(e) {
+  const style = styles.find((x) => x.id === e.style);
+  const pictureKind = generated(e) ? (style?.drawn ? "ai-drawn" : "ai-realistic") : "photograph";
   const img = sharp(e.file);
   const { width, height } = await img.metadata();
   const hash = sha256(e.file);
@@ -259,7 +269,8 @@ async function describe(e) {
     url: `${IMAGES_URL}/${e.kind}/${e.id}.webp`,
     alt: e.alt,
     tags: e.tags,
-    ...(e.style ? { style: e.style, subject: e.subject } : {}),
+    ...(style ? { style: style.id, subject: e.subject } : {}),
+    ...(style && style.kind !== pictureKind ? { pictureKind } : {}),
     sha256: hash,
     width,
     height,
@@ -271,10 +282,10 @@ async function describe(e) {
     source: e.photo ? "wikimedia-commons" : e.pixabay ? "pixabay" : e.wordpress ? "wordpress-photo-directory" : e.from && !madeBy(e) ? "file" : e.model,
     // A photograph or made to look like one (heroes and samples, the abstract heroes included);
     // marks, and the pictures of a drawn style (pastel, ink wash), are not.
-    photo: !KINDS[e.kind].transparent && !styles.find((x) => x.id === e.style)?.drawn,
+    photo: !KINDS[e.kind].transparent && !style?.drawn,
     // Made by an image model, so an app that places it says so (generated: true, the AI badge);
     // a real photograph is not, and carries where it is from instead.
-    generated: !photographed(e) && (!e.from || madeBy(e)),
+    generated: generated(e),
     // An enlarged real photograph stays generated: false (no AI badge); its credit says how it was enlarged.
     ...(photographed(e) ? { credit: widths.length ? { ...credits[e.id], enlarged: "with an AI model (Real-ESRGAN)" } : credits[e.id] } : {}),
     ...(e.uses ? { uses: e.uses } : {}),
@@ -290,6 +301,7 @@ function photographed(e) {
 // (entries default their model, so the manifest as written is read).
 const copiedByModel = new Set(manifest.images.filter((m) => m.from && m.model).map((m) => m.id));
 const madeBy = (e) => copiedByModel.has(e.id);
+const generated = (e) => !photographed(e) && (!e.from || madeBy(e));
 const sha256 = (file) => createHash("sha256").update(readFileSync(file)).digest("hex");
 
 async function writeIndex() {
@@ -302,11 +314,75 @@ async function writeIndex() {
   return index;
 }
 
+function upscaleFiles(entry, result) {
+  if (!result) return [];
+  return ["", ...result.widths.map((width) => `-${width}`)]
+    .map((suffix) => join(UPSCALED, entry.kind, `${entry.id}${suffix}.webp`))
+    .filter((file) => existsSync(file));
+}
+
+async function checkProvenance(pictures) {
+  let originals = 0;
+  let copies = 0;
+  for (const entry of pictures) {
+    if (!generated(entry) || !existsSync(entry.file)) continue;
+    await assertGeneratedWebp(entry.file, entry.id);
+    originals++;
+    for (const file of upscaleFiles(entry, upscaled.get(sha256(entry.file)))) {
+      await assertGeneratedWebp(file, file);
+      copies++;
+    }
+  }
+  if (pictures.some(generated) && !originals) throw new Error("No local generated WebPs to check");
+  console.log(`IPTC statement verified on ${originals} generated originals and ${copies} local upscale copies`);
+}
+
+function replaceImage(file, bytes) {
+  const temporary = `${file}.provenance-${process.pid}.tmp`;
+  writeFileSync(temporary, bytes, { flag: "wx" });
+  try {
+    renameSync(temporary, file);
+  } finally {
+    rmSync(temporary, { force: true });
+  }
+}
+
+async function backfillProvenance(pictures) {
+  for (const entry of pictures) {
+    if (!generated(entry) || !existsSync(entry.file)) continue;
+    const previous = readFileSync(entry.file);
+    const original = await backfillGeneratedWebp(previous, entry.id);
+    const oldHash = createHash("sha256").update(previous).digest("hex");
+    const result = upscaled.get(oldHash);
+    const copies = [];
+    for (const file of upscaleFiles(entry, result)) {
+      const before = readFileSync(file);
+      const after = await backfillGeneratedWebp(before, file);
+      if (after !== before) copies.push([file, after]);
+    }
+    for (const [file, bytes] of copies) replaceImage(file, bytes);
+    if (original === previous) continue;
+    if (result) {
+      const hash = createHash("sha256").update(original).digest("hex");
+      // Keep the old record and write the new association before swapping the source.
+      // A retry finds the upscales whether the source swap happened or not.
+      if (!upscaled.has(hash)) {
+        const updated = { ...result, sha256: hash };
+        appendFileSync(UPSCALE_RESULTS, `${JSON.stringify(updated)}\n`);
+        upscaled.set(hash, updated);
+      }
+    }
+    replaceImage(entry.file, original);
+  }
+  await checkProvenance(pictures);
+}
+
 // A version of the library: the styles and the entries, each file named by its SHA-256 under
 // images/files/, so a version once published never changes (look picker, step 1). index.json
 // stays as it was for the CLI that reads it; latest.json names the latest version.
 const VERSIONS = join(ROOT, "versions");
 async function writeVersion(index) {
+  await checkProvenance(entries);
   index ??= await writeIndex();
   const body = {
     styles,
@@ -730,6 +806,8 @@ if (args["dry-run"]) dryRun();
 else if (args.upload) await upload();
 else if (args.tar) tar();
 else if (args.sheet) await sheets();
+else if (args["backfill-provenance"]) await backfillProvenance(selected);
+else if (args["check-provenance"]) await checkProvenance(selected);
 else if (args.version) await writeVersion();
 else if (args.index) {
   await copyFiles();

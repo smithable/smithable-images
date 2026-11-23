@@ -117,3 +117,27 @@ pictures that the library's rule does not take (T933). Its file is removed from 
 published numbers have a gap there. `--upload` sends only the files of the entries in the version it
 publishes; a picture lying in `images/` that no entry names (withdrawn, or taken out before
 publishing) never goes up.
+
+## Picture provenance
+
+A version's styles carry `kind` (`ai-realistic`, `ai-drawn`, or `photograph`).
+An entry inherits its style's provenance unless it has a `pictureKind` override. The entry's
+`kind` still names the placement slot, such as `hero` or `sample`.
+
+The final WebP encode writes the [IPTC Digital Source Type](https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia)
+XMP statement on generated originals and resized copies. Before making a new version, run
+`node scripts/make-images.mjs --backfill-provenance` once on the local library to mark older
+generated files without re-encoding. It preserves the association between the original and its
+resized copies. Run it while the upscaler is idle. Existing XMP with another statement needs a
+manual metadata merge. The read-only `--check-provenance` command verifies local outputs.
+Each new version uses the resulting content hashes. Previously published version files and the
+immutable files they reference keep their original bytes.
+
+### Provenance sample
+
+On 2026-11-23, we inspected eight local library WebPs from the Lifelike and Ink wash styles.
+The sample included one hero and one card picture per style, plus an enlarged copy of each.
+The four IDs were `accounting-meeting-b`, `accounting-signing-b`, `fitness-yoga-class-ink`
+and `cafe-cinnamon-buns-ink`. No sampled file contained XMP or a top-level JUMBF or C2PA chunk.
+This check did not measure invisible watermarks in the pixels. The library relies on the
+explicit IPTC Digital Source Type statement for generated files.

@@ -26,7 +26,9 @@ function checkRecord(value, shape, where, required = []) {
 }
 const leaf = (check) => (v, where) => assert.ok(check(v), `${where} has a value of the wrong shape`);
 const CREDIT = Object.fromEntries(["page", "author", "licence", "licenceUrl", "uploaded", "evidence", "fetched", "enlarged"].map((k) => [k, leaf(text)]));
+const pictureKind = leaf((value) => ["ai-realistic", "ai-drawn", "photograph"].includes(value));
 const ENTRY = {
+  pictureKind,
   ...Object.fromEntries(
     ["id", "kind", "url", "alt", "style", "subject", "sha256", "orientation", "tone", "temperature", "color", "source"].map((k) => [k, leaf(text)]),
   ),
@@ -57,7 +59,7 @@ const words = (splitLetBy) => (v, where) => {
     checkRecord(w, shape, `${where}.${lang}`, ["name", "line"]);
   }
 };
-const STYLE = { id: leaf(text), generated: leaf(flag), drawn: leaf(flag), washHue: leaf((value) => Number.isFinite(value) && value >= 0 && value < 360), words: words(false) };
+const STYLE = { id: leaf(text), kind: pictureKind, generated: leaf(flag), drawn: leaf(flag), washHue: leaf((value) => Number.isFinite(value) && value >= 0 && value < 360), words: words(false) };
 const STYLE_REQUIRED = ["id", "generated", "words"];
 const ENTRY_REQUIRED = ["id", "kind", "url", "alt", "tags", "sha256", "width", "height", "bytes", "source", "photo", "generated"];
 const list = (shape, required) => (v, where) => {
