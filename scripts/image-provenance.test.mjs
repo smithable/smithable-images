@@ -29,6 +29,15 @@ test("an unstamped WebP and a file of another format fail the generated-picture 
   await assert.rejects(encodedPicture(image().png(), true, "wrong.png"), /wrong.png.*WebP/);
 });
 
+test("the generated check rejects a different namespace without overwriting the packet", async () => {
+  const original = await encodedPicture(image().webp(), true, "generated picture");
+  const { xmp } = await sharp(original).metadata();
+  const changed = xmp.toString("utf8").replace("http://iptc.org/", "http://example.invalid/iptc.org/");
+  const bytes = await image().webp().withXmp(changed).toBuffer();
+  await assert.rejects(assertGeneratedWebp(bytes, "other.webp"), /missing.*IPTC/);
+  await assert.rejects(backfillGeneratedWebp(bytes, "other.webp"), /manual provenance merge/);
+});
+
 test("the backfill preserves simple and alpha WebP image data and is idempotent", async () => {
   const translucent = () => sharp({
     create: { width: 40, height: 24, channels: 4, background: { r: 255, g: 5, b: 9, alpha: 0.5 } },

@@ -12,8 +12,8 @@ const XMP = `<x:xmpmeta xmlns:x="adobe:ns:meta/">
 </x:xmpmeta>`;
 
 function hasStatement(xmp) {
-  const packet = xmp?.toString("utf8") ?? "";
-  return packet.includes(IPTC_EXTENSION) && packet.includes(TYPE);
+  // Recognize the packet we write exactly. Leave any other XMP for a manual merge.
+  return xmp?.toString("utf8").trim() === XMP;
 }
 
 export async function assertGeneratedWebp(input, name) {
