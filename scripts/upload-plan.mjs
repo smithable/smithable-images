@@ -18,6 +18,9 @@ export function planUpload(index, versionNames) {
     ...(e.widths ?? []).map((w) => ({ src: `images/upscaled/${e.kind}/${e.id}-${w.width}.webp`, name: `${e.kind}/${e.id}-${w.width}.webp`, sha256: w.sha256 })),
   ]);
   const byId = files.map((f) => ({ src: f.src, key: `images/${f.name}` }));
+  // An id ending in a width ("sea-1600") would overwrite another's enlarged copy ("sea" at 1600).
+  const twice = byId.find((f, i) => byId.findIndex((g) => g.key === f.key) !== i);
+  if (twice) throw new Error(`Two files would be uploaded as ${twice.key}`);
   const seen = new Set();
   const byHash = [];
   for (const f of files) {
