@@ -30,3 +30,11 @@ test("an enlarged entry sends its widths too, by id and by hash", () => {
   ]);
   assert.deepEqual(plan.byHash.map((f) => f.key), [`images/files/${"c".repeat(64)}.webp`, `images/files/${"d".repeat(64)}.webp`]);
 });
+
+test("two files under one name stop the upload", () => {
+  const index = [
+    { id: "sea", kind: "hero", sha256: "c".repeat(64), widths: [{ width: 1600, sha256: "d".repeat(64) }] },
+    { id: "sea-1600", kind: "hero", sha256: "e".repeat(64) },
+  ];
+  assert.throws(() => planUpload(index, []), /images\/hero\/sea-1600\.webp/);
+});

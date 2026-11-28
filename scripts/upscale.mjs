@@ -3,8 +3,8 @@
 // A picture is upscaled when its width is below the minimum of one of its uses (hero 2400, filler and item page
 // 1600). Real-ESRGAN (realesrgan-x4plus, ncnn-vulkan v0.2.5.0) makes a 4x PNG in a temporary folder; from it come a
 // master (at most 3200 wide, WebP q92) and the widths its uses serve, each written to a temporary name and renamed.
-// The 4x PNG is deleted. One line per picture goes to images/upscaled/results.jsonl; a rerun skips every picture
-// whose source (by its sha256) already has a line there.
+// The 4x PNG is deleted. One line per picture goes to images/upscaled/results.jsonl; a rerun skips a source (by
+// its sha256) that has a line there, unless its uses have since gained a width or its files have been replaced.
 //
 // Order: pictures given with --dir or --list (newly generated app pictures, which need not be in the manifest), the
 // starters' heroes, other heroes, samples with marked uses, other samples. Logos and icons are never upscaled.
@@ -41,9 +41,9 @@ const GATE_LOCK = "/var/lib/smithable-gate/.gate-lock";
 const GPU_DIR = "/mnt/c/Users/johan/upscale/realesrgan";
 const CPU_BIN = process.env.UPSCALE_CPU_BIN ?? join(homedir(), "repos/.session-scripts/c/upscale/bin/realesrgan-ncnn-vulkan");
 
-// The uses of an entry: marked ones (`uses:` in the manifest), else a hero is a hero and a sample an item page.
+// The uses of an entry: a hero is a hero and a sample an item page, which marks (`uses:` in the manifest) add to.
 export function usesOf(e) {
-  if (e.uses?.length) return e.uses;
+  if (e.uses?.length) return e.kind === "sample" ? [...new Set(["item", ...e.uses])] : e.uses;
   return e.kind === "hero" ? ["hero"] : e.kind === "sample" ? ["item"] : [];
 }
 
@@ -63,9 +63,22 @@ export function widthsFor(e, master) {
   return [...all].filter((w) => w <= master && w > e.width).sort((a, b) => a - b);
 }
 
+// The result that stands for each source, by its sha256: the last line. A picture's files are named by its id, so
+// a later enlargement of another source replaces an earlier one's, which then no longer counts (a restored source is
+// enlarged again). Lines with the same time are one write (the provenance backfill's new sha256).
+export function current(rows) {
+  const wrote = new Map(rows.filter((r) => r.status === "done").map((r) => [`${r.kind}/${r.id}`, r.at]));
+  const out = new Map(rows.map((r) => [r.sha256, r]));
+  for (const [sha, r] of out) if (r.status === "done" && wrote.get(`${r.kind}/${r.id}`) !== r.at) out.delete(sha);
+  return out;
+}
+
+// A source with a result is skipped, unless its uses now serve a width that result did not write.
+const settled = (e, r) => Boolean(r) && (r.status !== "done" || widthsFor(e, r.master).every((w) => r.widths.includes(w)));
+
 export function queue(entries, done) {
   return entries
-    .filter((e) => usesOf(e).length && needs(e) && !done.has(e.sha256))
+    .filter((e) => usesOf(e).length && needs(e) && !settled(e, done.get(e.sha256)))
     .sort((a, b) => classOf(a) - classOf(b) || a.id.localeCompare(b.id));
 }
 
@@ -150,9 +163,8 @@ async function one(e, tmp) {
   return { ...row, status: "done", master, widths };
 }
 
-function done() {
-  if (!existsSync(RESULTS)) return new Set();
-  return new Set(readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l).sha256));
+export function readResults(file = RESULTS) {
+  return existsSync(file) ? readFileSync(file, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)) : [];
 }
 
 // The library's entries with their files and sizes (index.json), joined with the manifest's marks.
@@ -188,24 +200,30 @@ async function busiest(file, crop) {
 }
 
 async function sheet(n) {
-  const kept = new Set(readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "kept").map((r) => r.sha256));
-  const rows = readFileSync(RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)).filter((r) => r.status === "done" && !kept.has(r.sha256)).slice(-n);
-  const all = new Map((await libraryEntries()).map((e) => [e.id, e]));
+  // Only pictures that can be drawn, so each takes one row: its source still in the library, with a served width.
+  const all = new Map((await libraryEntries()).map((e) => [e.sha256, e]));
+  const rows = [...current(readResults()).values()]
+    .filter((r) => r.status === "done" && all.has(r.sha256) && widthsFor(all.get(r.sha256), r.master).length)
+    .sort((a, b) => a.at.localeCompare(b.at))
+    .slice(-n);
   const cell = 384, gap = 8, label = 24, W = 4 * (cell + gap) + 3 * gap;
   const tiles = [];
   for (const [i, r] of rows.entries()) {
-    const e = all.get(r.id);
-    if (!e) continue;
+    const e = all.get(r.sha256);
     // Judged at the served size (Fable, 2026-11-20): two spots at 100% of the largest served width, Lanczos from
     // the source beside the AI's file of that width: the most detailed spot and the centre, where a face or a
     // subject usually is.
-    const w = Math.max(...widthsFor(e, r.master)), k = w / e.width, src = Math.round(cell / k);
+    const w = Math.max(...widthsFor(e, r.master)), k = w / e.width;
     const served = join(OUT, e.kind, `${e.id}-${w}.webp`);
+    const { data: lanczos, info } = await sharp(e.file).resize(w, null, { kernel: "lanczos3" }).toBuffer({ resolveWithObject: true });
+    // A picture lower or narrower than the cell (a panorama) is cut to what it has.
+    const size = { width: Math.min(cell, w), height: Math.min(cell, info.height, (await sharp(served).metadata()).height) };
+    const src = Math.min(Math.round(cell / k), e.width, e.height);
     const spots = [await busiest(e.file, src), [Math.round((e.width - src) / 2), Math.round((e.height - src) / 2)]];
     const parts = [];
     for (const [left, top] of spots) {
-      const at = { left: Math.round(left * k), top: Math.round(top * k), width: cell, height: cell };
-      parts.push(await sharp(await sharp(e.file).resize(w, null, { kernel: "lanczos3" }).toBuffer()).extract(at).toBuffer());
+      const at = { left: Math.max(0, Math.min(Math.round(left * k), w - size.width)), top: Math.max(0, Math.min(Math.round(top * k), info.height - size.height)), ...size };
+      parts.push(await sharp(lanczos).extract(at).toBuffer());
       parts.push(await sharp(served).extract(at).toBuffer());
     }
     const y = i * (cell + label + gap);
@@ -228,7 +246,7 @@ async function main() {
   const app = dir ? readdirSync(dir).filter((f) => /\.(webp|png|jpe?g)$/i.test(f)).map((f) => join(dir, f))
     : list ? readFileSync(list, "utf8").split("\n").map((l) => l.trim()).filter(Boolean) : [];
   const only = arg("--only")?.split(",");
-  let todo = queue([...(await appEntries(app)), ...(await libraryEntries())], done());
+  let todo = queue([...(await appEntries(app)), ...(await libraryEntries())], current(readResults()));
   if (only) todo = todo.filter((e) => only.includes(e.id));
   todo = todo.slice(0, Number(arg("--limit")) || Infinity);
   console.log(`${todo.length} to upscale on the ${engine().toUpperCase()}`);

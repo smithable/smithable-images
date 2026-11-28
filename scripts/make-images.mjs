@@ -31,7 +31,7 @@ import { assertGeneratedWebp, backfillGeneratedWebp, encodedPicture } from "./im
 import { CUTOFF, LICENCE_CHANGE, refusal, THRESHOLD_ID, uploadDate, wayback } from "./pixabay.mjs";
 import { isPhotoId, pageOf, readPhotoPage } from "./wordpress.mjs";
 import { planUpload } from "./upload-plan.mjs";
-import { widthsFor } from "./upscale.mjs";
+import { current, readResults, widthsFor } from "./upscale.mjs";
 
 const ROOT = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const IMAGES_URL = "https://docs.smithable.ai/images";
@@ -233,11 +233,7 @@ async function store(e, input) {
 // served; a later "kept" (judged on the crop sheet, the original stays) withdraws it.
 const UPSCALED = join(ROOT, "images", "upscaled");
 const UPSCALE_RESULTS = join(UPSCALED, "results.jsonl");
-const upscaled = new Map();
-if (existsSync(UPSCALE_RESULTS))
-  for (const r of readFileSync(UPSCALE_RESULTS, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)))
-    if (r.status === "done") upscaled.set(r.sha256, r);
-    else upscaled.delete(r.sha256);
+const upscaled = new Map([...current(readResults(UPSCALE_RESULTS))].filter(([, r]) => r.status === "done"));
 
 // The served widths above the stored copy, each with its own address and hash (the stored copy stays
 // url, width and height, as old readers know them).
